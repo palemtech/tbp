@@ -1,6 +1,6 @@
 {
-  "name": "Terjemahan Baso Plembang",
-  "short_name": "TBP",
+  "name": "$$full_name$$",
+  "short_name": "$$short_name$$",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#F0F0F0",
