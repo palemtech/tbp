@@ -1949,6 +1949,7 @@ body {
     z-index: 999;
 }
 #chapter-menu {
+    left:12.5%;
     position: absolute;
     visibility: hidden;
     overflow: auto;
