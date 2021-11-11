@@ -3,6 +3,7 @@
   "short_name": "$$short_name$$",
   "start_url": "./index.html",
   "display": "standalone",
+  "prefer_related_applications": false,
   "background_color": "#F0F0F0",
   "theme_color":"#6C0000",
   "icons": [

@@ -1800,21 +1800,12 @@ span.v-versenumber {
 img { max-width: 100%; }
 .txs { display: inline; }
 
-@media(max-width: 368px) {
-    .navigation-top span {
-        font-size: 14px;
-    }
-}
-body {
-    background-color: #F0F0F0;
-}
-
 body {
     margin-left: 0;
     margin-right: 0;
 }
 #toolbar-top {
-    background: #6C0000;
+    background: #FAFAFA;
     border-bottom: 1px solid #DDD;
     -moz-box-shadow: 0 5px 5px -5px #CCC;
     -webkit-box-shadow: 0 5px 5px -5px #CCC;
@@ -1833,7 +1824,7 @@ body {
     margin: 80px auto 150px;
 }
 #toolbar-bottom {
-    background: #FFFFFF;
+    background: #FAFAFA;
     border-top: 1px solid #DDD;
     -moz-box-shadow: 0 -5px 5px -5px #CCC;
     -webkit-box-shadow: 0 -5px 5px -5px #CCC;
@@ -1858,9 +1849,9 @@ body {
     border-radius: 4px;
     border: solid 1px #CCCCCC;
     background: #F0F0F0;
-    padding: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    padding: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
     text-decoration: none;
     color: #808080;
     font-family: Arial, Helvetica, sans-serif;
@@ -1908,7 +1899,7 @@ body {
     border: solid 1px #CCCCCC;
     background: #F0F0F0;
     padding: 2px;
-    margin-left: 4px;
+    margin-left: 12px;
     margin-right: 2px;
     text-decoration: none;
     color: #808080;
@@ -1931,7 +1922,7 @@ body {
     background: #F0F0F0;
     padding: 2px;
     margin-left: 2px;
-    margin-right: 4px;
+    margin-right: 12px;
     text-decoration: none;
     color: #808080;
     font-weight: bold;
@@ -1958,6 +1949,7 @@ body {
     z-index: 999;
 }
 #chapter-menu {
+    left:12.5%;
     position: absolute;
     visibility: hidden;
     overflow: auto;
@@ -2053,3 +2045,10 @@ body {
         margin-right: auto;
     }
 }
+
+.add-button {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+}
+
