@@ -60,7 +60,7 @@ function showChapterMenu(chs, hasIntro, baseRef) {
 	var scrollTop = $(window).scrollTop();
 	 
     popUp.style.top = rect.top + rect.height + scrollTop + "px";
-    popUp.style.left = "45%";
+    popUp.style.left = "12.5%";
     popUp.style.width = 200 + "px";
     popUp.style.maxHeight = 400 + "px";
      
