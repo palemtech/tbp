@@ -807,6 +807,7 @@ var baseRef  = "Aktb-06-LUK-";
    </span>
    <span class="cpt_button md1-button mdl-js-button mdl-button--fab" id="play-button">
     <i class="material-icons" id="play-btn-i">
+     play_arrow
     </i>
    </span>
    <span class="button cpt_button next_cpt_button md1-button mdl-js-button mdl-button--fab" id="next_cpt_button">
@@ -831,15 +832,27 @@ var baseRef  = "Aktb-06-LUK-";
         if (state === 'play') {
             state = 'pause';
             audio.pause();
-            audioI.textContent = 'pause';
+            audioI.textContent = 'play_arrow';
         } else {
             state = 'play';
             audio.play();
-            audioI.textContent = 'play_arrow';
+            audioI.textContent = 'pause';
         }
     });
   </script>
   <script src="js/swipe.js" type="text/javascript">
+  </script>
+  <script src="js/material.min.js" type="text/javascript">
+  </script>
+  <link href="css/material.min.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript">
+   document.addEventListener('swiped-left', function(e) {
+        window.location.replace('Aktb-06-LUK-018.html');
+    });
+
+    document.addEventListener('swiped-right', function(e) {
+        window.location.replace('Aktb-06-LUK-020.html');
+    });
   </script>
   <script src="js/swipe.js" type="text/javascript">
   </script>
