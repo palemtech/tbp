@@ -29,7 +29,7 @@ function showBookMenu() {
 	
     popUp.style.top = rect.top + rect.height + scrollTop + "px";
     popUp.style.left = "12.5%";
-    popUp.style.width = 170 + "px";
+    popUp.style.width = "70%";
     popUp.style.height = 400 + "px";
      
 	baseText = "";

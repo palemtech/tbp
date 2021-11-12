@@ -1,30 +1,46 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#6C0000">
-<title>Saér Nyanyian 32</title>
-
-<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
-<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
-<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
-<script type='text/javascript' src='js/app-builder-audio.js'></script>
-<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
-<script type='text/javascript' src='js/app-builder-menus.js'></script>
-<script type='text/javascript' src='js/app-builder-video.js'></script>
-<script type='text/javascript' src='js/book-names.js'></script>
-
-<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
-
-<link rel="manifest" href="./manifest.webmanifest" />
-<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
-
-<link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
-
-<script type="text/javascript">
-
-$(document).ready(function() {
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="#6C0000" name="theme-color"/>
+  <title>
+   Saér Nyanyian 32
+  </title>
+  <script src="js/jquery-1.11.3.min.js" type="text/javascript">
+  </script>
+  <script src="js/popcorn-complete.min.js" type="text/javascript">
+  </script>
+  <script src="js/jquery.tooltipster.min.js" type="text/javascript">
+  </script>
+  <script src="js/app-builder-audio.js" type="text/javascript">
+  </script>
+  <script src="js/app-builder-footnotes.js" type="text/javascript">
+  </script>
+  <script src="js/app-builder-menus.js" type="text/javascript">
+  </script>
+  <script src="js/app-builder-video.js" type="text/javascript">
+  </script>
+  <script src="js/book-names.js" type="text/javascript">
+  </script>
+  <link href="css/tooltipster.css" rel="stylesheet" type="text/css"/>
+  <link href="./manifest.webmanifest" rel="manifest"/>
+  <link href="./icons/apple-touch-icon.png" rel="apple-touch-icon"/>
+  <link href="css/sab-stylesheet.css" rel="stylesheet" type="text/css"/>
+  <script src="js/material.min.js" type="text/javascript">
+  </script>
+  <link href="css/material.min.css" rel="stylesheet" type="text/css"/>
+  <script src="js/material.min.js" type="text/javascript">
+  </script>
+  <link href="css/material.min.css" rel="stylesheet" type="text/css"/>
+  <script src="js/material.min.js" type="text/javascript">
+  </script>
+  <link href="css/material.min.css" rel="stylesheet" type="text/css"/>
+  <script src="js/material.min.js" type="text/javascript">
+  </script>
+  <link href="css/material.min.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript">
+   $(document).ready(function() {
 
 // Footnotes and Cross-references
 var footnotes = {
@@ -52,79 +68,428 @@ initFootnotes(glossary);
 var chapters = [ { start: 1, end: 34 }, { start: 41, end: 41 }, { start: 46, end: 48 }, { start: 51, end: 51 }, { start: 53, end: 54 }, { start: 73, end: 73 }, { start: 84, end: 84 }, { start: 90, end: 91 }, { start: 113, end: 118 }, { start: 127, end: 128 }, { start: 133, end: 134 }, { start: 138, end: 139 }, { start: 146, end: 146 }, { start: 148, end: 148 }];
 var hasIntro = false;
 var baseRef  = "Aktb-04-B001-";
-
-
-</script>
-</head>
-
-<body class="browser" dir="LTR">
-
-<div id="book-menu"></div>
-<div id="chapter-menu"></div>
-
-<div id="toolbar-top">
-<div class="navigation-top">
-  <span class="button"><a href='Aktb-03-FRT-2-001.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
-  <span class="button"><a href='Aktb-04-B001-031.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
-  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;Saér Nyanyian&nbsp;&nbsp;</a></span>
-<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;32&nbsp;&nbsp;</a></span>
-  <span class="button"><a href='Aktb-04-B001-033.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
-  <span class="button"><a href='Aktb-05-JON-000.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
-</div>
-</div>
-
-<div id="content">
-
-<div class="c">32</div> 
-<div class="s2"><div id="s1">Kesenengan wong yang diampóni dusonyo</div></div><a id="v1"></a>
-<div class="qc-v top-spacing"><span class="v">1</span><span class="vsp">&nbsp;</span>Dari <span class="footnote selectable" id="G-11">Daód</span>. Maskil<span class="footnote selectable" id="F-0"><sup>a</sup></span>.</div>
-<div class="b">&nbsp;</div>
-<div class="q">Senengla ati wong yang diampóni pelanggarannyo,</div>
-<div class="q2">yang dusonyo ditótópi.<span id="bookmarks1"></span></div><span id="bookmarks1"></span><a id="v2"></a>
-<div class="q-v"><span class="v">2</span><span class="vsp">&nbsp;</span>Senengla ati wong yang kesalahannyo idak diétóng <span class="nd"><span class="footnote selectable" id="G-2"><span class="nd">Allah</span><span class="nd2">yhwh</span></span></span>,</div>
-<div class="q2">yang dalem jiwonyo katek penipuan.</div>
-<div class="b">&nbsp;</div><span id="bookmarks2"></span><span id="bookmarks2"></span><a id="v3"></a>
-<div class="q-v"><span class="v">3</span><span class="vsp">&nbsp;</span>Pas aku diem <span class="add">pasal duso aku</span>,</div>
-<div class="q2">tulang-tulang aku jadi keropos karno jerétan aku sepanjang ari.<span id="bookmarks3"></span></div><span id="bookmarks3"></span><a id="v4"></a>
-<div class="q-v"><span class="v">4</span><span class="vsp">&nbsp;</span>Soalnyo siang jugo malem, tangan Kau neken aku,</div>
-<div class="q2">kekuatan<span class="footnote selectable" id="F-1"><sup>b</sup></span> aku tekeréng pecak dalem panasnyo mósém kemaró. <span class="qs"><span class="footnote selectable" id="G-55">Selah</span></span><span id="bookmarks4"></span></div><span id="bookmarks4"></span><a id="v5"></a>
-<div class="q-v"><span class="v">5</span><span class="vsp">&nbsp;</span>Aku ngakui duso aku samo Kau,</div>
-<div class="q2">trós aku idak nyingiti kesalahan aku.</div>
-<div class="q">Uji aku, “Aku bakal ngakui pelanggaran-pelanggaran aku samo <span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span>.”</div>
-<div class="q">Trós Kau ngambék kesalahan <span class="add">aku dengen ngampóni</span> duso aku. <span class="qs">Selah</span></div>
-<div class="b">&nbsp;</div><span id="bookmarks5"></span><span id="bookmarks5"></span><a id="v6"></a>
-<div class="q-v"><span class="v">6</span><span class="vsp">&nbsp;</span>Karno tu, biarla slóró wong além bedoa samo Kau pas kesesekan<span class="footnote selectable" id="F-2"><sup>c</sup></span>.</div>
-<div class="q">Sebenernyo, pas banjér besak dateng,</div>
-<div class="q2">dio wong idak bakal keno.<span id="bookmarks6"></span></div><span id="bookmarks6"></span><a id="v7"></a>
-<div class="q-v"><span class="v">7</span><span class="vsp">&nbsp;</span>Kaula peléndóngan aku,</div>
-<div class="q2">Kau nyago aku dari kesaroan,</div>
-<div class="q2">Kau ngeléléngi aku dengen sorak'an karno keselametan. <span class="qs">Selah</span></div>
-<div class="b">&nbsp;</div><span id="bookmarks7"></span><span id="bookmarks7"></span><a id="v8"></a>
-<div class="q-v"><span class="v">8</span><span class="vsp">&nbsp;</span><span class="add">Uji Allah,</span></div>
-<div class="q2">“Aku bakal ngajar trós nónjókke samo kau</div>
-<div class="q3">jalan yang harós kau jalani.</div>
-<div class="q2">Aku bakal nasehati kau</div>
-<div class="q3">dengen mato Aku tetójó ke kau.<span id="bookmarks8"></span></div><span id="bookmarks8"></span><a id="v9"></a>
-<div class="q2-v"><span class="v">9</span><span class="vsp">&nbsp;</span>Jangan jadi pecak kudo apo keledai yang katek akal,</div>
-<div class="q3">yang harós dikendalike dengen kekang jugo tali,</div>
-<div class="q3"><span class="add">amen dak tu, binatang tu</span> dak bakal marak'i kau<span class="footnote selectable" id="F-3"><sup>d</sup></span>.”</div>
-<div class="b">&nbsp;</div><span id="bookmarks9"></span><span id="bookmarks9"></span><a id="v10"></a>
-<div class="q-vv"><span class="v">10</span><span class="vsp">&nbsp;</span>Banyak kesaroan óntók wong jahat,</div>
-<div class="q2">tapi kasé stio <span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span></div>
-<div class="q2">ngeléléngi wong yang pecayo samo Dio.<span id="bookmarks10"></span></div><span id="bookmarks10"></span><a id="v11"></a>
-<div class="q-vv"><span class="v">11</span><span class="vsp">&nbsp;</span>Besenengla dalem <span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span> trós pujila,</div>
-<div class="q2">ói kamu wong-wong bener!</div>
-<div class="q2">Besorakla, ói slóró wong yang lórós ati!<span id="bookmarks11"></span></div>
-</div>
-
-<div id="toolbar-bottom">
-<div class="audio-player">
-  <audio id="audio" controls>
-    <source id="audio1" src="https://storage.googleapis.com/tbp-audio/TBP Mazmur 32.mp3" />
-  </audio>
-</div>
-</div>
-
-<script type='text/javascript' src='./pwa-main.js'></script>
-</body>
+  </script>
+ </head>
+ <body class="browser" dir="LTR">
+  <div id="book-menu">
+  </div>
+  <div id="chapter-menu">
+  </div>
+  <div id="toolbar-top">
+   <div class="navigation-top">
+    <span id="book-selector">
+     <a href="#" onclick="toggleBookMenu(); return false;">
+      Saér Nyanyian
+     </a>
+    </span>
+    <span id="chapter-selector">
+     <a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">
+      32
+     </a>
+    </span>
+   </div>
+  </div>
+  <div id="content">
+   <div class="c">
+    32
+   </div>
+   <div class="s2">
+    <div id="s1">
+     Kesenengan wong yang diampóni dusonyo
+    </div>
+   </div>
+   <a id="v1">
+   </a>
+   <div class="qc-v top-spacing">
+    <span class="v">
+     1
+    </span>
+    <span class="vsp">
+    </span>
+    Dari
+    <span class="footnote selectable" id="G-11">
+     Daód
+    </span>
+    . Maskil
+    <span class="footnote selectable" id="F-0">
+     <sup>
+      a
+     </sup>
+    </span>
+    .
+   </div>
+   <div class="b">
+   </div>
+   <div class="q">
+    Senengla ati wong yang diampóni pelanggarannyo,
+   </div>
+   <div class="q2">
+    yang dusonyo ditótópi.
+    <span id="bookmarks1">
+    </span>
+   </div>
+   <span id="bookmarks1">
+   </span>
+   <a id="v2">
+   </a>
+   <div class="q-v">
+    <span class="v">
+     2
+    </span>
+    <span class="vsp">
+    </span>
+    Senengla ati wong yang kesalahannyo idak diétóng
+    <span class="nd">
+     <span class="footnote selectable" id="G-2">
+      <span class="nd">
+       Allah
+      </span>
+      <span class="nd2">
+       yhwh
+      </span>
+     </span>
+    </span>
+    ,
+   </div>
+   <div class="q2">
+    yang dalem jiwonyo katek penipuan.
+   </div>
+   <div class="b">
+   </div>
+   <span id="bookmarks2">
+   </span>
+   <span id="bookmarks2">
+   </span>
+   <a id="v3">
+   </a>
+   <div class="q-v">
+    <span class="v">
+     3
+    </span>
+    <span class="vsp">
+    </span>
+    Pas aku diem
+    <span class="add">
+     pasal duso aku
+    </span>
+    ,
+   </div>
+   <div class="q2">
+    tulang-tulang aku jadi keropos karno jerétan aku sepanjang ari.
+    <span id="bookmarks3">
+    </span>
+   </div>
+   <span id="bookmarks3">
+   </span>
+   <a id="v4">
+   </a>
+   <div class="q-v">
+    <span class="v">
+     4
+    </span>
+    <span class="vsp">
+    </span>
+    Soalnyo siang jugo malem, tangan Kau neken aku,
+   </div>
+   <div class="q2">
+    kekuatan
+    <span class="footnote selectable" id="F-1">
+     <sup>
+      b
+     </sup>
+    </span>
+    aku tekeréng pecak dalem panasnyo mósém kemaró.
+    <span class="qs">
+     <span class="footnote selectable" id="G-55">
+      Selah
+     </span>
+    </span>
+    <span id="bookmarks4">
+    </span>
+   </div>
+   <span id="bookmarks4">
+   </span>
+   <a id="v5">
+   </a>
+   <div class="q-v">
+    <span class="v">
+     5
+    </span>
+    <span class="vsp">
+    </span>
+    Aku ngakui duso aku samo Kau,
+   </div>
+   <div class="q2">
+    trós aku idak nyingiti kesalahan aku.
+   </div>
+   <div class="q">
+    Uji aku, “Aku bakal ngakui pelanggaran-pelanggaran aku samo
+    <span class="nd">
+     <span class="nd">
+      Allah
+     </span>
+     <span class="nd2">
+      yhwh
+     </span>
+    </span>
+    .”
+   </div>
+   <div class="q">
+    Trós Kau ngambék kesalahan
+    <span class="add">
+     aku dengen ngampóni
+    </span>
+    duso aku.
+    <span class="qs">
+     Selah
+    </span>
+   </div>
+   <div class="b">
+   </div>
+   <span id="bookmarks5">
+   </span>
+   <span id="bookmarks5">
+   </span>
+   <a id="v6">
+   </a>
+   <div class="q-v">
+    <span class="v">
+     6
+    </span>
+    <span class="vsp">
+    </span>
+    Karno tu, biarla slóró wong além bedoa samo Kau pas kesesekan
+    <span class="footnote selectable" id="F-2">
+     <sup>
+      c
+     </sup>
+    </span>
+    .
+   </div>
+   <div class="q">
+    Sebenernyo, pas banjér besak dateng,
+   </div>
+   <div class="q2">
+    dio wong idak bakal keno.
+    <span id="bookmarks6">
+    </span>
+   </div>
+   <span id="bookmarks6">
+   </span>
+   <a id="v7">
+   </a>
+   <div class="q-v">
+    <span class="v">
+     7
+    </span>
+    <span class="vsp">
+    </span>
+    Kaula peléndóngan aku,
+   </div>
+   <div class="q2">
+    Kau nyago aku dari kesaroan,
+   </div>
+   <div class="q2">
+    Kau ngeléléngi aku dengen sorak'an karno keselametan.
+    <span class="qs">
+     Selah
+    </span>
+   </div>
+   <div class="b">
+   </div>
+   <span id="bookmarks7">
+   </span>
+   <span id="bookmarks7">
+   </span>
+   <a id="v8">
+   </a>
+   <div class="q-v">
+    <span class="v">
+     8
+    </span>
+    <span class="vsp">
+    </span>
+    <span class="add">
+     Uji Allah,
+    </span>
+   </div>
+   <div class="q2">
+    “Aku bakal ngajar trós nónjókke samo kau
+   </div>
+   <div class="q3">
+    jalan yang harós kau jalani.
+   </div>
+   <div class="q2">
+    Aku bakal nasehati kau
+   </div>
+   <div class="q3">
+    dengen mato Aku tetójó ke kau.
+    <span id="bookmarks8">
+    </span>
+   </div>
+   <span id="bookmarks8">
+   </span>
+   <a id="v9">
+   </a>
+   <div class="q2-v">
+    <span class="v">
+     9
+    </span>
+    <span class="vsp">
+    </span>
+    Jangan jadi pecak kudo apo keledai yang katek akal,
+   </div>
+   <div class="q3">
+    yang harós dikendalike dengen kekang jugo tali,
+   </div>
+   <div class="q3">
+    <span class="add">
+     amen dak tu, binatang tu
+    </span>
+    dak bakal marak'i kau
+    <span class="footnote selectable" id="F-3">
+     <sup>
+      d
+     </sup>
+    </span>
+    .”
+   </div>
+   <div class="b">
+   </div>
+   <span id="bookmarks9">
+   </span>
+   <span id="bookmarks9">
+   </span>
+   <a id="v10">
+   </a>
+   <div class="q-vv">
+    <span class="v">
+     10
+    </span>
+    <span class="vsp">
+    </span>
+    Banyak kesaroan óntók wong jahat,
+   </div>
+   <div class="q2">
+    tapi kasé stio
+    <span class="nd">
+     <span class="nd">
+      Allah
+     </span>
+     <span class="nd2">
+      yhwh
+     </span>
+    </span>
+   </div>
+   <div class="q2">
+    ngeléléngi wong yang pecayo samo Dio.
+    <span id="bookmarks10">
+    </span>
+   </div>
+   <span id="bookmarks10">
+   </span>
+   <a id="v11">
+   </a>
+   <div class="q-vv">
+    <span class="v">
+     11
+    </span>
+    <span class="vsp">
+    </span>
+    Besenengla dalem
+    <span class="nd">
+     <span class="nd">
+      Allah
+     </span>
+     <span class="nd2">
+      yhwh
+     </span>
+    </span>
+    trós pujila,
+   </div>
+   <div class="q2">
+    ói kamu wong-wong bener!
+   </div>
+   <div class="q2">
+    Besorakla, ói slóró wong yang lórós ati!
+    <span id="bookmarks11">
+    </span>
+   </div>
+  </div>
+  <div id="toolbar-bottom">
+   <span class="button cpt_button prev_cpt_button md1-button mdl-js-button mdl-button--fab" id="prev_cpt_button">
+    <a href="Aktb-04-B001-031.html" title="Previous Chapter">
+     &lt;
+    </a>
+   </span>
+   <div class="audio-player">
+    <audio controls="" id="audio">
+     <source id="audio1" src="https://storage.googleapis.com/tbp-audio/TBP Mazmur 32.mp3"/>
+    </audio>
+   </div>
+   <span class="button cpt_button next_cpt_button md1-button mdl-js-button mdl-button--fab" id="next_cpt_button">
+    <a href="Aktb-04-B001-033.html" title="Next Chapter">
+     &gt;
+    </a>
+   </span>
+  </div>
+  <script src="js/material.min.js" type="text/javascript">
+  </script>
+  <link href="css/material.min.css" rel="stylesheet" type="text/css"/>
+  <script src="js/material.min.js" type="text/javascript">
+  </script>
+  <link href="css/material.min.css" rel="stylesheet" type="text/css"/>
+  <script src="js/material.min.js" type="text/javascript">
+  </script>
+  <link href="css/material.min.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript">
+   document.addEventListener('swiped-left', function(e) {
+        window.location.replace('#');
+    });
+    document.addEventListener('swipped-right', function(e) {
+        window.location.replace('#');
+    });
+  </script>
+  <script src="js/swipe.js" type="text/javascript">
+  </script>
+  <script src="js/material.min.js" type="text/javascript">
+  </script>
+  <link href="css/material.min.css" rel="stylesheet" type="text/css"/>
+  <script src="js/material.min.js" type="text/javascript">
+  </script>
+  <link href="css/material.min.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript">
+   document.addEventListener('swiped-left', function(e) {
+        window.location.replace('Aktb-04-B001-031.html');
+    });
+    document.addEventListener('swipped-right', function(e) {
+        window.location.replace('Aktb-04-B001-033.html');
+    });
+  </script>
+  <script src="js/swipe.js" type="text/javascript">
+  </script>
+  <script src="js/material.min.js" type="text/javascript">
+  </script>
+  <link href="css/material.min.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript">
+   document.addEventListener('swiped-left', function(e) {
+        window.location.replace('Aktb-04-B001-031.html');
+    });
+    document.addEventListener('swipped-right', function(e) {
+        window.location.replace('Aktb-04-B001-033.html');
+    });
+  </script>
+  <script src="js/swipe.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+    document.addEventListener('swiped-left', function(e) {
+        window.location.replace('Aktb-04-B001-031.html');
+    });
+    document.addEventListener('swipped-right', function(e) {
+        window.location.replace('Aktb-04-B001-033.html');
+    });
+    </script>
+<script src="./pwa-main.js" type="text/javascript">
+  </script>
+ </body>
 </html>

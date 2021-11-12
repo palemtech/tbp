@@ -1,30 +1,46 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#6C0000">
-<title>Lukas 1</title>
-
-<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
-<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
-<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
-<script type='text/javascript' src='js/app-builder-audio.js'></script>
-<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
-<script type='text/javascript' src='js/app-builder-menus.js'></script>
-<script type='text/javascript' src='js/app-builder-video.js'></script>
-<script type='text/javascript' src='js/book-names.js'></script>
-
-<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
-
-<link rel="manifest" href="./manifest.webmanifest" />
-<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
-
-<link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
-
-<script type="text/javascript">
-
-$(document).ready(function() {
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="#6C0000" name="theme-color"/>
+  <title>
+   Lukas 1
+  </title>
+  <script src="js/jquery-1.11.3.min.js" type="text/javascript">
+  </script>
+  <script src="js/popcorn-complete.min.js" type="text/javascript">
+  </script>
+  <script src="js/jquery.tooltipster.min.js" type="text/javascript">
+  </script>
+  <script src="js/app-builder-audio.js" type="text/javascript">
+  </script>
+  <script src="js/app-builder-footnotes.js" type="text/javascript">
+  </script>
+  <script src="js/app-builder-menus.js" type="text/javascript">
+  </script>
+  <script src="js/app-builder-video.js" type="text/javascript">
+  </script>
+  <script src="js/book-names.js" type="text/javascript">
+  </script>
+  <link href="css/tooltipster.css" rel="stylesheet" type="text/css"/>
+  <link href="./manifest.webmanifest" rel="manifest"/>
+  <link href="./icons/apple-touch-icon.png" rel="apple-touch-icon"/>
+  <link href="css/sab-stylesheet.css" rel="stylesheet" type="text/css"/>
+  <script src="js/material.min.js" type="text/javascript">
+  </script>
+  <link href="css/material.min.css" rel="stylesheet" type="text/css"/>
+  <script src="js/material.min.js" type="text/javascript">
+  </script>
+  <link href="css/material.min.css" rel="stylesheet" type="text/css"/>
+  <script src="js/material.min.js" type="text/javascript">
+  </script>
+  <link href="css/material.min.css" rel="stylesheet" type="text/css"/>
+  <script src="js/material.min.js" type="text/javascript">
+  </script>
+  <link href="css/material.min.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript">
+   $(document).ready(function() {
 
 // Footnotes and Cross-references
 var footnotes = {
@@ -72,129 +88,1447 @@ initFootnotes(glossary);
 var chapters = [ { start: 1, end: 24 }];
 var hasIntro = true;
 var baseRef  = "Aktb-06-LUK-";
-
-
-</script>
-</head>
-
-<body class="browser" dir="LTR">
-
-<div id="book-menu"></div>
-<div id="chapter-menu"></div>
-
-<div id="toolbar-top">
-<div class="navigation-top">
-  <span class="button"><a href='Aktb-05-JON-000.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
-  <span class="button"><a href='Aktb-06-LUK-000.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
-  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;Lukas&nbsp;&nbsp;</a></span>
-<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;1&nbsp;&nbsp;</a></span>
-  <span class="button"><a href='Aktb-06-LUK-002.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
-  <span class="button"><a href='Aktb-07-JHN-001.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
-</div>
-</div>
-
-<div id="content">
-
-<div class="mt"><span class="mt">LUKAS</span></div>
-<div class="mt2"><span class="mt2">[VERSI AWAL]</span></div>
-<div class="b"></div>
-<div class="b"></div>
-<div class="c">1</div> 
-
-<div class="s"><div id="s1">Pembukaan</div></div><a id="v1"></a>
-<div class="m"><span class="v">1</span><span class="vsp">&nbsp;</span>Yang Tehormat Bapak Teopélós<span class="footnote selectable" id="F-0"><sup>a</sup></span>,</div>
-<div class="p">Banyak wong la nyobo nyósón dengen beórótan cerito pasal kejadian-kejadian<span class="footnote selectable" id="F-1"><sup>b</sup></span> yang la dipenui di antaro kito<span class="footnote selectable" id="F-2"><sup>c</sup></span>,<span id="bookmarks1"></span> <a id="v2"></a><span class="v">2</span><span class="vsp">&nbsp;</span>pecak yang disampeke ke kito dari wong-wong yang jadi saksi mato kejadian tu, trós jadi pengajar cerito tu<span class="footnote selectable" id="F-3"><sup>d</sup></span>.<span id="bookmarks2"></span> <a id="v3"></a><span class="v">3</span><span class="vsp">&nbsp;</span>Aku la nian-nian nyelédék'i galonyo tu dari petamo, jadi aku jugo mótóske óntók nóléskenyo secaro beórótan óntók kau, Bapak Teopélós.<span id="bookmarks3"></span> <a id="v4"></a><span class="v">4</span><span class="vsp">&nbsp;</span>Tójóannyo supayo Bapak tau amen galo-galo yang la diajarke ke Bapak tu bener-bener ado nian.<span id="bookmarks4"></span></div>
-
-<div class="s"><div id="s2">Asal-ósól Nabi Yahya samo Yesus</div></div>
-<div class="s2"><div id="s3">Kelaéran Nabi Yahya dienjók tau</div></div><span id="bookmarks4"></span><a id="v5"></a>
-<div class="p"><span class="v">5</span><span class="vsp">&nbsp;</span>Pas jamannyo Herodes, rajo <span class="footnote selectable" id="G-65">Yudea</span>, ado sikok imam<span class="footnote selectable" id="F-4"><sup>e</sup></span> yang benamo Jakaria yang dari kelompok pelayanan Abia. Bininyo yang benamo Elisabet tu ketórónan <span class="footnote selectable" id="G-16">Harón</span>.<span id="bookmarks5"></span></div><span id="bookmarks5"></span><a id="v6"></a>
-<div class="p"><span class="v">6</span><span class="vsp">&nbsp;</span>Duo laki bini tu bener di mato Allah, jugo édóp nórót prénto samo atóran Allah<span class="ul">‡</span> dengen sole.<span id="bookmarks6"></span> <a id="v7"></a><span class="v">7</span><span class="vsp">&nbsp;</span>Dio wong dak katek anak karno Elisabet mandól, trós tu dio wong jugo la tuo nian.<span id="bookmarks7"></span></div><span id="bookmarks7"></span><a id="v8"></a>
-<div class="p"><span class="v">8</span><span class="vsp">&nbsp;</span>Kejadian ni tejadi pas Jakaria lagi ngimami di adepan Allah soalnyo itu tu géléran rombongannyo.<span id="bookmarks8"></span> <a id="v9"></a><span class="v">9</span><span class="vsp">&nbsp;</span>Sesuai dengen adat jabatan imam, dio diundi óntók masók ke <span class="footnote selectable" id="G-51">Ruma Agóng Allah</span> trós nunu garu.<span id="bookmarks9"></span> <a id="v10"></a><span class="v">10</span><span class="vsp">&nbsp;</span>Trós, galo-galo umat yang ado di luar lagi bedoa waktu garu tu tetunu.<span id="bookmarks10"></span></div><span id="bookmarks10"></span><a id="v11"></a>
-<div class="p"><span class="v">11</span><span class="vsp">&nbsp;</span>Tibo-tibo móncólla <span class="footnote selectable" id="G-32">malekat</span> Allah tegak di sebela kanan meja tempat nunu garu.<span id="bookmarks11"></span> <a id="v12"></a><span class="v">12</span><span class="vsp">&nbsp;</span>Jakaria ni tekejót waktu dio nyingok malekat tu trós ketakótan.<span id="bookmarks12"></span> <a id="v13"></a><span class="v">13</span><span class="vsp">&nbsp;</span>Tapi malekat tu ngomong ke dio, “Dak usa takót Jakaria, doa kau la dikabólke. Bini kau Elisabet bakal ngelaérke sikok budak lanang, trós bakal kau namoi dio Yahya<span class="footnote selectable" id="F-5"><sup>f</sup></span>.<span id="bookmarks13"></span> <a id="v14"></a><span class="v">14</span><span class="vsp">&nbsp;</span>Dio bakal mbékén kau seneng nian, trós banyak wong jugo melok seneng karno dio laér,<span id="bookmarks14"></span> <a id="v15"></a><span class="v">15</span><span class="vsp">&nbsp;</span>soalnyo dio ni kagek jadi wong yang besak di mato Allah<span class="ul">‡</span>. Trós dio jugo dak bole minum anggór samo minuman keras laénnyo.<span class="footnote selectable" id="F-6"><sup>g</sup></span> Dari rahém emaknyo dio bakal dipenui samo Ro Suci.<span class="footnote selectable" id="F-7"><sup>h</sup></span><span id="bookmarks15"></span> <a id="v16"></a><span class="v">16</span><span class="vsp">&nbsp;</span>Dio kagek ngarake banyak ketórónan <span class="footnote selectable" id="G-22">Israel</span> balék ke Allah<span class="ul">‡</span>, Tuhan dio wong.<span id="bookmarks16"></span> <a id="v17"></a><span class="v">17</span><span class="vsp">&nbsp;</span>Trós budak ni bakal ndului Allah<span class="footnote selectable" id="F-8"><sup>i</sup></span> dengen ro samo kuaso Nabi Elias.<span class="footnote selectable" id="F-9"><sup>j</sup></span> Itu bakal dilakuke supayo ngarake ati galo-galo aba bebalék ke anak-anaknyo trós wong-wong durhako bebalék ke dalem hikmah wong bener, trós nyedioke óntók Allahsikok umat yang la siap.”<span id="bookmarks17"></span></div><span id="bookmarks17"></span><a id="v18"></a>
-<div class="p"><span class="v">18</span><span class="vsp">&nbsp;</span>Laju Jakaria ni ngomong samo malekat tu, “Cakmano aku pacak tau amen pasal tu bakal tejadi? Soalnyo aku ni la tuo, trós bini aku jugo la beómór.”<span id="bookmarks18"></span></div><span id="bookmarks18"></span><a id="v19"></a>
-<div class="p"><span class="v">19</span><span class="vsp">&nbsp;</span>Trós uji malekat tu ke Jakaria, “Aku ni Jebrel, yang tegak di adepan Allah, trós aku ni dikongkon óntók ngomong samo kau trós nyampeke kabar baék ni samo kau.<span id="bookmarks19"></span> <a id="v20"></a><span class="v">20</span><span class="vsp">&nbsp;</span>Jingokla, kau sekarang jadi bisu trós dak pacak ngomong sampe ari di mano galonyo tu tejadi. Soalnyo kau dak pecayo samo kato-kato aku yang bakal dinyatoke pas waktunyo.”<span id="bookmarks20"></span></div><span id="bookmarks20"></span><a id="v21"></a>
-<div class="p"><span class="v">21</span><span class="vsp">&nbsp;</span>Sementaro tu, banyak wong nunggui Jakaria, trós dio wong ni heran ngapo Jakaria ni lamo nian di Ruma Agóng Allah.<span id="bookmarks21"></span></div><span id="bookmarks21"></span><a id="v22"></a>
-<div class="p"><span class="v">22</span><span class="vsp">&nbsp;</span>Pas Jakaria ni metu, dio dak pacak ngomong ke dio wong. Trós ngertila wong-wong tu amen dio la nyingok sikok penjingokan di jeró Ruma Allah. Laju dio ngenjók isyarat ke dio wong, soalnyo dio tetep bisu.<span id="bookmarks22"></span> <a id="v23"></a><span class="v">23</span><span class="vsp">&nbsp;</span>Ahérnyo pas ari pelayanannyo la selesai, dio balék ke rumanyo.<span id="bookmarks23"></span></div><span id="bookmarks23"></span><a id="v24"></a>
-<div class="p"><span class="v">24</span><span class="vsp">&nbsp;</span>Beberapo lamo abés tu, Elisabet bininyo bónténg. Trós selamo limo bulan dio mendep bae, ujinyo,<span id="bookmarks24"></span> <a id="v25"></a><span class="v">25</span><span class="vsp">&nbsp;</span>“Na, inila yang Allah<span class="ul">‡</span> gaweke óntók aku, pas Dio meratike aku óntók ngapós aéb aku.”<span id="bookmarks25"></span></div>
-<div class="s2"><div id="s4">Kelaéran Yesus dienjók tau ke Mariam</div></div><span id="bookmarks25"></span><a id="v26"></a>
-<div class="p"><span class="v">26</span><span class="vsp">&nbsp;</span>Pas <span class="add">kandóngan Elisabet la masók</span> bulan yang keenem, malekat Jebrel dikongkon ole Allah ke dósón yang benamo Najaret di daera <span class="footnote selectable" id="G-15">Galilea</span>,<span id="bookmarks26"></span> <a id="v27"></a><span class="v">27</span><span class="vsp">&nbsp;</span>ke sikok betino yang masé gadés yang la betunangan samo lanang yang benamo Yósóp, ketórónan Rajo <span class="footnote selectable" id="G-11">Daód</span>. Namo gadés tu Mariam.<span id="bookmarks27"></span></div><span id="bookmarks27"></span><a id="v28"></a>
-<div class="p"><span class="v">28</span><span class="vsp">&nbsp;</span>Malekat tu ndatengi dio, ujinyo, “Salam, kau yang dikarunioi. Allah ado besamo kau.”<span id="bookmarks28"></span></div><span id="bookmarks28"></span><a id="v29"></a>
-<div class="p"><span class="v">29</span><span class="vsp">&nbsp;</span>Tapi dio ni bingung nian karno salam tu, trós betanyo di jeró atinyo apola maksód dari salam tu.<span id="bookmarks29"></span></div><span id="bookmarks29"></span><a id="v30"></a>
-<div class="p"><span class="v">30</span><span class="vsp">&nbsp;</span>Tapi uji malekat tu <span class="add">ke dio</span>, “Dak usa takót Mariam, karno kau la dapet karunio dari Allah.<span id="bookmarks30"></span> <a id="v31"></a><span class="v">31</span><span class="vsp">&nbsp;</span>Jingokla, kau bakal bónténg trós ngelaérke sikok kupek lanang. Kau bakal namoi-Nyo Yesus<span class="footnote selectable" id="F-10"><sup>k</sup></span>.<span id="bookmarks31"></span> <a id="v32"></a><span class="v">32</span><span class="vsp">&nbsp;</span>Dio bakal jadi wong yang besak trós bakal disebót Anak dari Yang Mahabesak. Tuhan Allah<span class="ul">‡</span> bakal ngarunioke ke Dio korsi kerajaannyo Daód, nenek moyang-Nyo.<span id="bookmarks32"></span> <a id="v33"></a><span class="v">33</span><span class="vsp">&nbsp;</span>Dio bakal mrénto ketórónan <span class="footnote selectable" id="G-62">Yakób</span> sampe selamo-lamonyo, trós kerajaan-Nyo dak bakal beahér.”<span id="bookmarks33"></span></div><span id="bookmarks33"></span><a id="v34"></a>
-<div class="p"><span class="v">34</span><span class="vsp">&nbsp;</span>Tapi uji Mariam ke malekat tu, “Cakmano pasal tu pacak tejadi? Soalnyo aku ni <span class="add">masé gadés</span>, dak perna tédók samo lanang.”<span id="bookmarks34"></span></div><span id="bookmarks34"></span><a id="v35"></a>
-<div class="p"><span class="v">35</span><span class="vsp">&nbsp;</span>Uji malekat tu ke dio , “<span class="footnote selectable" id="G-49">Ro Suci</span> bakal ndatengi kau, trós kuaso dari Yang Mahabesak bakal nódóngi kau. Itula sebabnyo Kupek yang kagek kau laérke tu bakal disebót suci, Anak-Nyo Allah.<span class="footnote selectable" id="F-11"><sup>l</sup></span><span id="bookmarks35"></span> <a id="v36"></a><span class="v">36</span><span class="vsp">&nbsp;</span>Jingokla! Elisabet, dólór kau tu, dio jugo lagi bónténg enem bulan, mugola dio diomongi mandól,<span id="bookmarks36"></span> <a id="v37"></a><span class="v">37</span><span class="vsp">&nbsp;</span>soalnyo dak katek yang dak móngkén óntók Allah.”<span id="bookmarks37"></span></div><span id="bookmarks37"></span><a id="v38"></a>
-<div class="p"><span class="v">38</span><span class="vsp">&nbsp;</span>Uji Mariam, “Aku ni iola hamba Allah<span class="ul">‡</span>. Biarla tejadi samo aku apo yang la kau omongke tu.” Trós malekat tu pegi ninggalke dio.<span id="bookmarks38"></span></div>
-<div class="s2"><div id="s5">Mariam ndatengi Elisabet</div></div><span id="bookmarks38"></span><a id="v39"></a>
-<div class="p"><span class="v">39</span><span class="vsp">&nbsp;</span>Dak lamo abés tu, Mariam begancang pegi ke sikok kota di Yudea di daera pebókétan.<span id="bookmarks39"></span> <a id="v40"></a><span class="v">40</span><span class="vsp">&nbsp;</span>Dio masók ke rumanyo Jakaria, trós ngucapke salam ke Elisabet.<span id="bookmarks40"></span> <a id="v41"></a><span class="v">41</span><span class="vsp">&nbsp;</span>Pas Elisabet ndenger salamnyo Mariam, kupek yang di jeró perótnyo Elisabet ngelonjak. Trós Elisabet ni jugo dipenui samo Ro Suci,<span id="bookmarks41"></span> <a id="v42"></a><span class="v">42</span><span class="vsp">&nbsp;</span>laju dengen suaro besak dio beteriak, “Diberkahila kau di antaro slóró betino, trós diberkahila bua dari rahém kau!<span id="bookmarks42"></span> <a id="v43"></a><span class="v">43</span><span class="vsp">&nbsp;</span>Siapola aku ni, sampe-sampe emak-Nyo Tuan aku ndatengi aku?<span id="bookmarks43"></span> <a id="v44"></a><span class="v">44</span><span class="vsp">&nbsp;</span>Karno cak ini, pas suaro salam kau sampe ke kópéng aku, kupek yang ado di jeró perót aku ni ngelonjak kesenengan.<span id="bookmarks44"></span> <a id="v45"></a><span class="v">45</span><span class="vsp">&nbsp;</span>Trós senengla kau yang la pecayo amen apo yang diomongke samo kau dari Allah<span class="ul">‡</span> tu bakal tejadi.”<span id="bookmarks45"></span></div>
-<div class="s2"><div id="s6">Mariam muji Allah</div></div><span id="bookmarks45"></span><a id="v46"></a>
-<div class="p"><span class="v">46</span><span class="vsp">&nbsp;</span>Trós uji Mariam,</div>
-<div class="b">&nbsp;</div>
-<div class="q">“Jiwo aku muji Allah<span class="ul">‡</span>,<span id="bookmarks46"></span></div><span id="bookmarks46"></span><a id="v47"></a>
-<div class="q2-vv"><span class="v">47</span><span class="vsp">&nbsp;</span>trós ati aku seneng nian karno Tuhan, Penyelamet aku,<span id="bookmarks47"></span></div><span id="bookmarks47"></span><a id="v48"></a>
-<div class="q2-vv"><span class="v">48</span><span class="vsp">&nbsp;</span>karno Dio la meratike keadaan saro hamba-Nyo.</div>
-<div class="q">Jingokla! Mulai sekarang slóró angkatan bakal nganggep aku seneng,<span id="bookmarks48"></span></div><span id="bookmarks48"></span><a id="v49"></a>
-<div class="q2-vv"><span class="v">49</span><span class="vsp">&nbsp;</span>karno Yang Bekuaso la ngelakuke pebuatan-pebuatan besak óntók aku.</div>
-<div class="q">Sucila namo-Nyo!<span id="bookmarks49"></span></div><span id="bookmarks49"></span><a id="v50"></a>
-<div class="q-vv"><span class="v">50</span><span class="vsp">&nbsp;</span>Kasé stio-Nyo tórón-temórón óntók wong yang takót samo Dio.</div>
-<div class="b">&nbsp;</div><span id="bookmarks50"></span><span id="bookmarks50"></span><a id="v51"></a>
-<div class="q-vv"><span class="v">51</span><span class="vsp">&nbsp;</span>“Dio ngelakuke kekuatan dengen tangan-Nyo.</div>
-<div class="q2">Dio bubarke wong-wong yang sombong di jeró atinyo.<span id="bookmarks51"></span></div><span id="bookmarks51"></span><a id="v52"></a>
-<div class="q2-vv"><span class="v">52</span><span class="vsp">&nbsp;</span>Dio nyampakke wong-wong yang bekuaso dari kedódókannyo,</div>
-<div class="q3">trós ngangkat wong-wong yang dak masók étóngan.<span id="bookmarks52"></span></div><span id="bookmarks52"></span><a id="v53"></a>
-<div class="q-vv"><span class="v">53</span><span class="vsp">&nbsp;</span>Wong-wong yang laper Dio penui dengen pasal yang baék,</div>
-<div class="q2">trós wong-wong yang kayo Dio ósér dengen dak gawak apo-apo.<span id="bookmarks53"></span></div><span id="bookmarks53"></span><a id="v54"></a>
-<div class="q-vv"><span class="v">54</span><span class="vsp">&nbsp;</span>Dio nolong wong-wong <span class="footnote selectable" id="G-22">Israel</span>, hamba-Nyo,</div>
-<div class="q2">karno Dio nginget kasé stio-Nyo<span id="bookmarks54"></span> <a id="v55"></a><span class="v">55</span><span class="vsp">&nbsp;</span>óntók <span class="footnote selectable" id="G-19">Ibrahim</span> samo ketórónannyo</div>
-<div class="q3">sampe selamo-lamonyo,</div>
-<div class="q2">pecak yang diomongke-Nyo ke nenek moyang kito.”</div>
-<div class="b">&nbsp;</div><span id="bookmarks55"></span><span id="bookmarks55"></span><a id="v56"></a>
-<div class="p"><span class="v">56</span><span class="vsp">&nbsp;</span>Mariam tinggal samo Elisabet kiro-kiro tigo bulan lamonyo, abés tu balék lagi ke rumanyo.<span id="bookmarks56"></span></div>
-<div class="s2"><div id="s7">Kelaéran Nabi Yahya</div></div><span id="bookmarks56"></span><a id="v57"></a>
-<div class="p"><span class="v">57</span><span class="vsp">&nbsp;</span>Tibola waktunyo óntók Elisabet beranak, trós dio ngelaérke sikok budak lanang.<span id="bookmarks57"></span> <a id="v58"></a><span class="v">58</span><span class="vsp">&nbsp;</span>Tetanggo-tetanggonyo samo dólórnyo denger amen Allah<span class="ul">‡</span> la nónjókke kasé stio-Nyo yang besak ke dio, laju dio wong melok seneng jugo.<span id="bookmarks58"></span></div><span id="bookmarks58"></span><a id="v59"></a>
-<div class="p"><span class="v">59</span><span class="vsp">&nbsp;</span>Pas la lapan ari<span class="footnote selectable" id="F-12"><sup>m</sup></span>, datengla wong-wong tu óntók nyunatke budak tu, trós dio wong nak namoi budak tu Jakaria pecak namo abanyo.<span id="bookmarks59"></span> <a id="v60"></a><span class="v">60</span><span class="vsp">&nbsp;</span>Tapi uji emaknyo, “Jangan! Dio tu harós dinamoi Yahya.”<span id="bookmarks60"></span></div><span id="bookmarks60"></span><a id="v61"></a>
-<div class="p"><span class="v">61</span><span class="vsp">&nbsp;</span>Uji dio wong ke dio, “Dak katek sanak kluargo kau yang punyo namo cak itu.”<span id="bookmarks61"></span></div><span id="bookmarks61"></span><a id="v62"></a>
-<div class="p"><span class="v">62</span><span class="vsp">&nbsp;</span>Laju dio wong ngenjók isyarat ke abanyo óntók nanyoke namo apo yang nak dienjókke samo anaknyo tu.<span id="bookmarks62"></span> <a id="v63"></a><span class="v">63</span><span class="vsp">&nbsp;</span>Jakaria ni mintak alat tólés trós nóléske kato-kato ni, “Yahya namonyo.” Dio wong jadi heran galo.<span id="bookmarks63"></span> <a id="v64"></a><span class="v">64</span><span class="vsp">&nbsp;</span>Trós Jakaria ni langsóng pacak ngomong lagi, laju dio muji Allah.<span id="bookmarks64"></span></div><span id="bookmarks64"></span><a id="v65"></a>
-<div class="p"><span class="v">65</span><span class="vsp">&nbsp;</span>Slóró wong yang tinggal di parak dio wong ketakótan, trós galo-galo kejadian tu jadi omongan di slóró pegónóngan Yudea.<span id="bookmarks65"></span> <a id="v66"></a><span class="v">66</span><span class="vsp">&nbsp;</span>Galo-galo wong yang ndengernyo betanyo-tanyo di jeró ati cak ini, “Jadi apola budak ni kagek?” Soalnyo kuaso<span class="footnote selectable" id="F-13"><sup>n</sup></span> Allah<span class="ul">‡</span> ado samo dio.<span id="bookmarks66"></span></div>
-<div class="s2"><div id="s8">Jakaria ngewahyuke pesen dari Allah</div></div><span id="bookmarks66"></span><a id="v67"></a>
-<div class="p"><span class="v">67</span><span class="vsp">&nbsp;</span>Trós Jakaria, abanyo, dipenui samo <span class="footnote selectable" id="G-49">Ro Suci</span>, laju ngewahyuke pesen dari Allah<span class="ul">‡</span>. Ujinyo,<span class="footnote selectable" id="F-14"><sup>o</sup></span></div>
-<div class="b">&nbsp;</div><span id="bookmarks67"></span><span id="bookmarks67"></span><a id="v68"></a>
-<div class="q-vv"><span class="v">68</span><span class="vsp">&nbsp;</span>“Pujila Allah<span class="ul">‡</span>, Tuhan bangso <span class="footnote selectable" id="G-22">Israel</span>,</div>
-<div class="q2">soalnyo Dio la ndatengi umat-Nyo trós gawak kebebasan óntók dio wong,<span id="bookmarks68"></span></div><span id="bookmarks68"></span><a id="v69"></a>
-<div class="q2-vv"><span class="v">69</span><span class="vsp">&nbsp;</span>trós Dio ngangkat sikok Penyelamet yang perkasa<span class="footnote selectable" id="F-15"><sup>p</sup></span> óntók kito</div>
-<div class="q3">dari ketórónan <span class="footnote selectable" id="G-11">Daód</span>, hamba-Nyo tu.<span id="bookmarks69"></span></div><span id="bookmarks69"></span><a id="v70"></a>
-<div class="q-vv"><span class="v">70</span><span class="vsp">&nbsp;</span>Pasal tu pecak yang la diomongke-Nyo dari jaman bingen</div>
-<div class="q2">ole mólót nabi-nabi-Nyo yang suci,<span id="bookmarks70"></span></div><span id="bookmarks70"></span><a id="v71"></a>
-<div class="q-vv"><span class="v">71</span><span class="vsp">&nbsp;</span>amen kito pasti diselametke dari mósó-mósó,</div>
-<div class="q2">jugo dari tangan slóró wong yang mbenci kito,<span id="bookmarks71"></span></div><span id="bookmarks71"></span><a id="v72"></a>
-<div class="q2-vv"><span class="v">72</span><span class="vsp">&nbsp;</span>óntók nónjókke kasé stio-Nyo ke nenek moyang kito,</div>
-<div class="q3">jugo óntók nginget pejanjian-Nyo yang suci.<span id="bookmarks72"></span></div><span id="bookmarks72"></span><a id="v73"></a>
-<div class="q-vv"><span class="v">73</span><span class="vsp">&nbsp;</span>Itula sumpa yang la dijanjike-Nyo ke <span class="footnote selectable" id="G-19">Ibrahim</span>, aba lelóhór kito,</div>
-<div class="q2">óntók ngenjókke samo kito amen,<span id="bookmarks73"></span></div><span id="bookmarks73"></span><a id="v74"></a>
-<div class="q3-vv"><span class="v">74</span><span class="vsp">&nbsp;</span>pas diselametke dari tangan mósó,</div>
-<div class="q2">kito pacak ngelayani Dio dengen katek raso takót<span id="bookmarks74"></span></div><span id="bookmarks74"></span><a id="v75"></a>
-<div class="q3-vv"><span class="v">75</span><span class="vsp">&nbsp;</span>jugo dengen kesucian samo kebeneran,</div>
-<div class="q2">di adepan-Nyo seómór édóp kito.</div>
-<div class="b">&nbsp;</div><span id="bookmarks75"></span><span id="bookmarks75"></span><a id="v76"></a>
-<div class="q-vv"><span class="v">76</span><span class="vsp">&nbsp;</span>“Trós kau, anak aku ni, bakal disebót nabi dari Yang Mahabesak,</div>
-<div class="q2">soalnyo kau bakal bejalan ndului Allah<span class="ul">‡</span> óntók nyiapke jalan-Nyo<span class="footnote selectable" id="F-16"><sup>q</sup></span>,<span id="bookmarks76"></span></div><span id="bookmarks76"></span><a id="v77"></a>
-<div class="q2-vv"><span class="v">77</span><span class="vsp">&nbsp;</span>óntók ngenjók pengertian pasal keselametan ke umat-Nyo</div>
-<div class="q3">liwat pengampónan duso-duso dio wong.<span id="bookmarks77"></span></div><span id="bookmarks77"></span><a id="v78"></a>
-<div class="q-vv"><span class="v">78</span><span class="vsp">&nbsp;</span>Itu karno kasé stio samo belas kesian Allah kito,</div>
-<div class="q2">di mano pajar pagi bakal ndatengi kito dari surgo,<span id="bookmarks78"></span></div><span id="bookmarks78"></span><a id="v79"></a>
-<div class="q3-vv"><span class="v">79</span><span class="vsp">&nbsp;</span>óntók nerangi dio wong yang tinggal dalem kegelepan jugo dalem bayangan kematian,</div>
-<div class="q3">trós óntók ngarake sekel kito ke jalan kedamaian.”</div>
-<div class="b">&nbsp;</div><span id="bookmarks79"></span><span id="bookmarks79"></span><a id="v80"></a>
-<div class="p"><span class="v">80</span><span class="vsp">&nbsp;</span>Lamo-kelamoan budak tu namba besak jugo namba kuat rohaninyo, trós dio tinggal di padang górón sampe ari di mano dio nónjókke dirinyo ke Israel.<span id="bookmarks80"></span></div>
-</div>
-
-<div id="toolbar-bottom">
-<div class="audio-player">
-  <audio id="audio" controls>
-    <source id="audio1" src="https://storage.googleapis.com/tbp-audio/TBP Lukas 1.mp3" />
-  </audio>
-</div>
-</div>
-
-<script type='text/javascript' src='./pwa-main.js'></script>
-</body>
+  </script>
+ </head>
+ <body class="browser" dir="LTR">
+  <div id="book-menu">
+  </div>
+  <div id="chapter-menu">
+  </div>
+  <div id="toolbar-top">
+   <div class="navigation-top">
+    <span id="book-selector">
+     <a href="#" onclick="toggleBookMenu(); return false;">
+      Lukas
+     </a>
+    </span>
+    <span id="chapter-selector">
+     <a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">
+      1
+     </a>
+    </span>
+   </div>
+  </div>
+  <div id="content">
+   <div class="mt">
+    <span class="mt">
+     LUKAS
+    </span>
+   </div>
+   <div class="mt2">
+    <span class="mt2">
+     [VERSI AWAL]
+    </span>
+   </div>
+   <div class="b">
+   </div>
+   <div class="b">
+   </div>
+   <div class="c">
+    1
+   </div>
+   <div class="s">
+    <div id="s1">
+     Pembukaan
+    </div>
+   </div>
+   <a id="v1">
+   </a>
+   <div class="m">
+    <span class="v">
+     1
+    </span>
+    <span class="vsp">
+    </span>
+    Yang Tehormat Bapak Teopélós
+    <span class="footnote selectable" id="F-0">
+     <sup>
+      a
+     </sup>
+    </span>
+    ,
+   </div>
+   <div class="p">
+    Banyak wong la nyobo nyósón dengen beórótan cerito pasal kejadian-kejadian
+    <span class="footnote selectable" id="F-1">
+     <sup>
+      b
+     </sup>
+    </span>
+    yang la dipenui di antaro kito
+    <span class="footnote selectable" id="F-2">
+     <sup>
+      c
+     </sup>
+    </span>
+    ,
+    <span id="bookmarks1">
+    </span>
+    <a id="v2">
+    </a>
+    <span class="v">
+     2
+    </span>
+    <span class="vsp">
+    </span>
+    pecak yang disampeke ke kito dari wong-wong yang jadi saksi mato kejadian tu, trós jadi pengajar cerito tu
+    <span class="footnote selectable" id="F-3">
+     <sup>
+      d
+     </sup>
+    </span>
+    .
+    <span id="bookmarks2">
+    </span>
+    <a id="v3">
+    </a>
+    <span class="v">
+     3
+    </span>
+    <span class="vsp">
+    </span>
+    Aku la nian-nian nyelédék'i galonyo tu dari petamo, jadi aku jugo mótóske óntók nóléskenyo secaro beórótan óntók kau, Bapak Teopélós.
+    <span id="bookmarks3">
+    </span>
+    <a id="v4">
+    </a>
+    <span class="v">
+     4
+    </span>
+    <span class="vsp">
+    </span>
+    Tójóannyo supayo Bapak tau amen galo-galo yang la diajarke ke Bapak tu bener-bener ado nian.
+    <span id="bookmarks4">
+    </span>
+   </div>
+   <div class="s">
+    <div id="s2">
+     Asal-ósól Nabi Yahya samo Yesus
+    </div>
+   </div>
+   <div class="s2">
+    <div id="s3">
+     Kelaéran Nabi Yahya dienjók tau
+    </div>
+   </div>
+   <span id="bookmarks4">
+   </span>
+   <a id="v5">
+   </a>
+   <div class="p">
+    <span class="v">
+     5
+    </span>
+    <span class="vsp">
+    </span>
+    Pas jamannyo Herodes, rajo
+    <span class="footnote selectable" id="G-65">
+     Yudea
+    </span>
+    , ado sikok imam
+    <span class="footnote selectable" id="F-4">
+     <sup>
+      e
+     </sup>
+    </span>
+    yang benamo Jakaria yang dari kelompok pelayanan Abia. Bininyo yang benamo Elisabet tu ketórónan
+    <span class="footnote selectable" id="G-16">
+     Harón
+    </span>
+    .
+    <span id="bookmarks5">
+    </span>
+   </div>
+   <span id="bookmarks5">
+   </span>
+   <a id="v6">
+   </a>
+   <div class="p">
+    <span class="v">
+     6
+    </span>
+    <span class="vsp">
+    </span>
+    Duo laki bini tu bener di mato Allah, jugo édóp nórót prénto samo atóran Allah
+    <span class="ul">
+     ‡
+    </span>
+    dengen sole.
+    <span id="bookmarks6">
+    </span>
+    <a id="v7">
+    </a>
+    <span class="v">
+     7
+    </span>
+    <span class="vsp">
+    </span>
+    Dio wong dak katek anak karno Elisabet mandól, trós tu dio wong jugo la tuo nian.
+    <span id="bookmarks7">
+    </span>
+   </div>
+   <span id="bookmarks7">
+   </span>
+   <a id="v8">
+   </a>
+   <div class="p">
+    <span class="v">
+     8
+    </span>
+    <span class="vsp">
+    </span>
+    Kejadian ni tejadi pas Jakaria lagi ngimami di adepan Allah soalnyo itu tu géléran rombongannyo.
+    <span id="bookmarks8">
+    </span>
+    <a id="v9">
+    </a>
+    <span class="v">
+     9
+    </span>
+    <span class="vsp">
+    </span>
+    Sesuai dengen adat jabatan imam, dio diundi óntók masók ke
+    <span class="footnote selectable" id="G-51">
+     Ruma Agóng Allah
+    </span>
+    trós nunu garu.
+    <span id="bookmarks9">
+    </span>
+    <a id="v10">
+    </a>
+    <span class="v">
+     10
+    </span>
+    <span class="vsp">
+    </span>
+    Trós, galo-galo umat yang ado di luar lagi bedoa waktu garu tu tetunu.
+    <span id="bookmarks10">
+    </span>
+   </div>
+   <span id="bookmarks10">
+   </span>
+   <a id="v11">
+   </a>
+   <div class="p">
+    <span class="v">
+     11
+    </span>
+    <span class="vsp">
+    </span>
+    Tibo-tibo móncólla
+    <span class="footnote selectable" id="G-32">
+     malekat
+    </span>
+    Allah tegak di sebela kanan meja tempat nunu garu.
+    <span id="bookmarks11">
+    </span>
+    <a id="v12">
+    </a>
+    <span class="v">
+     12
+    </span>
+    <span class="vsp">
+    </span>
+    Jakaria ni tekejót waktu dio nyingok malekat tu trós ketakótan.
+    <span id="bookmarks12">
+    </span>
+    <a id="v13">
+    </a>
+    <span class="v">
+     13
+    </span>
+    <span class="vsp">
+    </span>
+    Tapi malekat tu ngomong ke dio, “Dak usa takót Jakaria, doa kau la dikabólke. Bini kau Elisabet bakal ngelaérke sikok budak lanang, trós bakal kau namoi dio Yahya
+    <span class="footnote selectable" id="F-5">
+     <sup>
+      f
+     </sup>
+    </span>
+    .
+    <span id="bookmarks13">
+    </span>
+    <a id="v14">
+    </a>
+    <span class="v">
+     14
+    </span>
+    <span class="vsp">
+    </span>
+    Dio bakal mbékén kau seneng nian, trós banyak wong jugo melok seneng karno dio laér,
+    <span id="bookmarks14">
+    </span>
+    <a id="v15">
+    </a>
+    <span class="v">
+     15
+    </span>
+    <span class="vsp">
+    </span>
+    soalnyo dio ni kagek jadi wong yang besak di mato Allah
+    <span class="ul">
+     ‡
+    </span>
+    . Trós dio jugo dak bole minum anggór samo minuman keras laénnyo.
+    <span class="footnote selectable" id="F-6">
+     <sup>
+      g
+     </sup>
+    </span>
+    Dari rahém emaknyo dio bakal dipenui samo Ro Suci.
+    <span class="footnote selectable" id="F-7">
+     <sup>
+      h
+     </sup>
+    </span>
+    <span id="bookmarks15">
+    </span>
+    <a id="v16">
+    </a>
+    <span class="v">
+     16
+    </span>
+    <span class="vsp">
+    </span>
+    Dio kagek ngarake banyak ketórónan
+    <span class="footnote selectable" id="G-22">
+     Israel
+    </span>
+    balék ke Allah
+    <span class="ul">
+     ‡
+    </span>
+    , Tuhan dio wong.
+    <span id="bookmarks16">
+    </span>
+    <a id="v17">
+    </a>
+    <span class="v">
+     17
+    </span>
+    <span class="vsp">
+    </span>
+    Trós budak ni bakal ndului Allah
+    <span class="footnote selectable" id="F-8">
+     <sup>
+      i
+     </sup>
+    </span>
+    dengen ro samo kuaso Nabi Elias.
+    <span class="footnote selectable" id="F-9">
+     <sup>
+      j
+     </sup>
+    </span>
+    Itu bakal dilakuke supayo ngarake ati galo-galo aba bebalék ke anak-anaknyo trós wong-wong durhako bebalék ke dalem hikmah wong bener, trós nyedioke óntók Allahsikok umat yang la siap.”
+    <span id="bookmarks17">
+    </span>
+   </div>
+   <span id="bookmarks17">
+   </span>
+   <a id="v18">
+   </a>
+   <div class="p">
+    <span class="v">
+     18
+    </span>
+    <span class="vsp">
+    </span>
+    Laju Jakaria ni ngomong samo malekat tu, “Cakmano aku pacak tau amen pasal tu bakal tejadi? Soalnyo aku ni la tuo, trós bini aku jugo la beómór.”
+    <span id="bookmarks18">
+    </span>
+   </div>
+   <span id="bookmarks18">
+   </span>
+   <a id="v19">
+   </a>
+   <div class="p">
+    <span class="v">
+     19
+    </span>
+    <span class="vsp">
+    </span>
+    Trós uji malekat tu ke Jakaria, “Aku ni Jebrel, yang tegak di adepan Allah, trós aku ni dikongkon óntók ngomong samo kau trós nyampeke kabar baék ni samo kau.
+    <span id="bookmarks19">
+    </span>
+    <a id="v20">
+    </a>
+    <span class="v">
+     20
+    </span>
+    <span class="vsp">
+    </span>
+    Jingokla, kau sekarang jadi bisu trós dak pacak ngomong sampe ari di mano galonyo tu tejadi. Soalnyo kau dak pecayo samo kato-kato aku yang bakal dinyatoke pas waktunyo.”
+    <span id="bookmarks20">
+    </span>
+   </div>
+   <span id="bookmarks20">
+   </span>
+   <a id="v21">
+   </a>
+   <div class="p">
+    <span class="v">
+     21
+    </span>
+    <span class="vsp">
+    </span>
+    Sementaro tu, banyak wong nunggui Jakaria, trós dio wong ni heran ngapo Jakaria ni lamo nian di Ruma Agóng Allah.
+    <span id="bookmarks21">
+    </span>
+   </div>
+   <span id="bookmarks21">
+   </span>
+   <a id="v22">
+   </a>
+   <div class="p">
+    <span class="v">
+     22
+    </span>
+    <span class="vsp">
+    </span>
+    Pas Jakaria ni metu, dio dak pacak ngomong ke dio wong. Trós ngertila wong-wong tu amen dio la nyingok sikok penjingokan di jeró Ruma Allah. Laju dio ngenjók isyarat ke dio wong, soalnyo dio tetep bisu.
+    <span id="bookmarks22">
+    </span>
+    <a id="v23">
+    </a>
+    <span class="v">
+     23
+    </span>
+    <span class="vsp">
+    </span>
+    Ahérnyo pas ari pelayanannyo la selesai, dio balék ke rumanyo.
+    <span id="bookmarks23">
+    </span>
+   </div>
+   <span id="bookmarks23">
+   </span>
+   <a id="v24">
+   </a>
+   <div class="p">
+    <span class="v">
+     24
+    </span>
+    <span class="vsp">
+    </span>
+    Beberapo lamo abés tu, Elisabet bininyo bónténg. Trós selamo limo bulan dio mendep bae, ujinyo,
+    <span id="bookmarks24">
+    </span>
+    <a id="v25">
+    </a>
+    <span class="v">
+     25
+    </span>
+    <span class="vsp">
+    </span>
+    “Na, inila yang Allah
+    <span class="ul">
+     ‡
+    </span>
+    gaweke óntók aku, pas Dio meratike aku óntók ngapós aéb aku.”
+    <span id="bookmarks25">
+    </span>
+   </div>
+   <div class="s2">
+    <div id="s4">
+     Kelaéran Yesus dienjók tau ke Mariam
+    </div>
+   </div>
+   <span id="bookmarks25">
+   </span>
+   <a id="v26">
+   </a>
+   <div class="p">
+    <span class="v">
+     26
+    </span>
+    <span class="vsp">
+    </span>
+    Pas
+    <span class="add">
+     kandóngan Elisabet la masók
+    </span>
+    bulan yang keenem, malekat Jebrel dikongkon ole Allah ke dósón yang benamo Najaret di daera
+    <span class="footnote selectable" id="G-15">
+     Galilea
+    </span>
+    ,
+    <span id="bookmarks26">
+    </span>
+    <a id="v27">
+    </a>
+    <span class="v">
+     27
+    </span>
+    <span class="vsp">
+    </span>
+    ke sikok betino yang masé gadés yang la betunangan samo lanang yang benamo Yósóp, ketórónan Rajo
+    <span class="footnote selectable" id="G-11">
+     Daód
+    </span>
+    . Namo gadés tu Mariam.
+    <span id="bookmarks27">
+    </span>
+   </div>
+   <span id="bookmarks27">
+   </span>
+   <a id="v28">
+   </a>
+   <div class="p">
+    <span class="v">
+     28
+    </span>
+    <span class="vsp">
+    </span>
+    Malekat tu ndatengi dio, ujinyo, “Salam, kau yang dikarunioi. Allah ado besamo kau.”
+    <span id="bookmarks28">
+    </span>
+   </div>
+   <span id="bookmarks28">
+   </span>
+   <a id="v29">
+   </a>
+   <div class="p">
+    <span class="v">
+     29
+    </span>
+    <span class="vsp">
+    </span>
+    Tapi dio ni bingung nian karno salam tu, trós betanyo di jeró atinyo apola maksód dari salam tu.
+    <span id="bookmarks29">
+    </span>
+   </div>
+   <span id="bookmarks29">
+   </span>
+   <a id="v30">
+   </a>
+   <div class="p">
+    <span class="v">
+     30
+    </span>
+    <span class="vsp">
+    </span>
+    Tapi uji malekat tu
+    <span class="add">
+     ke dio
+    </span>
+    , “Dak usa takót Mariam, karno kau la dapet karunio dari Allah.
+    <span id="bookmarks30">
+    </span>
+    <a id="v31">
+    </a>
+    <span class="v">
+     31
+    </span>
+    <span class="vsp">
+    </span>
+    Jingokla, kau bakal bónténg trós ngelaérke sikok kupek lanang. Kau bakal namoi-Nyo Yesus
+    <span class="footnote selectable" id="F-10">
+     <sup>
+      k
+     </sup>
+    </span>
+    .
+    <span id="bookmarks31">
+    </span>
+    <a id="v32">
+    </a>
+    <span class="v">
+     32
+    </span>
+    <span class="vsp">
+    </span>
+    Dio bakal jadi wong yang besak trós bakal disebót Anak dari Yang Mahabesak. Tuhan Allah
+    <span class="ul">
+     ‡
+    </span>
+    bakal ngarunioke ke Dio korsi kerajaannyo Daód, nenek moyang-Nyo.
+    <span id="bookmarks32">
+    </span>
+    <a id="v33">
+    </a>
+    <span class="v">
+     33
+    </span>
+    <span class="vsp">
+    </span>
+    Dio bakal mrénto ketórónan
+    <span class="footnote selectable" id="G-62">
+     Yakób
+    </span>
+    sampe selamo-lamonyo, trós kerajaan-Nyo dak bakal beahér.”
+    <span id="bookmarks33">
+    </span>
+   </div>
+   <span id="bookmarks33">
+   </span>
+   <a id="v34">
+   </a>
+   <div class="p">
+    <span class="v">
+     34
+    </span>
+    <span class="vsp">
+    </span>
+    Tapi uji Mariam ke malekat tu, “Cakmano pasal tu pacak tejadi? Soalnyo aku ni
+    <span class="add">
+     masé gadés
+    </span>
+    , dak perna tédók samo lanang.”
+    <span id="bookmarks34">
+    </span>
+   </div>
+   <span id="bookmarks34">
+   </span>
+   <a id="v35">
+   </a>
+   <div class="p">
+    <span class="v">
+     35
+    </span>
+    <span class="vsp">
+    </span>
+    Uji malekat tu ke dio , “
+    <span class="footnote selectable" id="G-49">
+     Ro Suci
+    </span>
+    bakal ndatengi kau, trós kuaso dari Yang Mahabesak bakal nódóngi kau. Itula sebabnyo Kupek yang kagek kau laérke tu bakal disebót suci, Anak-Nyo Allah.
+    <span class="footnote selectable" id="F-11">
+     <sup>
+      l
+     </sup>
+    </span>
+    <span id="bookmarks35">
+    </span>
+    <a id="v36">
+    </a>
+    <span class="v">
+     36
+    </span>
+    <span class="vsp">
+    </span>
+    Jingokla! Elisabet, dólór kau tu, dio jugo lagi bónténg enem bulan, mugola dio diomongi mandól,
+    <span id="bookmarks36">
+    </span>
+    <a id="v37">
+    </a>
+    <span class="v">
+     37
+    </span>
+    <span class="vsp">
+    </span>
+    soalnyo dak katek yang dak móngkén óntók Allah.”
+    <span id="bookmarks37">
+    </span>
+   </div>
+   <span id="bookmarks37">
+   </span>
+   <a id="v38">
+   </a>
+   <div class="p">
+    <span class="v">
+     38
+    </span>
+    <span class="vsp">
+    </span>
+    Uji Mariam, “Aku ni iola hamba Allah
+    <span class="ul">
+     ‡
+    </span>
+    . Biarla tejadi samo aku apo yang la kau omongke tu.” Trós malekat tu pegi ninggalke dio.
+    <span id="bookmarks38">
+    </span>
+   </div>
+   <div class="s2">
+    <div id="s5">
+     Mariam ndatengi Elisabet
+    </div>
+   </div>
+   <span id="bookmarks38">
+   </span>
+   <a id="v39">
+   </a>
+   <div class="p">
+    <span class="v">
+     39
+    </span>
+    <span class="vsp">
+    </span>
+    Dak lamo abés tu, Mariam begancang pegi ke sikok kota di Yudea di daera pebókétan.
+    <span id="bookmarks39">
+    </span>
+    <a id="v40">
+    </a>
+    <span class="v">
+     40
+    </span>
+    <span class="vsp">
+    </span>
+    Dio masók ke rumanyo Jakaria, trós ngucapke salam ke Elisabet.
+    <span id="bookmarks40">
+    </span>
+    <a id="v41">
+    </a>
+    <span class="v">
+     41
+    </span>
+    <span class="vsp">
+    </span>
+    Pas Elisabet ndenger salamnyo Mariam, kupek yang di jeró perótnyo Elisabet ngelonjak. Trós Elisabet ni jugo dipenui samo Ro Suci,
+    <span id="bookmarks41">
+    </span>
+    <a id="v42">
+    </a>
+    <span class="v">
+     42
+    </span>
+    <span class="vsp">
+    </span>
+    laju dengen suaro besak dio beteriak, “Diberkahila kau di antaro slóró betino, trós diberkahila bua dari rahém kau!
+    <span id="bookmarks42">
+    </span>
+    <a id="v43">
+    </a>
+    <span class="v">
+     43
+    </span>
+    <span class="vsp">
+    </span>
+    Siapola aku ni, sampe-sampe emak-Nyo Tuan aku ndatengi aku?
+    <span id="bookmarks43">
+    </span>
+    <a id="v44">
+    </a>
+    <span class="v">
+     44
+    </span>
+    <span class="vsp">
+    </span>
+    Karno cak ini, pas suaro salam kau sampe ke kópéng aku, kupek yang ado di jeró perót aku ni ngelonjak kesenengan.
+    <span id="bookmarks44">
+    </span>
+    <a id="v45">
+    </a>
+    <span class="v">
+     45
+    </span>
+    <span class="vsp">
+    </span>
+    Trós senengla kau yang la pecayo amen apo yang diomongke samo kau dari Allah
+    <span class="ul">
+     ‡
+    </span>
+    tu bakal tejadi.”
+    <span id="bookmarks45">
+    </span>
+   </div>
+   <div class="s2">
+    <div id="s6">
+     Mariam muji Allah
+    </div>
+   </div>
+   <span id="bookmarks45">
+   </span>
+   <a id="v46">
+   </a>
+   <div class="p">
+    <span class="v">
+     46
+    </span>
+    <span class="vsp">
+    </span>
+    Trós uji Mariam,
+   </div>
+   <div class="b">
+   </div>
+   <div class="q">
+    “Jiwo aku muji Allah
+    <span class="ul">
+     ‡
+    </span>
+    ,
+    <span id="bookmarks46">
+    </span>
+   </div>
+   <span id="bookmarks46">
+   </span>
+   <a id="v47">
+   </a>
+   <div class="q2-vv">
+    <span class="v">
+     47
+    </span>
+    <span class="vsp">
+    </span>
+    trós ati aku seneng nian karno Tuhan, Penyelamet aku,
+    <span id="bookmarks47">
+    </span>
+   </div>
+   <span id="bookmarks47">
+   </span>
+   <a id="v48">
+   </a>
+   <div class="q2-vv">
+    <span class="v">
+     48
+    </span>
+    <span class="vsp">
+    </span>
+    karno Dio la meratike keadaan saro hamba-Nyo.
+   </div>
+   <div class="q">
+    Jingokla! Mulai sekarang slóró angkatan bakal nganggep aku seneng,
+    <span id="bookmarks48">
+    </span>
+   </div>
+   <span id="bookmarks48">
+   </span>
+   <a id="v49">
+   </a>
+   <div class="q2-vv">
+    <span class="v">
+     49
+    </span>
+    <span class="vsp">
+    </span>
+    karno Yang Bekuaso la ngelakuke pebuatan-pebuatan besak óntók aku.
+   </div>
+   <div class="q">
+    Sucila namo-Nyo!
+    <span id="bookmarks49">
+    </span>
+   </div>
+   <span id="bookmarks49">
+   </span>
+   <a id="v50">
+   </a>
+   <div class="q-vv">
+    <span class="v">
+     50
+    </span>
+    <span class="vsp">
+    </span>
+    Kasé stio-Nyo tórón-temórón óntók wong yang takót samo Dio.
+   </div>
+   <div class="b">
+   </div>
+   <span id="bookmarks50">
+   </span>
+   <span id="bookmarks50">
+   </span>
+   <a id="v51">
+   </a>
+   <div class="q-vv">
+    <span class="v">
+     51
+    </span>
+    <span class="vsp">
+    </span>
+    “Dio ngelakuke kekuatan dengen tangan-Nyo.
+   </div>
+   <div class="q2">
+    Dio bubarke wong-wong yang sombong di jeró atinyo.
+    <span id="bookmarks51">
+    </span>
+   </div>
+   <span id="bookmarks51">
+   </span>
+   <a id="v52">
+   </a>
+   <div class="q2-vv">
+    <span class="v">
+     52
+    </span>
+    <span class="vsp">
+    </span>
+    Dio nyampakke wong-wong yang bekuaso dari kedódókannyo,
+   </div>
+   <div class="q3">
+    trós ngangkat wong-wong yang dak masók étóngan.
+    <span id="bookmarks52">
+    </span>
+   </div>
+   <span id="bookmarks52">
+   </span>
+   <a id="v53">
+   </a>
+   <div class="q-vv">
+    <span class="v">
+     53
+    </span>
+    <span class="vsp">
+    </span>
+    Wong-wong yang laper Dio penui dengen pasal yang baék,
+   </div>
+   <div class="q2">
+    trós wong-wong yang kayo Dio ósér dengen dak gawak apo-apo.
+    <span id="bookmarks53">
+    </span>
+   </div>
+   <span id="bookmarks53">
+   </span>
+   <a id="v54">
+   </a>
+   <div class="q-vv">
+    <span class="v">
+     54
+    </span>
+    <span class="vsp">
+    </span>
+    Dio nolong wong-wong
+    <span class="footnote selectable" id="G-22">
+     Israel
+    </span>
+    , hamba-Nyo,
+   </div>
+   <div class="q2">
+    karno Dio nginget kasé stio-Nyo
+    <span id="bookmarks54">
+    </span>
+    <a id="v55">
+    </a>
+    <span class="v">
+     55
+    </span>
+    <span class="vsp">
+    </span>
+    óntók
+    <span class="footnote selectable" id="G-19">
+     Ibrahim
+    </span>
+    samo ketórónannyo
+   </div>
+   <div class="q3">
+    sampe selamo-lamonyo,
+   </div>
+   <div class="q2">
+    pecak yang diomongke-Nyo ke nenek moyang kito.”
+   </div>
+   <div class="b">
+   </div>
+   <span id="bookmarks55">
+   </span>
+   <span id="bookmarks55">
+   </span>
+   <a id="v56">
+   </a>
+   <div class="p">
+    <span class="v">
+     56
+    </span>
+    <span class="vsp">
+    </span>
+    Mariam tinggal samo Elisabet kiro-kiro tigo bulan lamonyo, abés tu balék lagi ke rumanyo.
+    <span id="bookmarks56">
+    </span>
+   </div>
+   <div class="s2">
+    <div id="s7">
+     Kelaéran Nabi Yahya
+    </div>
+   </div>
+   <span id="bookmarks56">
+   </span>
+   <a id="v57">
+   </a>
+   <div class="p">
+    <span class="v">
+     57
+    </span>
+    <span class="vsp">
+    </span>
+    Tibola waktunyo óntók Elisabet beranak, trós dio ngelaérke sikok budak lanang.
+    <span id="bookmarks57">
+    </span>
+    <a id="v58">
+    </a>
+    <span class="v">
+     58
+    </span>
+    <span class="vsp">
+    </span>
+    Tetanggo-tetanggonyo samo dólórnyo denger amen Allah
+    <span class="ul">
+     ‡
+    </span>
+    la nónjókke kasé stio-Nyo yang besak ke dio, laju dio wong melok seneng jugo.
+    <span id="bookmarks58">
+    </span>
+   </div>
+   <span id="bookmarks58">
+   </span>
+   <a id="v59">
+   </a>
+   <div class="p">
+    <span class="v">
+     59
+    </span>
+    <span class="vsp">
+    </span>
+    Pas la lapan ari
+    <span class="footnote selectable" id="F-12">
+     <sup>
+      m
+     </sup>
+    </span>
+    , datengla wong-wong tu óntók nyunatke budak tu, trós dio wong nak namoi budak tu Jakaria pecak namo abanyo.
+    <span id="bookmarks59">
+    </span>
+    <a id="v60">
+    </a>
+    <span class="v">
+     60
+    </span>
+    <span class="vsp">
+    </span>
+    Tapi uji emaknyo, “Jangan! Dio tu harós dinamoi Yahya.”
+    <span id="bookmarks60">
+    </span>
+   </div>
+   <span id="bookmarks60">
+   </span>
+   <a id="v61">
+   </a>
+   <div class="p">
+    <span class="v">
+     61
+    </span>
+    <span class="vsp">
+    </span>
+    Uji dio wong ke dio, “Dak katek sanak kluargo kau yang punyo namo cak itu.”
+    <span id="bookmarks61">
+    </span>
+   </div>
+   <span id="bookmarks61">
+   </span>
+   <a id="v62">
+   </a>
+   <div class="p">
+    <span class="v">
+     62
+    </span>
+    <span class="vsp">
+    </span>
+    Laju dio wong ngenjók isyarat ke abanyo óntók nanyoke namo apo yang nak dienjókke samo anaknyo tu.
+    <span id="bookmarks62">
+    </span>
+    <a id="v63">
+    </a>
+    <span class="v">
+     63
+    </span>
+    <span class="vsp">
+    </span>
+    Jakaria ni mintak alat tólés trós nóléske kato-kato ni, “Yahya namonyo.” Dio wong jadi heran galo.
+    <span id="bookmarks63">
+    </span>
+    <a id="v64">
+    </a>
+    <span class="v">
+     64
+    </span>
+    <span class="vsp">
+    </span>
+    Trós Jakaria ni langsóng pacak ngomong lagi, laju dio muji Allah.
+    <span id="bookmarks64">
+    </span>
+   </div>
+   <span id="bookmarks64">
+   </span>
+   <a id="v65">
+   </a>
+   <div class="p">
+    <span class="v">
+     65
+    </span>
+    <span class="vsp">
+    </span>
+    Slóró wong yang tinggal di parak dio wong ketakótan, trós galo-galo kejadian tu jadi omongan di slóró pegónóngan Yudea.
+    <span id="bookmarks65">
+    </span>
+    <a id="v66">
+    </a>
+    <span class="v">
+     66
+    </span>
+    <span class="vsp">
+    </span>
+    Galo-galo wong yang ndengernyo betanyo-tanyo di jeró ati cak ini, “Jadi apola budak ni kagek?” Soalnyo kuaso
+    <span class="footnote selectable" id="F-13">
+     <sup>
+      n
+     </sup>
+    </span>
+    Allah
+    <span class="ul">
+     ‡
+    </span>
+    ado samo dio.
+    <span id="bookmarks66">
+    </span>
+   </div>
+   <div class="s2">
+    <div id="s8">
+     Jakaria ngewahyuke pesen dari Allah
+    </div>
+   </div>
+   <span id="bookmarks66">
+   </span>
+   <a id="v67">
+   </a>
+   <div class="p">
+    <span class="v">
+     67
+    </span>
+    <span class="vsp">
+    </span>
+    Trós Jakaria, abanyo, dipenui samo
+    <span class="footnote selectable" id="G-49">
+     Ro Suci
+    </span>
+    , laju ngewahyuke pesen dari Allah
+    <span class="ul">
+     ‡
+    </span>
+    . Ujinyo,
+    <span class="footnote selectable" id="F-14">
+     <sup>
+      o
+     </sup>
+    </span>
+   </div>
+   <div class="b">
+   </div>
+   <span id="bookmarks67">
+   </span>
+   <span id="bookmarks67">
+   </span>
+   <a id="v68">
+   </a>
+   <div class="q-vv">
+    <span class="v">
+     68
+    </span>
+    <span class="vsp">
+    </span>
+    “Pujila Allah
+    <span class="ul">
+     ‡
+    </span>
+    , Tuhan bangso
+    <span class="footnote selectable" id="G-22">
+     Israel
+    </span>
+    ,
+   </div>
+   <div class="q2">
+    soalnyo Dio la ndatengi umat-Nyo trós gawak kebebasan óntók dio wong,
+    <span id="bookmarks68">
+    </span>
+   </div>
+   <span id="bookmarks68">
+   </span>
+   <a id="v69">
+   </a>
+   <div class="q2-vv">
+    <span class="v">
+     69
+    </span>
+    <span class="vsp">
+    </span>
+    trós Dio ngangkat sikok Penyelamet yang perkasa
+    <span class="footnote selectable" id="F-15">
+     <sup>
+      p
+     </sup>
+    </span>
+    óntók kito
+   </div>
+   <div class="q3">
+    dari ketórónan
+    <span class="footnote selectable" id="G-11">
+     Daód
+    </span>
+    , hamba-Nyo tu.
+    <span id="bookmarks69">
+    </span>
+   </div>
+   <span id="bookmarks69">
+   </span>
+   <a id="v70">
+   </a>
+   <div class="q-vv">
+    <span class="v">
+     70
+    </span>
+    <span class="vsp">
+    </span>
+    Pasal tu pecak yang la diomongke-Nyo dari jaman bingen
+   </div>
+   <div class="q2">
+    ole mólót nabi-nabi-Nyo yang suci,
+    <span id="bookmarks70">
+    </span>
+   </div>
+   <span id="bookmarks70">
+   </span>
+   <a id="v71">
+   </a>
+   <div class="q-vv">
+    <span class="v">
+     71
+    </span>
+    <span class="vsp">
+    </span>
+    amen kito pasti diselametke dari mósó-mósó,
+   </div>
+   <div class="q2">
+    jugo dari tangan slóró wong yang mbenci kito,
+    <span id="bookmarks71">
+    </span>
+   </div>
+   <span id="bookmarks71">
+   </span>
+   <a id="v72">
+   </a>
+   <div class="q2-vv">
+    <span class="v">
+     72
+    </span>
+    <span class="vsp">
+    </span>
+    óntók nónjókke kasé stio-Nyo ke nenek moyang kito,
+   </div>
+   <div class="q3">
+    jugo óntók nginget pejanjian-Nyo yang suci.
+    <span id="bookmarks72">
+    </span>
+   </div>
+   <span id="bookmarks72">
+   </span>
+   <a id="v73">
+   </a>
+   <div class="q-vv">
+    <span class="v">
+     73
+    </span>
+    <span class="vsp">
+    </span>
+    Itula sumpa yang la dijanjike-Nyo ke
+    <span class="footnote selectable" id="G-19">
+     Ibrahim
+    </span>
+    , aba lelóhór kito,
+   </div>
+   <div class="q2">
+    óntók ngenjókke samo kito amen,
+    <span id="bookmarks73">
+    </span>
+   </div>
+   <span id="bookmarks73">
+   </span>
+   <a id="v74">
+   </a>
+   <div class="q3-vv">
+    <span class="v">
+     74
+    </span>
+    <span class="vsp">
+    </span>
+    pas diselametke dari tangan mósó,
+   </div>
+   <div class="q2">
+    kito pacak ngelayani Dio dengen katek raso takót
+    <span id="bookmarks74">
+    </span>
+   </div>
+   <span id="bookmarks74">
+   </span>
+   <a id="v75">
+   </a>
+   <div class="q3-vv">
+    <span class="v">
+     75
+    </span>
+    <span class="vsp">
+    </span>
+    jugo dengen kesucian samo kebeneran,
+   </div>
+   <div class="q2">
+    di adepan-Nyo seómór édóp kito.
+   </div>
+   <div class="b">
+   </div>
+   <span id="bookmarks75">
+   </span>
+   <span id="bookmarks75">
+   </span>
+   <a id="v76">
+   </a>
+   <div class="q-vv">
+    <span class="v">
+     76
+    </span>
+    <span class="vsp">
+    </span>
+    “Trós kau, anak aku ni, bakal disebót nabi dari Yang Mahabesak,
+   </div>
+   <div class="q2">
+    soalnyo kau bakal bejalan ndului Allah
+    <span class="ul">
+     ‡
+    </span>
+    óntók nyiapke jalan-Nyo
+    <span class="footnote selectable" id="F-16">
+     <sup>
+      q
+     </sup>
+    </span>
+    ,
+    <span id="bookmarks76">
+    </span>
+   </div>
+   <span id="bookmarks76">
+   </span>
+   <a id="v77">
+   </a>
+   <div class="q2-vv">
+    <span class="v">
+     77
+    </span>
+    <span class="vsp">
+    </span>
+    óntók ngenjók pengertian pasal keselametan ke umat-Nyo
+   </div>
+   <div class="q3">
+    liwat pengampónan duso-duso dio wong.
+    <span id="bookmarks77">
+    </span>
+   </div>
+   <span id="bookmarks77">
+   </span>
+   <a id="v78">
+   </a>
+   <div class="q-vv">
+    <span class="v">
+     78
+    </span>
+    <span class="vsp">
+    </span>
+    Itu karno kasé stio samo belas kesian Allah kito,
+   </div>
+   <div class="q2">
+    di mano pajar pagi bakal ndatengi kito dari surgo,
+    <span id="bookmarks78">
+    </span>
+   </div>
+   <span id="bookmarks78">
+   </span>
+   <a id="v79">
+   </a>
+   <div class="q3-vv">
+    <span class="v">
+     79
+    </span>
+    <span class="vsp">
+    </span>
+    óntók nerangi dio wong yang tinggal dalem kegelepan jugo dalem bayangan kematian,
+   </div>
+   <div class="q3">
+    trós óntók ngarake sekel kito ke jalan kedamaian.”
+   </div>
+   <div class="b">
+   </div>
+   <span id="bookmarks79">
+   </span>
+   <span id="bookmarks79">
+   </span>
+   <a id="v80">
+   </a>
+   <div class="p">
+    <span class="v">
+     80
+    </span>
+    <span class="vsp">
+    </span>
+    Lamo-kelamoan budak tu namba besak jugo namba kuat rohaninyo, trós dio tinggal di padang górón sampe ari di mano dio nónjókke dirinyo ke Israel.
+    <span id="bookmarks80">
+    </span>
+   </div>
+  </div>
+  <div id="toolbar-bottom">
+   <span class="button cpt_button prev_cpt_button md1-button mdl-js-button mdl-button--fab" id="prev_cpt_button">
+    <a href="Aktb-06-LUK-000.html" title="Previous Chapter">
+     &lt;
+    </a>
+   </span>
+   <div class="audio-player">
+    <audio controls="" id="audio">
+     <source id="audio1" src="https://storage.googleapis.com/tbp-audio/TBP Lukas 1.mp3"/>
+    </audio>
+   </div>
+   <span class="button cpt_button next_cpt_button md1-button mdl-js-button mdl-button--fab" id="next_cpt_button">
+    <a href="Aktb-06-LUK-002.html" title="Next Chapter">
+     &gt;
+    </a>
+   </span>
+  </div>
+  <script src="js/material.min.js" type="text/javascript">
+  </script>
+  <link href="css/material.min.css" rel="stylesheet" type="text/css"/>
+  <script src="js/material.min.js" type="text/javascript">
+  </script>
+  <link href="css/material.min.css" rel="stylesheet" type="text/css"/>
+  <script src="js/material.min.js" type="text/javascript">
+  </script>
+  <link href="css/material.min.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript">
+   document.addEventListener('swiped-left', function(e) {
+        window.location.replace('#');
+    });
+    document.addEventListener('swipped-right', function(e) {
+        window.location.replace('#');
+    });
+  </script>
+  <script src="js/swipe.js" type="text/javascript">
+  </script>
+  <script src="js/material.min.js" type="text/javascript">
+  </script>
+  <link href="css/material.min.css" rel="stylesheet" type="text/css"/>
+  <script src="js/material.min.js" type="text/javascript">
+  </script>
+  <link href="css/material.min.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript">
+   document.addEventListener('swiped-left', function(e) {
+        window.location.replace('Aktb-06-LUK-000.html');
+    });
+    document.addEventListener('swipped-right', function(e) {
+        window.location.replace('Aktb-06-LUK-002.html');
+    });
+  </script>
+  <script src="js/swipe.js" type="text/javascript">
+  </script>
+  <script src="js/material.min.js" type="text/javascript">
+  </script>
+  <link href="css/material.min.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript">
+   document.addEventListener('swiped-left', function(e) {
+        window.location.replace('Aktb-06-LUK-000.html');
+    });
+    document.addEventListener('swipped-right', function(e) {
+        window.location.replace('Aktb-06-LUK-002.html');
+    });
+  </script>
+  <script src="js/swipe.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+    document.addEventListener('swiped-left', function(e) {
+        window.location.replace('Aktb-06-LUK-000.html');
+    });
+    document.addEventListener('swipped-right', function(e) {
+        window.location.replace('Aktb-06-LUK-002.html');
+    });
+    </script>
+<script src="./pwa-main.js" type="text/javascript">
+  </script>
+ </body>
 </html>
