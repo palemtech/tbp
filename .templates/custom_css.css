@@ -8,12 +8,12 @@
     src: url('../fonts/icomoon.ttf')  format('truetype');
     font-weight: normal; font-style: normal; 
 }
-
+/*
 @font-face {
     font-family: "Material Icons";
     src: url('../fonts/MaterialIcons-Regular.ttf');
     font-style: normal;
-}
+}*/
 
 body {
     font-family: font1;
