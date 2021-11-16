@@ -1842,7 +1842,7 @@ body {
     height: auto;
     padding-left: 5%;
     padding-right: 5%;
-    margin: 80px auto 150px;
+    margin: 80px auto 200px;
 }
 #toolbar-bottom {
     background: #FFFFFF;
@@ -1856,7 +1856,25 @@ body {
     text-align: center;
     display: flex;
     padding-top:4px;
-    padding-bottom:4px;
+    padding-bottom:8px;
+}
+#play-button svg{
+    display: flex;
+    margin: 4px auto;
+    
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    max-width: 1em;
+	justify-content: center;
+	align-items: center;
+}
+
+#play-button svg path {
+	scale: 75%;
+	padding-top:1em;
+	padding-bottom:1em;
 }
 .audio-player {
     flex: 1;
@@ -1865,6 +1883,20 @@ body {
 }
 #audio {
 }
+
+.mdl-dialog__actions {
+	display: flex;
+}
+
+.mdl-dialog__actions button{
+	flex: 0.25;
+}
+
+#close-font-size-dialog {
+	flex: 0.5;
+	margin-left: 1em;
+}
+
 .navigation-top {
     text-align: center;
     padding-top: 16px;
@@ -1927,8 +1959,8 @@ body {
 .tooltipster-theme .tooltipster-content {
     font-family: font1, 'Arial', sans-serif;
     font-size: 15px;
-    line-height: 16px;
-    padding: 8px 10px;
+    line-height: 24px;
+    padding: 16px 24px;
 }
 .cpt_button {
     border: 0px;
@@ -2058,6 +2090,7 @@ body {
     padding-right: 6px;
     padding-top: 4px;
     padding-bottom: 4px;
+    font-size: 1.15em;
 }
 .book-menu-item a {
     text-decoration:none;
