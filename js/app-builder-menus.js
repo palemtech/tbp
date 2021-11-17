@@ -34,7 +34,7 @@ function showBookMenu() {
      
 	baseText = "";
 	$.each(books, function(i) {
-	    baseText = baseText + "<div class='book-menu-item'><a href='" + this.ref + "'>" + this.name + "</a></div>";
+	    baseText = baseText + "<div class='book-menu-item'><a onClick='reloadPage(\"" + this.ref + "\");'>" + this.name + "</a></div>";
 	});
 	   	   
 	popUp.innerHTML = baseText;
@@ -69,7 +69,7 @@ function showChapterMenu(chs, hasIntro, baseRef) {
 	
 	if (hasIntro) {
 		ref = baseRef + padWithLeadingZeros(0, 3) + ".html";
-		baseText = baseText + "<div class='intro-menu-item'>" + "<a href='" + ref + "'>" + "Introduction" + "</a></div>";
+		baseText = baseText + "<div class='intro-menu-item'>" + "<a onClick='reloadPage(\"" + this.ref + "\");'>" + "Pendahuluan" + "</a></div>";
 	}
 	 
 	baseText = baseText + "<table class='chapter-table'>";
@@ -84,7 +84,7 @@ function showChapterMenu(chs, hasIntro, baseRef) {
 			}
 			
 			ref = baseRef + padWithLeadingZeros(n, 3) + ".html";
-			baseText = baseText + "<td class='chapter-menu-cell'><div class='chapter-menu-item'><a href='" + ref + "'>" + n + "</a></div></td>";
+			baseText = baseText + "<td class='chapter-menu-cell'><div class='chapter-menu-item'><a onClick='reloadPage(\"" + ref + "\");'>" + n + "</a></div></td>";
 			
 			if (count == 5) {
 				baseText = baseText + "</tr>";
