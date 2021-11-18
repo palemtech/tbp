@@ -2,7 +2,7 @@ function loadPage(name, setupFns) {
 	console.log(name);
 	var mydata = bookData[name];
 	var navAddresses = mydata['nav_addresses'];
-	$('#content').replaceWith(JSON.parse(mydata.content));
+	$('#content').replaceWith(JSON.parse(mydata.content).replace(/\s+(\W)/g, "$1"));
 	setupAudio(mydata['audio_url']);
 	$('#prev_cpt_button').data('data-prev', navAddresses[0]);
 	$('#next_cpt_button').data('data-next', navAddresses[1]);

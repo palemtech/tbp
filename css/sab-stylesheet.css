@@ -596,6 +596,8 @@ span.nd {
 span.nd2 {
     font-variant: small-caps;
     vertical-align: sub;
+    font-weight: bold;   
+    font-size: 60%;
 }
 
 span.ord {
@@ -730,6 +732,14 @@ span.glossary {
 span.footnote {
     color: navy;
     font-weight: bold;
+}
+
+span.fnspan {
+	margin-left: -0.2em	
+}
+
+span.glospan {
+	margin-left: 0em;
 }
 
 span.xo {
@@ -1774,13 +1784,6 @@ span.addadd-specialtext-translationaladdition {
 span.v-versenumber {
 }
 
-.nd2 {
-    font-weight: bold;
-    font-style: italic;
-    font-variant: small-caps;
-    vertical-align: bottom;
-    font-size: 60%;
-}
 
 .d2 {
     text-align: center;
