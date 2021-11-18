@@ -2,7 +2,10 @@ function loadPage(name, setupFns) {
 	console.log(name);
 	var mydata = bookData[name];
 	var navAddresses = mydata['nav_addresses'];
-	$('#content').replaceWith(JSON.parse(mydata.content).replace(/\s+(\W)/g, "$1"));
+	let cons = $(JSON.parse(mydata.content.replace(/\s+(\W)/g, "$1")))
+	let inner = cons.html()
+	
+	$('#content').html(inner);
 	setupAudio(mydata['audio_url']);
 	$('#prev_cpt_button').data('data-prev', navAddresses[0]);
 	$('#next_cpt_button').data('data-next', navAddresses[1]);
@@ -37,6 +40,7 @@ function setupAudio(audioUrl) {
 	}
 }
 
+//TODO: figure out how to ke	
 function searchData(searchString){
 	//loop index keys for matches, then return matching pairs of stuff.
 }
