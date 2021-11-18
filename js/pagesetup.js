@@ -36,3 +36,7 @@ function setupAudio(audioUrl) {
 		aelem.dataset.state = 'pause';
 	}
 }
+
+function searchData(searchString){
+	//loop index keys for matches, then return matching pairs of stuff.
+}

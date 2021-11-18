@@ -591,6 +591,7 @@ span.lit {
 
 span.nd {
     font-variant: small-caps;
+	white-space: nowrap;
 }
 
 span.nd2 {
