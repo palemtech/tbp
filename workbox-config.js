@@ -3,6 +3,7 @@ module.exports = {
   "globPatterns": [
     "**/*.{css,ttf,ico,png,icns,jpg,htm,html,js,json}"
   ],
+  
   "swDest": "sw.js",
    runtimeCaching: [{
     // Match any request that ends with .png, .jpg, .jpeg or .svg.
