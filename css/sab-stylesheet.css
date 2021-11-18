@@ -2019,6 +2019,11 @@ span.cpt_btn_text {
 
 }
 
+#chapter-selector-a, #book-selector-a {
+	width:100%;
+	height:100%;
+}
+
 #book-selector {
     /*-webkit-border-radius: 4px;
     -moz-border-radius: 4px;
