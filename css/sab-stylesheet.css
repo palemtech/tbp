@@ -1846,7 +1846,9 @@ body {
     height: auto;
     padding-left: 5%;
     padding-right: 5%;
-    margin: 80px auto 200px;
+	padding-bottom: 18%;
+    margin: 80px auto 0px;
+	
 }
 #toolbar-bottom {
     background: #FFFFFF;
@@ -2004,10 +2006,10 @@ span.cpt_btn_text {
     display: inherit; */
 }
 
-
-#nav-app-icon {
-	flex: 0.1;
+#top-right-menu i {
+	color:white;
 }
+
 
 #chapter-selector, #book-selector {
 	flex: 1;
