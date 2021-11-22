@@ -2,7 +2,7 @@ function loadPage(name, setupFns) {
 	console.log(name);
 	var mydata = bookData[name];
 	var navAddresses = mydata['nav_addresses'];
-	let cons = $(JSON.parse(mydata.content.replace(/\s+(\W)/g, "$1")))
+	let cons = $(JSON.parse(mydata.content).replace(/\s+(\W)/g, "$1"))
 	let inner = cons.html()
 	
 	$('#content').html(inner);
