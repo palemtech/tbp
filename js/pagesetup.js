@@ -1,12 +1,27 @@
+
+// need to write a function to handle the spaces being stripped from the text before quotes, but it can only apply to the right markers.
+//.replace(/\S“/g, " “").replace(/\S‘/g, " ‘")
+
 function loadPage(name, setupFns) {
 	console.log(name);
 	var mydata = bookData[name];
 	var navAddresses = mydata['nav_addresses'];
-	let cons = $(JSON.parse(mydata.content).replace(/\s+(\W)/g, "$1"))
+	let cons = $(JSON.parse(mydata.content).replace(/\s+/g, " ").replace(/\s+([.?!,])/g, "$1"));
+	
 	let inner = cons.html()
 	
+	//walk(inner)
+	
 	$('#content').html(inner);
-	setupAudio(mydata['audio_url']);
+	$('.glospan').each(function(index) {
+		var str = $(this).text().trim()
+		$(this).text(str);
+		});
+	$('sup').each(function(index) {
+		var str = $(this).text().trim()
+		$(this).text(str);
+		});
+	setupAudio(mydata['audio_url']);1
 	$('#prev_cpt_button').data('data-prev', navAddresses[0]);
 	$('#next_cpt_button').data('data-next', navAddresses[1]);
 	if (mydata.glo !== '') {

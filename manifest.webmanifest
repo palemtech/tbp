@@ -2,7 +2,7 @@
   "name": "TBP",
   "short_name": "TBP",
   "start_url": "./index.html",
-  "display": "standalone",
+  "display": "standalone", 
   "background_color": "#6C0000",
   "theme_color":"#6C0000",
   "icons": [
