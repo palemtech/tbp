@@ -8,12 +8,7 @@
     src: url('../fonts/icomoon.ttf')  format('truetype');
     font-weight: normal; font-style: normal; 
 }
-/*
-@font-face {
-    font-family: "Material Icons";
-    src: url('../fonts/MaterialIcons-Regular.ttf');
-    font-style: normal;
-}*/
+
 html, body {
 font-family: "Gentium Basic";
 font-size: 16px;
@@ -105,11 +100,24 @@ highlighting {
     background-color: #FFFF99;
 }
 
-div.c {
+.chapter-number-audio-wrapper {
+    margin-top: 1em;
+    padding-top:1em;
+}
+
+
+.chapter-number-audio-wrapper > button {
+    font-size: 0.75em;
+    margin-left: 8px;
+    border: 2px solid black;
+}
+
+div.c, span.c {
     text-align: left;
     color: #6C0000;
-    font-size: 140%;
+    font-size: 175%;
     font-weight: bold;
+    vertical-align: middle;
 }
 
 div.c-drop {
@@ -137,6 +145,7 @@ span.v {
     position: relative;
     bottom: 0.3em;
     line-height: normal;
+    margin-right:2px;
 }
 
 span.vsp {
@@ -158,7 +167,7 @@ span.ayah {
     bottom: 0em;
 }
 
-div.s {
+div.s, div.s1 {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 2px;
@@ -247,7 +256,7 @@ div.sp {
     font-style: italic;
 }
 
-div.mt {
+div.mt, div.mt1 {
     text-align: center;
     color: #6C0000;
     font-weight: bold;
@@ -730,6 +739,7 @@ body.footnote {
     background-color: #E0E0E0;
 }
 
+
 span.glossary {
     font-weight: normal;
     font-style: normal;
@@ -740,6 +750,24 @@ span.glossary {
 span.footnote {
     color: navy;
     font-weight: bold;
+}
+#footerwrapper {
+    
+}
+
+#note-renderer {
+    margin: auto;
+    display: block;
+    top:40%;
+    width:100%;
+    height:auto;
+    z-index: 99;
+    
+    
+}
+
+#note-renderer > mdl-card__supporting-text {
+    overflow:auto;
 }
 
 span.fnspan {
@@ -863,6 +891,11 @@ div.imte2 {
     color: #6C0000;
     font-weight: bold;
     font-size: 130%;
+}
+
+.fnbodyhidden > span {
+    visibility: hidden;
+    display: none;
 }
 
 div.iot {
@@ -1107,8 +1140,26 @@ span.ref {
     font-size: 90%;
 }
 
+span.notinapp {
+    font-weight: normal;
+    color:#000000;
+    
+    font-size: 90%;
+}
+
 span.reflink {
     white-space: nowrap;
+	text-decoration: underline;
+	color: navy;
+}
+
+span.reflink span {
+	
+
+}
+
+span.reflink:hover {
+		background-color: #EEEEEE;
 }
 
 body.contents {
@@ -1837,6 +1888,12 @@ body {
     margin-left: 0;
     margin-right: 0;
 }
+
+#header-bar {
+    background: #6C0000;
+}
+
+
 #toolbar-top {
     background: #6C0000;
     border-bottom: 1px solid #DDD;
@@ -1856,21 +1913,79 @@ body {
     padding-right: 5%;
 	padding-bottom: 18%;
     margin: 80px auto 0px;
+    justify-content: center;
+}
+
+#mainelem {
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+#closeFnButton {
+	display:inline-block;
+	align:center;
+}
+
+.fncloseButton-shown {
+	visibility:visible; 
+	display:block;
+}
+
+.fncloseButton-hidden {
+	visibility:hidden; 
+	display:none;
+}
+
+
+#fnglo-wrapper {
+	background: #FFFFFF;
+    padding: 0 15%;
+    
+    bottom: 100px;
+    width: 100%;
+    position: absolue;
+    text-align: center;
+    
+}
+
+.fnglo-shown {
+	margin-bottom: 4px;
+    padding-top:4px;
+    padding-bottom:8px;
+	display:block;
+	visibility: visible;
+	border-top: 1px solid #DDD;
+	border-bottom: 1px solid #DDD;
+}
+
+.fnglo-hidden {
+	margin-bottom: 0px;
+    padding-top:0px;
+    padding-bottom:0px;
+	display:none;
+	visibility: hidden;
 	
 }
+
+
 #toolbar-bottom {
     background: #FFFFFF;
     border-top: 1px solid #DDD;
     -moz-box-shadow: 0 -5px 5px -5px #CCC;
     -webkit-box-shadow: 0 -5px 5px -5px #CCC;
     box-shadow: 0 -5px 5px -5px #CCC;
-    bottom: 0px;
+    
     width: 100%;
-    position: fixed;
+    /*position: fixed; */
     text-align: center;
     display: flex;
+	flex-wrap:wrap;
     padding-top:4px;
-    padding-bottom:8px;
+    padding-left:0px;
+    padding-right:0px;
+    padding-bottom:22px;
+    margin-bottom: 0px;;
 }
 #play-button svg{
     display: flex;
@@ -1884,8 +1999,6 @@ body {
 	justify-content: center;
 	align-items: center;
 }
-
-
 
 #play-button svg path {
 	scale: 75%;
@@ -1921,9 +2034,6 @@ body {
     padding-left: 5%;
     padding-right:5%;
 }
-
-
-
 
 /*.navigation-top > .button:first-of-type, .navigation-top > .button:last-of-type  {
     visibility: hidden;
@@ -1979,6 +2089,13 @@ body {
     line-height: 24px;
     padding: 16px 24px;
 }
+
+#nav-app-icon {
+	flex-shrink:0;
+	width:36px;
+	height:36px;
+}
+
 .cpt_button {
     border: 0px;
     flex: 0.5;
@@ -1993,7 +2110,7 @@ body {
 span.cpt_btn_text {
 	display: inline-block;
 }
-.cpt_button a, prev_cpt_button a, next_cpt_button a {
+.cpt_button a, .prev_cpt_button a, .next_cpt_button a {
     display: inline-block;
     width: 100%;
     height: 100%;
@@ -2046,6 +2163,7 @@ span.cpt_btn_text {
     border-bottom-left-radius: 12px;
     border-top-left-radius: 12px;
     background: #F0F0F0;
+    white-space: nowrap;
     padding: 2px;
     margin-left: 2em;
     text-decoration: none;
@@ -2113,6 +2231,9 @@ span.cpt_btn_text {
     -moz-box-shadow: 2px 2px 5px 0px #e0e0e0;
     box-shadow: 2px 2px 5px 0px #e0e0e0;
     z-index: 999;
+	/*display: flex;
+	
+	justify-content: center; */
 }
 .book-menu-item {
     color: black;
@@ -2145,18 +2266,36 @@ span.cpt_btn_text {
     text-align: center;
     color: black;
     background-color: #EEEEEE;
+    /* width: 100%;
+   display: block; */
+    border: 1px solid #E0E0E0;
+   /* padding: 6px 0px 6px 0px; */
+}
+
+.chapter-intro-item {
+	grid-column: 1 / 6; 
+	text-align: center;
+    color: black;
+    background-color: #EEEEEE;
     width: 100%;
     display: block;
     border: 1px solid #E0E0E0;
     padding: 6px 0px 6px 0px;
 }
-.chapter-menu-item a {
+
+.chapter-table-wrapper {
+	display: grid;
+	grid-template-columns: 18% 18% 18% 18% 18%;
+	grid-gap: 2%;
+	width:100%;
+}
+.chapter-menu-item a, .chapter-intro-item a {
     text-decoration:none;
     color: inherit;
     width: 100%;
     display: block;
 }
-.chapter-menu-item:hover {
+.chapter-menu-item:hover, .chapter-intro-item:hover {
     background-color: #DDDDDD;
     cursor: pointer;
 }
