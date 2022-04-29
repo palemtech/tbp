@@ -8,14 +8,24 @@
   "theme_color": "#673ab8",
   "icons": [
     {
-      "src": "/assets/icons/icon-512.png",
+      "src": "/assets/icon-512.png",
       "type": "image/png",
       "sizes": "512x512"
     },
     {
-      "src": "/assets/icons/icon-144.png",
+      "src": "/assets/icon-144.png",
       "type": "image/png",
       "sizes": "144x144"
     }
-  ]
+  ],
+  "related_applications": [{
+    "platform": "webapp",
+    "id": "tbp",
+    "url": "https://apptbp.org/manifest.json"
+  }, {
+    "platform": "webapp",
+    "id": "tbp",
+    "url": "https://tbpapp.org/manifest.json"
+  }
+]
 }
