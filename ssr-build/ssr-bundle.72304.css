@@ -1,11 +1,11 @@
 @font-face {
     font-family: font1;
-    src: url('../fonts/GentiumPlusAm-R.ttf')  format('truetype');
+    src: url(/a531cba3f2692ccfd5634842d66cc82c.ttf)  format('truetype');
     font-weight: normal; font-style: normal; 
 }
 @font-face {
     font-family: font2;
-    src: url('../fonts/icomoon.ttf')  format('truetype');
+    src: url(/c3c1cabbc6ab0eecb870947e287661b8.ttf)  format('truetype');
     font-weight: normal; font-style: normal; 
 }
 
@@ -131,6 +131,7 @@ highlighting {
 
 .search-shown {
     visibility: visible;
+    display:-ms-flexbox;
     display:flex;
 }
 
@@ -1955,8 +1956,6 @@ body {
 #toolbar-top {
     background: #6C0000;
     border-bottom: 1px solid #DDD;
-    -moz-box-shadow: 0 5px 5px -5px #CCC;
-    -webkit-box-shadow: 0 5px 5px -5px #CCC;
     box-shadow: 0 5px 5px -5px #CCC;
     top: 0px;
     width: 100%;
@@ -1971,13 +1970,16 @@ body {
     padding-right: 5%;
 	padding-bottom: 18%;
     margin: 80px auto 0px;
-    justify-content: center;
+    -ms-flex-pack: center;
+        justify-content: center;
 }
 
 #mainelem {
     width:100%;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -ms-flex-pack: center;
+        justify-content: center;
 }
 
 #closeFnButton {
@@ -2030,15 +2032,15 @@ body {
 #toolbar-bottom {
     background: #FFFFFF;
     border-top: 1px solid #DDD;
-    -moz-box-shadow: 0 -5px 5px -5px #CCC;
-    -webkit-box-shadow: 0 -5px 5px -5px #CCC;
     box-shadow: 0 -5px 5px -5px #CCC;
     
     width: 100%;
     /*position: fixed; */
     text-align: center;
+    display: -ms-flexbox;
     display: flex;
-	flex-wrap:wrap;
+	-ms-flex-wrap:wrap;
+	    flex-wrap:wrap;
     padding-top:4px;
     padding-left:0px;
     padding-right:0px;
@@ -2046,6 +2048,7 @@ body {
     margin-bottom: 0px;;
 }
 #play-button svg{
+    display: -ms-flexbox;
     display: flex;
     margin: 4px auto;
     
@@ -2054,8 +2057,10 @@ body {
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     max-width: 1em;
-	justify-content: center;
-	align-items: center;
+	-ms-flex-pack: center;
+	    justify-content: center;
+	-ms-flex-align: center;
+	    align-items: center;
 }
 
 #play-button svg path {
@@ -2064,7 +2069,8 @@ body {
 	padding-bottom:1em;
 }
 .audio-player {
-    flex: 1;
+    -ms-flex: 1;
+        flex: 1;
     padding-top: 20px;
     padding-bottom: 12px;
 }
@@ -2072,15 +2078,18 @@ body {
 }
 
 .mdl-dialog__actions {
+	display: -ms-flexbox;
 	display: flex;
 }
 
 .mdl-dialog__actions button{
-	flex: 0.25;
+	-ms-flex: 0.25;
+	    flex: 0.25;
 }
 
 #close-font-size-dialog {
-	flex: 0.5;
+	-ms-flex: 0.5;
+	    flex: 0.5;
 	margin-left: 1em;
 }
 
@@ -2096,13 +2105,12 @@ body {
 }
 
 .navigation-top-wrapper {
+    display: -ms-flexbox;
     display: flex;
 }
 
 
 .button {
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
     border-radius: 4px;
     border: solid 1px #CCCCCC;
     background: #F0F0F0;
@@ -2151,21 +2159,28 @@ body {
 }
 
 #nav-app-icon {
-	flex-shrink:0;
+	-ms-flex-negative:0;
+	    flex-shrink:0;
 	width:36px;
 	height:36px;
 }
 
 .cpt_button {
     border: 0px;
-    flex: 0.5;
+    -ms-flex: 0.5;
+        flex: 0.5;
     padding: 0.5em 0;
     text-align: center;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
     max-width: fit-content;
     border-radius: 0px;
+	display:-ms-flexbox;
 	display:flex;
-	justify-content: center;
-	align-items: center;
+	-ms-flex-pack: center;
+	    justify-content: center;
+	-ms-flex-align: center;
+	    align-items: center;
 }
 span.cpt_btn_text {
 	display: inline-block;
@@ -2202,10 +2217,14 @@ span.cpt_btn_text {
 
 
 #chapter-selector, #book-selector {
-	flex: 1;
+	-ms-flex: 1;
+	    flex: 1;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-ms-flex-pack: center;
+	    justify-content: center;
+	-ms-flex-align: center;
+	    align-items: center;
 
 }
 
@@ -2233,7 +2252,8 @@ span.cpt_btn_text {
     color: #808080;
     font-weight: bold;
     cursor: pointer;
-    flex: 1;
+    -ms-flex: 1;
+        flex: 1;
 }
 
 #book-selector a {
@@ -2260,7 +2280,8 @@ span.cpt_btn_text {
     color: #808080;
     font-weight: bold;
     cursor: pointer;
-	flex: 0.25;
+	-ms-flex: 0.25;
+	    flex: 0.25;
 }
 #chapter-selector a {
     text-decoration:none;
@@ -2288,8 +2309,6 @@ span.cpt_btn_text {
     border: 1px solid #D0D0D0;
     background-color: #F9F9F9;
     padding: 5px;
-    -webkit-box-shadow: 2px 2px 5px 0px #e0e0e0;
-    -moz-box-shadow: 2px 2px 5px 0px #e0e0e0;
     box-shadow: 2px 2px 5px 0px #e0e0e0;
     z-index: 999;
 }
@@ -2301,8 +2320,6 @@ span.cpt_btn_text {
     border: 1px solid #D0D0D0;
     background-color: #F9F9F9;
     padding: 5px;
-    -webkit-box-shadow: 2px 2px 5px 0px #e0e0e0;
-    -moz-box-shadow: 2px 2px 5px 0px #e0e0e0;
     box-shadow: 2px 2px 5px 0px #e0e0e0;
     z-index: 999;
 	/*display: flex;
@@ -2412,3 +2429,53 @@ span.cpt_btn_text {
         margin-right: auto;
     }
 }
+
+ /* Dropdown Button */
+ .dropbtn {
+    
+    color: white;
+    padding: 4px;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #3E0000;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    float:right;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    right: 0;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;} 
+
+/*# sourceMappingURL=ssr-bundle.72304.css.map*/
