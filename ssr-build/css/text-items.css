@@ -232,6 +232,18 @@ div.s2 {
     font-style: normal;
 }
 
+div.s3 {
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 2px;
+    color: #6C0000;
+    font-style: normal;
+    font-style:italic;
+    font-size: 110%;
+    page-break-after: avoid;
+    font-style: normal;
+}
+
 div.ms {
     text-align: center;
     padding-top: 30px;
