@@ -2091,6 +2091,18 @@ body {
     box-shadow: 2px 2px 5px 0px #e0e0e0;
     z-index: 999;
 }
+@media (max-width: 500px) {
+#chapter-menu, #book-menu {
+    left:25%;
+}
+
+}
+@media (min-width: 501px) {
+#chapter-menu, #book-menu {
+    left:45%;
+}
+}
+
 #chapter-menu {
     position: absolute;
     visibility: hidden;
