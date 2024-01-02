@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#6C0000">
+<title>Cerito Rosul-Rosul 2</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+// Footnotes and Cross-references
+var footnotes = {
+    "F-0": "<div class=\"footnote-p\"><span class=\"fr\">2:1 </span><span class=\"fq\">ari rayo Pentakosta: </span><span class=\"ft\">Ari rayo ni dirayoke pas 50 ari seabés <span class=\"footnote selectable\" id=\"G-38\">Paska</span> wong Israel. Wong-wong Israel dateng ke Yerusalem óntók ngerayoke panen gendóm (</span><span class=\"xt\">Imamat 23:15-21</span><span class=\"ft\">).</span></div>",
+    "F-1": "<div class=\"footnote-p\"><span class=\"fr\">2:9-11 </span><span class=\"fq\">Partia … Kreta jugo Arab: </span><span class=\"ft\">Tempat-tempat yang disebótke di ayat 9-11 iola tempat di mano wong-wong Israel tesebar seabés Yerusalem diróbóke ole Babilonia kiro-kiro 500 taón sebelóm kejadian ini. Wong-wong yang dateng ni iola wong ketórónan Israel mugola dio wong tu tinggal di luar tana Israel.</span></div>",
+    "F-2": "<div class=\"footnote-p\"><span class=\"fr\">2:16 </span><span class=\"fq\">Nabi Yoel: </span><span class=\"ft\">Nabi Yoel ngewahyuke pesen dari Allah ke Israel kiro-kiro 800 SM apo dak tu 500 SM. Dio ni yang nóléske kitab Yoel.</span></div>",
+    "F-3": "<div class=\"footnote-p\"><span class=\"fr\">2:17 </span><span class=\"fq\">ari-ari terahér: </span><span class=\"ft\">Iola jaman pas Yesus laér sampe Dio dateng ke bumi óntók yang keduo kalinyo.</span></div>",
+    "F-4": "<div class=\"footnote-p\"><span class=\"fr\">2:24 </span><span class=\"fq\">ngancórke kesengsaroan maót: </span><span class=\"ft\">Teks asli pacak jugo diartike ‘ngelepaske Dio dari kesengsaroan maót’.</span></div>",
+    "F-5": "<div class=\"footnote-p\"><span class=\"fr\">2:34 </span><span class=\"fq\">Tuan aku: </span><span class=\"ft\">Kato ‘Tuan’ nónjókke ‘Almasi’. Trós kato ‘aku’ nónjókke ‘Daód’.</span></div>",
+    "F-6": "<div class=\"footnote-p\"><span class=\"fr\">2:34 </span><span class=\"fq\">sebela kanan Aku: </span><span class=\"ft\">Allah mélé Yesus óntók dódók di sebela kanan-Nyo karno tempat tu nónjókke kehormatan jugo kuaso óntók merénto besamo dengen Allah.</span></div>",
+    "F-7": "<div class=\"footnote-p\"><span class=\"fr\">2:36 </span><span class=\"fq\">Tuan jugo Almasi: </span><span class=\"ft\">Kato “Tuan” di sini nónjókke amen Yesus iola penguaso slóró dunio, trós kato “Almasi” nónjókke amen Yesus iola <span class=\"footnote selectable\" id=\"G-60\">Rajo Yang Dilanték</span> yang la dijanjike dari jaman bingen.</span></div>",
+    "F-8": "<div class=\"footnote-p\"><span class=\"fr\">2:37 </span><span class=\"fq\">wong-wong yang tadi bekómpól: </span><span class=\"ft\">Teks asli iola “dio wong”.</span></div>",
+    "F-9": "<div class=\"footnote-p\"><span class=\"fr\">2:39 </span><span class=\"fq\">galo-galo wong yang jaó: </span><span class=\"ft\">Ado kemóngkénan kato-kato ni nónjókke wong-wong yang masók agama wong Israel jugo wong Israel yang tinggal di luar negri, apo dak tu pacak jugo nónjókke wong-wong yang bukan Israel yang bakal pecayo samo Yesus.</span></div>",
+    "F-10": "<div class=\"footnote-p\"><span class=\"fr\">2:42 </span><span class=\"fq\">makan besamo: </span><span class=\"ft\">Kato teks asli iola “mecake roti”. Ado kemóngkénan makan wong-wong tu makan besamo trós dilanjótke dengen Pejamuan Suci (jingok ayat </span><span class=\"xt\">46|ACT 2:26</span><span class=\"ft\">).</span></div>",
+    "F-11": "<div class=\"footnote-p\"><span class=\"fr\">2:47 </span><span class=\"fq\">Tuan: </span><span class=\"ft\">Kato ni pacak nónjókke Allah<span class=\"ul\">‡</span> apo dak tu pacak jugo nónjókke Yesus secaro kósós.</span></div>"
+};
+
+initFootnotes(footnotes);
+
+
+// Glossary entries
+var glossary = {
+    "G-11": "<div><span class=\"k\">Daód</span> - Dio ni rajo yang paléng penténg jugo yang paléng dicintoi di sejara bangso Israel. Keédópan Nabi Daód diceritoke di 1 Samuel 16–31, 2 Samuel 1–24, 1 Rajo-Rajo 1–2, jugo 1 Riwayat 11–29. Banyak nyanyian yang dikaétke ke Nabi Daód di kitab Saér Nyanyian, mugola idak jelas amen slóró nyanyian tu memang ditólés ole Nabi Daód, apo amen sebagéan darinyo cuman ditujuke bae ke dio.</div><div class=\"p\">Karno kasé Allah óntók Daód, Allah békén pejanjian samo dio amen ketórónan-ketórónan dio bakal nguasoi bangso Israel selamo-lamonyo (2 Samuel 7:11-16). Yesus iola ketórónan Daód yang jadi penggenepan terahér pejanjian ni. Dio bakal jadi rajo yang mrénto umat Allah sampe selamo-lamonyo.</div>",
+    "G-3": "<div><span class=\"k\">Almasi</span> - Arti istila ni iola ‘<span class=\"footnote selectable\" id=\"G-60\">wong yang dilanték</span>’, samo pecak kato “Kristus” jugo “Mesias”. Dalem Pejanjian Lamo, Allah bekali-kali janjike amen sikok Wong Yang Dilanték bakal dateng óntók jadi Rajo Penyelamet óntók umat Allah.</div>",
+    "G-51": "<div><span class=\"k\">Ruma Agóng Allah</span> - Ini ni bukan ruma ibada biaso, malahan sikok-sikoknyo tempat di dunio di mano hadérat Allah tinggal pas jaman tu. Letaknyo di <span class=\"footnote selectable\" id=\"G-64\">Yerusalem</span>, trós wong Ibrani nyemba Allah di tempat tu. Mak ini ari, Ruma tu dak katek lagi karno la diancórke ole tentra Roma pas taón 70 M.</div><div class=\"p\">Pas jaman Ruma Agóng Allah masé ado, Ruma tu iola pusat budayo jugo agama slóró wong Ibrani, mugola amen dio wong tinggal jaó nian dari tempat tu. Yang seréng dilakuke di Ruma tu iola pesembahan kórban sembeléhan, pembakaran garu ole imam, pesembahan dóét, pesembahan-pesembahan laén, jugo doa. Pas jaman Musa sampe jaman Daód, Ruma Agóng Allah bebentók kemah karno belóm ado bangónannyo. Jingokla jugo “<span class=\"footnote selectable\" id=\"G-27\">Kemah Petemuan</span>”.</div>"
+};
+
+initFootnotes(glossary);
+
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 28 }];
+var hasIntro = true;
+var baseRef  = "Aktb-08-ACT-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='Aktb-07-JHN-001.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-08-ACT-001.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;Cerito Rosul-Rosul&nbsp;&nbsp;</a></span>
+<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;2&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-08-ACT-003.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-09-GLO-001.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div class="c">2</div> 
+
+<div class="s"><div id="s1">kabar baék tesebar di Yerusalem</div></div>
+<div class="s2"><div id="s2">Kedatengan Ro Suci pas ari rayo Pentakosta</div></div><a id="v1"></a>
+<div class="p"><span class="v">1</span><span class="vsp">&nbsp;</span>Pas ari rayo Pentakosta<span class="footnote selectable" id="F-0"><sup>a</sup></span>, galo-galo wong <span class="add">yang pecayo</span> lagi ado besamo-samo di sikok tempat.<span id="bookmarks1"></span> <a id="v2"></a><span class="v">2</span><span class="vsp">&nbsp;</span>Tibo-tibo tedenger dari langét suaro yang besak pecak suaro angin rébót. Ruma tempat dio wong bekómpól dipenui suaro tu.<span id="bookmarks2"></span> <a id="v3"></a><span class="v">3</span><span class="vsp">&nbsp;</span>Laju di adepan dio wong ado kejingok'an yang bentóknyo pecak lida-lida api betebaran trós hinggep di pócók dio wong tu.<span id="bookmarks3"></span> <a id="v4"></a><span class="v">4</span><span class="vsp">&nbsp;</span>Galo-galo wong tu dipenui Ro Suci, trós mulai ngomong makek baso-baso wong laén, sesuai yang dienjók ole Ro Suci ke dio wong óntók diomongke.<span id="bookmarks4"></span></div><span id="bookmarks4"></span><a id="v5"></a>
+<div class="p"><span class="v">5</span><span class="vsp">&nbsp;</span>Pas waktu tu, ado wong-wong Israel yang além yang tinggal di Yerusalem. Dio wong ni dateng dari slóró bangso di dunio.<span id="bookmarks5"></span> <a id="v6"></a><span class="v">6</span><span class="vsp">&nbsp;</span>Pas suaro tu tedenger, wong banyak tadi dateng bekerómón. Dio wong ni tekejót karno ndenger rosul-rosul tu ngomong dalem baso daera dio wong dewek.<span id="bookmarks6"></span> <a id="v7"></a><span class="v">7</span><span class="vsp">&nbsp;</span>Galo-galo wong tu tecengang jugo heran. Uji dio wong, “Jingokla, dio wong yang ngomong ni galo-galonyo wong Galilea kan?<span id="bookmarks7"></span> <a id="v8"></a><span class="v">8</span><span class="vsp">&nbsp;</span>Cakmano móngkén kito-kito ni ndenger dio wong ngomong makek baso asli kito?<span id="bookmarks8"></span> <a id="v9"></a><span class="v">9</span><span class="vsp">&nbsp;</span>Padahal kito ni wong-wong dari negri-negri Partia, Media, jugo Elam; ado jugo wong-wong yang tinggal di Mesopotamia; ado yang dari daera-daera Yudea, Kapadokia, Pontus, Asia,<span id="bookmarks9"></span> <a id="v10"></a><span class="v">10</span><span class="vsp">&nbsp;</span>Prigia, jugo Pampilia; ado yang dari Mesir jugo dari daera-daera Libia yang parak dengen Kota Kirene; ado jugo pendateng-pendateng dari Kota Roma.<span id="bookmarks10"></span> <a id="v11"></a><span class="v">11</span><span class="vsp">&nbsp;</span>Wong ketórónan Israel jugo wong yang masók agama wong Israel dari bangso laén, trós wong-wong Kreta jugo Arab<span class="footnote selectable" id="F-1"><sup>b</sup></span>! Mugola cak itu, kito galo-galo ni ndenger amen wong-wong tu ngomong makek baso daera kito dewek pasal pebuatan besak yang dilakuke Allah.”<span id="bookmarks11"></span> <a id="v12"></a><span class="v">12</span><span class="vsp">&nbsp;</span>Dio wong tecengang jugo bingung nian sampe-sampe dio wong tu saléng ngomong, “Cakmano pasal ni pacak tejadi?”<span id="bookmarks12"></span></div><span id="bookmarks12"></span><a id="v13"></a>
+<div class="p"><span class="v">13</span><span class="vsp">&nbsp;</span>Tapi, ado wong laén yang ngetawoi dio wong, ujinyo, “Wong-wong ni mabok lantak anggór manis.”<span id="bookmarks13"></span></div>
+<div class="s3"><div id="s3">Petrus nyelaske amen kedatengan Ro Suci mbuktike amen Yesus iola Almasi</div></div><span id="bookmarks13"></span><a id="v14"></a>
+<div class="p"><span class="v">14</span><span class="vsp">&nbsp;</span>Jadi Petrus tegak dengen kesebelas rosul laénnyo, trós dio ngomong dengen suaro besak, “Ói wong-wong Israel, jugo kamu galo-galo yang tinggal di Yerusalem! Biarla kamu tau jugo kamu peratike pasal omongan aku ni.<span id="bookmarks14"></span> <a id="v15"></a><span class="v">15</span><span class="vsp">&nbsp;</span>Wong-wong ni dak mabok pecak yang kamu sangko, soalnyo sekarang ni baru jam sembilan pagi.<span id="bookmarks15"></span> <a id="v16"></a><span class="v">16</span><span class="vsp">&nbsp;</span>Tapi kejadian ni iola pasal yang la diomongke sebelómnyo liwat Nabi Yoel<span class="footnote selectable" id="F-2"><sup>c</sup></span>.</div>
+<div class="b">&nbsp;</div><span id="bookmarks16"></span><span id="bookmarks16"></span><a id="v17"></a>
+<div class="q-vv"><span class="v">17</span><span class="vsp">&nbsp;</span>Uji Allah,</div>
+<div class="q">‘Inila yang bakal tejadi pas ari-ari terahér<span class="footnote selectable" id="F-3"><sup>d</sup></span>.</div>
+<div class="q2">Aku bakal numpake Ro Aku ke slóró manusio.</div>
+<div class="q2">Anak-anak kamu lanang betino bakal ngewahyuke pesen-pesen dari Allah;</div>
+<div class="q2">wong-wong mudo kamu bakal ndapetke penjingok'an;</div>
+<div class="q2">trós wong-wong tuo bakal ndapetke mimpi.<span id="bookmarks17"></span></div><span id="bookmarks17"></span><a id="v18"></a>
+<div class="q-vv"><span class="v">18</span><span class="vsp">&nbsp;</span>Mala, ke hamba-hamba Aku lanang jugo betino</div>
+<div class="q2">Aku bakal numpake Ro Aku pas ari-ari tu,</div>
+<div class="q2">trós dio wong bakal ngewahyuke pesen dari Allah.<span id="bookmarks18"></span></div><span id="bookmarks18"></span><a id="v19"></a>
+<div class="q-vv"><span class="v">19</span><span class="vsp">&nbsp;</span>Aku bakal mbékén keajaéban di langét yang ado di pócók,</div>
+<div class="q2">trós tando-tando di bumi yang ado di bawa:</div>
+<div class="q3">dara, api, jugo kabót asep.<span id="bookmarks19"></span></div><span id="bookmarks19"></span><a id="v20"></a>
+<div class="q2-vv"><span class="v">20</span><span class="vsp">&nbsp;</span>Matoari bakal dijadike gelep,</div>
+<div class="q3">trós bulan dijadike abang pecak dara</div>
+<div class="q2">sebelóm tibo Ari Allah<span class="ul">‡</span> yang besak jugo mulyo tu.<span id="bookmarks20"></span></div><span id="bookmarks20"></span><a id="v21"></a>
+<div class="q-vv"><span class="v">21</span><span class="vsp">&nbsp;</span>Pas ari <span class="add">pengakéman</span> tu wong yang manggél namo Allah<span class="ul">‡</span> bakal diselametke.’</div>
+<div class="b">&nbsp;</div><span id="bookmarks21"></span><span id="bookmarks21"></span><a id="v22"></a>
+<div class="m"><span class="v">22</span><span class="vsp">&nbsp;</span><span class="add">Trós uji Petrus lagi,</span> “Ói wong-wong Israel, dengerkela kato-kato ni! Pasal Yesus, wong Najaret tu, la tebukti amen Dio tu dikongkon Allah. Pasal ni tebukti liwat mujijat-mujijat, keajaéban, jugo tando-tando yang dilakuke Allah liwat Dio di antaro kamu. Kamu dewek tau pasal tu.<span id="bookmarks22"></span> <a id="v23"></a><span class="v">23</span><span class="vsp">&nbsp;</span>Yesus diserake sesuai maksód jugo rencano Allah dewek. Trós kamu mbunu-Nyo dengen nyerake Dio óntók disalébke ole wong-wong yang dak tau pasal Hókóm Allah.<span id="bookmarks23"></span> <a id="v24"></a><span class="v">24</span><span class="vsp">&nbsp;</span>Allah mbangkétke Dio lagi, trós ngancórke kesengsaroan maót<span class="footnote selectable" id="F-4"><sup>e</sup></span> soalnyo Dio dak móngkén dikuasoi ole maót.<span id="bookmarks24"></span> <a id="v25"></a><span class="v">25</span><span class="vsp">&nbsp;</span>Karno Rajo <span class="footnote selectable" id="G-11">Daód</span> ni ngomong pasal Yesus cak ini,</div>
+<div class="b">&nbsp;</div>
+<div class="q">‘Aku nyingok Allah<span class="ul">‡</span> ado di adepan Aku terós</div>
+<div class="q2">karno Dio ado di sebela kanan Aku, supayo Aku idak tegoncang.<span id="bookmarks25"></span></div><span id="bookmarks25"></span><a id="v26"></a>
+<div class="q-vv"><span class="v">26</span><span class="vsp">&nbsp;</span>Mangkonyo, ati Aku seneng, jugo mólót Aku besorak;</div>
+<div class="q2">Iyo, badan Aku bakal netep dalem pengarepan.<span id="bookmarks26"></span></div><span id="bookmarks26"></span><a id="v27"></a>
+<div class="q-vv"><span class="v">27</span><span class="vsp">&nbsp;</span>Karno, Kau dak bakal nyerake jiwo Aku ke dunio wong mati.</div>
+<div class="q2">Kau dak bakal mbiarke Wong Além Kau ngalami kebósók'an.<span id="bookmarks27"></span></div><span id="bookmarks27"></span><a id="v28"></a>
+<div class="q-vv"><span class="v">28</span><span class="vsp">&nbsp;</span>Kau ngenjóktauke samo Aku jalan keédópan;</div>
+<div class="q2">Kau bakal menui Aku dengen kesenengan liwat kehadéran Kau.’</div>
+<div class="b">&nbsp;</div><span id="bookmarks28"></span><span id="bookmarks28"></span><a id="v29"></a>
+<div class="m"><span class="v">29</span><span class="vsp">&nbsp;</span><span class="add">Uji Petrus,</span> “Dólór-dólór, dengen yakén nian aku ngomong samo kamu pasal Daód, aba lelóhór kito. Dio la mati jugo dikóbórke, trós kóbórannyo tu masé ado dengen kito sampe mak ini ari.<span id="bookmarks29"></span> <a id="v30"></a><span class="v">30</span><span class="vsp">&nbsp;</span>Tapi Daód ni iola nabi, trós dio tu tau amen Allah la bejanji jugo besumpa óntók ngangkat sikok ketórónannyo óntók jadi rajo di korsi kerajaannyo.<span id="bookmarks30"></span> <a id="v31"></a><span class="v">31</span><span class="vsp">&nbsp;</span>Ole karno tu, Daód la nyingok apo yang bakal dilakuke ole Allah kageknyo. Jadi dio ngomong pasal kebangkétan <span class="footnote selectable" id="G-3">Almasi</span>, amen Dio dak bakal diserake ke dunio wong mati trós badan-Nyo dak bakal ngalami kebósók'an.<span id="bookmarks31"></span> <a id="v32"></a><span class="v">32</span><span class="vsp">&nbsp;</span>Yesus inila yang dibangkétke dari kematian ole Allah, trós kami galo-galo ni iola saksi-saksinyo.<span id="bookmarks32"></span> <a id="v33"></a><span class="v">33</span><span class="vsp">&nbsp;</span>Dio ditinggike di sebela kanan Allah, trós nerimo dari Allah pasal janji Ro Suci. Dio jugo la ngelakuke apo yang kamu jingok jugo denger sekarang ni.<span id="bookmarks33"></span> <a id="v34"></a><span class="v">34</span><span class="vsp">&nbsp;</span>Soalnyo Daód idak naék ke surgo, tapi dio dewek ngomong <span class="add">pasal Almasi</span> cak ini,</div>
+<div class="b">&nbsp;</div>
+<div class="q">‘Allah<span class="ul">‡</span> ngomong ke Tuan aku<span class="footnote selectable" id="F-5"><sup>f</sup></span> <span class="add">cak ini</span>:</div>
+<div class="q2">“Dódókla di sebela kanan Aku<span class="footnote selectable" id="F-6"><sup>g</sup></span><span id="bookmarks34"></span></div><span id="bookmarks34"></span><a id="v35"></a>
+<div class="q2-vv"><span class="v">35</span><span class="vsp">&nbsp;</span>sampe Aku mbékén mósó-mósó Kau</div>
+<div class="q2">jadi bangku alas sekel Kau.”’</div>
+<div class="b">&nbsp;</div><span id="bookmarks35"></span><span id="bookmarks35"></span><a id="v36"></a>
+<div class="m"><span class="v">36</span><span class="vsp">&nbsp;</span>Jadi, biarkela galo-galo wong Israel yakén nian amen Yesus yang kamu salébke tu la diangkat Allah jadi Tuan jugo Almasi<span class="footnote selectable" id="F-7"><sup>h</sup></span>!”<span id="bookmarks36"></span></div><span id="bookmarks36"></span><a id="v37"></a>
+<div class="p"><span class="v">37</span><span class="vsp">&nbsp;</span>Pas wong-wong yang tadi bekómpól<span class="footnote selectable" id="F-8"><sup>i</sup></span> ndenger pasal tu, dio wong ni ngeraso besala. Dio wong betanyo ke Petrus jugo rosul-rosul laénnyo, ujinyo, “Dólór-dólór, apo yang harós kami lakuke?”<span id="bookmarks37"></span></div><span id="bookmarks37"></span><a id="v38"></a>
+<div class="p"><span class="v">38</span><span class="vsp">&nbsp;</span>Uji Petrus, “Betobatla, trós setiap dari kamu harós dibaptés dalem namo Yesus Almasi supayo duso-duso kamu diampóni trós kamu bakal nerimo karunio yang iola Ro Suci.<span id="bookmarks38"></span> <a id="v39"></a><span class="v">39</span><span class="vsp">&nbsp;</span>Karno janji Allah tu óntók kamu jugo óntók anak-anak kamu, jugo óntók galo-galo wong yang jaó <span class="footnote selectable" id="F-9"><sup>j</sup></span>, iola slóró yang dipanggél ole Allah<span class="ul">‡</span>, Tuhan kito, óntók dateng ke Dio.”<span id="bookmarks39"></span></div><span id="bookmarks39"></span><a id="v40"></a>
+<div class="p"><span class="v">40</span><span class="vsp">&nbsp;</span>Trós Petrus ni besaksi jugo nasehati dio wong dengen banyak omongan-omongan laénnyo. Ujinyo, “Selametkela diri kamu dari angkatan yang dak bener ni.”<span id="bookmarks40"></span> <a id="v41"></a><span class="v">41</span><span class="vsp">&nbsp;</span>Wong-wong yang nerimo apo yang diomongke ole Petrus ni dibaptés, trós pas ari tu jemaah yang pecayo jadi betamba kiro-kiro tigo ribu wong.<span id="bookmarks41"></span></div>
+<div class="s2"><div id="s4">Kerajaan Allah mulai nyato di Yerusalem liwat jemaah baru yang pecayo samo Yesus</div></div><span id="bookmarks41"></span><a id="v42"></a>
+<div class="p"><span class="v">42</span><span class="vsp">&nbsp;</span>Dio wong rajén nian ndengerke pengajaran dari rosul-rosul jugo galak bekómpól. Trós dio wong ni jugo rajén óntók makan besamo<span class="footnote selectable" id="F-10"><sup>k</sup></span> trós manjatke doa-doa.<span id="bookmarks42"></span></div><span id="bookmarks42"></span><a id="v43"></a>
+<div class="p"><span class="v">43</span><span class="vsp">&nbsp;</span>Laju tiap wong jadi takót, trós banyak mujijat jugo tando-tando ajaéb tejadi liwat rosul-rosul.<span id="bookmarks43"></span> <a id="v44"></a><span class="v">44</span><span class="vsp">&nbsp;</span>Slóró wong yang pecayo samo Yesus tetep besamo jadi sekelompok trós slóró harto kepunyoan dio wong dipakek besamo-samo.<span id="bookmarks44"></span> <a id="v45"></a><span class="v">45</span><span class="vsp">&nbsp;</span>Trós ado beberapo dari dio wong nyual kebon jugo hartonyo. Asélnyo tu dibagéke samo wong yang merluke.<span id="bookmarks45"></span> <a id="v46"></a><span class="v">46</span><span class="vsp">&nbsp;</span>Tiap ari dio wong bekómpól dengen seati jugo sepékéran di jabo <span class="footnote selectable" id="G-51">Ruma Agóng Allah</span>, trós makan besamo dari ruma ke ruma. Wong-wong tu nerimo pajóan dio wong dengen ati yang seneng jugo tólós,<span id="bookmarks46"></span> <a id="v47"></a><span class="v">47</span><span class="vsp">&nbsp;</span>sambél muji-muji Allah. Galo-galo wong seneng nian dengen dio wong, trós tiap ari, Tuan<span class="footnote selectable" id="F-11"><sup>l</sup></span> nambake wong-wong yang diselametke ke kelompok dio wong.<span id="bookmarks47"></span></div>
+</div>
+<script type='text/javascript' src='./pwa-main.js'></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#6C0000">
+<title>Cerito Rosul-Rosul 8</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+// Footnotes and Cross-references
+var footnotes = {
+    "F-0": "<div class=\"footnote-p\"><span class=\"fr\">8:5 </span><span class=\"fq\">Pilipus: </span><span class=\"ft\">Pilipus ni samo pecak Stepanus, dio ni sala sikok dari ketójó wong dipélé yang ado di </span><span class=\"xt\"><span class=\"reflink\"><a href=\"Aktb-08-ACT-006.html#v5\">Cerito Rosul-Rosul 6:5</a></span>.</span><span class=\"ft\"></span></div>",
+    "F-1": "<div class=\"footnote-p\"><span class=\"fr\">8:7 </span><span class=\"ft\">Teks asli pacak jugo diartike “Soalnyo banyak wong yang kesórópan ole ro-ro jahat metu <span class=\"add\">dari kota tu</span> sambél mekék-mekék. Dio wong samo wong-wong cacat jugo wong-wong pincang disembóke galo.”</span></div>",
+    "F-2": "<div class=\"footnote-p\"><span class=\"fr\">8:26 </span><span class=\"fq\">Jalan tu iola jalan yang sepi: </span><span class=\"ft\">Teks asli pacak jugo diartike “jalan yang ngeliwati padang górón”.</span></div>",
+    "F-3": "<div class=\"footnote-p\"><span class=\"fr\">8:27 </span><span class=\"fq\">wong pejabat kasém: </span><span class=\"ft\">Dalem teks asli istila ni nónjókke lanang yang la dikebiri alat kelaminnyo supayo tuannyo ni dak perlu takót amen wong tu bakal nedók'i bini apo dak tu anak betinonyo. Wong kasém seréng dipélé óntók jadi pejabat dalem kerajaan. Tapi, hókóm Israel idak mboleke wong kasém óntók jadi anggota umat Israel (</span><span class=\"xt\">Ulangan 23:1</span><span class=\"ft\">), jugo idak mboleke dio wong óntók jadi imam (</span><span class=\"xt\">Imamat 21:20</span><span class=\"ft\">). Mugola cak itu, dalem agama wong Israel dio wong tetep bole nyemba Allah trós ado arepan amen dio wong bakal diselametke (</span><span class=\"xt\">Yesaya 56:3-8</span><span class=\"ft\">).</span></div>",
+    "F-4": "<div class=\"footnote-p\"><span class=\"fr\">8:37 </span><span class=\"ft\">Kemóngkénan besak ayat 37 ni ditamba ole wong yang nyalén naska.</span></div>",
+    "F-5": "<div class=\"footnote-p\"><span class=\"fr\">8:40 </span><span class=\"fq\">Kota Asdod: </span><span class=\"ft\">iola sala sikok kota tepenténg di Pilistin (</span><span class=\"xt\">Yosua 13:3</span><span class=\"ft\">). Letak kota ni kiro-kiro 35 km di sebela utara Kota Gaza, trós 90 km di sebela selatan Kota Kaisarea.</span></div>"
+};
+
+initFootnotes(footnotes);
+
+
+// Glossary entries
+var glossary = {
+    "G-23": "<div><span class=\"k\">kabar baék</span> - Kabar baéknyo iola, sangkéng Allah ngaséhi manusio mangkonyo Dio bebuat keselametan óntók umat-Nyo liwat Yesus, sampe-sampe duso dio wong pacak diapóske trós hóbóngan dio wong dengen Allah pacak dibeneri. Jadi siapo bae yang dateng ke Yesus dengen ati yang betobat bakal nerimo idak cuman pengapósan duso dio tempo dulu, tapi jugo ati yang baru supayo dio pacak mélé óntók nyalanke édóp sesuai kendak Allah.</div><div class=\"p\">Selaén tu, Kabar Baék ni jugo temasók janji dari Allah amen slóró yang idak baék di dunio bakal dibenerke di jeró <span class=\"footnote selectable\" id=\"G-28\">Kerajaan Allah</span>. Kerajaan Allah tu idak tebates cuman di masa depan bae, tapi jugo bakal mulai dinyatoke dikit-dikit di antaro wong-wong yang la nerimo ati yang baru tadi trós mélé óntók édóp nórót prénto Allah di dunio ni.</div>",
+    "G-54": "<div><span class=\"k\">Samaria</span> - Dalem Pejanjian Lamo, Samaria iola namo kota yang jadi ibu kota Kerajaan Israel Utara. Dalem Pejanjian Baru, Samaria iola namo propinsi yang letaknyo di utara dari propinsi Yudea jugo selatan dari propinsi Galilea. Pas jaman Yesus, wong Samaria dibenci nian ole wong Yahudi karno banyak alesan, temasók:</div><div class=\"li top-spacing\">1) <span class=\"it\">Alesan sejara:</span> Lelóhór wong Samaria berontak ke rajo Israel yang dilanték Allah (1 Rajo-Rajo 12:16-24) laju békén kerajaan dewek yang terós-terósan idak stio samo Allah (2 Rajo-Rajo 17).</div><div class=\"li\">2) <span class=\"it\">Alesan agama:</span> Abés pemberontakan tu, dio wong békén perobahan agama supayo dak usa pegi lagi ke Yerusalem óntók beibada (1 Rajo-Rajo 12:26-33). Pas jaman Yesus, dio wong la lamo beibada di Gónóng Gerijim, bukan di Ruma Allah di Yerusalem (<span class=\"reflink\"><a href=\"Aktb-07-JHN-004.html#v20\">Yahya 4:20</a></span>). Dio wong jugo cuman ngakui kelimo kitab Nabi Musa.</div><div class=\"li\">3) <span class=\"it\">Alesan campóran dara:</span> Abés dikalake bangso Asyur pas taón 722 SM, wong-wong di daera ni banyak becampór samo wong yang bukan wong Yahudi (2 Rajo-Rajo 17:23-24).</div>",
+    "G-28": "<div><span class=\"k\">Kerajaan Allah</span> - Kerajaan Allah iola di mano bae Allah diakui ole umat-Nyo jadi Rajo dio wong, sampe-sampe dio wong melok'i jalan-Nyo Allah dengen sempurno. Hasélnyo iola kerajaan yang penu kebaék'an jugo damai sentosa. Kerajaan Allah tu idak tebates cuman di surgo apo di maso depan bae. Yesus gawak <span class=\"footnote selectable\" id=\"G-23\">kabar baék</span> amen Kerajaan Allah yang la lamo dijanjike tu mulai jadi nyato dikit-dikit kósósnyo di antaro wong-wong yang nerimo ati yang baru dari Allah trós mélé óntók édóp nórót prénto Allah di dunio ni. Mugola la mulai nyato, Kerajaan Allah tu dak bakal hadér sepenunyo sampe disempurnoke Allah di ahér jaman.</div>"
+};
+
+initFootnotes(glossary);
+
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 28 }];
+var hasIntro = true;
+var baseRef  = "Aktb-08-ACT-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='Aktb-07-JHN-001.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-08-ACT-007.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;Cerito Rosul-Rosul&nbsp;&nbsp;</a></span>
+<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;8&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-08-ACT-009.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-09-GLO-001.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div class="c">8</div> <a id="v1"></a>
+<div class="p"><span class="v">1a</span><span class="vsp">&nbsp;</span>Saólós jugo nyetujui Stepanus dibunu.<span id="bookmarks1a"></span></div>
+
+<div class="s"><div id="s1">kabar baék tesebar di luar Yerusalem</div></div>
+<div class="s2"><div id="s2">Wong-wong pecayo ngelarike diri dari Yerusalem karno penganiayoan</div></div><span id="bookmarks1a"></span><a id="v1"></a>
+<div class="p"><span class="v">1b</span><span class="vsp">&nbsp;</span>Waktu tu tejadi penganiayoan yang besak nian samo jemaah yang ado di Yerusalem, sampe-sampe dio wong tepisa-pisa ke slóró Yudea jugo ke Samaria. Cuman rosul-rosul bae yang tetep tinggal di Yerusalem.<span id="bookmarks1b"></span> <a id="v2"></a><span class="v">2</span><span class="vsp">&nbsp;</span>Beberapo wong além ngóbórke Stepanus trós ngeratepi dio dengen jerét tangisan.<span id="bookmarks2"></span> <a id="v3"></a><span class="v">3</span><span class="vsp">&nbsp;</span>Tapi Saólós ni beusaha mbinasoke jemaah. Dio masók ke setiap ruma, nyeret lanang jugo betino, trós masókke wong-wong tu ke jeró penjaro.<span id="bookmarks3"></span></div>
+<div class="s2"><div id="s3">Pilipus gawak Kabar Baék ke Samaria</div></div><span id="bookmarks3"></span><a id="v4"></a>
+<div class="p"><span class="v">4</span><span class="vsp">&nbsp;</span>Wong-wong yang la tepencar tu bekeléléng sambél mbritoke <span class="footnote selectable" id="G-23">Kabar Baék</span>.<span id="bookmarks4"></span></div><span id="bookmarks4"></span><a id="v5"></a>
+<div class="p"><span class="v">5</span><span class="vsp">&nbsp;</span>Pilipus<span class="footnote selectable" id="F-0"><sup>a</sup></span> pegi ke sikok kota di <span class="footnote selectable" id="G-54">Samaria</span> trós mbritoke pasal Almasi ke wong-wong di sano.<span id="bookmarks5"></span> <a id="v6"></a><span class="v">6</span><span class="vsp">&nbsp;</span>Pas wong banyak tu ndenger ajarannyo jugo nyingok tando-tando ajaéb yang Pilipus lakuke, galo-galo wong tu mulai ndengerke nian omongannyo.<span id="bookmarks6"></span> <a id="v7"></a><span class="v">7</span><span class="vsp">&nbsp;</span>Soalnyo dari banyak wong yang kesórópan, ro-ro jahat metu sambél mekék-mekék. Cak itu jugo wong-wong lómpó samo wong-wong pincang disembóke.<span class="footnote selectable" id="F-1"><sup>b</sup></span><span id="bookmarks7"></span> <a id="v8"></a><span class="v">8</span><span class="vsp">&nbsp;</span>Jadi ado kesenengan besak di kota tu.<span id="bookmarks8"></span></div><span id="bookmarks8"></span><a id="v9"></a>
+<div class="p"><span class="v">9</span><span class="vsp">&nbsp;</span>Di kota tu ado sikok lanang benamo Simon. La lamo dio ni makek kekuatan gaébnyo trós mbékén slóró wong Samaria teheran-heran. Dio ngaku amen dio ni wong hebat.<span id="bookmarks9"></span> <a id="v10"></a><span class="v">10</span><span class="vsp">&nbsp;</span>Slóró wong Samaria, mulai dari wong kecik sampe wong besak, meratike Simon trós ngomong <span class="add">pasal dio</span> cak ini, “Wong ni iola kuaso dari Allah yang dikenal dengen ‘Kuaso Besak’.”<span id="bookmarks10"></span> <a id="v11"></a><span class="v">11</span><span class="vsp">&nbsp;</span>Wong-wong tu meratike dio karno la lamo nian dio ni mbékén dio wong takjób dengen ilmu gaébnyo.<span id="bookmarks11"></span></div><span id="bookmarks11"></span><a id="v12"></a>
+<div class="p"><span class="v">12</span><span class="vsp">&nbsp;</span>Tapi wong-wong Samaria ni pecayo samo Pilipus pas dio mbritoke Kabar Baék pasal <span class="footnote selectable" id="G-28">Kerajaan Allah</span> jugo Yesus Almasi. Abés tu, dio wong ni dibaptés, mugola itu lanang apo betino.<span id="bookmarks12"></span> <a id="v13"></a><span class="v">13</span><span class="vsp">&nbsp;</span>Simon ni dewek pecayo trós dibaptés. Abés tu dio ni terós-terósan melok'i Pilipus, trós dio takjób nian pas nyingok mujijat-mujijat jugo tando-tando ajaéb yang tejadi.<span id="bookmarks13"></span></div><span id="bookmarks13"></span><a id="v14"></a>
+<div class="p"><span class="v">14</span><span class="vsp">&nbsp;</span>Seabés rosul-rosul di Yerusalem ndenger amen wong-wong Samaria la nerimo pirman Allah, dio wong ngótós Petrus samo Yahya ke wong-wong yang ado di sano.<span id="bookmarks14"></span> <a id="v15"></a><span class="v">15</span><span class="vsp">&nbsp;</span>Pas sampe di sano, keduo rosul tu ndoake dio wong supayo wong-wong Samaria ni nerimo Ro Suci.<span id="bookmarks15"></span> <a id="v16"></a><span class="v">16</span><span class="vsp">&nbsp;</span>Soalnyo sampe waktu tu dak katek sikok bae dari antaro dio wong yang la nerimo Ro Suci. Dio wong baru dibaptés dalem namo Tuan Yesus bae.<span id="bookmarks16"></span> <a id="v17"></a><span class="v">17</span><span class="vsp">&nbsp;</span>Laju Petrus samo Yahya ni narokke tangannyo ke pócók <span class="add">palak</span> dio wong, trós dio wong ni nerimo Ro Suci.<span id="bookmarks17"></span></div><span id="bookmarks17"></span><a id="v18"></a>
+<div class="p"><span class="v">18</span><span class="vsp">&nbsp;</span>Pas Simon nyingok amen Ro Suci dienjók liwat rosul-rosul pas dio wong narokke tangannyo ke pócók wong-wong tu, Simon nawak'i dóét ke rosul-rosul tu.<span id="bookmarks18"></span> <a id="v19"></a><span class="v">19</span><span class="vsp">&nbsp;</span>Uji dio, “Enjókla samo aku kuaso itu jugo, supayo amen aku narokke tangan aku ke pócók <span class="add">palak</span> wong, wong tu jugo nerimo Ro Suci.”<span id="bookmarks19"></span></div><span id="bookmarks19"></span><a id="v20"></a>
+<div class="p"><span class="v">20</span><span class="vsp">&nbsp;</span>Tapi, uji Petrus ke Simon, “Matila dóét kau besamo dengen kau jugo, soalnyo kau bepékér kau pacak dapet karunio Allah dengen dóét!<span id="bookmarks20"></span> <a id="v21"></a><span class="v">21</span><span class="vsp">&nbsp;</span>Kau tu katek nian bagéan dalem pasal ni soalnyo ati kau dak bener di adepan Allah.<span id="bookmarks21"></span> <a id="v22"></a><span class="v">22</span><span class="vsp">&nbsp;</span>Jadi betobatla dari kejahatan kau ni trós bedoala ke Tuan <span class="add">kito</span>, supayo niatan ati kau tu diampóni.<span id="bookmarks22"></span> <a id="v23"></a><span class="v">23</span><span class="vsp">&nbsp;</span>Soalnyo aku nyingok amen kau tu iri ati trós teiket dalem duso.”<span id="bookmarks23"></span></div><span id="bookmarks23"></span><a id="v24"></a>
+<div class="p"><span class="v">24</span><span class="vsp">&nbsp;</span>Uji Simon cak ini, “Kamu baela yang bedoa óntók aku ke Tuan supayo slóró yang kamu omongke tu jangan tejadi samo aku.”<span id="bookmarks24"></span></div><span id="bookmarks24"></span><a id="v25"></a>
+<div class="p"><span class="v">25</span><span class="vsp">&nbsp;</span>Laju, seabés Petrus samo Yahya ni besaksi trós nyampeke pirman Tuan <span class="add">kito</span>, dio wong balék ke Yerusalem sambél mbritoke Kabar Baék ke banyak dósón di Samaria.<span id="bookmarks25"></span></div>
+<div class="s2"><div id="s4">Pilipus gawak Kabar Baék ke pejabat Etiopia</div></div><span id="bookmarks25"></span><a id="v26"></a>
+<div class="p"><span class="v">26</span><span class="vsp">&nbsp;</span>Abés tu malekat Allah<span class="ul">‡</span> ngomong ke Pilipus, ujinyo, “Bangón trós pegila ke ara Selatan, ke jalan yang nórón dari Yerusalem nuju Gaza. Jalan tu iola jalan yang sepi.<span class="footnote selectable" id="F-2"><sup>c</sup></span>”<span id="bookmarks26"></span></div><span id="bookmarks26"></span><a id="v27"></a>
+<div class="p"><span class="v">27</span><span class="vsp">&nbsp;</span>Laju Pilipus ni bangón trós pegi. Ternyato ado sikok lanang Etiopia. Dio tu wong pejabat kasém<span class="footnote selectable" id="F-3"><sup>d</sup></span> Ratu Kandake, Ratu negri Etiopia. Lanang ni ketuo bendahara ratu tu, trós dio jugo baru pegi ke Yerusalem óntók beibada.<span id="bookmarks27"></span> <a id="v28"></a><span class="v">28</span><span class="vsp">&nbsp;</span>Pas waktu tu, dio lagi dalem pejalanan balék ke negrinyo. Sambél dódók di jeró kreto, dio mbaco kitab Nabi Yesaya.<span id="bookmarks28"></span> <a id="v29"></a><span class="v">29</span><span class="vsp">&nbsp;</span>Trós Ro Suci ngomong ke Pilipus, ujinyo, “Pegila trós parak'ila kreto tu.”<span id="bookmarks29"></span></div><span id="bookmarks29"></span><a id="v30"></a>
+<div class="p"><span class="v">30</span><span class="vsp">&nbsp;</span>Laju Pilipus ni lari marak'i kreto tu. Dio ndenger wong tu lagi mbaco kitab Nabi Yesaya. Uji Pilipus, “Apo Tuan ngerti yang lagi Tuan baco tu?”<span id="bookmarks30"></span></div><span id="bookmarks30"></span><a id="v31"></a>
+<div class="p"><span class="v">31</span><span class="vsp">&nbsp;</span>Uji wong tu, “Cakmano nian aku pacak ngerti amen katek wong yang mbémbéng aku?”</div>
+<div class="p">Laju wong tu mintak Pilipus naék trós dódók samo dio.<span id="bookmarks31"></span> <a id="v32"></a><span class="v">32</span><span class="vsp">&nbsp;</span>Bagéan Kitab Suci yang dio baco iola yang ini,</div>
+<div class="b">&nbsp;</div>
+<div class="q">“Pecak domba yang digawak óntók disembelé,</div>
+<div class="q2">trós pecak anak domba yang diem di depan wong yang ngónténg bulunyo,</div>
+<div class="q2">cak itu jugo Dio dak mbukak mólót-Nyo.<span id="bookmarks32"></span></div><span id="bookmarks32"></span><a id="v33"></a>
+<div class="q-vv"><span class="v">33</span><span class="vsp">&nbsp;</span>Dio dihino, trós keadélan diambék dari-Nyo.</div>
+<div class="q">Siapo nian yang pacak nyeritoke pasal ketórónan-Nyo?</div>
+<div class="q2">Soalnyo nyawo Dio diambék dari bumi.”</div>
+<div class="b">&nbsp;</div><span id="bookmarks33"></span><span id="bookmarks33"></span><a id="v34"></a>
+<div class="p"><span class="v">34</span><span class="vsp">&nbsp;</span>Trós uji pejabat tu ke Pilipus, “Tolong enjóktauke samo aku, nabi tu nyeritoke siapo? Pasal dirinyo dewek apo wong laén?”<span id="bookmarks34"></span></div><span id="bookmarks34"></span><a id="v35"></a>
+<div class="p"><span class="v">35</span><span class="vsp">&nbsp;</span>Laju Pilipus mulai ngomong. Dio mbukak omongan makek ayat tu, trós dio nyeritoke Kabar Baék ke pejabat istana tu pasal Yesus.<span id="bookmarks35"></span></div><span id="bookmarks35"></span><a id="v36"></a>
+<div class="p"><span class="v">36</span><span class="vsp">&nbsp;</span>Di tenga jalan dio wong sampe di sikok tempat yang ado banyu. Laju uji pejabat istana tu, “Jingokla, di sini ado banyu! Apo yang ngalangi aku óntók dibaptés?”<span id="bookmarks36"></span></div><span id="bookmarks36"></span><a id="v37"></a>
+<div class="p"><span class="v">37</span><span class="vsp">&nbsp;</span>[Uji Pilipus, “Amen Tuan pecayo sepenu ati, bole.”</div>
+<div class="p">Uji pejabat tu, “Aku pecayo amen Yesus iola Anak-Nyo Allah.”]<span class="footnote selectable" id="F-4"><sup>e</sup></span><span id="bookmarks37"></span></div><span id="bookmarks37"></span><a id="v38"></a>
+<div class="p"><span class="v">38</span><span class="vsp">&nbsp;</span>Abés tu, dio ngongkon kretonyo brenti. Laju Pilipus samo pejabat istana tu masók ke jeró banyu, trós Pilipus mbaptéskenyo.<span id="bookmarks38"></span> <a id="v39"></a><span class="v">39</span><span class="vsp">&nbsp;</span>Seabés dio wong metu dari banyu, tibo-tibo Pilipus ngilang digawak Ro Allah<span class="ul">‡</span>. Pejabat tu idak nyingok dio lagi, tapi dengen ati yang seneng dio ngelanjótke pejalanannyo.<span id="bookmarks39"></span> <a id="v40"></a><span class="v">40</span><span class="vsp">&nbsp;</span>Tapi Pilipus la ado di Kota Asdod<span class="footnote selectable" id="F-5"><sup>f</sup></span>. Dio bejalan ngeliwati <span class="add">daera tu</span> sambél mbritoke Kabar Baék ke tiap kota sampe dio tibo di Kota Kaisarea.<span id="bookmarks40"></span></div>
+</div>
+<script type='text/javascript' src='./pwa-main.js'></script>
+</body>
+</html>
