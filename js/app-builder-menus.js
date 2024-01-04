@@ -145,6 +145,8 @@ function updateApp(e)  {
           window.location.reload(true);
         });
       });
+    } else {
+        console.log('Update not done');
     }
 }
 
