@@ -4,7 +4,8 @@
 function initFootnotes(footnotes) {
 
 	$.each(footnotes, function(id, value) {
-		$('#' + id).tooltipster({
+		//$('#' + id).tooltipster({
+		$('[id="' + id + '"]').tooltipster({
 			content: $(value),
 			interactive: true,
 			theme: 'tooltipster-theme',
