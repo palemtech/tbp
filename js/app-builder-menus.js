@@ -136,4 +136,16 @@ function padWithLeadingZeros(num, len) {
     return s;
 }
 
+//TODO: add logic to add button to top menu that calls the below button.
+function updateApp()  {
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.ready.then((registration) => {
+        registration.unregister().then(() => {
+          window.location.reload();
+        });
+      });
+    }
+}
+
+
 

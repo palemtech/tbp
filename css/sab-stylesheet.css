@@ -1910,6 +1910,15 @@ span.addadd-specialtext-translationaladdition {
     font-style: italic;
 }
 
+.artikata:before {
+    content: "‘";
+}
+
+.artikata:after {
+    content:"’";
+
+}
+
 .kompas {
     text-align: right;
     font-family: font2;
