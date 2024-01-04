@@ -137,15 +137,27 @@ function padWithLeadingZeros(num, len) {
 }
 
 //TODO: add logic to add button to top menu that calls the below button.
-function updateApp()  {
+function updateApp(e)  {
+    console.log('update buttn clicked');
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.ready.then((registration) => {
         registration.unregister().then(() => {
-          window.location.reload();
+          window.location.reload(true);
         });
       });
     }
 }
 
+window.onload = function()  {
+    console.log('update button addign');
+    let btn = document.createElement('button');
+    btn.textContent = "Update";
+    btn.id = 'updateBtn';
+    btn.addEventListener("click", updateApp);
+
+    let nav = document.getElementsByClassName('navigation-top')[0];
+
+    nav.appendChild(btn);
+}
 
 

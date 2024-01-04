@@ -1994,6 +1994,18 @@ body {
     letter-spacing: 0.15em;
 
 }
+
+#updateBtn {
+    font-family:font5;
+    padding: inherit;
+    min-width: 5em;
+    position: absolute;
+    right: 1em;
+    top:1em;
+    padding: 4px 0px;
+    cursor: pointer;
+}
+
 .button {
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -2213,3 +2225,5 @@ span.footnote > a:link { text-decoration: none; }
 .collapsible-button:after { content: '\002B'; color: white; font-weight: bold; float: right; margin-left: 5px; }
 .active:after { content: '\2212'; }
 .collapsible-element { padding: 0; max-height: 0; overflow: hidden; transition: max-height 0.2s ease-out; }
+
+
