@@ -142,7 +142,9 @@ function updateApp(e)  {
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.ready.then((registration) => {
         registration.unregister().then(() => {
-          window.location.reload(true);
+          console.log("unregistered and reloading");
+          window.location.reload();
+
         });
       });
     } else {
