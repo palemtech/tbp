@@ -98,11 +98,61 @@
     src: url('../fonts/Inter-VariableFont_slnt,wght.ttf');
     font-weight: normal; font-style: normal; 
 }
+
+:root {
+  --fluid-min-width: 320;
+  --fluid-max-width: 1500;
+  --fluid-min-size: 17;
+  --fluid-max-size: 20;
+  --fluid-min-ratio: 1.2;
+  --fluid-max-ratio: 1.33;
+}
+
+:root {
+  --fluid-screen: 100vw;
+  --fluid-bp: calc((var(--fluid-screen) - ((var(--fluid-min-width) / 16) * 1rem)) / ((var(--fluid-max-width) / 16) - (var(--fluid-min-width) / 16)));
+}
+
+@media screen and (min-width: 1500px) {
+  :root {
+    --fluid-screen: calc(var(--fluid-max-width) * 1px);
+  }
+}
+
+:root {
+  --fluid-min-scale-0: var(--fluid-min-ratio);
+  --fluid-min-scale-1: var(--fluid-min-scale-0) * var(--fluid-min-ratio);
+  --fluid-min-scale-2: var(--fluid-min-scale-1) * var(--fluid-min-ratio);
+  --fluid-min-scale-3: var(--fluid-min-scale-2) * var(--fluid-min-ratio);
+
+  --fluid-max-scale-0: var(--fluid-max-ratio);
+  --fluid-max-scale-1: var(--fluid-max-scale-0) * var(--fluid-max-ratio);
+  --fluid-max-scale-2: var(--fluid-max-scale-1) * var(--fluid-max-ratio);
+  --fluid-max-scale-3: var(--fluid-max-scale-2) * var(--fluid-max-ratio);
+
+  --fluid-min-size-0: (var(--fluid-min-size)) / 16;
+  --fluid-min-size-1: (var(--fluid-min-size) * var(--fluid-min-scale-0)) / 16;
+  --fluid-min-size-2: (var(--fluid-min-size) * var(--fluid-min-scale-1)) / 16;
+  --fluid-min-size-3: (var(--fluid-min-size) * var(--fluid-min-scale-2)) / 16;
+
+  --fluid-max-size-0: (var(--fluid-max-size)) / 16;
+  --fluid-max-size-1: (var(--fluid-max-size) * var(--fluid-max-scale-0)) / 16;
+  --fluid-max-size-2: (var(--fluid-max-size) * var(--fluid-max-scale-1)) / 16;
+  --fluid-max-size-3: (var(--fluid-max-size) * var(--fluid-max-scale-2)) / 16;
+
+  --fluid-0: calc(((var(--fluid-min-size-0) * 1rem) + (var(--fluid-max-size-0) - var(--fluid-min-size-0)) * var(--fluid-bp)));
+  --fluid-1: calc(((var(--fluid-min-size-1) * 1rem) + (var(--fluid-max-size-1) - var(--fluid-min-size-1)) * var(--fluid-bp)));
+  --fluid-2: calc(((var(--fluid-min-size-2) * 1rem) + (var(--fluid-max-size-2) - var(--fluid-min-size-2)) * var(--fluid-bp)));
+  --fluid-3: calc(((var(--fluid-min-size-3) * 1rem) + (var(--fluid-max-size-3) - var(--fluid-min-size-3)) * var(--fluid-bp)));
+}
+
+
 body {
     font-family: font5;
     text-wrap: balance;
     direction: LTR;
-    font-size: 17px;
+/*    font-size: 17px;*/
+    font-size: var(-fluid-0);
     font-weight: normal;
     font-style: normal;
     color: #000000;
@@ -242,7 +292,8 @@ div.s {
     padding-bottom: 2px;
     color: #6C0000;
     font-weight: bold;
-    font-size: 120%;
+    /*font-size: 120%;*/
+    font-size: var(--fluid-3);
     page-break-after: avoid;
     font-variant: small-caps;
     font-family: font4;
@@ -254,7 +305,8 @@ div.s2 {
     padding-bottom: 2px;
     color: #6C0000;
     font-weight: bold;
-    font-size: 110%;
+    /*font-size: 110%;*/
+    font-size: var(--fluid-2);
     page-break-after: avoid;
     font-style: normal;
     font-family: font4;
@@ -266,7 +318,8 @@ div.ms {
     padding-bottom: 8px;
     color: #6C0000;
     font-weight: bold;
-    font-size: 120%;
+    /*font-size: 120%;*/
+    font-size: var(--fluid-3);
     page-break-after: avoid;
 }
 
@@ -276,7 +329,8 @@ div.ms2 {
     padding-bottom: 8px;
     color: #6C0000;
     font-weight: bold;
-    font-size: 110%;
+    /*font-size: 110%;*/
+    font-size: var(--fluid-2);
     page-break-after: avoid;
 }
 
@@ -1907,7 +1961,8 @@ span.addadd-specialtext-translationaladdition {
     padding-bottom: 2px;
     color: #6C0000;
     font-weight: normal;
-    font-size: 105%;
+ /*   font-size: 105%; */
+    font-size: var(--fluid-1);
     page-break-after: avoid;
     font-style: italic;
 }
@@ -2228,4 +2283,74 @@ span.footnote > a:link { text-decoration: none; }
 .active:after { content: '\2212'; }
 .collapsible-element { padding: 0; max-height: 0; overflow: hidden; transition: max-height 0.2s ease-out; }
 
+
+
+
+.endnotes {
+    visibility: hidden;
+    display: none;
+
+}
+
+@media print {
+
+.endnotes {
+    display:block;
+    visibility: visible;
+}
+
+#toolbar-top{
+display:none;
+}
+
+#toolbar-bottom {
+    display: none;
+}
+
+div.p, p {
+page-break-inside: avoid;
+}
+div.s, div.s2, .s3 {
+line-height: 1.25;
+page-break-after: avoid;
+}
+div.s {
+font-size:36pt
+}
+
+div.s2 {
+font-size: 24pt;
+}
+
+.s3 {
+font-size:18pt
+}
+
+body, #content {
+font-size: 12pt;
+margin:1em;
+line-height: 1.125;
+}
+/*
+.footnote {
+    display: none;
+
+} */
+
+}
+
+
+@page {
+    margin: 3in;
+    size: A4;
+    @bottom-right {
+        content: counter(page);
+        border-top: 2px solid black;
+
+    }
+
+    @bottom-center {
+        content: "Terjemahan Baso Plembang"
+    }
+}
 
