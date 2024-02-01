@@ -30,9 +30,9 @@ $(document).ready(function() {
 var footnotes = {
     "F-0": "<div class=\"footnote-p\"><span class=\"fr\">9:4 </span><span class=\"fq\">kito harós gaweke gawean Dio yang ngótós Aku: </span><span class=\"ft\">Ado jugo naska kuno dari kitab ni yang tetólés cak ini, “Aku harós gaweke gawean Dio yang ngótós Aku”.</span></div>",
     "F-1": "<div class=\"footnote-p\"><span class=\"fr\">9:14 </span><span class=\"fq\">mbékén lómpór trós melekke mato wong buto: </span><span class=\"ft\">Wong Israel nganggep amen mbékén lómpór apo nyembóke wong pecak itu iola gawean yang dak bole digaweke pas ari Sabat kecuali nyawo wong tu lagi teancem bahayo.</span></div>",
-    "F-2": "<div class=\"footnote-p\"><span class=\"fr\">9:34 </span><span class=\"fq\">ngósér: </span><span class=\"ft\">Maksód kato “ngósér” di sini iola lanang tu memang diósér dari tempat dio wong betemu apo dak tu dikócélke dari ruma ibada.</span></div>",
-    "F-3": "<div class=\"footnote-p\"><span class=\"fr\">9:39 </span><span class=\"ft\">Ado jugo naska kuno dari kitab ni yang idak nóléske ayat 38 samo kato “Uji Yesus” di awal ayat 39.</span></div>",
-    "F-4": "<div class=\"footnote-p\"><span class=\"fr\">9:39 </span><span class=\"fq\">nyingok: </span><span class=\"ft\">Kato “nyingok” di ayat 39-41 ngumpamoke wong yang pacak tau kebeneran dari Allah apo idak.</span></div>"
+    "F-2": "<div class=\"footnote-p\"><span class=\"fr\">9:34 </span><span class=\"fq\">ngósér: </span><span class=\"ft\">Maksód kato <span class=\"it\">ngósér</span> di sini iola lanang tu memang diósér dari tempat dio wong betemu apo dak tu dikócélke dari ruma ibada.</span></div>",
+    "F-3": "<div class=\"footnote-p\"><span class=\"fr\">9:39 </span><span class=\"ft\">Ado jugo naska kuno dari kitab ni yang idak nóléske ayat 38 samo kato <span class=\"it\">Uji Yesus</span> di awal ayat 39.</span></div>",
+    "F-4": "<div class=\"footnote-p\"><span class=\"fr\">9:39 </span><span class=\"fq\">nyingok: </span><span class=\"ft\">Kato <span class=\"it\">nyingok</span> di ayat 39-41 ngumpamoke wong yang pacak tau kebeneran dari Allah apo idak.</span></div>"
 };
 
 initFootnotes(footnotes);
@@ -58,7 +58,7 @@ initFootnotes(glossary);
 
 // Chapters
 var chapters = [ { start: 1, end: 21 }];
-var hasIntro = true;
+var hasIntro = false;
 var baseRef  = "Aktb-10-JHN-";
 
 
@@ -72,7 +72,7 @@ var baseRef  = "Aktb-10-JHN-";
 
 <div id="toolbar-top">
 <div class="navigation-top">
-  <span class="button"><a href='Aktb-09-LUK-000.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-09-LUK-001.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
   <span class="button"><a href='Aktb-10-JHN-008.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
   <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;Yahya&nbsp;&nbsp;</a></span>
 <span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;9&nbsp;&nbsp;</a></span>

@@ -28,9 +28,9 @@ $(document).ready(function() {
 
 // Footnotes and Cross-references
 var footnotes = {
-    "F-0": "<div class=\"footnote-p\"><span class=\"fr\">3:2 </span><span class=\"fq\">kami: </span><span class=\"ft\">Nórót penapsér-penapsér, kato “kami” di sini jugo kato “kamu” di ayat </span><span class=\"xt\"><span class=\"reflink\"><a href=\"Aktb-10-JHN-003.html#v11\">11-12</a></span></span><span class=\"ft\"> pacak nónjókke: (1) Nikodemus samo wong-wong laén yang pecayo samo Yesus karno tando-tando ajaéb yang Dio békén (</span><span class=\"xt\"><span class=\"reflink\"><a href=\"Aktb-10-JHN-002.html#v23\">2:23</a></span></span><span class=\"ft\">); (2) Nikodemus gawak beberapo wong pas nemui Yesus; (3) Nikodemus dateng dewek'an tapi ngewakéli beberapo wong Parisi apo dak tu pemémpén agama; (4) Nikodemus makek kato “kami” óntók nyebót dirinyo dewek jugo óntók nónjókke raso hormat.</span></div>",
+    "F-0": "<div class=\"footnote-p\"><span class=\"fr\">3:2 </span><span class=\"fq\">kami: </span><span class=\"ft\">Nórót penapsér-penapsér, kato <span class=\"it\">kami</span> di sini jugo kato <span class=\"it\">kamu</span> di ayat </span><span class=\"xt\"><span class=\"reflink\"><a href=\"Aktb-10-JHN-003.html#v11\">11-12</a></span></span><span class=\"ft\"> pacak nónjókke: (1) Nikodemus samo wong-wong laén yang pecayo samo Yesus karno tando-tando ajaéb yang Dio békén (</span><span class=\"xt\"><span class=\"reflink\"><a href=\"Aktb-10-JHN-002.html#v23\">2:23</a></span></span><span class=\"ft\">); (2) Nikodemus gawak beberapo wong pas nemui Yesus; (3) Nikodemus dateng dewek'an tapi ngewakéli beberapo wong Parisi apo dak tu pemémpén agama; (4) Nikodemus makek kato “kami” óntók nyebót dirinyo dewek jugo óntók nónjókke raso hormat.</span></div>",
     "F-1": "<div class=\"footnote-p\"><span class=\"fr\">3:2 </span><span class=\"ft\">Pecak tando yang dibékén Yesus di </span><span class=\"xt\"><span class=\"reflink\"><a href=\"Aktb-10-JHN-002.html#v23\">Yahya 2:23</a></span></span><span class=\"ft\"></span></div>",
-    "F-2": "<div class=\"footnote-p\"><span class=\"fr\">3:3 </span><span class=\"fq\">lagi: </span><span class=\"ft\">Kato “lagi” di sini dengen kato “lagi” di ayat 7 pacak punyo duo arti: (1) ‘Lagi’; (2) ‘Dari pócók’ yang iola caro alós óntók nyebótke Allah. Ado kemóngkénan amen Yesus nyampeke keduo arti tu di sini.</span></div>",
+    "F-2": "<div class=\"footnote-p\"><span class=\"fr\">3:3 </span><span class=\"fq\">lagi: </span><span class=\"ft\">Kato it lagi\it* di sini dengen kato <span class=\"it\">lagi</span> di ayat 7 pacak punyo duo arti: (1) ‘Lagi’; (2) ‘Dari pócók’ yang iola caro alós óntók nyebótke Allah. Ado kemóngkénan amen Yesus nyampeke keduo arti tu di sini.</span></div>",
     "F-3": "<div class=\"footnote-p\"><span class=\"fr\">3:6 </span><span class=\"fq\">manusio: </span><span class=\"ft\">Tólésan aslinyo iola “dagéng” yang seréng dipakek óntók sebótan manusio.</span></div>",
     "F-4": "<div class=\"footnote-p\"><span class=\"fr\">3:14 </span><span class=\"fq\">patóng ulo perunggu: </span><span class=\"ft\">Pas wong-wong Israel ngelawan Allah samo Musa di padang górón, Allah ngérém ulo-ulo bebiso óntók nyetók dio wong. Sangkéng banyaknyo wong yang keno cetók tu mati, mangkonyo dio wong ngadep Musa óntók betobat samo Allah. Allah ngongkon Musa óntók mbékén patóng ulo dari perunggu trós ditarokke di pócók cagak. Amen wong yang dicetók ulo tu nyingok patóng tu, dio wong dak lokak mati (jingok </span><span class=\"xt\">Kelóyóran di Górón 21:4-9</span><span class=\"ft\">).</span></div>",
     "F-5": "<div class=\"footnote-p\"><span class=\"fr\">3:15 </span><span class=\"fq\">supayo tiap wong … selamo-lamonyo: </span><span class=\"ft\">Ayat ni pacak jugo diartike “supayo tiap wong yang pecayo pacak nerimo édóp yang óntók selamo-lamonyo di dalem Dio.”</span></div>",
@@ -68,7 +68,7 @@ initFootnotes(glossary);
 
 // Chapters
 var chapters = [ { start: 1, end: 21 }];
-var hasIntro = true;
+var hasIntro = false;
 var baseRef  = "Aktb-10-JHN-";
 
 
@@ -82,7 +82,7 @@ var baseRef  = "Aktb-10-JHN-";
 
 <div id="toolbar-top">
 <div class="navigation-top">
-  <span class="button"><a href='Aktb-09-LUK-000.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-09-LUK-001.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
   <span class="button"><a href='Aktb-10-JHN-002.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
   <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;Yahya&nbsp;&nbsp;</a></span>
 <span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;3&nbsp;&nbsp;</a></span>
