@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#6C0000">
+<title>Yahya 2</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+// Footnotes and Cross-references
+var footnotes = {
+    "F-0": "<div class=\"footnote-p\"><span class=\"fr\">2:1 </span><span class=\"fq\">duo ari abés tu: </span><span class=\"ft\">Tólésan aslinyo iola “pas ari ketigo”. Artinyo, kejadian yang diceritoke di awal pasal 2 ni tejadi duo ari seabés kejadian yang diceritoke di ahér pasal 1.</span></div>",
+    "F-1": "<div class=\"footnote-p\"><span class=\"fr\">2:6 </span><span class=\"fq\">tato caro penyucian wong-wong Israel: </span><span class=\"ft\">Kemóngkénan besak tato caro penyucian yang dimaksód di sini iola mbasó tangan sebelóm makan supayo pajóannyo idak jadi najés (jingok </span><span class=\"xt\">Markós 7:2-4</span><span class=\"ft\">).</span></div>",
+    "F-2": "<div class=\"footnote-p\"><span class=\"fr\">2:6 </span><span class=\"fq\">2 apo 3 kendi: </span><span class=\"ft\">Sikok kendi pacak diisi 40 liter banyu. Amen 2 apo 3 kendi jadinyo gentong tu pacak nampóng 80 sampe 120 liter banyu.</span></div>",
+    "F-3": "<div class=\"footnote-p\"><span class=\"fr\">2:14 </span><span class=\"fq\">tukang tuker dóét aséng: </span><span class=\"ft\">Pas jaman Yesus, dóét aséng idak pacak dipakek di Ruma Agóng Allah óntók mbeli kórban tunuan, apo dak tu óntók bayar pajak Israel. Jadi, itula gunonyo tukang tuker dóét tu ado di halaman Ruma Agóng Allah.</span></div>",
+    "F-4": "<div class=\"footnote-p\"><span class=\"fr\">2:18 </span><span class=\"fq\">pemémpén-pemémpén Israel: </span><span class=\"ft\">Dalem Énjél Yahya, kato tólésan asli óntók <span class=\"it\">Israel</span> pacak punyo empat arti: (1) wong Israel, (2) wong yang tinggal di Propinsi Yudea, (3) pemémpén wong Israel, apo dak tu (4) wong Israel yang galak ngelawan Yesus.</span></div>"
+};
+
+initFootnotes(footnotes);
+
+var crossrefs = {
+    "X-0": "<div class=\"footnote-p\"><span class=\"xo\">2:17 </span><span class=\"xt\"><span class=\"reflink\">Saér Nyanyian 69:10</span></span></div>"
+};
+
+initFootnotes(crossrefs);
+
+
+// Glossary entries
+var glossary = {
+    "G-66": "<div><span class=\"k\">tato caro penyucian</span> - Sebelóm beibada, wong Israel harós nyucike dirinyo dóken supayo dio pacak diterimo samo Allah jugo pacak nyentu barang-barang suci. Bedasarke <span class=\"footnote selectable\" id=\"G-15\">Hókóm Musa</span>, wong Israel pacak jadi najés amen dio wong punyo penyakét kusta, nyekel mayat, makan pajóan yang haram pecak babi apo jenis iwak tetentu, behóbóngan badan, apo dak tu ngelaérke kupek (jingok Imamat 11–18). Amen wong tu jadi najés, wong tu harós nyalanke upacara penyucian pecak baso baju, mandi, nyókór rambótnyo jugo ngenjók kórban pesembahan supayo dio pacak bersé lagi (jingok Imamat 14:8; 10). <span class=\"k\">tato caro penyucian</span>).</div>",
+    "G-26": "<div><span class=\"k\">Paska</span> - Beda dari ari rayo wong Kristen, kato <span class=\"it\">Paska</span> di Alkitab nónjókke ari rayo wong Ibrani. Paska iola ari petamo dari perayoan tójó ari yang disebót Roti Dak Beragi. Pas jaman Yesus, wong-wong Israel ngerayoke Paska di Yerusalem, dengen makan domba sembeléhan jugo roti dak beragi. (Jingok Pembebasan 13:3-10 jugo Ulangan 16:1-8.)</div><div class=\"p\">Karno Yesus mati pas ari rayo Paska, kageknyo perayoan wong Kristen pasal kebangkétan Yesus jugo disebót ari Paska. Paska wong Ibrani ngingetke dio wong pasal cakmano Allah mbebaske nenek moyang dio wong dari perbudakan di Mesir sekitar 1500 SM (Pembebasan 12:1-42 ), sementaro Paskanyo wong Kristen ngingetke kito pasal cakmano Allah mbebaske dio wong dari duso liwat kematian jugo kebangkétan Yesus.</div>",
+    "G-36": "<div><span class=\"k\">Ruma Agóng Allah</span> - Ini ni bukan ruma ibada biaso, malahan sikok-sikoknyo tempat di dunio di mano hadérat Allah tinggal pas jaman tu. Letaknyo di <span class=\"footnote selectable\" id=\"G-46\">Yerusalem</span>, trós wong Israel nyemba Allah di tempat tu. Mak ini ari, Ruma tu dak katek lagi karno la diancórke ole tentra Roma pas taón 70 M.</div><div class=\"p\">Pas jaman Ruma Agóng Allah masé ado, Ruma tu iola pusat budayo jugo agama slóró wong Ibrani, mugola amen dio wong tinggal jaó nian dari tempat tu. Yang seréng dilakuke di Ruma tu iola pesembahan kórban sembeléhan, pembakaran garu ole imam, pesembahan dóét, pesembahan-pesembahan laén, jugo doa. Pas jaman Musa sampe jaman Daód, Ruma Agóng Allah bebentók kemah karno belóm ado bangónannyo. Jingokla jugo “<span class=\"footnote selectable\" id=\"G-20\">Kemah Petemuan</span>”.</div>"
+};
+
+initFootnotes(glossary);
+
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 21 }];
+var hasIntro = false;
+var baseRef  = "Aktb-10-JHN-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='Aktb-09-LUK-001.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-10-JHN-001.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;Yahya&nbsp;&nbsp;</a></span>
+<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;2&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-10-JHN-003.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-11-ACT-000.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div class="c">2</div> 
+
+<div class="s"><div id="s1">Ketójó tando ajaéb Yesus</div></div>
+<div class="s2"><div id="s2">Tando Petamo: Yesus ngoba banyu jadi banyu anggór di kawénan yang diadoke di Kota Kana</div></div><a id="v1"></a>
+<div class="p"><span class="v">1</span><span class="vsp">&nbsp;</span>Duo ari abés tu,<span class="footnote selectable" id="F-0"><sup>*</sup></span> ado kawénan di Kota Kana di Wilaya Galilea. Na, emak Yesus ado di situ.<span id="bookmarks1"></span> <a id="v2"></a><span class="v">2</span><span class="vsp">&nbsp;</span>Yesus samo pengékót-pengékót-Nyo jugo diundang ke kawénan tu.<span id="bookmarks2"></span> <a id="v3"></a><span class="v">3</span><span class="vsp">&nbsp;</span>Pas banyu anggór la abés, emak Yesus ngomong ke Dio cak ini, “Dio wong keabésan banyu anggór.”<span id="bookmarks3"></span></div><span id="bookmarks3"></span><a id="v4"></a>
+<div class="p"><span class="v">4</span><span class="vsp">&nbsp;</span>Uji Yesus, “Ói Buk, itu tu bukan órósan kito. Waktunyo belóm tibo óntók Aku.”<span id="bookmarks4"></span></div><span id="bookmarks4"></span><a id="v5"></a>
+<div class="p"><span class="v">5</span><span class="vsp">&nbsp;</span>Emak Yesus ngomong samo tukang-tukang saji cak ini, “Apo bae yang dikongkon-Nyo, gawekela.”<span id="bookmarks5"></span></div><span id="bookmarks5"></span><a id="v6"></a>
+<div class="p"><span class="v">6</span><span class="vsp">&nbsp;</span>Di situ ado enem ikok gentong banyu dari batu yang dipakek óntók <span class="footnote selectable" id="G-66">tato caro penyucian</span> wong-wong Israel.<span class="footnote selectable" id="F-1"><sup>a</sup></span> Maséng-maséng gentong tu pacak muat banyu 2 apo 3 kendi.<span class="footnote selectable" id="F-2"><sup>*</sup></span><span id="bookmarks6"></span></div><span id="bookmarks6"></span><a id="v7"></a>
+<div class="p"><span class="v">7</span><span class="vsp">&nbsp;</span>Uji Yesus ke tukang-tukang saji tu, “Isila gentong-gentong ni dengen banyu.” Laju, dio wong ngisinyo sampe penu.<span id="bookmarks7"></span></div><span id="bookmarks7"></span><a id="v8"></a>
+<div class="p"><span class="v">8</span><span class="vsp">&nbsp;</span>Abés tu, Dio ngomong ke tukang-tukang saji tu, “Sekarang cedokla dikit trós gawakla ke pemémpén pesta.”</div>
+<div class="p">Laju, digawakla.<span id="bookmarks8"></span> <a id="v9"></a><span class="v">9</span><span class="vsp">&nbsp;</span>Pemémpén pesta dak tau dari mano asalnyo banyu anggór tu, tapi tukang-tukang saji yang nuangke banyu tu memang tau nian. Na, pas pemémpén pesta tu nyécép banyu yang la beroba jadi banyu anggór tu, dio manggél pengantén lanang<span id="bookmarks9"></span> <a id="v10"></a><span class="v">10</span><span class="vsp">&nbsp;</span>trós ngomong ke dio cak ini, “Biasonyo wong ngidangke banyu anggór yang paléng lemak dóken. Pas wong la mabok, barula dimetuke banyu anggór yang biaso. Tapi, kau masé bae nyimpen banyu anggór yang paléng lemak sampe sekarang!”<span id="bookmarks10"></span></div><span id="bookmarks10"></span><a id="v11"></a>
+<div class="p"><span class="v">11</span><span class="vsp">&nbsp;</span>Pasal tu dilakuke Yesus di Kota Kana di Wilaya Galilea, trós jadi tando petamo dari tando-tando ajaéb-Nyo. Na, liwat pasal tu, Yesus la nyatoke kemulyoan-Nyo, trós pengékót-pengékót-Nyo jadi pecayo samo Dio.<span id="bookmarks11"></span></div><span id="bookmarks11"></span><a id="v12"></a>
+<div class="p"><span class="v">12</span><span class="vsp">&nbsp;</span>Abés tu, Yesus pegi ke Kota Kapernaum samo emak-Nyo, dólór-dólór-Nyo, jugo pengékót-pengékót-Nyo. Dio wong tinggal di sano selamo beberapo ari.<span id="bookmarks12"></span></div>
+<div class="s2"><div id="s3">Yesus nyucike Ruma Agóng Allah</div></div>
+<div class="r"><div id="r1">(<span class="reflink">Matius 21:12-13</span>; Markós 11:15-17; <span class="reflink"><a href="Aktb-09-LUK-019.html#v45">Lukas 19:45-46</a></span>)</div></div><span id="bookmarks12"></span><a id="v13"></a>
+<div class="p"><span class="v">13</span><span class="vsp">&nbsp;</span>Pas ari rayo <span class="footnote selectable" id="G-26">Paska</span> bangso Israel la parak, Yesus pegi ke Kota Yerusalem.<span id="bookmarks13"></span> <a id="v14"></a><span class="v">14</span><span class="vsp">&nbsp;</span>Di halaman <span class="footnote selectable" id="G-36">Ruma Agóng Allah</span> Dio nemuke wong-wong yang nyual sapi, domba, jugo bóróng daro, samo tukang tuker dóét aséng<span class="footnote selectable" id="F-3"><sup>*</sup></span> yang lagi dódók di situ.<span id="bookmarks14"></span> <a id="v15"></a><span class="v">15</span><span class="vsp">&nbsp;</span>Dio mbékén cambók dari tali, trós ngósér galo-galo wong teko domba jugo sapi tu metu dari halaman Ruma Agóng Allah. Dio jugo mbuangke dóét logam tukang tuker dóét tu trós jóngkér balékke meja dio wong.<span id="bookmarks15"></span> <a id="v16"></a><span class="v">16</span><span class="vsp">&nbsp;</span>Uji-Nyo ke wong-wong yang nyual bóróng daro tu, “Metukela galo-galonyo dari sini! Jangan mbékén Ruma Aba Aku pecak pasar!”<span id="bookmarks16"></span> <a id="v17"></a><span class="v">17</span><span class="vsp">&nbsp;</span>Laju, teingetla pengékót-pengékót-Nyo amen ado tetólés <span class="add">di Kitab Suci</span>, “Cinto samo Ruma <span class="add">Agóng</span> Kau bakal ngabési Aku.”<span class="footnote selectable" id="X-0"><sup>b</sup></span><span id="bookmarks17"></span></div><span id="bookmarks17"></span><a id="v18"></a>
+<div class="p"><span class="v">18</span><span class="vsp">&nbsp;</span>Jadi, nyawabla pemémpén-pemémpén Israel<span class="footnote selectable" id="F-4"><sup>*</sup></span> ke Yesus cak ini, “Tando apo yang bakal kau tónjókke samo kami amen kau tu punyo hak óntók ngelakuke pasal-pasal ni?”<span id="bookmarks18"></span></div><span id="bookmarks18"></span><a id="v19"></a>
+<div class="p"><span class="v">19</span><span class="vsp">&nbsp;</span>Nyawabla Yesus ke dio wong cak ini, “Ancórkela Ruma Agóng Allah ni, trós dalem tigo ari Aku bakal mbangónnyo lagi.”<span id="bookmarks19"></span></div><span id="bookmarks19"></span><a id="v20"></a>
+<div class="p"><span class="v">20</span><span class="vsp">&nbsp;</span>Laju, pemémpén-pemémpén Israel ngomong cak ini, “Ruma Agóng Allah ni dibangón selamo 46 taón, trós kau nak mbangónnyo cuman tigo ari bae?”<span id="bookmarks20"></span> <a id="v21"></a><span class="v">21</span><span class="vsp">&nbsp;</span>Tapi, Ruma Agóng Allah yang dimaksód Yesus iola badan-Nyo dewek.<span id="bookmarks21"></span> <a id="v22"></a><span class="v">22</span><span class="vsp">&nbsp;</span>Kageknyo, seabés Yesus dibangkétke dari antaro wong mati, pengékót-pengékót-Nyo teinget apo yang la diomongke Yesus. Dio wong jadi pecayo Kitab Suci jugo omongan yang la Yesus omongke tu.<span id="bookmarks22"></span></div><span id="bookmarks22"></span><a id="v23"></a>
+<div class="p"><span class="v">23</span><span class="vsp">&nbsp;</span>Selamo Yesus ado di Yerusalem pas perayoan ari rayo <span class="footnote selectable" id="G-26">Paska</span> bangso Israel, banyak wong jadi pecayo samo Yesus karno dio wong nyingok tando-tando ajaéb yang dibékén-Nyo.<span id="bookmarks23"></span> <a id="v24"></a><span class="v">24</span><span class="vsp">&nbsp;</span>Tapi, Yesus ni dewek idak pecayoke diri-Nyo ke wong-wong tu karno Dio tau galo-galo wong,<span id="bookmarks24"></span> <a id="v25"></a><span class="v">25</span><span class="vsp">&nbsp;</span>jugo karno Yesus ni idak butu siapo bae óntók besaksi pasal manusio, soalnyo Dio tau apo yang ado di jeró ati wong.<span id="bookmarks25"></span></div>
+</div>
+<script type='text/javascript' src='./pwa-main.js'></script>
+<script>
+var coll = document.getElementsByClassName("collapsible-button");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
+}
+</script>
+</body>
+</html>

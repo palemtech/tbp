@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#6C0000">
+<title>Saér Nyanyian 29</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+// Footnotes and Cross-references
+var footnotes = {
+    "F-0": "<div class=\"footnote-p\"><span class=\"fr\">29:1 </span><span class=\"fq\">mahlók-mahlók surgawi: </span><span class=\"ft\">Ini ni maksódnyo nyóró slóró mahlók surgawi pecak malekat jugo dewo-dewo bangso laén óntók ngakui kehebatan Allah. (Jingok jugo catetan sekel pasal “Gónóng Sirion” di ayat 6.)</span></div>",
+    "F-1": "<div class=\"footnote-p\"><span class=\"fr\">29:5 </span><span class=\"fq\">pohon-pohon besak: </span><span class=\"ft\">Teks asli iola “pohon-pohon aras”.</span></div>",
+    "F-2": "<div class=\"footnote-p\"><span class=\"fr\">29:5 </span><span class=\"fq\">pohon-pohon aras Lebanon: </span><span class=\"ft\">Pas jaman tu, pegónóngan Lebanon tekenal karno pohon-pohon arasnyo yang besak nian jugo kuat.</span></div>",
+    "F-3": "<div class=\"footnote-p\"><span class=\"fr\">29:6 </span><span class=\"fq\">pegónóngan Lebanon kocar-kacér pecak anak sapi: </span><span class=\"ft\">Ini ni maksódnyo pegónóngan Lebanon tegoncang pecak gempa bumi pas Allah metuke suaro-Nyo.</span></div>",
+    "F-4": "<div class=\"footnote-p\"><span class=\"fr\">29:6 </span><span class=\"fq\">Gónóng Sirion: </span><span class=\"ft\">Ini ni namo laén óntók Gónóng Hermon, sala sikok gónóng besak yang ado di Lebanon. Gónóng ni dianggep tempat tinggalnyo dewo Baal, yang iola dewo besak wong Kanaan. Jadi amen gónóng ni tegoncang karno suaro Allah, artinyo Allah lebé kuat daripado dewo Baal tu.</span></div>",
+    "F-5": "<div class=\"footnote-p\"><span class=\"fr\">29:10 </span><span class=\"fq\">segalo banyu: </span><span class=\"ft\">Yang dimaksód di sini iola segalo banyu yang ado di bumi jugo di langét, pecak laót, sungi, ujan, badai, sampe banyu banjér jugo. Jadi Allah bukan cuman nguasoi banyu di bumi bae tapi jugo banyu yang ado di surgo.</span></div>"
+};
+
+initFootnotes(footnotes);
+
+
+// Glossary entries
+var glossary = {
+    "G-8": "<div><span class=\"k\">Daód</span> - Dio ni rajo yang paléng penténg jugo yang paléng dicintoi di sejara bangso Israel. Keédópan Nabi Daód diceritoke di 1 Samuel 16–31, 2 Samuel 1–24, 1 Rajo-Rajo 1–2, jugo 1 Riwayat 11–29. Banyak nyanyian yang dikaétke ke Nabi Daód di kitab Saér Nyanyian, mugola idak jelas amen slóró nyanyian tu memang ditólés ole Nabi Daód, apo amen sebagéan darinyo cuman ditujuke bae ke dio.</div><div class=\"p\">Karno kasé Allah óntók Daód, Allah békén pejanjian samo dio amen ketórónan-ketórónan dio bakal nguasoi bangso Israel selamo-lamonyo (2 Samuel 7:11-16). Yesus iola ketórónan Daód yang jadi penggenepan terahér pejanjian ni. Dio bakal jadi rajo yang mrénto umat Allah sampe selamo-lamonyo.</div>",
+    "G-0": "<div><span class=\"k\"><span class=\"nd\">Allah</span><span class=\"nd2\">yhwh</span></span> - Setiap kali tejingok kato ni (óróp besak galo), artinyo yang tetólés di teks aslinyo bukan kato Allah, tapi namo YHWH. YHWH tu iola namonyo Allah yang diwahyuke-Nyo ke Nabi Musa di Gónóng Horeb (Pembebasan 3:15). Namo YHWH tu móngkén diucapke “Yahwe” trós artinyo ‘Yang Kekal’. Tapi ado tradisi lamo yang dak nyebótke namo YHWH soalnyo takót dianggep ngotori namo tu. Jadi banyak wong makek kato pengganti, contonyo “Allah”.</div>"
+};
+
+initFootnotes(glossary);
+
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 34 }, { start: 36, end: 36 }, { start: 41, end: 43 }, { start: 46, end: 48 }, { start: 51, end: 51 }, { start: 53, end: 54 }, { start: 73, end: 73 }, { start: 84, end: 84 }, { start: 87, end: 87 }, { start: 90, end: 91 }, { start: 104, end: 104 }, { start: 108, end: 108 }, { start: 110, end: 110 }, { start: 112, end: 118 }, { start: 127, end: 128 }, { start: 132, end: 134 }, { start: 137, end: 139 }, { start: 143, end: 143 }, { start: 146, end: 146 }, { start: 148, end: 148 }];
+var hasIntro = false;
+var baseRef  = "Aktb-06-B001-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='Aktb-05-EST-001.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-06-B001-028.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;Saér Nyanyian&nbsp;&nbsp;</a></span>
+<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;29&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-06-B001-030.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-07-JON-000.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div class="c">29</div> 
+<div class="s2"><div id="s1">Akuila kekuasoan Allah!</div></div><a id="v1"></a>
+<div class="qc-v top-spacing"><span class="v">1</span><span class="vsp">&nbsp;</span>Nyanyian <span class="footnote selectable" id="G-8">Daód</span>.</div>
+<div class="b">&nbsp;</div>
+<div class="q">Akuila <span class="nd"><span class="footnote selectable" id="G-0"><span class="nd">Allah</span><span class="nd2">yhwh</span></span></span>, ói mahlók-mahlók surgawi<span class="footnote selectable" id="F-0"><sup>a</sup></span>,</div>
+<div class="q2">akuila <span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span> karno kemulyoan jugo kekuatan-Nyo!<span id="bookmarks1"></span></div><span id="bookmarks1"></span><a id="v2"></a>
+<div class="q-v"><span class="v">2</span><span class="vsp">&nbsp;</span>Akuila <span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span> karno kemulyoan namo-Nyo!</div>
+<div class="q">Sójódla samo <span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span> dengen behiaske kesucian!</div>
+<div class="b">&nbsp;</div><span id="bookmarks2"></span><span id="bookmarks2"></span><a id="v3"></a>
+<div class="q-v"><span class="v">3</span><span class="vsp">&nbsp;</span>Suaro <span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span> <span class="add">pecak góntór</span> di pócók laótan;</div>
+<div class="q2">Tuhan Yang Mahamulyo begemóró,</div>
+<div class="q2"><span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span> di pócók laótan luas.<span id="bookmarks3"></span></div><span id="bookmarks3"></span><a id="v4"></a>
+<div class="q-v"><span class="v">4</span><span class="vsp">&nbsp;</span>Suaro <span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span> tu bekuaso.</div>
+<div class="q">Suaro <span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span> tu mulyo.<span id="bookmarks4"></span></div><span id="bookmarks4"></span><a id="v5"></a>
+<div class="q-v"><span class="v">5</span><span class="vsp">&nbsp;</span>Suaro <span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span> matake pohon-pohon besak<span class="footnote selectable" id="F-1"><sup>b</sup></span>;</div>
+<div class="q2">iyo, <span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span> matake pohon-pohon aras Lebanon<span class="footnote selectable" id="F-2"><sup>c</sup></span>.<span id="bookmarks5"></span></div><span id="bookmarks5"></span><a id="v6"></a>
+<div class="q-v"><span class="v">6</span><span class="vsp">&nbsp;</span>Dio mbékén pegónóngan Lebanon kocar-kacér pecak anak sapi<span class="footnote selectable" id="F-3"><sup>d</sup></span>,</div>
+<div class="q2">jugo Gónóng Sirion<span class="footnote selectable" id="F-4"><sup>e</sup></span> pecak anak banteng.<span id="bookmarks6"></span></div><span id="bookmarks6"></span><a id="v7"></a>
+<div class="q-v"><span class="v">7</span><span class="vsp">&nbsp;</span>Suaro <span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span> mancarke kilatan api yang benyalo-nyalo.<span id="bookmarks7"></span></div><span id="bookmarks7"></span><a id="v8"></a>
+<div class="q-v"><span class="v">8</span><span class="vsp">&nbsp;</span>Suaro <span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span> geterke padang górón,</div>
+<div class="q2"><span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span> geterke padang górón Kadesh.<span id="bookmarks8"></span></div><span id="bookmarks8"></span><a id="v9"></a>
+<div class="q-v"><span class="v">9</span><span class="vsp">&nbsp;</span>Suaro <span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span> mbékén ruso beranak,</div>
+<div class="q2">trós nelanjangi utan.</div>
+<div class="q">Di jeró Ruma Agóng-Nyo</div>
+<div class="q2">tiap wong bejerét, “Mulyo!”</div>
+<div class="b">&nbsp;</div><span id="bookmarks9"></span><span id="bookmarks9"></span><a id="v10"></a>
+<div class="q-vv"><span class="v">10</span><span class="vsp">&nbsp;</span><span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span> bekuaso di pócók segalo banyu<span class="footnote selectable" id="F-5"><sup>f</sup></span>,</div>
+<div class="q2"><span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span> bekuaso jadi Rajo óntók selamo-lamonyo.<span id="bookmarks10"></span></div><span id="bookmarks10"></span><a id="v11"></a>
+<div class="q-vv"><span class="v">11</span><span class="vsp">&nbsp;</span><span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span> ngenjók kekuatan samo bangso-Nyo,</div>
+<div class="q2"><span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span> mberkahi bangso-Nyo dengen damai sentoso.<span id="bookmarks11"></span></div>
+</div>
+
+<div id="toolbar-bottom">
+<div class="audio-player">
+  <audio id="audio" controls>
+    <source id="audio1" src="https://storage.googleapis.com/tbp-audio/TBP Mazmur 29.mp3" />
+  </audio>
+</div>
+</div>
+
+<script type='text/javascript' src='./pwa-main.js'></script>
+<script>
+var coll = document.getElementsByClassName("collapsible-button");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
+}
+</script>
+</body>
+</html>

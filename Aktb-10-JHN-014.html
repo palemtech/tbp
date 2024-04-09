@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#6C0000">
+<title>Yahya 14</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+// Footnotes and Cross-references
+var footnotes = {
+    "F-0": "<div class=\"footnote-p\"><span class=\"fr\">14:1 </span><span class=\"fq\">Pecayola: </span><span class=\"ft\">Tólésan asli dalem baso Yunani pacak jugo diartike “Kamu pecayo samo Allah, pecayola jugo samo Aku” apo dak tu “Apo kamu pecayo samo Allah? Pecayola jugo samo Aku”.</span></div>",
+    "F-1": "<div class=\"footnote-p\"><span class=\"fr\">14:2 </span><span class=\"fq\">Amen idak … tempat óntók kamu: </span><span class=\"ft\">Tólésan asli dalem baso Yunani pacak jugo diartike, “Amen idak cak itu, ceto idak Aku omongke samo kamu amen Aku pegi nyiapke tempat óntók kamu.</span></div>",
+    "F-2": "<div class=\"footnote-p\"><span class=\"fr\">14:7 </span><span class=\"fq\">Amen kamu … Aba Aku: </span><span class=\"ft\">Ado jugo naska kuno dari kitab ni yang tetólés cak ini, “Seandainyo kamu la ngenal Aku, kamu ceto la ngenal Aba Aku jugo.”</span></div>",
+    "F-3": "<div class=\"footnote-p\"><span class=\"fr\">14:15 </span><span class=\"fq\">Amen kamu … prénto-prénto Aku: </span><span class=\"ft\">Ado naska kuno dari kitab ni yang tetólés cak ini, “Amen kamu ngaséhi Aku, tórótila prénto-prénto Aku!” apo dak tu “Amen kamu ngaséhi Aku jugo nóróti prénto-prénto Aku, </span><span class=\"fv\">16</span><span class=\"ft\"> Aku bakal mintak samo Aba Aku …”</span></div>",
+    "F-4": "<div class=\"footnote-p\"><span class=\"fr\">14:16 </span><span class=\"fq\">Penolong: </span><span class=\"ft\">Tólésan aslinyo ni nónjókke wong yang ngewakéli, dampéngi, apo dak tu mbantu wong laén. Yesus jugo disebót penolong di </span><span class=\"xt\">1 Yahya 2:1</span><span class=\"ft\">.</span></div>",
+    "F-5": "<div class=\"footnote-p\"><span class=\"fr\">14:17 </span><span class=\"fq\">Dio bakal ado dalem kamu: </span><span class=\"ft\">Ado jugo naska kuno dari kitab ni yang tetólés cak ini, “Dio ado dalem kamu.”</span></div>",
+    "F-6": "<div class=\"footnote-p\"><span class=\"fr\">14:19 </span><span class=\"fq\">Tapi, kamu … jugo bakal édóp: </span><span class=\"ft\">Tólésan asli dalem baso Yunani pacak jugo diartike, “Tapi, kamu bakal nyingok Aku. Karno Aku édóp, kamu jugo bakal édóp”.</span></div>",
+    "F-7": "<div class=\"footnote-p\"><span class=\"fr\">14:20 </span><span class=\"fq\">ari tu: </span><span class=\"ft\">Kato-kato ni pacak nónjókke 2 makno: (1) waktu seabés Yesus bangkét, (2) kedatengan Ro Suci pas ari Pentakosta.</span></div>",
+    "F-8": "<div class=\"footnote-p\"><span class=\"fr\">14:30 </span><span class=\"fq\">penguaso dunio ni lagi dateng: </span><span class=\"ft\">Penguaso dunio yang dimaksód di sini iola Éblés. Kemóngkénan maksód kato <span class=\"it\">lagi dateng</span> di sini iola Éblés denget lagi nak nyerang Yesus.</span></div>",
+    "F-9": "<div class=\"footnote-p\"><span class=\"fr\">14:31 </span><span class=\"fq\">Tapi … pegi dari sini: </span><span class=\"ft\">Ado jugo naska kuno dari kitab ni yang tetólés cak ini: (1) “Tapi, supayo dunio tau amen Aku ngaséhi Aba, pecak yang la dipréntoke Aba samo Aku, pecak itu jugo Aku ngelakukenyo. Bangónla, payó kito pegi dari sini.” (2) “Tapi, bangónla, payó kito pegi dari sini supayo dunio tau amen Aku ngaséhi Aba, trós pecak yang la dipréntoke Aba samo Aku, pecak itu jugo Aku ngelakukenyo.”</span></div>"
+};
+
+initFootnotes(footnotes);
+
+var crossrefs = {
+    "X-0": "<div class=\"footnote-p\"><span class=\"xo\">14:28 </span><span class=\"xq\">Aku bakal pegi: </span><span class=\"xta\">Omongan ni samo pecak di </span><span class=\"xt\"><span class=\"reflink\"><a href=\"Aktb-10-JHN-013.html#v33\">Yahya 13:33</a></span>; <span class=\"reflink\"><a href=\"Aktb-10-JHN-014.html#v4\">Yahya 14:4</a></span></span></div>"
+};
+
+initFootnotes(crossrefs);
+
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 21 }];
+var hasIntro = false;
+var baseRef  = "Aktb-10-JHN-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='Aktb-09-LUK-001.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-10-JHN-013.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;Yahya&nbsp;&nbsp;</a></span>
+<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;14&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-10-JHN-015.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-11-ACT-000.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div class="c">14</div> 
+<div class="s2"><div id="s1">Yesus jalan yang bener ke Aba</div></div><a id="v1"></a>
+<div class="p"><span class="v">1</span><span class="vsp">&nbsp;</span><span class="add">Yesus ngomong lagi cak ini</span>, “Janganla bingsal ati kamu. Pecayola<span class="footnote selectable" id="F-0"><sup>*</sup></span> samo Allah, pecayo jugola samo Aku.<span id="bookmarks1"></span> <a id="v2"></a><span class="v">2</span><span class="vsp">&nbsp;</span>Di ruma Aba Aku ado banyak tempat tinggal. Kalu idak cak itu, apo gunonyo Aku ngomong amen Aku pegi nyiapke tempat óntók kamu?<span class="footnote selectable" id="F-1"><sup>a</sup></span><span id="bookmarks2"></span> <a id="v3"></a><span class="v">3</span><span class="vsp">&nbsp;</span>Kalu Aku pegi jugo nyiapke tempat óntók kamu, bearti Aku bakal dateng lagi, abés tu Aku bakal gawak kamu ke tempat Aku, supayo di mano Aku ado, di situ jugo kamu ado.<span id="bookmarks3"></span> <a id="v4"></a><span class="v">4</span><span class="vsp">&nbsp;</span>Ke mano aku pegi, kamu tau jalannyo.”<span id="bookmarks4"></span></div><span id="bookmarks4"></span><a id="v5"></a>
+<div class="p"><span class="v">5</span><span class="vsp">&nbsp;</span>Uji Tomas ke Yesus cak ini, “Tuan, kami ni dak tau ke mano Kau nak pegi. Jadi, cakmano nian kami pacak tau jalannyo?”<span id="bookmarks5"></span></div><span id="bookmarks5"></span><a id="v6"></a>
+<div class="p"><span class="v">6</span><span class="vsp">&nbsp;</span>Uji Yesus ke dio, “Akula jalan, kebeneran, jugo édóp. Dak katek wong yang pacak dateng ke Aba amen idak liwat Aku.<span id="bookmarks6"></span> <a id="v7"></a><span class="v">7</span><span class="vsp">&nbsp;</span>Amen kamu kenal Aku, kamu bakal kenal Aba Aku.<span class="footnote selectable" id="F-2"><sup>*</sup></span> Mulai sekarang ni kamu kenal Dio trós la nyingok Dio.”<span id="bookmarks7"></span></div><span id="bookmarks7"></span><a id="v8"></a>
+<div class="p"><span class="v">8</span><span class="vsp">&nbsp;</span>Pilipus ngomong ke Yesus cak ini, “Tuan, tónjókkela Aba tu samo kami. Itu la cókóp óntók kami.”<span id="bookmarks8"></span></div><span id="bookmarks8"></span><a id="v9"></a>
+<div class="p"><span class="v">9</span><span class="vsp">&nbsp;</span>Uji Yesus ke dio, “Ói Pilipus, la lamo nian Aku tu besamo kamu, tapi kau ni masé bae idak ngenal Aku? Wong yang nyingok Aku, bearti la nyingok Aba Aku. <span class="add">Jadi</span>, cakmano kau pacak ngomong, ‘Tónjókkela Aba tu samo kami’?<span id="bookmarks9"></span> <a id="v10"></a><span class="v">10</span><span class="vsp">&nbsp;</span>Apo kau idak pecayo amen Aku di dalem Aba trós Aba di dalem Aku? Kato-kato yang Aku omongke samo kamu tu idak beasal dari Aku dewek, tapi Aba yang tinggal di dalem Aku nila yang ngelakuke galo-galo gawean-Nyo.<span id="bookmarks10"></span> <a id="v11"></a><span class="v">11</span><span class="vsp">&nbsp;</span>Pecayola samo omongan Aku amen Aku di dalem Aba trós Aba di dalem Aku. Apo dak tu paléng idak, pecayola karno gawean-gawean tu dewek.”<span id="bookmarks11"></span></div><span id="bookmarks11"></span><a id="v12"></a>
+<div class="p"><span class="v">12</span><span class="vsp">&nbsp;</span><span class="add">Uji Yesus lagi,</span> “Aku enjók tau samo kamu nian, wong yang pecayo samo Aku bakal ngelakuke gawean yang Aku lakuke. Dio jugo bakal ngelakuke gawean yang lebé besak daripado ini, karno Aku bakal pegi ke Aba.<span id="bookmarks12"></span> <a id="v13"></a><span class="v">13</span><span class="vsp">&nbsp;</span>Apo bae yang kamu mintak dalem namo Aku, Aku bakal ngelakukenyo, supayo Aba dimulyoke di jeró Anak.<span id="bookmarks13"></span> <a id="v14"></a><span class="v">14</span><span class="vsp">&nbsp;</span><span class="add">Iyo nian,</span> kalu kamu mintak apo bae samo Aku dalem namo Aku, Aku bakal ngelakukenyo.”<span id="bookmarks14"></span></div>
+<div class="s2"><div id="s2">Yesus janjike Ro Suci óntók wong pecayo</div></div><span id="bookmarks14"></span><a id="v15"></a>
+<div class="p"><span class="v">15</span><span class="vsp">&nbsp;</span>“Amen kamu ngaséhi Aku, kamu bakal nóróti prénto-prénto Aku.<span class="footnote selectable" id="F-3"><sup>*</sup></span><span id="bookmarks15"></span> <a id="v16"></a><span class="v">16</span><span class="vsp">&nbsp;</span>Aku bakal mintak samo Aba Aku, trós Aba Aku tu bakal ngenjók ke kamu Penolong<span class="footnote selectable" id="F-4"><sup>b</sup></span> yang laén supayo Penolong tu nyertoi kamu sampe selamo-lamonyo.<span id="bookmarks16"></span> <a id="v17"></a><span class="v">17</span><span class="vsp">&nbsp;</span>Penolong tu iola Ro Kebeneran. Wong-wong dunio idak pacak nerimo Ro Kebeneran tu karno wong-wong dunio idak nyingok-Nyo apolagi ngenal-Nyo. Tapi, kamu ngenal Ro Kebeneran tu, karno Dio tinggal samo kamu trós Dio bakal ado dalem kamu.<span class="footnote selectable" id="F-5"><sup>*</sup></span><span id="bookmarks17"></span></div><span id="bookmarks17"></span><a id="v18"></a>
+<div class="p"><span class="v">18</span><span class="vsp">&nbsp;</span>“Aku idak bakal ninggalke kamu pecak yatém piatu. Aku bakal dateng lagi ke kamu.<span id="bookmarks18"></span> <a id="v19"></a><span class="v">19</span><span class="vsp">&nbsp;</span>Denget lagi, dunio dak bakal nyingok Aku lagi. Tapi, kamu bakal nyingok Aku karno Aku édóp, trós kamu jugo bakal édóp.<span class="footnote selectable" id="F-6"><sup>c</sup></span><span id="bookmarks19"></span> <a id="v20"></a><span class="v">20</span><span class="vsp">&nbsp;</span>Pas ari tu<span class="footnote selectable" id="F-7"><sup>*</sup></span> kamu bakal tau amen Aku di dalem Aba Aku, kamu di dalem Aku, trós Aku di dalem kamu.<span id="bookmarks20"></span> <a id="v21"></a><span class="v">21</span><span class="vsp">&nbsp;</span>Wong yang megang prénto-prénto Aku jugo nórótinyo, diola yang ngaséhi Aku. Wong yang ngaséhi Aku bakal dikaséhi Aba Aku, pecak itu jugo Aku bakal ngaséhi wong tu trós Aku bakal nyatoke diri Aku samo wong tu.”<span id="bookmarks21"></span></div><span id="bookmarks21"></span><a id="v22"></a>
+<div class="p"><span class="v">22</span><span class="vsp">&nbsp;</span>Jadi, Yudas, yang bukan Iskariot, ngomong ke Yesus cak ini, “Tuan, ngapo pulok Kau nyatoke diri Kau samo kami, bukan samo dunio?”<span id="bookmarks22"></span></div><span id="bookmarks22"></span><a id="v23"></a>
+<div class="p"><span class="v">23</span><span class="vsp">&nbsp;</span>Yesus nyawab cak ini, “Amen wong ngaséhi Aku, dio bakal nóróti omongan Aku, trós Aba Aku bakal ngaséhi wong tu. Kami jugo bakal dateng ke wong tu trós bakal mbékén tempat tinggal besamonyo.<span id="bookmarks23"></span> <a id="v24"></a><span class="v">24</span><span class="vsp">&nbsp;</span>Wong yang idak ngaséhi Aku, bearti wong tu idak nóróti omongan Aku. Omongan yang kamu denger tu idak beasal dari Aku, tapi dari Aba yang ngótós Aku.<span id="bookmarks24"></span></div><span id="bookmarks24"></span><a id="v25"></a>
+<div class="p"><span class="v">25</span><span class="vsp">&nbsp;</span>“Pasal-pasal ni la Aku omongke samo kamu selamo Aku masé tinggal besamo kamu.<span id="bookmarks25"></span> <a id="v26"></a><span class="v">26</span><span class="vsp">&nbsp;</span>Tapi, Penolong tu, iola Ro Suci, yang bakal diótós Aba dalem namo Aku, Diola yang bakal ngajari kamu segalonyo. Dio bakal ngingetke kamu segalo yang la Aku omongke samo kamu.<span id="bookmarks26"></span> <a id="v27"></a><span class="v">27</span><span class="vsp">&nbsp;</span>Damai sentoso, Aku tinggalke samo kamu. Iyo, damai sentoso Aku, Aku enjókke samo kamu. Yang Aku enjókke samo kamu tu idak pecak yang dunio enjók. Jadi, dak usala ati kamu bingsal apo takót.<span id="bookmarks27"></span></div><span id="bookmarks27"></span><a id="v28"></a>
+<div class="p"><span class="v">28</span><span class="vsp">&nbsp;</span>“Kamu la ndenger amen Aku la ngomong samo kamu, ‘Aku bakal pegi’<span class="footnote selectable" id="X-0"><sup>d</sup></span> trós ‘Aku bakal dateng lagi ke kamu.’ Amen kamu memang nian ngaséhi Aku, kamu bakal seneng amen Aku pegi ke Aba Aku karno Aba Aku lebé besak daripado Aku.<span id="bookmarks28"></span> <a id="v29"></a><span class="v">29</span><span class="vsp">&nbsp;</span>Sekarang, Aku omongke samo kamu sebelóm pasal tu tejadi supayo pas pasal tu tejadi kamu bakal pecayo.<span id="bookmarks29"></span> <a id="v30"></a><span class="v">30</span><span class="vsp">&nbsp;</span>Aku idak bakal ngomong banyak pasal lagi samo kamu, soalnyo penguaso dunio ni lagi dateng,<span class="footnote selectable" id="F-8"><sup>e</sup></span> tapi dio samo sekali katek kuaso ke Aku.<span id="bookmarks30"></span> <a id="v31"></a><span class="v">31</span><span class="vsp">&nbsp;</span>Tapi, <span class="add">pasal-pasal ni tejadi</span> supayo wong-wong dunio tau amen Aku ngaséhi Aba, jugo amen Aku ngelakuke pecak yang la dipréntoke Aba samo Aku. Bangónla, payó kito pegi dari sini.”<span class="footnote selectable" id="F-9"><sup>*</sup></span><span id="bookmarks31"></span></div>
+</div>
+<script type='text/javascript' src='./pwa-main.js'></script>
+<script>
+var coll = document.getElementsByClassName("collapsible-button");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
+}
+</script>
+</body>
+</html>

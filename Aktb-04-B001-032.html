@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#6C0000">
+<title>Saér Nyanyian 32</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+// Footnotes and Cross-references
+var footnotes = {
+    "F-0": "<div class=\"footnote-p\"><span class=\"fr\">32:1 </span><span class=\"fq\">Maskil: </span><span class=\"ft\">Kato ni dari baso asli. Maknonyo dak pulok jelas. Ini ni móngkén semacem nyanyian.</span></div>",
+    "F-1": "<div class=\"footnote-p\"><span class=\"fr\">32:4 </span><span class=\"fq\">kekuatan: </span><span class=\"ft\">Makno teks asli dari kato ni dak pulok jelas.</span></div>",
+    "F-2": "<div class=\"footnote-p\"><span class=\"fr\">32:6 </span><span class=\"fq\">pas kesesekan: </span><span class=\"ft\">Teks asli dari barés ni dak pulok jelas. Selaén “pas kesesekan”, arti dari teks asli pacak jugo jadi “pas Kau pacak ditemui” apo dak tu “pas aku nyadari duso aku”.</span></div>",
+    "F-3": "<div class=\"footnote-p\"><span class=\"fr\">32:9 </span><span class=\"fq\">yang harós dikendalike … dak bakal marak'i kau: </span><span class=\"ft\">Makno teks asli dari keduo barés ni dak pulok jelas.</span></div>"
+};
+
+initFootnotes(footnotes);
+
+
+// Glossary entries
+var glossary = {
+    "G-11": "<div><span class=\"k\">Daód</span> - Dio ni rajo yang paléng penténg jugo yang paléng dicintoi di sejara bangso Israel. Keédópan Nabi Daód diceritoke di 1 Samuel 16–31, 2 Samuel 1–24, 1 Rajo-Rajo 1–2, jugo 1 Riwayat 11–29. Banyak nyanyian yang dikaétke ke Nabi Daód di kitab Saér Nyanyian, mugola idak jelas amen slóró nyanyian tu memang ditólés ole Nabi Daód, apo amen sebagéan darinyo cuman ditujuke bae ke dio.</div><div class=\"p\">Karno kasé Allah óntók Daód, Allah békén pejanjian samo dio amen ketórónan-ketórónan dio bakal nguasoi bangso Israel selamo-lamonyo (2 Samuel 7:11-16). Yesus iola ketórónan Daód yang jadi penggenepan terahér pejanjian ni. Dio bakal jadi rajo yang mrénto umat Allah sampe selamo-lamonyo.</div>",
+    "G-2": "<div><span class=\"k\"><span class=\"nd\">Allah</span><span class=\"nd2\">yhwh</span></span> - Setiap kali tejingok kato ni (óróp besak galo), artinyo yang tetólés di teks aslinyo bukan kato Allah, tapi namo YHWH. YHWH tu iola namonyo Allah yang diwahyuke-Nyo ke Nabi Musa di Gónóng Horeb (Pembebasan 3:15). Namo YHWH tu móngkén diucapke “Yahwe” trós artinyo ‘Yang Kekal’. Tapi ado tradisi lamo yang dak nyebótke namo YHWH soalnyo takót dianggep ngotori namo tu. Jadi banyak wong makek kato pengganti, contonyo “Allah”.</div>",
+    "G-55": "<div><span class=\"k\">selah</span> - Ini ni kato dari baso asli. Idak ditejemake karno idak jelas maknonyo, tapi móngkén digunoke jadi petónjók musik.</div>"
+};
+
+initFootnotes(glossary);
+
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 34 }, { start: 36, end: 36 }, { start: 41, end: 43 }, { start: 46, end: 48 }, { start: 51, end: 51 }, { start: 53, end: 54 }, { start: 73, end: 73 }, { start: 84, end: 84 }, { start: 87, end: 87 }, { start: 90, end: 91 }, { start: 104, end: 104 }, { start: 108, end: 108 }, { start: 110, end: 110 }, { start: 112, end: 118 }, { start: 127, end: 128 }, { start: 132, end: 134 }, { start: 137, end: 139 }, { start: 143, end: 143 }, { start: 146, end: 146 }, { start: 148, end: 148 }];
+var hasIntro = false;
+var baseRef  = "Aktb-04-B001-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='Aktb-03-FRT-2-001.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-04-B001-031.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;Saér Nyanyian&nbsp;&nbsp;</a></span>
+<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;32&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-04-B001-033.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-05-JON-000.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div class="c">32</div> 
+<div class="s2"><div id="s1">Kesenengan wong yang diampóni dusonyo</div></div><a id="v1"></a>
+<div class="qc-v top-spacing"><span class="v">1</span><span class="vsp">&nbsp;</span>Dari <span class="footnote selectable" id="G-11">Daód</span>. Maskil<span class="footnote selectable" id="F-0"><sup>a</sup></span>.</div>
+<div class="b">&nbsp;</div>
+<div class="q">Senengla ati wong yang diampóni pelanggarannyo,</div>
+<div class="q2">yang dusonyo ditótópi.<span id="bookmarks1"></span></div><span id="bookmarks1"></span><a id="v2"></a>
+<div class="q-v"><span class="v">2</span><span class="vsp">&nbsp;</span>Senengla ati wong yang kesalahannyo idak diétóng <span class="nd"><span class="footnote selectable" id="G-2"><span class="nd">Allah</span><span class="nd2">yhwh</span></span></span>,</div>
+<div class="q2">yang dalem jiwonyo katek penipuan.</div>
+<div class="b">&nbsp;</div><span id="bookmarks2"></span><span id="bookmarks2"></span><a id="v3"></a>
+<div class="q-v"><span class="v">3</span><span class="vsp">&nbsp;</span>Pas aku diem <span class="add">pasal duso aku</span>,</div>
+<div class="q2">tulang-tulang aku jadi keropos karno jerétan aku sepanjang ari.<span id="bookmarks3"></span></div><span id="bookmarks3"></span><a id="v4"></a>
+<div class="q-v"><span class="v">4</span><span class="vsp">&nbsp;</span>Soalnyo siang jugo malem, tangan Kau neken aku,</div>
+<div class="q2">kekuatan<span class="footnote selectable" id="F-1"><sup>b</sup></span> aku tekeréng pecak dalem panasnyo mósém kemaró. <span class="qs"><span class="footnote selectable" id="G-55">Selah</span></span><span id="bookmarks4"></span></div><span id="bookmarks4"></span><a id="v5"></a>
+<div class="q-v"><span class="v">5</span><span class="vsp">&nbsp;</span>Aku ngakui duso aku samo Kau,</div>
+<div class="q2">trós aku idak nyingiti kesalahan aku.</div>
+<div class="q">Uji aku, “Aku bakal ngakui pelanggaran-pelanggaran aku samo <span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span>.”</div>
+<div class="q">Trós Kau ngambék kesalahan <span class="add">aku dengen ngampóni</span> duso aku. <span class="qs">Selah</span></div>
+<div class="b">&nbsp;</div><span id="bookmarks5"></span><span id="bookmarks5"></span><a id="v6"></a>
+<div class="q-v"><span class="v">6</span><span class="vsp">&nbsp;</span>Karno tu, biarla slóró wong além bedoa samo Kau pas kesesekan<span class="footnote selectable" id="F-2"><sup>c</sup></span>.</div>
+<div class="q">Sebenernyo, pas banjér besak dateng,</div>
+<div class="q2">dio wong idak bakal keno.<span id="bookmarks6"></span></div><span id="bookmarks6"></span><a id="v7"></a>
+<div class="q-v"><span class="v">7</span><span class="vsp">&nbsp;</span>Kaula peléndóngan aku,</div>
+<div class="q2">Kau nyago aku dari kesaroan,</div>
+<div class="q2">Kau ngeléléngi aku dengen sorak'an karno keselametan. <span class="qs">Selah</span></div>
+<div class="b">&nbsp;</div><span id="bookmarks7"></span><span id="bookmarks7"></span><a id="v8"></a>
+<div class="q-v"><span class="v">8</span><span class="vsp">&nbsp;</span><span class="add">Uji Allah,</span></div>
+<div class="q2">“Aku bakal ngajar trós nónjókke samo kau</div>
+<div class="q3">jalan yang harós kau jalani.</div>
+<div class="q2">Aku bakal nasehati kau</div>
+<div class="q3">dengen mato Aku tetójó ke kau.<span id="bookmarks8"></span></div><span id="bookmarks8"></span><a id="v9"></a>
+<div class="q2-v"><span class="v">9</span><span class="vsp">&nbsp;</span>Jangan jadi pecak kudo apo keledai yang katek akal,</div>
+<div class="q3">yang harós dikendalike dengen kekang jugo tali,</div>
+<div class="q3"><span class="add">amen dak tu, binatang tu</span> dak bakal marak'i kau<span class="footnote selectable" id="F-3"><sup>d</sup></span>.”</div>
+<div class="b">&nbsp;</div><span id="bookmarks9"></span><span id="bookmarks9"></span><a id="v10"></a>
+<div class="q-vv"><span class="v">10</span><span class="vsp">&nbsp;</span>Banyak kesaroan óntók wong jahat,</div>
+<div class="q2">tapi kasé stio <span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span></div>
+<div class="q2">ngeléléngi wong yang pecayo samo Dio.<span id="bookmarks10"></span></div><span id="bookmarks10"></span><a id="v11"></a>
+<div class="q-vv"><span class="v">11</span><span class="vsp">&nbsp;</span>Besenengla dalem <span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span> trós pujila,</div>
+<div class="q2">ói kamu wong-wong bener!</div>
+<div class="q2">Besorakla, ói slóró wong yang lórós ati!<span id="bookmarks11"></span></div>
+</div>
+
+<div id="toolbar-bottom">
+<div class="audio-player">
+  <audio id="audio" controls>
+    <source id="audio1" src="https://storage.googleapis.com/tbp-audio/TBP Mazmur 32.mp3" />
+  </audio>
+</div>
+</div>
+
+<script type='text/javascript' src='./pwa-main.js'></script>
+</body>
+</html>

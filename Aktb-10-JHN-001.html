@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#6C0000">
+<title>Yahya 1</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+// Footnotes and Cross-references
+var footnotes = {
+    "F-0": "<div class=\"footnote-p\"><span class=\"fr\">1:5 </span><span class=\"fq\">ngalakenyo: </span><span class=\"ft\">Tólésan asli dalem baso Yunani pacak jugo diartike “ngertikenyo”.</span></div>",
+    "F-1": "<div class=\"footnote-p\"><span class=\"fr\">1:13 </span><span class=\"fq\">manusio: </span><span class=\"ft\">Tólésan asli di sini jugo di ayat </span><span class=\"xt\"><span class=\"reflink\"><a href=\"Aktb-10-JHN-001.html#v14\">14</a></span></span><span class=\"ft\"> iola “dagéng”. Dalem baso asli, yang iola baso Yunani, kato “dagéng” seréng digunoke óntók sebótan manusio apo dak tu sipat bawak'an manusio.</span></div>",
+    "F-2": "<div class=\"footnote-p\"><span class=\"fr\">1:18 </span><span class=\"fq\">Anak Tunggal Allah yang ado di pangkuan Aba: </span><span class=\"ft\">Ado jugo naska kuno dari kitab ni yang tetólés cak ini, “Tapi, Tuhan yang sikok-sikoknyo, yang ado di pangkuan Aba.”</span></div>",
+    "F-3": "<div class=\"footnote-p\"><span class=\"fr\">1:24 </span><span class=\"fq\">Di antaro wong yang diótós tu ado beberapo wong dari kelompok Parisi: </span><span class=\"ft\">Tólésan asli dalem baso Yunani pacak jugo diartike, “Wong-wong yang diótós tu iola wong Parisi” apo dak tu “Wong-wong tu diótós ole wong Parisi”.</span></div>",
+    "F-4": "<div class=\"footnote-p\"><span class=\"fr\">1:34 </span><span class=\"fq\">Dio nila Anak-Nyo Allah: </span><span class=\"ft\">Ado jugo naska kuno dari kitab ni yang tetólés cak ini, “Dio nila yang dipélé Allah.”</span></div>",
+    "F-5": "<div class=\"footnote-p\"><span class=\"fr\">1:42 </span><span class=\"fq\">Kau Simon, anaknyo Yahya: </span><span class=\"ft\">Ado jugo naska kuno dari kitab ni yang tetólés cak ini, “Kau Simon, anaknyo Yunus” (jingok </span><span class=\"xt\"><span class=\"reflink\">Matius 16:17</span></span><span class=\"ft\">). Ado kemóngkénan amen dalem baso Aram, namo Yunus iola singkatan dari namo Yahya. Petrus dipanggél “anak Yahya” lagi di </span><span class=\"xt\"><span class=\"reflink\"><a href=\"Aktb-10-JHN-021.html#v15\">Yahya 21:15-17</a></span></span><span class=\"ft\">.</span></div>",
+    "F-6": "<div class=\"footnote-p\"><span class=\"fr\">1:42 </span><span class=\"fq\">Kepas … Petrus: </span><span class=\"ft\">Keduo namo ni artinyo ‘batu’. Kepas dari baso Aram, trós Petrus dari baso Yunani.</span></div>"
+};
+
+initFootnotes(footnotes);
+
+var crossrefs = {
+    "X-0": "<div class=\"footnote-p\"><span class=\"xo\">1:6 </span><span class=\"xta\">Cerito pasal Nabi Yahya jugo pacak dibaco di </span><span class=\"xt\"><span class=\"reflink\"><a href=\"Aktb-08-MAT-003.html#v1\">Matius 3:1</a></span>; Markós 1:4; <span class=\"reflink\"><a href=\"Aktb-09-LUK-003.html#v2\">Lukas 3:2</a></span></span></div>",
+    "X-1": "<div class=\"footnote-p\"><span class=\"xo\">1:23 </span><span class=\"xt\">Yesaya 40:3</span></div>"
+};
+
+initFootnotes(crossrefs);
+
+
+// Glossary entries
+var glossary = {
+    "G-75": "<div><span class=\"k\">Pirman - 1:1</span> -  Tólésan asli dalem baso Yunani iola <span class=\"tl\">logos</span> yang jugo pacak diartike ‘kato’, ‘pékéran’, apo ‘akal’.</div>",
+    "G-43": "<div><span class=\"k\">Yahya Pembaptés</span> - Namo Yahya iola namo umum pas jaman tu. Ado beberapo wong dalem Alkitab yang benamo Yahya, pecak Yahya móréd Yesus, Yahya Pembaptés, abanyo Petrus, jugo beberapo penólés surat-surat Yahya jugo kitab Wahyu. Yahya Pembaptés iola nabi yang nyiapke wong-wong Israel óntók kedatengan Almasi, yang iola Yesus. Dio manggél wong-wong Israel tu óntók betobat trós dibaptés (<span class=\"reflink\"><a href=\"Aktb-09-LUK-003.html#v1\">Lukas 3:1-20</a></span> , jingok jugo <span class=\"footnote selectable\" id=\"G-50\">baptés</span>). Sebelóm Yesus mulai pelayanan-Nyo, Dio jugo dibaptés ole Nabi Yahya (<span class=\"reflink\"><a href=\"Aktb-09-LUK-003.html#v21\">Lukas 3:21-22</a></span>). Nabi Yahya ditolak ole pemémpén-pemémpén Israel (<span class=\"reflink\"><a href=\"Aktb-09-LUK-020.html#v3\">Lukas 20:3-7</a></span> ) trós ahérnyo dibunu ole Rajo Herodes (Markós 6:14-29). Tapi, Nabi Yahya ni bukan sala sikok dari penólés Kitab Suci.</div><div class=\"p\">Dio tu iola sepupu Yesus soalnyo Elisabet, emaknyo ni, bedólór samo Mariam (<span class=\"reflink\"><a href=\"Aktb-09-LUK-001.html#v36\">Lukas 1:36</a></span>). Óntók cerito pasal kelaéran Yahya yang luar biaso, jingokla <span class=\"reflink\"><a href=\"Aktb-09-LUK-001.html\">Lukas 1</a></span>.</div>",
+    "G-76": "<div><span class=\"k\">tinggal - 1:14</span> -  Tólésan asli dalem basó Yunani artinyo ‘bekemah’. Kemóngkénan besak, kato ni ngingetke pasal <span class=\"footnote selectable\" id=\"G-20\">Kemah Petemuan</span> di mano Allah tinggal di antaro umat-Nyo sebelóm Ruma Agóng Allah dibangón (jingok Pembebasan 25:8).</div>",
+    "G-14": "<div><span class=\"k\">Hókóm Taurat</span> - Istila ni óntók nónjókke ajaran-ajaran jugo hókóm-hókóm yang dienjók dalem kelimo kitab yang ditólés Nabi Musa: Asal Mulo Dunio, Pembebasan, Imamat, Kelóyóran di Górón, jugo Ulangan. </div>",
+    "G-1": "<div><span class=\"k\">Almasi</span> - Arti istila ni iola ‘<span class=\"footnote selectable\" id=\"G-42\">wong yang dilanték</span>’ , samo pecak kato “Kristus” jugo “Mesias”. Dalem Pejanjian Lamo, Allah bekali-kali janjike amen sikok Wong Yang Dilanték bakal dateng óntók jadi Rajo Penyelamet óntók umat Allah.</div>",
+    "G-51": "<div><span class=\"k\">imam</span> - Tugas imam dalem agama wong Israel pas jaman tu beda nian dengen tugas pendeta apo imam mak ini ari. Tugas utamo imam dalem agama wong Israel bukan becerama, tapi ngenjókke kórban bakaran ke Allah jugo jadi penenga antaro Allah samo manusio. Slóró imam Israel iola ketórónan Harón. Dio wong ngelayani di <span class=\"footnote selectable\" id=\"G-36\">Ruma Agóng Allah</span> di Yerusalem secaro begéléran, bukan di ruma ibada biaso, karno dalem agama wong Israel kórban sembeléhan cuman bole dienjók di Ruma Allah tu.</div>",
+    "G-67": "<div><span class=\"k\">wong Lewi</span> - Wong-wong Lewi iola wong dari ketórónan Lewi, anak ketigo dari Yakób. Pas jaman Nabi Musa, Allah mélé Harón (kakaknyo Musa) samo ketórónannyo óntók jadi imam. Wong-wong Lewi yang bukan ketórónan Harón dipélé óntók ngelayani Allah di Kemah Suci jugo bantu imam-imam, tapi dak bole nyembake kórban (jingok Kelóyóran di Górón 3:5-9).</div>",
+    "G-25": "<div><span class=\"k\">Parisi</span> - Ini ni partai agama wong Israel yang cókóp begaéra pasal Prénto Allah. Dio wong jugo pecayo samo slóró kitab suci wong Israel trós seréng dipelajarinyo. Selaén kitab suci, dio wong jugo pecayo samo “tradisi lelóhór” yang dianggepnyo samo penténg pecak kitab-kitab suci. Pasal ni seréng nyebabke pedebatan antaro dio wong samo Yesus. Wong Parisi jugo ngargoi nian upacara samo adat wong Israel, sampe-sampe banyak wong Parisi diséndér ole Yesus karno lebé ngargoi upacara samo adat dibandéngke ketólósan ati, yang sebenernyo lebé penténg.</div><div class=\"p\">Asal-ósól partai ni móngkén dari duo apo tigo abad SM, jadi partai ni belóm ado pas jaman Pejanjian Lamo, tapi pas jaman Yesus partai ni la punyo pengaru besak di Israel. Idak slóró wong Parisi nolak Yesus. Rosul Paólós dulu iola wong Parisi (<span class=\"reflink\"><a href=\"Aktb-11-ACT-023.html#v9\">Cerito Rosul-Rosul 23:9</a></span>; <span class=\"reflink\"><a href=\"Aktb-11-ACT-026.html#v5\">Cerito Rosul-Rosul 26:5</a></span>; Pilipi 3:5) trós ado jugo wong-wong yang laén dari partai ni yang pecayo samo Yesus (<span class=\"reflink\"><a href=\"Aktb-10-JHN-003.html#v1\">Yahya 3:1-15</a></span>; <span class=\"reflink\"><a href=\"Aktb-11-ACT-015.html#v5\">Cerito Rosul-Rosul 15:5</a></span>).</div>",
+    "G-50": "<div><span class=\"k\">baptés</span> - Kato ni dipinjem dari baso Yunani (kato asli: <span class=\"it\">baptizo</span>). Makno kato ni iola ‘pencelópan’, biasonyo pencelópan kaén óntók dienjók warno. Maknonyo dalem agama wong Israel iola pencelópan wong supayo disucike. Cak itula baptésan dari Yahya. Kageknyo, óntók wong-wong yang melok'i Yesus abés kebangkétan-Nyo, upacara ni jadi gambaran cakmano wong yang betobat la nerimo keédópan baru dalem Yesus.</div><div class=\"p\">Gambarannyo cak ini: Masók ke dalem banyu iola tando kematian dari keédópan lamo yang beduso. Metu dari banyu iola tando bangkét lagi dalem keédópan baru yang diterimo dari Yesus. Upacara ni biasonyo dilakuke pas wong tu pecayo samo Yesus.</div>",
+    "G-3": "<div><span class=\"k\">Anak-Nyo Allah</span> - Ini ni sebótan óntók Yesus. Nórót Alkitab, cuman ado sikok Tuhan (iola Allah), tapi Tuhan tu ado tigo pribadi: Aba, Anak, samo Ro Suci. Ketigo pribadi tu iola Allah dari mulonyo, trós tiap pribadi tu punyo hóbóngan kósós dengen yang laénnyo.</div><div class=\"p\">Kato-kato “Anak-Nyo Allah” ngambarke amen hóbóngan Yesus (Anak) samo Aba jadi pecak wong tuo samo anaknyo. Samo pecak anak nórót kendak abanyo, pecak itu jugola Yesus nórót Aba. Samo pecak anak yang punyo kesamoan dengen abanyo, pecak itu jugo Yesus punyo sipat yang samo dengen Aba.</div><div class=\"p\">Mugola pasal ni saro óntók kito ngerti, tapi itula wahyu Allah pasal diri-Nyo dewek.</div>",
+    "G-42": "<div><span class=\"k\">Wong Yang Dilanték</span> - Istila ni samo dengen <span class=\"footnote selectable\" id=\"G-1\">Almasi</span>, Mesias, jugo Kristus. Dalem Pejanjian Lamo, Allah bekali-kali janjike amen sikok Wong Yang Dilanték bakal dateng óntók jadi Rajo Penyelamet óntók umat Allah. Jingokla jugo kato “<span class=\"footnote selectable\" id=\"G-56\">lanték</span>”.</div>",
+    "G-2": "<div><span class=\"k\">Anak Manusio</span> - Ini ni gelar yang Yesus pakek óntók diri-Nyo dewek yang diambék dari Danil 7:13-14. Istila ni idak bemaksód óntók negeske amen Yesus iola manusio, tapi nónjókke amen Diola rajo dunio yang dateng dari Allah trós punyo hak óntók merénto selamo-lamonyo.</div>"
+};
+
+initFootnotes(glossary);
+
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 21 }];
+var hasIntro = false;
+var baseRef  = "Aktb-10-JHN-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='Aktb-09-LUK-001.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-09-LUK-024.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;Yahya&nbsp;&nbsp;</a></span>
+<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;1&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-10-JHN-002.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-11-ACT-000.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div class="mt"><span class="mt">YAHYA</span></div>
+<div class="mt2"><span class="mt2">[PERSI AWAL]</span></div>
+<div class="b"></div>
+<div class="b"></div>
+<div class="c">1</div> 
+<div class="s2"><div id="s1"><span class="footnote selectable" id="G-75">Pirman</span> yang la jadi manusio</div></div><a id="v1"></a>
+<div class="p"><span class="v">1</span><span class="vsp">&nbsp;</span>Awal mulonyo ado Pirman. Pirman tu besamo-samo dengen Allah. Pirman tu iola Allah.<span id="bookmarks1"></span> <a id="v2"></a><span class="v">2</span><span class="vsp">&nbsp;</span>Pirman tu ado besamo dengen Allah dari mulonyo.<span id="bookmarks2"></span> <a id="v3"></a><span class="v">3</span><span class="vsp">&nbsp;</span>Galo-galonyo tu diciptoke liwat Pirman, trós dari galo-galo yang diciptoke tu, dak katek sikok bae yang tecipto amen idak liwat Pirman tu.<span id="bookmarks3"></span> <a id="v4"></a><span class="v">4</span><span class="vsp">&nbsp;</span>Dalem Dio ado édóp. Édóp tu iola terang umat manusio.<span id="bookmarks4"></span> <a id="v5"></a><span class="v">5</span><span class="vsp">&nbsp;</span>Terang tu terós becahayo dalem kegelepan, trós kegelepan tu dak pacak ngalakenyo.<span class="footnote selectable" id="F-0"><sup>a</sup></span><span id="bookmarks5"></span></div><span id="bookmarks5"></span><a id="v6"></a>
+<div class="p"><span class="v">6</span><span class="vsp">&nbsp;</span>Datengla sikok wong yang diótós Allah, namonyo <span class="footnote selectable" id="G-43">Yahya</span>.<span class="footnote selectable" id="X-0"><sup>b</sup></span><span id="bookmarks6"></span> <a id="v7"></a><span class="v">7</span><span class="vsp">&nbsp;</span>Dio ni dateng óntók ngenjók kesaksian pasal terang tu supayo liwat dio, galo-galo wong pacak jadi pecayo.<span id="bookmarks7"></span> <a id="v8"></a><span class="v">8</span><span class="vsp">&nbsp;</span>Dio dewek bukan terang tu, tapi dio dateng óntók ngenjók kesaksian pasal terang tu.<span id="bookmarks8"></span></div><span id="bookmarks8"></span><a id="v9"></a>
+<div class="p"><span class="v">9</span><span class="vsp">&nbsp;</span>Terang yang sebenernyo, yang nerangi galo-galo wong, la dateng ke dunio.<span id="bookmarks9"></span> <a id="v10"></a><span class="v">10</span><span class="vsp">&nbsp;</span>Dio ado di dalem dunio, trós dunio tu tecipto liwat Dio, tapi dunio idak ngenal-Nyo.<span id="bookmarks10"></span> <a id="v11"></a><span class="v">11</span><span class="vsp">&nbsp;</span>Dio dateng ke mélék kepunyoan-Nyo dewek, tapi mélék kepunyoan-Nyo tu idak nerimo Dio.<span id="bookmarks11"></span> <a id="v12"></a><span class="v">12</span><span class="vsp">&nbsp;</span>Tapi, galo-galo wong yang nerimo Dio, iola wong-wong yang pecayo dalem namo-Nyo, wong-wong tu dienjók-Nyo hak óntók jadi anak-anak Allah.<span id="bookmarks12"></span> <a id="v13"></a><span class="v">13</span><span class="vsp">&nbsp;</span>Wong-wong tu laér idak secaro jasmani, idak dari keéngénan manusio,<span class="footnote selectable" id="F-1"><sup>*</sup></span> jugo idak dari keéngénan lanang, tapi laér dari Allah.<span id="bookmarks13"></span></div><span id="bookmarks13"></span><a id="v14"></a>
+<div class="p"><span class="v">14</span><span class="vsp">&nbsp;</span>Pirman tu la jadi manusio jugo <span class="footnote selectable" id="G-76">tinggal</span> di antaro kito. Kito la nyingok kemulyoan-Nyo, iola kemulyoan Anak Tunggal Aba yang penu dengen kemurahan ati jugo kebeneran.<span id="bookmarks14"></span> <a id="v15"></a><span class="v">15</span><span class="vsp">&nbsp;</span><span class="footnote selectable" id="G-43">Nabi Yahya</span> ngenjók kesaksian pasal Dio trós mekék cak ini, “Dio nila Wong yang aku maksódke pas aku ngomong, ‘Dio yang dateng seabés aku, lebé penténg dari aku karno Dio la ado sebelóm aku.’”<span id="bookmarks15"></span> <a id="v16"></a><span class="v">16</span><span class="vsp">&nbsp;</span>Dari kelimpahan-Nyo, kito galo-galo la terós-terósan nerimo kemurahan ati dari Dio.<span id="bookmarks16"></span> <a id="v17"></a><span class="v">17</span><span class="vsp">&nbsp;</span>Karno <span class="footnote selectable" id="G-14">Hókóm Taurat</span> la dienjók liwat Nabi Musa, tapi kemurahan ati jugo kebeneran dateng liwat Yesus <span class="footnote selectable" id="G-1">Almasi</span>, <span class="add">Wong Yang Dilanték</span>.<span id="bookmarks17"></span> <a id="v18"></a><span class="v">18</span><span class="vsp">&nbsp;</span>Dak katek sikok wong bae yang perna nyingok Allah, tapi Anak Tunggal Allah yang ado di pangkuan Aba,<span class="footnote selectable" id="F-2"><sup>c</sup></span> Diola yang nyatoke-Nyo.<span id="bookmarks18"></span></div>
+<div class="s2"><div id="s2">Kesaksian Nabi Yahya pasal dirinyo dewek</div></div>
+<div class="r"><div id="r1">(<span class="reflink"><a href="Aktb-08-MAT-003.html#v1">Matius 3:1-12</a></span>; Markós 1:1-8; <span class="reflink"><a href="Aktb-09-LUK-003.html#v1">Lukas 3:1-6</a></span>, <span class="reflink"><a href="Aktb-09-LUK-003.html#v15">15-17</a></span>)</div></div><span id="bookmarks18"></span><a id="v19"></a>
+<div class="p"><span class="v">19</span><span class="vsp">&nbsp;</span>Inila kesaksian Nabi Yahya pas pemémpén-pemémpén Israel ngótós beberapo <span class="footnote selectable" id="G-51">imam</span> jugo <span class="footnote selectable" id="G-67">wong Lewi</span> dari <span class="add">Ruma Agóng Allah yang di</span> Yerusalem óntók betanyo samo dio cak ini, “Siapo nian kau ni?”<span id="bookmarks19"></span></div><span id="bookmarks19"></span><a id="v20"></a>
+<div class="p"><span class="v">20</span><span class="vsp">&nbsp;</span>Dio ngaku jugo idak mbantanyo, trós ngakui cak ini, “Aku ni bukan <span class="footnote selectable" id="G-1">Almasi</span>!”<span id="bookmarks20"></span></div><span id="bookmarks20"></span><a id="v21"></a>
+<div class="p"><span class="v">21</span><span class="vsp">&nbsp;</span>Jadi, dio wong betanyo samo Yahya cak ini, “Amen cak itu, kau ni siapo? Apo kau ni Nabi Elias?”</div>
+<div class="p">Dio nyawab, “Bukan!”</div>
+<div class="p">“Apo kau ni nabi <span class="add">yang dijanjike Allah</span> tu?”</div>
+<div class="p">Dio jugo nyawab, “Bukan!”<span id="bookmarks21"></span></div><span id="bookmarks21"></span><a id="v22"></a>
+<div class="p"><span class="v">22</span><span class="vsp">&nbsp;</span>Laju, dio wong betanyo lagi samo dio cak ini, “Jadi, kau ni siapo? <span class="add">Enjók taula</span> supayo kami pacak ngenjók jawaban ke wong-wong yang ngótós kami ni. Apo uji kau pasal diri kau dewek?”<span id="bookmarks22"></span></div><span id="bookmarks22"></span><a id="v23"></a>
+<div class="p"><span class="v">23</span><span class="vsp">&nbsp;</span>Nabi Yahya ngomong cak ini, “Aku nila wong yang la diomongke Nabi Yesaya pas dio ngomong cak ini, ‘Ado suaro wong yang mekék-mekék di padang górón, “Lóróskela jalan óntók Allah<span class="ul">‡</span>.”’”<span class="footnote selectable" id="X-1"><sup>d</sup></span><span id="bookmarks23"></span></div><span id="bookmarks23"></span><a id="v24"></a>
+<div class="p"><span class="v">24</span><span class="vsp">&nbsp;</span>Di antaro wong yang diótós tu ado beberapo wong <span class="add">dari kelompok</span> <span class="footnote selectable" id="G-25">Parisi</span>.<span class="footnote selectable" id="F-3"><sup>e</sup></span><span id="bookmarks24"></span> <a id="v25"></a><span class="v">25</span><span class="vsp">&nbsp;</span>Ahérnyo, dio wong betanyo samo Yahya cak ini, “Ngapo kau <span class="footnote selectable" id="G-50">mbaptés</span> wong amen kau tu bukan Almasi, bukan Elias, bukan pulok nabi tu?”<span id="bookmarks25"></span></div><span id="bookmarks25"></span><a id="v26"></a>
+<div class="p"><span class="v">26</span><span class="vsp">&nbsp;</span>Nabi Yahya nyawab dio wong cak ini, “Aku mbaptés dengen banyu. Tapi, di tenga-tenga kamu tegak sikok Wong yang idak kamu kenal,<span id="bookmarks26"></span> <a id="v27"></a><span class="v">27</span><span class="vsp">&nbsp;</span>Diola yang dateng seabés aku. Ngelepaske tali selop-Nyo bae aku dak pantes.”<span id="bookmarks27"></span></div><span id="bookmarks27"></span><a id="v28"></a>
+<div class="p"><span class="v">28</span><span class="vsp">&nbsp;</span>Pasal ni tejadi di Betania, di sebrang Sungi Yordan, di mano Nabi Yahya lagi mbaptés wong.<span id="bookmarks28"></span></div>
+<div class="s2"><div id="s3">Nabi Yahya besaksi pasal Yesus</div></div><span id="bookmarks28"></span><a id="v29"></a>
+<div class="p"><span class="v">29</span><span class="vsp">&nbsp;</span>Besoknyo, Nabi Yahya nyingok Yesus dateng ke dio trós ngomong, “Jingokla, Anak Domba Allah yang ngangkat duso dunio.<span id="bookmarks29"></span> <a id="v30"></a><span class="v">30</span><span class="vsp">&nbsp;</span>Dio nila yang aku maksód pas aku ngomong, ‘Seabés aku, bakal dateng sikok Wong yang lebé penténg dari aku, karno Dio la ado sebelóm aku ado.<span id="bookmarks30"></span> <a id="v31"></a><span class="v">31</span><span class="vsp">&nbsp;</span>Sebelómnyo aku dewek bae dak tau siapo nian Dio tu, tapi óntók itula aku dateng trós mbaptés dengen banyu supayo Dio pacak dinyatoke samo bangso Israel.’’’<span id="bookmarks31"></span></div><span id="bookmarks31"></span><a id="v32"></a>
+<div class="p"><span class="v">32</span><span class="vsp">&nbsp;</span>Abés tu, Yahya ngenjók kesaksian, ujinyo, “Aku jingok Ro tórón dari langét pecak bóróng daro, trós tetep tinggal samo Dio.<span id="bookmarks32"></span> <a id="v33"></a><span class="v">33</span><span class="vsp">&nbsp;</span>Aku dewek bae dak tau siapo nian Dio tu, tapi Allah, yang ngótós aku óntók mbaptés dengen banyu, la ngomong samo aku cak ini, ‘Amen kau jingok Ro tórón jugo tinggal samo sikok Wong, Wong itula yang bakal mbaptés dengen Ro Suci.’<span id="bookmarks33"></span> <a id="v34"></a><span class="v">34</span><span class="vsp">&nbsp;</span>Aku la nyingok <span class="add">kejadian</span> tu jugo la besaksi amen Dio nila <span class="footnote selectable" id="G-3">Anak-Nyo Allah</span>.”<span class="footnote selectable" id="F-4"><sup>*</sup></span><span id="bookmarks34"></span></div>
+<div class="s2"><div id="s4">Móréd-móréd Yesus yang petamo</div></div><span id="bookmarks34"></span><a id="v35"></a>
+<div class="p"><span class="v">35</span><span class="vsp">&nbsp;</span>Na, pas besoknyo, Nabi Yahya tegak di situ lagi, besamo duo pengékótnyo.<span id="bookmarks35"></span> <a id="v36"></a><span class="v">36</span><span class="vsp">&nbsp;</span>Dio nyingok Yesus lagi bejalan, trós Nabi Yahya ngomong cak ini, “Jingokla, Anak Domba Allah!”<span id="bookmarks36"></span> <a id="v37"></a><span class="v">37</span><span class="vsp">&nbsp;</span>Pas keduo pengékótnyo ni ndenger Nabi Yahya ngomong cak itu, dio wong melok'i Yesus.<span id="bookmarks37"></span> <a id="v38"></a><span class="v">38</span><span class="vsp">&nbsp;</span>Yesus balékke badan trós nyingok amen dio wong lagi melok'i-Nyo, laju betanyo samo dio wong cak ini, “Apo yang kamu cari?”</div>
+<div class="p">Dio wong nyawab Yesus cak ini, “Rabi, di mano Rabi tinggal?” (Kato “Rabi” tu artinyo ‘Guru’.)<span id="bookmarks38"></span></div><span id="bookmarks38"></span><a id="v39"></a>
+<div class="p"><span class="v">39</span><span class="vsp">&nbsp;</span>Uji Yesus ke dio wong cak ini, “Melokla trós jingokla dewek.”</div>
+<div class="p">Jadi, dio wong melok trós nyingok di mano Dio tinggal, abés tu dio wong tinggal samo Yesus ari tu. Waktu tu kiro-kiro jam empat sore.<span id="bookmarks39"></span> <a id="v40"></a><span class="v">40</span><span class="vsp">&nbsp;</span>Andreas, dólórnyo Simon Petrus, iola sala sikok dari keduo pengékót yang ndenger omongan Nabi Yahya tu tadi jugo melok'i Yesus.<span id="bookmarks40"></span> <a id="v41"></a><span class="v">41</span><span class="vsp">&nbsp;</span>Petamo-tamo Andreas ni pegi nyari Simon, dólórnyo dewek, ujinyo, “Kami la nemuke Almasi!” (yang artinyo ‘<span class="footnote selectable" id="G-42">Wong Yang Dilanték</span>’).<span id="bookmarks41"></span></div><span id="bookmarks41"></span><a id="v42"></a>
+<div class="p"><span class="v">42</span><span class="vsp">&nbsp;</span>Abés tu, Andreas gawak Simon ke Yesus. Yesus nyingok dio, laju ngomong cak ini, “Kau Simon, anaknyo Yahya.<span class="footnote selectable" id="F-5"><sup>*</sup></span> Kau bakal dipanggél Kepas” (<span class="add">[yang dalem baso Yunani iola “Petrus”</span><span class="footnote selectable" id="F-6"><sup>f</sup></span>] yang artinyo ‘batu’).<span id="bookmarks42"></span></div><span id="bookmarks42"></span><a id="v43"></a>
+<div class="p"><span class="v">43</span><span class="vsp">&nbsp;</span>Besoknyo Yesus nak pegi ke Wilaya Galilea. Dio pegi nyari Pilipus trós ngomong cak ini, “Melokla Aku.”<span id="bookmarks43"></span></div><span id="bookmarks43"></span><a id="v44"></a>
+<div class="p"><span class="v">44</span><span class="vsp">&nbsp;</span>Na, Pilipus ni asalnyo jugo dari Kota Betsaida, kotanyo Andreas jugo Petrus.<span id="bookmarks44"></span> <a id="v45"></a><span class="v">45</span><span class="vsp">&nbsp;</span>Pilipus pegi nyari Natanael trós ngomong samo dio cak ini, “Kami la nemuke Dio yang la ditóléske ole Musa dalem kitab Taurat, yang jugo ditóléske nabi-nabi <span class="add">dalem kitab-kitab dio wong</span>. Dio tu Yesus, anaknyo Yósóp, dari Najaret.”<span id="bookmarks45"></span></div><span id="bookmarks45"></span><a id="v46"></a>
+<div class="p"><span class="v">46</span><span class="vsp">&nbsp;</span>Natanael ngomong ke Pilipus cak ini, “Madak'i ado yang baék dateng dari Najaret!”</div>
+<div class="p">Uji Pilipus, “Melokla, jingokla dewek.”<span id="bookmarks46"></span></div><span id="bookmarks46"></span><a id="v47"></a>
+<div class="p"><span class="v">47</span><span class="vsp">&nbsp;</span>Yesus nyingok Natanael dateng nemui-Nyo. Dio ngomong pasal Natanael cak ini, “Jingokla, dio ni wong Israel nian yang tólós jugo jójór.”<span id="bookmarks47"></span></div><span id="bookmarks47"></span><a id="v48"></a>
+<div class="p"><span class="v">48</span><span class="vsp">&nbsp;</span>Natanael ngomong samo Dio cak ini, “Cakmano nian Kau pacak tau samo aku?”</div>
+<div class="p">Nyimbatla Yesus ke dio cak ini, “Sebelóm Pilipus manggél kau, Aku la nyingok kau di bawa batang ara.”<span id="bookmarks48"></span></div><span id="bookmarks48"></span><a id="v49"></a>
+<div class="p"><span class="v">49</span><span class="vsp">&nbsp;</span>Natanael nyawab Dio cak ini, “Guru, Kau nila Anak-Nyo Allah. Kau Rajo bangso Israel!”<span id="bookmarks49"></span></div><span id="bookmarks49"></span><a id="v50"></a>
+<div class="p"><span class="v">50</span><span class="vsp">&nbsp;</span>Nyimbatla Yesus ke dio cak ini, “Apo kau pecayo karno Aku ngomong amen Aku la nyingok kau di bawa batang ara? Kau bakal nyingok pasal-pasal yang lebé hebat dari ini.”<span id="bookmarks50"></span> <a id="v51"></a><span class="v">51</span><span class="vsp">&nbsp;</span>Yesus ngomong ke dio cak ini, “Aku ngomong nian samo kamu, kamu bakal nyingok surgo tebukak jugo malekat-malekat Allah tórón naék di pócók <span class="footnote selectable" id="G-2">Anak Manusio</span>.”<span id="bookmarks51"></span></div>
+</div>
+<script type='text/javascript' src='./pwa-main.js'></script>
+<script>
+var coll = document.getElementsByClassName("collapsible-button");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
+}
+</script>
+</body>
+</html>

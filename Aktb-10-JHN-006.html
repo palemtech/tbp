@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#6C0000">
+<title>Yahya 6</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+// Footnotes and Cross-references
+var footnotes = {
+    "F-0": "<div class=\"footnote-p\"><span class=\"fr\">6:7 </span><span class=\"fq\">upa 200 ari begawe: </span><span class=\"ft\">Tólésan aslinyo iola “200 dinar”. Dinar ni dóét bangso Romawi. Sikok dóét dinar regonyo samo dengen upa seari tukang begawe.</span></div>",
+    "F-1": "<div class=\"footnote-p\"><span class=\"fr\">6:31 </span><span class=\"fq\">manna: </span><span class=\"ft\">Manna iola pajóan wong Israel pas dio wong masé bekelóyóran di padang górón. Manna ni warnonyo póté trós rasonyo manis. Dalem baso Ibrani, kato ni artinyo ‘apo ini?’, soalnyo pas Allah nyedioke pajóan ni, dio wong betanyo cak itu pas petamo kali jingok pajóan tu (jingok </span><span class=\"xt\">Pembebasan 16:14-16</span><span class=\"ft\">).</span></div>",
+    "F-2": "<div class=\"footnote-p\"><span class=\"fr\">6:41–6:51 </span><span class=\"fq\">wong-wong Israel yang ngelawan Yesus: </span><span class=\"ft\">Penjelasan ni ditamba karno ado kemóngkénan besak galo-galo wong yang ado di situ iola wong Israel. Yahya, yang iola penólés kitab ni, seréng makek istila “wong-wong Israel” ni óntók nyebótke kelompok wong Israel yang mósói Yesus.</span></div>",
+    "F-3": "<div class=\"footnote-p\"><span class=\"fr\">6:63 </span><span class=\"fq\">rohani jugo ngenjók keédópan: </span><span class=\"ft\">Tólésan aslinyo iola “ro jugo keédópan”. Kato <span class=\"it\">ro</span> pacak nónjókke ro secaro ómóm, apo dak tu Ro Allah. Amen <span class=\"it\">ro</span> yang dimaksód di sini iola Ro Allah jadi kato-kato di sini pacak diartike “dari Ro jugo ngenjók keédópan”.</span></div>",
+    "F-4": "<div class=\"footnote-p\"><span class=\"fr\">6:70 </span><span class=\"fq\">Éblés: </span><span class=\"ft\">Ado penapsér-penapsér bepékér amen Éblés di sini pacak diartike “pemémpén setan” apo dak tu “anak bua Éblés”. Selaén tu, kato ni jugo pacak diartike “tukang nódó”.</span></div>"
+};
+
+initFootnotes(footnotes);
+
+var crossrefs = {
+    "X-0": "<div class=\"footnote-p\"><span class=\"xo\">6:2 </span><span class=\"xta\">Beberapo tando ajaéb ni pacak dibaco di </span><span class=\"xt\"><span class=\"reflink\"><a href=\"Aktb-10-JHN-004.html#v46\">Yahya 4:46-54</a></span></span><span class=\"xt\">; </span><span class=\"xt\"><span class=\"reflink\"><a href=\"Aktb-10-JHN-005.html#v1\">5:1-9</a></span></span><span class=\"xt\"></span><span class=\"xta\">.</span></div>",
+    "X-1": "<div class=\"footnote-p\"><span class=\"xo\">6:14 </span><span class=\"xta\">Nabi tu dijanjike di </span><span class=\"xt\">Ulangan 18:15, </span><span class=\"xt\"><span class=\"reflink\"><a href=\"Aktb-10-JHN-018.html\">18</a></span></span><span class=\"xt\"></span><span class=\"xta\">.</span></div>",
+    "X-2": "<div class=\"footnote-p\"><span class=\"xo\">6:31 </span><span class=\"xt\"><span class=\"reflink\">Saér Nyanyian 78:24</span></span></div>",
+    "X-3": "<div class=\"footnote-p\"><span class=\"xo\">6:45 </span><span class=\"xt\">Yesaya 54:13</span></div>"
+};
+
+initFootnotes(crossrefs);
+
+
+// Glossary entries
+var glossary = {
+    "G-6": "<div><span class=\"k\">Danau Galilea</span> - Danau besak (11 km x 22 km) yang letaknyo di Wilaya Galilea trós jugo disebót “Danau Geneseret”. Danau ni dikeléléngi gónóng trós seréng diliwati angin besak. Danau ni jugo iola sumber iwak óntók daera tu. Sungi Yordan ngalér dari ójóng selatannyo.</div>",
+    "G-26": "<div><span class=\"k\">Paska</span> - Beda dari ari rayo wong Kristen, kato <span class=\"it\">Paska</span> di Alkitab nónjókke ari rayo wong Ibrani. Paska iola ari petamo dari perayoan tójó ari yang disebót Roti Dak Beragi. Pas jaman Yesus, wong-wong Israel ngerayoke Paska di Yerusalem, dengen makan domba sembeléhan jugo roti dak beragi. (Jingok Pembebasan 13:3-10 jugo Ulangan 16:1-8.)</div><div class=\"p\">Karno Yesus mati pas ari rayo Paska, kageknyo perayoan wong Kristen pasal kebangkétan Yesus jugo disebót ari Paska. Paska wong Ibrani ngingetke dio wong pasal cakmano Allah mbebaske nenek moyang dio wong dari perbudakan di Mesir sekitar 1500 SM (Pembebasan 12:1-42 ), sementaro Paskanyo wong Kristen ngingetke kito pasal cakmano Allah mbebaske dio wong dari duso liwat kematian jugo kebangkétan Yesus.</div>",
+    "G-82": "<div><span class=\"k\">5 apo 6 kilometer - 6:19</span> -  Danau Galilea ni panjangnyo kiro-kiro 20 kilometer trós lebarnyo kiro-kiro 12 kilometer.</div>",
+    "G-2": "<div><span class=\"k\">Anak Manusio</span> - Ini ni gelar yang Yesus pakek óntók diri-Nyo dewek yang diambék dari Danil 7:13-14. Istila ni idak bemaksód óntók negeske amen Yesus iola manusio, tapi nónjókke amen Diola rajo dunio yang dateng dari Allah trós punyo hak óntók merénto selamo-lamonyo.</div>"
+};
+
+initFootnotes(glossary);
+
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 21 }];
+var hasIntro = false;
+var baseRef  = "Aktb-10-JHN-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='Aktb-09-LUK-001.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-10-JHN-005.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;Yahya&nbsp;&nbsp;</a></span>
+<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;6&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-10-JHN-007.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-11-ACT-000.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div class="c">6</div> 
+<div class="s2"><div id="s1">Yesus iola roti keédópan yang óntók selamo-lamonyo</div></div>
+<div class="r"><div id="r1">(<span class="reflink">Matius 14:13-21</span>; Markós 6:32-44; <span class="reflink"><a href="Aktb-09-LUK-009.html#v10">Lukas 9:10-17</a></span>)</div></div>
+<div class="s3"><div id="s2">Yesus ngenjók makan 5 ribu wong</div></div><a id="v1"></a>
+<div class="p"><span class="v">1</span><span class="vsp">&nbsp;</span>Beberapo waktu seabés tu, Yesus pegi ke sebrang <span class="footnote selectable" id="G-6">Danau Galilea</span> yang jugo disebót Danau Tiberias.<span id="bookmarks1"></span> <a id="v2"></a><span class="v">2</span><span class="vsp">&nbsp;</span>Sekómpólan wong banyak melok'i Yesus karno dio wong la nyingok tando-tando ajaéb yang Yesus lakuke samo wong-wong sakét.<span class="footnote selectable" id="X-0"><sup>a</sup></span><span id="bookmarks2"></span> <a id="v3"></a><span class="v">3</span><span class="vsp">&nbsp;</span>Jadi, Yesus naék ke bókét trós dódók di sano dengen pengékót-pengékót-Nyo.<span id="bookmarks3"></span> <a id="v4"></a><span class="v">4</span><span class="vsp">&nbsp;</span>Waktu tu ari rayo <span class="footnote selectable" id="G-26">Paska</span> la parak. Itu tu perayoan wong Israel.<span id="bookmarks4"></span></div><span id="bookmarks4"></span><a id="v5"></a>
+<div class="p"><span class="v">5</span><span class="vsp">&nbsp;</span>Pas Yesus nyingok sekeléléng-Nyo, Dio nyingok wong banyak ndatengi Dio. Laju, Yesus ngomong samo Pilipus cak ini, “Di manola kito pacak beli roti supayo wong-wong ni pacak makan?”<span id="bookmarks5"></span> <a id="v6"></a><span class="v">6</span><span class="vsp">&nbsp;</span>Maksód omongan Yesus ni cuman óntók nguji Pilipus bae, soalnyo Dio tau apo yang bakal digaweke-Nyo.<span id="bookmarks6"></span></div><span id="bookmarks6"></span><a id="v7"></a>
+<div class="p"><span class="v">7</span><span class="vsp">&nbsp;</span>Jawab Pilipus ke Dio cak ini, “Roti serego upa 200 ari begawe<span class="footnote selectable" id="F-0"><sup>b</sup></span> dak bakal cókóp óntók dio wong <span class="add">galo</span>, mugola maséng-maséng wong <span class="add">cuman</span> dapet sedikit bae.”<span id="bookmarks7"></span></div><span id="bookmarks7"></span><a id="v8"></a>
+<div class="p"><span class="v">8</span><span class="vsp">&nbsp;</span>Na, sala sikok móréd-Nyo yang benamo Andreas, dólórnyo Simon Petrus, ngomong ke Dio cak ini,<span id="bookmarks8"></span> <a id="v9"></a><span class="v">9</span><span class="vsp">&nbsp;</span>“Di sini ado sikok budak lanang yang punyo limo ikok roti dari gendóm yang mura jugo duo ikok iwak, tapi apola artinyo tu óntók wong sebanyak ini?”<span id="bookmarks9"></span></div><span id="bookmarks9"></span><a id="v10"></a>
+<div class="p"><span class="v">10</span><span class="vsp">&nbsp;</span>Yesus ngomong cak ini, “Kongkonla wong-wong tu dódók.” Di tempat tu ado banyak rómpót. Laju, wong-wong tu dódók di situ. Jumla lanang yang ado di situ kiro-kiro 5 ribu wong.<span id="bookmarks10"></span> <a id="v11"></a><span class="v">11</span><span class="vsp">&nbsp;</span>Jadi, Yesus ngambék roti tu. Seabés ngucap sókór, Dio mbagé-bagéke roti tu ke wong-wong yang dódók. Pecak itu jugo Dio mbagé-bagéke iwak tu sebanyak yang dio wong galak.<span id="bookmarks11"></span></div><span id="bookmarks11"></span><a id="v12"></a>
+<div class="p"><span class="v">12</span><span class="vsp">&nbsp;</span>Pas dio wong la kenyang, Yesus ngomong ke móréd-móréd-Nyo cak ni, “Kómpólkela tetak'an-tetak'an yang tesiso, supayo katek yang tebuang.”<span id="bookmarks12"></span> <a id="v13"></a><span class="v">13</span><span class="vsp">&nbsp;</span>Jadi, dio wong ngómpólkenyo trós ngisi 12 bakól dengen siso-siso tetak'an dari limo ikok roti yang la wong-wong tu makan.<span id="bookmarks13"></span></div><span id="bookmarks13"></span><a id="v14"></a>
+<div class="p"><span class="v">14</span><span class="vsp">&nbsp;</span>Pas wong-wong tu nyingok tando ajaéb yang la Yesus lakuke, dio wong <span class="add">saléng</span> ngomong cak ni, “Dio ni nian-nian nabi <span class="add">yang dijanjike</span> yang bakal dateng ke dunio tu.”<span class="footnote selectable" id="X-1"><sup>c</sup></span><span id="bookmarks14"></span> <a id="v15"></a><span class="v">15</span><span class="vsp">&nbsp;</span>Karno Yesus tau amen wong-wong tu bakal dateng jugo makso Dio óntók jadi rajo, laju Yesus nyéngkér lagi ke bókét dewek'an.<span id="bookmarks15"></span></div>
+<div class="s3"><div id="s3">Yesus bejalan di pócók banyu</div></div><span id="bookmarks15"></span><a id="v16"></a>
+<div class="p"><span class="v">16</span><span class="vsp">&nbsp;</span>Na, pas ari mulai gelep, móréd-móréd-Nyo tórón ke pénggér Danau Galilea,<span id="bookmarks16"></span> <a id="v17"></a><span class="v">17</span><span class="vsp">&nbsp;</span>trós naék ke perau, abés tu dio wong mulai nyebrangi danau tu nuju Kota Kapernaum. Mugola ari tu la gelep, Yesus belóm jugo dateng nemui dio wong.<span id="bookmarks17"></span> <a id="v18"></a><span class="v">18</span><span class="vsp">&nbsp;</span>Angin berembós kenceng jugo banyu danau lagi beombak.<span id="bookmarks18"></span> <a id="v19"></a><span class="v">19</span><span class="vsp">&nbsp;</span>Pas móréd-móréd-Nyo la ndayóng kiro-kiro <span class="footnote selectable" id="G-82">5 apo 6 kilometer</span>, dio wong jingok Yesus bejalan di pócók banyu dateng marak'i perau tu. Jadi, dio wong ketakótan.<span id="bookmarks19"></span> <a id="v20"></a><span class="v">20</span><span class="vsp">&nbsp;</span>Tapi, Yesus ngomong ke dio wong cak ini, “Ini Aku. Dak usa takót!”<span id="bookmarks20"></span> <a id="v21"></a><span class="v">21</span><span class="vsp">&nbsp;</span>Ahérnyo, dio wong nak naékke Yesus ke jeró perau, trós perau tu langsóng sampe di tempat yang nak dio wong tuju.<span id="bookmarks21"></span></div>
+<div class="s3"><div id="s4">Wong banyak nyari Yesus</div></div><span id="bookmarks21"></span><a id="v22"></a>
+<div class="p"><span class="v">22</span><span class="vsp">&nbsp;</span>Besoknyo, wong banyak yang masé tegak di sebrang danau tu sadar amen sebelómnyo cuman ado sikok perau di situ. Dio wong jugo sadar amen Yesus dak masók ke jeró perau tu besamo móréd-móréd-Nyo, tapi cuman móréd-móréd-Nyo bae yang berangkat.<span id="bookmarks22"></span> <a id="v23"></a><span class="v">23</span><span class="vsp">&nbsp;</span>Abés tu, beberapo perau laén dari Kota Tiberias dateng marak'i tempat di mano dio wong makan roti seabés Tuan Yesus ngucap sókór.<span id="bookmarks23"></span> <a id="v24"></a><span class="v">24</span><span class="vsp">&nbsp;</span>Jadi, pas wong banyak tu sadar amen Yesus jugo móréd-móréd-Nyo katek di sano, dio wong naék perau-perau tu trós pegi ke Kota Kapernaum nyari Yesus.<span id="bookmarks24"></span></div>
+<div class="s3"><div id="s5">Yesus nyelaske Diola roti keédópan</div></div><span id="bookmarks24"></span><a id="v25"></a>
+<div class="p"><span class="v">25</span><span class="vsp">&nbsp;</span>Na, pas dio wong nemuke Yesus di sebrang danau tu, dio wong ngomong ke Yesus cak ini, “Guru, sejak kapan Kau la ado di sini?”<span id="bookmarks25"></span></div><span id="bookmarks25"></span><a id="v26"></a>
+<div class="p"><span class="v">26</span><span class="vsp">&nbsp;</span>Jawab Yesus ke dio wong cak ini, “Aku enjók tau nian samo kamu, kamu nyari Aku karno kamu la makan roti sampe kenyang, bukan karno la nyingok tando-tando ajaéb.<span id="bookmarks26"></span> <a id="v27"></a><span class="v">27</span><span class="vsp">&nbsp;</span>Jangan berejo óntók dapetke pajóan yang bakal basi, tapi berejola óntók dapetke pajóan yang betahan jugo ngenjókke édóp yang óntók selamo-lamonyo. Pajóan tu bakal dienjók ke kamu ole <span class="footnote selectable" id="G-2">Anak Manusio</span>. Soalnyo, Aba, yang iola Allah, la ngesahke-Nyo.”<span id="bookmarks27"></span></div><span id="bookmarks27"></span><a id="v28"></a>
+<div class="p"><span class="v">28</span><span class="vsp">&nbsp;</span>Laju, dio wong ngomong ke Yesus cak ini, “Apo yang harós kami lakuke supayo kami gaweke gawean-gawean yang Allah kendak'i?”<span id="bookmarks28"></span></div><span id="bookmarks28"></span><a id="v29"></a>
+<div class="p"><span class="v">29</span><span class="vsp">&nbsp;</span>Jawab Yesus ke dio wong cak ini, “Inila gawean yang dikendak'i Allah, kamu harós pecayo samo Dio yang la diótós Allah.”<span id="bookmarks29"></span></div><span id="bookmarks29"></span><a id="v30"></a>
+<div class="p"><span class="v">30</span><span class="vsp">&nbsp;</span>Dio wong ngomong ke Yesus cak ini, “Jadi, tando ajaéb apo yang kau lakuke, supayo kami pacak nyingok jugo pecayo samo kau? Apo yang bakal kau gaweke?<span id="bookmarks30"></span> <a id="v31"></a><span class="v">31</span><span class="vsp">&nbsp;</span>Nenek moyang kami makan <span class="add">pajóan yang disebót</span> manna,<span class="footnote selectable" id="F-1"><sup>d</sup></span> di padang górón, pecak yang tetólés di kitab suci cak ini, ‘Dio ngenjók dio wong roti dari surgo óntók dimakan.’”<span class="footnote selectable" id="X-2"><sup>e</sup></span><span id="bookmarks31"></span></div><span id="bookmarks31"></span><a id="v32"></a>
+<div class="p"><span class="v">32</span><span class="vsp">&nbsp;</span>Jadi, Yesus ngomong ke dio wong cak ini, “Aku enjók tau kamu nian, bukan Musa yang perna ngenjók kamu roti dari surgo, tapi Aba Akula yang ngenjók kamu roti yang nyato dari surgo.<span id="bookmarks32"></span> <a id="v33"></a><span class="v">33</span><span class="vsp">&nbsp;</span>Soalnyo, roti yang dari Allah tu iola yang tórón dari surgo jugo ngenjók keédópan ke dunio.”<span id="bookmarks33"></span></div><span id="bookmarks33"></span><a id="v34"></a>
+<div class="p"><span class="v">34</span><span class="vsp">&nbsp;</span>Uji dio wong ke Yesus, “Tuan, enjókla roti tu samo kami terós-terósan!”<span id="bookmarks34"></span></div><span id="bookmarks34"></span><a id="v35"></a>
+<div class="p"><span class="v">35</span><span class="vsp">&nbsp;</span>Yesus ngomong ke dio wong cak ini, “Akula roti keédópan tu. Wong yang dateng ke Aku dak bakal laper. Wong yang pecayo samo Aku dak bakal aós lagi.<span id="bookmarks35"></span> <a id="v36"></a><span class="v">36</span><span class="vsp">&nbsp;</span>Tapi, pecak yang la Aku omongke samo kamu, mugola kamu la nyingok Aku, kamu tetep bae idak pecayo.<span id="bookmarks36"></span> <a id="v37"></a><span class="v">37</span><span class="vsp">&nbsp;</span>Galo-galo wong yang Aba enjók samo Aku bakal dateng ke Aku, trós siapo bae yang dateng ke Aku, Aku dak bakal ngósér wong tu.<span id="bookmarks37"></span> <a id="v38"></a><span class="v">38</span><span class="vsp">&nbsp;</span>Soalnyo, Aku tórón dari surgo bukan óntók ngelakuke kendak Aku dewek, tapi kendak Dio yang la ngótós Aku.<span id="bookmarks38"></span> <a id="v39"></a><span class="v">39</span><span class="vsp">&nbsp;</span>Inila kendak Dio yang la ngótós Aku, Dio péngén Aku idak keilangan sikok bae dari galo-galo yang la Dio enjókke samo Aku. Tapi, Aku bakal mbangkétke dio wong galo pas ari terahér.<span id="bookmarks39"></span> <a id="v40"></a><span class="v">40</span><span class="vsp">&nbsp;</span>Soalnyo, inila kendak Aba Aku, tiap wong yang nyingok Anak jugo pecayo samo Dio bakal ndapetke keédópan yang óntók selamo-lamonyo, trós Aku dewek <span class="add">, yang iola Anak-Nyo,</span> bakal mbangkétke wong tu pas ari terahér.”<span id="bookmarks40"></span></div><span id="bookmarks40"></span><a id="v41"></a>
+<div class="p"><span class="v">41</span><span class="vsp">&nbsp;</span>Laju, wong-wong Israel <span class="add">yang ngelawan Yesus</span><span class="footnote selectable" id="F-2"><sup>f</sup></span> mulai berótók'an pasal Dio, soalnyo Dio la ngomong cak ini, “Akula roti yang tórón dari surgo tu.”<span id="bookmarks41"></span> <a id="v42"></a><span class="v">42</span><span class="vsp">&nbsp;</span>Trós dio wong ngomong, “Bukannyo dio ni Yesus anaknyo Yósóp, yang aba samo emak-Nyo kito kenal? Cakmano sekarang dio pacak ngomong, ‘Aku tórón dari surgo’?”<span id="bookmarks42"></span></div><span id="bookmarks42"></span><a id="v43"></a>
+<div class="p"><span class="v">43</span><span class="vsp">&nbsp;</span>Jawab Yesus ke dio wong cak ini, “Jangan berótók'an sesamo kamu.<span id="bookmarks43"></span> <a id="v44"></a><span class="v">44</span><span class="vsp">&nbsp;</span>Dak katek siapo bae yang pacak dateng ke Aku amen dio idak ditarék samo Aba yang ngótós Aku. Trós Aku bakal mbangkétke dio pas ari terahér.<span id="bookmarks44"></span> <a id="v45"></a><span class="v">45</span><span class="vsp">&nbsp;</span>Ado tetólés dalem kitab nabi-nabi cak ini, ‘Trós dio wong bakal diajar ole Allah.’<span class="footnote selectable" id="X-3"><sup>g</sup></span> Jadi, tiap wong yang la ndenger jugo la belajar dari Aba dateng ke Aku.<span id="bookmarks45"></span> <a id="v46"></a><span class="v">46</span><span class="vsp">&nbsp;</span>Tapi, pasal tu idak bearti amen ado wong yang perna nyingok Aba, kecuali Dio yang dateng dari Allah. Dio itula yang la nyingok Aba.<span id="bookmarks46"></span> <a id="v47"></a><span class="v">47</span><span class="vsp">&nbsp;</span>Aku enjók tau kamu nian, wong yang pecayo punyo édóp yang óntók selamo-lamonyo.<span id="bookmarks47"></span> <a id="v48"></a><span class="v">48</span><span class="vsp">&nbsp;</span>Akula roti keédópan tu.<span id="bookmarks48"></span> <a id="v49"></a><span class="v">49</span><span class="vsp">&nbsp;</span>Nenek moyang kamu la makan roti manna di padang górón, tapi dio wong jugo tetep mati.<span id="bookmarks49"></span> <a id="v50"></a><span class="v">50</span><span class="vsp">&nbsp;</span>Tapi, inila roti yang tórón dari surgo tu. Ini ni supayo wong yang makan roti tu idak bakal mati.<span id="bookmarks50"></span> <a id="v51"></a><span class="v">51</span><span class="vsp">&nbsp;</span>Akula roti édóp yang tórón dari surgo. Amen wong makan roti ni, dio bakal édóp óntók selamo-lamonyo. Trós roti yang bakal Aku enjókke óntók keédópan dunio ni iola dagéng Aku.”<span id="bookmarks51"></span></div><span id="bookmarks51"></span><a id="v52"></a>
+<div class="p"><span class="v">52</span><span class="vsp">&nbsp;</span>Ole karno tu, wong-wong Israel <span class="add">yang ngelawan Yesus</span> saléng adu mólót, trós ngomong cak ini, “Cakmano nian wong ni pacak ngenjók dagéngnyo óntók kito makan?”<span id="bookmarks52"></span></div><span id="bookmarks52"></span><a id="v53"></a>
+<div class="p"><span class="v">53</span><span class="vsp">&nbsp;</span>Jadi, uji Yesus ke dio wong, “Aku enjók tau kamu nian, amen kamu idak makan dagéng <span class="footnote selectable" id="G-2">Anak Manusio</span> jugo minum dara-Nyo, kamu idak punyo keédópan dalem diri kamu tu.<span id="bookmarks53"></span> <a id="v54"></a><span class="v">54</span><span class="vsp">&nbsp;</span>Wong yang makan dagéng Aku jugo minum dara Aku punyo keédópan yang óntók selamo-lamonyo, trós Aku bakal mbangkétke wong tu pas ari terahér.<span id="bookmarks54"></span> <a id="v55"></a><span class="v">55</span><span class="vsp">&nbsp;</span>Soalnyo, dagéng Aku ni iola pajóan yang sebenernyo trós dara Aku ni iola minuman yang sebenernyo.<span id="bookmarks55"></span> <a id="v56"></a><span class="v">56</span><span class="vsp">&nbsp;</span>Siapo yang makan dagéng Aku jugo minum dara Aku, dio tinggal dalem Aku trós Aku dalem dio.<span id="bookmarks56"></span> <a id="v57"></a><span class="v">57</span><span class="vsp">&nbsp;</span>Pecak Aba yang édóp la ngótós Aku trós ngenjókke édóp ke Aku, pecak itu jugo Aku ngenjókke édóp ke wong yang makan Aku.<span id="bookmarks57"></span> <a id="v58"></a><span class="v">58</span><span class="vsp">&nbsp;</span>Inila roti yang tórón dari surgo, bukan roti pecak yang dimakan nenek moyang kamu trós dio wong tetep mati jugo. Wong yang makan roti ni bakal édóp óntók selamo-lamonyo.”<span id="bookmarks58"></span> <a id="v59"></a><span class="v">59</span><span class="vsp">&nbsp;</span>Yesus ngomong pasal ni pas Dio ngajar di ruma ibada di Kota Kapernaum.<span id="bookmarks59"></span></div>
+<div class="s3"><div id="s6">Banyak pengékót Yesus yang ngóndórke diri</div></div><span id="bookmarks59"></span><a id="v60"></a>
+<div class="p"><span class="v">60</span><span class="vsp">&nbsp;</span>Na, seabés ndenger <span class="add">ajaran Yesus tu</span>, banyak dari antaro pengékót-pengékót-Nyo ngomong cak ini, “Omongan ni saro óntók diterimo. Siapo yang pacak ndengerke omongan tu?”<span id="bookmarks60"></span></div><span id="bookmarks60"></span><a id="v61"></a>
+<div class="p"><span class="v">61</span><span class="vsp">&nbsp;</span>Di jeró ati-Nyo dewek Yesus tau amen pengékót-pengékót-Nyo ni berótók'an pasal tu, trós Yesus ngomong ke dio wong cak ini, “Apo omongan Aku tu mbékén kamu nak murtad?<span id="bookmarks61"></span> <a id="v62"></a><span class="v">62</span><span class="vsp">&nbsp;</span>Jadi, <span class="add">apo yang bakal kamu pékér</span> amen kamu nyingok <span class="footnote selectable" id="G-2">Anak Manusio</span> naék ke tempat asal-Nyo?<span id="bookmarks62"></span> <a id="v63"></a><span class="v">63</span><span class="vsp">&nbsp;</span>Rola yang ngenjók keédópan, dagéng dak pacak. Kato-kato yang Aku omongke samo kamu tu iola rohani jugo ngenjók keédópan.<span class="footnote selectable" id="F-3"><sup>h</sup></span><span id="bookmarks63"></span> <a id="v64"></a><span class="v">64</span><span class="vsp">&nbsp;</span>Tapi, ado beberapo di antaro kamu ni yang idak pecayo.” Soalnyo, dari petamo Yesus la tau siapo bae yang idak pecayo jugo siapo yang bakal ngianati Dio.<span id="bookmarks64"></span> <a id="v65"></a><span class="v">65</span><span class="vsp">&nbsp;</span>Jadi, uji Yesus, “Itula sebabnyo Aku la ngomong samo kamu amen katek sikok wong bae yang pacak dateng ke Aku kecuali dikarunioke Aba Aku.”<span id="bookmarks65"></span></div><span id="bookmarks65"></span><a id="v66"></a>
+<div class="p"><span class="v">66</span><span class="vsp">&nbsp;</span>Ahérnyo, sejak itu jugo, banyak pengékót-Nyo yang ngóndórke diri trós idak lagi melok'i Dio.<span id="bookmarks66"></span></div>
+<div class="s3"><div id="s7">Pengakuan Petrus pasal siapo Yesus</div></div><span id="bookmarks66"></span><a id="v67"></a>
+<div class="p"><span class="v">67</span><span class="vsp">&nbsp;</span>Yesus ngomong samo ke-12 móréd-Nyo cak ini, “Apo kamu idak nak pegi jugo?”<span id="bookmarks67"></span></div><span id="bookmarks67"></span><a id="v68"></a>
+<div class="p"><span class="v">68</span><span class="vsp">&nbsp;</span>Jawab Simon Petrus ke Yesus cak ini, “Tuan, ke siapo lagi kami bakal pegi? Kaula yang punyo omongan yang ngenjók keédópan yang óntók selamo-lamonyo.<span id="bookmarks68"></span> <a id="v69"></a><span class="v">69</span><span class="vsp">&nbsp;</span>Kami la pecayo jugo la tau amen Kaula Yang Suci dari Allah.”<span id="bookmarks69"></span></div><span id="bookmarks69"></span><a id="v70"></a>
+<div class="p"><span class="v">70</span><span class="vsp">&nbsp;</span>Jadi, Yesus nyawab dio wong, “Bukannyo Aku dewek yang la mélé kamu yang 12 wong ni? Mugola cak itu, sala sikok di antaro kamu tu iola Éblés.”<span class="footnote selectable" id="F-4"><sup>i</sup></span><span id="bookmarks70"></span> <a id="v71"></a><span class="v">71</span><span class="vsp">&nbsp;</span>Yang Yesus maksód ni iola Yudas, anak Simon Iskariot. Soalnyo, Yudas bakal ngianati Yesus. Dio ni sala sikok dari ke-12 móréd Yesus.<span id="bookmarks71"></span></div>
+</div>
+<script type='text/javascript' src='./pwa-main.js'></script>
+<script>
+var coll = document.getElementsByClassName("collapsible-button");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
+}
+</script>
+</body>
+</html>
