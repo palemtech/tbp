@@ -4,7 +4,7 @@ var books = [
   { name: "Daptar Singkatan Namo Kitab", ref: "Aktb-03-FRT-2-001.html" },
   { name: "Asal Mulo Dunio", ref: "Aktb-04-GEN-001.html" },
   { name: "Ester", ref: "Aktb-05-EST-001.html" },
-  { name: "Saér Nyanyian", ref: "Aktb-04-B001-001.html" },
+  { name: "Saér Nyanyian", ref: "Aktb-06-PSA-001.html" },
   { name: "Yunus", ref: "Aktb-07-JON-001.html" },
   { name: "Matius", ref: "Aktb-08-MAT-001.html" },
   { name: "Lukas", ref: "Aktb-09-LUK-001.html" },
