@@ -43,6 +43,7 @@ else
 ~/OneDrive/_Areas/10\ tbp_scripts/replace_xrs.py
 ~/OneDrive/_Areas/10\ tbp_scripts/process_footnotes_to_glo.py finish 
 ./update-index.py
+./update-metadata.py
 git commit -a -m "$MSG"
 git push
 fi
