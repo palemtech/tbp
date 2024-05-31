@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#6C0000">
+<title>Yahya 9</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+// Footnotes and Cross-references
+var footnotes = {
+    "F-0": "<div class=\"footnote-p\"><span class=\"fr\">9:4 </span><span class=\"fq\">kito harós gaweke gawean Dio yang ngótós Aku: </span><span class=\"ft\">Ado jugo naska kuno dari kitab ni yang tetólés cak ini, “Aku harós gaweke gawean Dio yang ngótós Aku”.</span></div>",
+    "F-1": "<div class=\"footnote-p\"><span class=\"fr\">9:14 </span><span class=\"fq\">mbékén lómpór trós melekke mato wong buto: </span><span class=\"ft\">Wong Israel nganggep amen mbékén lómpór apo nyembóke wong pecak itu iola gawean yang dak bole digaweke pas ari Sabat kecuali nyawo wong tu lagi teancem bahayo.</span></div>",
+    "F-2": "<div class=\"footnote-p\"><span class=\"fr\">9:34 </span><span class=\"fq\">ngósér: </span><span class=\"ft\">Maksód kato <span class=\"it\">ngósér</span> di sini iola lanang tu memang diósér dari tempat dio wong betemu apo dak tu dikócélke dari ruma ibada.</span></div>",
+    "F-3": "<div class=\"footnote-p\"><span class=\"fr\">9:39 </span><span class=\"ft\">Ado jugo naska kuno dari kitab ni yang idak nóléske ayat 38 samo kato <span class=\"it\">Uji Yesus</span> di awal ayat 39.</span></div>",
+    "F-4": "<div class=\"footnote-p\"><span class=\"fr\">9:39 </span><span class=\"fq\">nyingok: </span><span class=\"ft\">Kato <span class=\"it\">nyingok</span> di ayat 39-41 ngumpamoke wong yang pacak tau kebeneran dari Allah apo idak.</span></div>"
+};
+
+initFootnotes(footnotes);
+
+var crossrefs = {
+    "X-0": "<div class=\"footnote-p\"><span class=\"xo\">9:5 </span><span class=\"xta\">Yesus jugo ngomong yang samo pasal siapo diri-Nyo di </span><span class=\"xt\"><span class=\"reflink\"><a href=\"Aktb-10-JHN-008.html#v12\">Yahya 8:12</a></span></span><span class=\"xta\">.</span></div>"
+};
+
+initFootnotes(crossrefs);
+
+
+// Glossary entries
+var glossary = {
+    "G-25": "<div><span class=\"k\">Parisi</span> - Ini ni partai agama wong Israel yang cókóp begaéra pasal Prénto Allah. Dio wong jugo pecayo samo slóró kitab suci wong Israel trós seréng dipelajarinyo. Selaén kitab suci, dio wong jugo pecayo samo “tradisi lelóhór” yang dianggepnyo samo penténg pecak kitab-kitab suci. Pasal ni seréng nyebabke pedebatan antaro dio wong samo Yesus. Wong Parisi jugo ngargoi nian upacara samo adat wong Israel, sampe-sampe banyak wong Parisi diséndér ole Yesus karno lebé ngargoi upacara samo adat dibandéngke ketólósan ati, yang sebenernyo lebé penténg.</div><div class=\"p\">Asal-ósól partai ni móngkén dari duo apo tigo abad SM, jadi partai ni belóm ado pas jaman Pejanjian Lamo, tapi pas jaman Yesus partai ni la punyo pengaru besak di Israel. Idak slóró wong Parisi nolak Yesus. Rosul Paólós dulu iola wong Parisi (<span class=\"reflink\"><a href=\"Aktb-11-ACT-023.html#v9\">Cerito Rosul-Rosul 23:9</a></span>; <span class=\"reflink\"><a href=\"Aktb-11-ACT-026.html#v5\">Cerito Rosul-Rosul 26:5</a></span>; Pilipi 3:5) trós ado jugo wong-wong yang laén dari partai ni yang pecayo samo Yesus (<span class=\"reflink\"><a href=\"Aktb-10-JHN-003.html#v1\">Yahya 3:1-15</a></span>; <span class=\"reflink\"><a href=\"Aktb-11-ACT-015.html#v5\">Cerito Rosul-Rosul 15:5</a></span>).</div>",
+    "G-37": "<div><span class=\"k\">Sabat</span> - Ini ni ari óntók istirahat jugo ibada. Dalem agama wong Israel, wong dak bole gaweke apo bae dari Jumat magréb sampe Sabtu magréb. Prénto ni dienjókke ole Allah ke Israel di Pembebasan 20:8-11. Pasal ni bedasarke <span class=\"reflink\"><a href=\"Aktb-04-GEN-002.html#v1\">Asal Mulo Dunio 2:1-3</a></span> di mano Allah istirahat pas ari ketójó, seari abés Dio nyelesaike penciptoan dunio.</div>",
+    "G-42": "<div><span class=\"k\">Wong Yang Dilanték</span> - Istila ni samo dengen <span class=\"footnote selectable\" id=\"G-1\">Almasi</span>, Mesias, jugo Kristus. Dalem Pejanjian Lamo, Allah bekali-kali janjike amen sikok Wong Yang Dilanték bakal dateng óntók jadi Rajo Penyelamet óntók umat Allah. Jingokla jugo kato “<span class=\"footnote selectable\" id=\"G-56\">lanték</span>”.</div>",
+    "G-2": "<div><span class=\"k\">Anak Manusio</span> - Ini ni gelar yang Yesus pakek óntók diri-Nyo dewek yang diambék dari Danil 7:13-14. Istila ni idak bemaksód óntók negeske amen Yesus iola manusio, tapi nónjókke amen Diola rajo dunio yang dateng dari Allah trós punyo hak óntók merénto selamo-lamonyo.</div>"
+};
+
+initFootnotes(glossary);
+
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 21 }];
+var hasIntro = false;
+var baseRef  = "Aktb-10-JHN-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='Aktb-10-JHN-008.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span id="book-selector">&nbsp;&nbsp;Yahya&nbsp;&nbsp;</span>
+<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;9&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-10-JHN-010.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div class="c">9</div> 
+<div class="s2"><div id="s1">Yesus nyembóke wong yang buto dari laér</div></div><a id="v1"></a>
+<div class="p"><span class="v">1</span><span class="vsp">&nbsp;</span>Na, pas Yesus lagi liwat, Dio nyingok ado sikok lanang yang buto dari laér.<span id="bookmarks1"></span> <a id="v2"></a><span class="v">2</span><span class="vsp">&nbsp;</span>Móréd-móréd-Nyo betanyo samo Dio cak ini, “Guru, siapola yang beduso sampe-sampe dio ni laér buto? Lanang ni apo wong tuonyo?”<span id="bookmarks2"></span></div><span id="bookmarks2"></span><a id="v3"></a>
+<div class="p"><span class="v">3</span><span class="vsp">&nbsp;</span>Uji Yesus, “Bukan lanang ni jugo bukan wong tuonyo yang beduso, tapi <span class="add">dio laér buto</span> supayo gawean Allah dinyatoke liwat dio.<span id="bookmarks3"></span> <a id="v4"></a><span class="v">4</span><span class="vsp">&nbsp;</span>Selamo ari masé siang, kito harós gaweke gawean Dio yang ngótós Aku<span class="footnote selectable" id="F-0"><sup>a</sup></span> karno malem bakal dateng trós dak katek sikok wong bae yang pacak begawe.<span id="bookmarks4"></span> <a id="v5"></a><span class="v">5</span><span class="vsp">&nbsp;</span>Selamo Aku ado di dunio ni, Akula terang dunio.”<span class="footnote selectable" id="X-0"><sup>b</sup></span><span id="bookmarks5"></span></div><span id="bookmarks5"></span><a id="v6"></a>
+<div class="p"><span class="v">6</span><span class="vsp">&nbsp;</span>Na, seabés Yesus ngomong cak itu, Dio ngeluda ke tana, trós mbékén lómpór dengen luda. Abés tu, ngoleske lómpór tu ke mato wong buto tadi.<span id="bookmarks6"></span> <a id="v7"></a><span class="v">7</span><span class="vsp">&nbsp;</span>Yesus ngomong ke dio cak ini, “Pegila, basóla <span class="add">mato kau</span> di Kambang Siloam.” (Siloam artinyo ‘yang diótós’.) Jadi, wong tu pegi mbasó <span class="add">matonyo</span>. Pas balék, dio la pacak nyingok.<span id="bookmarks7"></span></div><span id="bookmarks7"></span><a id="v8"></a>
+<div class="p"><span class="v">8</span><span class="vsp">&nbsp;</span>Tetanggo-tetanggonyo jugo wong-wong yang sebelómnyo perna nyingok amen dio ni pengemis mulai ngomong cak ini, “Bukannyo dio ni yang biaso dódók sambél ngemis?”<span id="bookmarks8"></span> <a id="v9"></a><span class="v">9</span><span class="vsp">&nbsp;</span>Beberapo wong ngomong cak ini, “Yo, dio nila.”</div>
+<div class="p">Tapi, ado yang laén ngomong, “Bukan ói! Dio ni cuman mérép bae pecak wong tu.”</div>
+<div class="p">Uji lanang tu, “Akula dio.”<span id="bookmarks9"></span></div><span id="bookmarks9"></span><a id="v10"></a>
+<div class="p"><span class="v">10</span><span class="vsp">&nbsp;</span>Jadi, wong-wong tu ngomong ke dio cak ini, “Cakmano mato kau pacak nyingok?”<span id="bookmarks10"></span></div><span id="bookmarks10"></span><a id="v11"></a>
+<div class="p"><span class="v">11</span><span class="vsp">&nbsp;</span>Uji lanang tu, “Wong yang dipanggél Yesus tu mbékén lómpór, trós ngoleskenyo ke mato aku, abés tu Dio ngomong, ‘Pegila ke Kambang Siloam trós basóla <span class="add">mato kau</span>.’ Jadi, seabés aku pegi trós mbasó <span class="add">mato</span>, aku pacak nyingok.”<span id="bookmarks11"></span></div><span id="bookmarks11"></span><a id="v12"></a>
+<div class="p"><span class="v">12</span><span class="vsp">&nbsp;</span>Uji wong-wong ke lanang tu, “Di mano Dio?”</div>
+<div class="p">Ujinyo, “Aku dak tau.”<span id="bookmarks12"></span></div><span id="bookmarks12"></span><a id="v13"></a>
+<div class="p"><span class="v">13</span><span class="vsp">&nbsp;</span>Ahérnyo, dio wong gawak lanang yang tadinyo buto tu ke wong-wong <span class="footnote selectable" id="G-25">Parisi</span>.<span id="bookmarks13"></span></div><span id="bookmarks13"></span><a id="v14"></a>
+<div class="p"><span class="v">14</span><span class="vsp">&nbsp;</span>Soalnyo, ari di mano pas Yesus mbékén lómpór trós melekke mato wong buto<span class="footnote selectable" id="F-1"><sup>c</sup></span> tu iola ari <span class="footnote selectable" id="G-37">Sabat</span>.<span id="bookmarks14"></span></div><span id="bookmarks14"></span><a id="v15"></a>
+<div class="p"><span class="v">15</span><span class="vsp">&nbsp;</span>Wong-wong Parisi tu jugo betanyo ke dio cakmano dio pacak nyingok. Uji lanang tu ke wong-wong Parisi, “Dio narokke lómpór ke mato aku, abés tu aku mbasó <span class="add">mato aku</span>, trós sekarang aku pacak nyingok.”<span id="bookmarks15"></span></div><span id="bookmarks15"></span><a id="v16"></a>
+<div class="p"><span class="v">16</span><span class="vsp">&nbsp;</span>Beberapo wong Parisi tu ngomong cak ini, “Wong itu tu dak dateng dari Allah karno Dio idak nóróti peratóran ari Sabat.”</div>
+<div class="p">Tapi, ado wong yang laénnyo ngomong, “Apo móngkén wong beduso pacak mbékén tando-tando ajaéb pecak itu?” Abés tu, tejadila peseléséan di antaro dio wong.<span id="bookmarks16"></span></div><span id="bookmarks16"></span><a id="v17"></a>
+<div class="p"><span class="v">17</span><span class="vsp">&nbsp;</span>Jadi, dio wong betanyo lagi samo lanang yang tadinyo buto tu cak ini, “Apo pendapet kau pasal Dio, soalnyo Dio la mbékén mato kau pacak nyingok?”</div>
+<div class="p">Ujinyo, “Dio tu nabi.”<span id="bookmarks17"></span></div><span id="bookmarks17"></span><a id="v18"></a>
+<div class="p"><span class="v">18</span><span class="vsp">&nbsp;</span>Tapi, pemémpén-pemémpén Israel masé bae idak pecayo amen wong tu memang buto trós la pacak nyingok. Jadi, dio wong manggél wong tuo lanang yang baru pacak nyingok tu.<span id="bookmarks18"></span> <a id="v19"></a><span class="v">19</span><span class="vsp">&nbsp;</span>Laju, betanyola dio wong tu ke wong tuo lanang yang tadinyo buto tu cak ini, “Apo dio nila anak lanang kamu yang kamu omongke buto dari laér tu? Jadi, cakmano nian dio pacak nyingok sekarang?”<span id="bookmarks19"></span></div><span id="bookmarks19"></span><a id="v20"></a>
+<div class="p"><span class="v">20</span><span class="vsp">&nbsp;</span>Nyimbatla wong tuonyo cak ini, “Kami tau dio ni anak lanang kami. Memang nian dio ni buto dari laér.<span id="bookmarks20"></span> <a id="v21"></a><span class="v">21</span><span class="vsp">&nbsp;</span>Tapi, cakmano sekarang dio pacak nyingok, kami idak tau. Siapo yang melekke matonyo, kami jugo idak tau. Tanyo dio dewek bae, dio la besak. Dio pacak nyelaske pasal dirinyo dewek.”<span id="bookmarks21"></span> <a id="v22"></a><span class="v">22</span><span class="vsp">&nbsp;</span>Wong tuonyo tu ngomong pecak itu karno dio wong takót samo pemémpén-pemémpén Israel. Soalnyo, wong-wong tu la sepakat amen ado wong yang ngakui Yesus tu Almasi, <span class="footnote selectable" id="G-42">Wong Yang Dilanték</span>, dio bakal dikócélke dari ruma ibada.<span id="bookmarks22"></span> <a id="v23"></a><span class="v">23</span><span class="vsp">&nbsp;</span>Mangkonyo, wong tuonyo tu ado ngomong cak ini, “Dio la besak. Tanyo dio dewek bae.”<span id="bookmarks23"></span></div><span id="bookmarks23"></span><a id="v24"></a>
+<div class="p"><span class="v">24</span><span class="vsp">&nbsp;</span>Ahérnyo, pemémpén-pemémpén Israel manggél wong yang tadinyo buto tu óntók keduo kalinyo, trós ngomong ke dio cak ini, “Enjókla kemulyoan óntók Allah <span class="add">dengen ngomongke yang sebenernyo</span>! Kami tau amen wong tu wong beduso.”<span id="bookmarks24"></span></div><span id="bookmarks24"></span><a id="v25"></a>
+<div class="p"><span class="v">25</span><span class="vsp">&nbsp;</span>Uji lanang tu, “Dio tu wong beduso apo idak, aku dak tau. Yang aku tau, dulunyo aku buto, sekarang aku pacak nyingok.”<span id="bookmarks25"></span></div><span id="bookmarks25"></span><a id="v26"></a>
+<div class="p"><span class="v">26</span><span class="vsp">&nbsp;</span>Jadi, pemémpén-pemémpén Israel ngomong ke dio cak ini, “Apo yang dilakuke-Nyo samo kau? Cakmano caronyo Dio melekke mato kau?”<span id="bookmarks26"></span></div><span id="bookmarks26"></span><a id="v27"></a>
+<div class="p"><span class="v">27</span><span class="vsp">&nbsp;</span>Lanang tu nyimbati dio wong cak ini, “Kan la aku enjók tau, tapi kamu idak ndenger. Ngapo kamu nak ndengernyo lagi? Apo kamu nak jadi móréd-Nyo jugo?”<span id="bookmarks27"></span></div><span id="bookmarks27"></span><a id="v28"></a>
+<div class="p"><span class="v">28</span><span class="vsp">&nbsp;</span>Dio wong ngino lanang tu trós ngomong cak ini, “Kau tu móréd Wong tu, tapi kami ni móréd-mórédnyo Musa.<span id="bookmarks28"></span> <a id="v29"></a><span class="v">29</span><span class="vsp">&nbsp;</span>Kami tau amen Allah la ngomong samo Musa. Tapi, amen Wong ni kami idak tau dari mano Dio beasal.”<span id="bookmarks29"></span></div><span id="bookmarks29"></span><a id="v30"></a>
+<div class="p"><span class="v">30</span><span class="vsp">&nbsp;</span>Laju, nyimbatla lanang tu ke dio wong cak ini, “Ane nian amen kamu idak tau dari mano Dio beasal, padahal Dio la melekke mato aku.<span id="bookmarks30"></span> <a id="v31"></a><span class="v">31</span><span class="vsp">&nbsp;</span>Kito tau amen Allah idak ndengerke wong-wong beduso. Tapi, amen ado wong yang takót samo Allah trós ngelakuke kendak-Nyo, Allah bakal ndengerke wong yang cak itu.<span id="bookmarks31"></span> <a id="v32"></a><span class="v">32</span><span class="vsp">&nbsp;</span>Dari jaman bingen sampe mak ini ari, idak perna tedenger ado wong yang pacak melekke mato wong yang buto dari laér.<span id="bookmarks32"></span> <a id="v33"></a><span class="v">33</span><span class="vsp">&nbsp;</span>Amen Wong ni idak dateng dari Allah, Dio dak pacak ngelakuke apo-apo.”<span id="bookmarks33"></span></div><span id="bookmarks33"></span><a id="v34"></a>
+<div class="p"><span class="v">34</span><span class="vsp">&nbsp;</span>Laju, nyimbatla pemémpén-pemémpén Israel ke lanang tu cak ini, “Kau ni dari laér la penu dengen duso, kau nak ngajari kami pulok?” Ahérnyo, dio wong ngósér<span class="footnote selectable" id="F-2"><sup>d</sup></span> lanang tu metu.<span id="bookmarks34"></span></div>
+<div class="s2"><div id="s2">Wong buto pecayo samo Yesus</div></div><span id="bookmarks34"></span><a id="v35"></a>
+<div class="p"><span class="v">35</span><span class="vsp">&nbsp;</span>Na, pas Yesus ndenger amen pemémpén-pemémpén Israel la ngósér lanang tu metu, Yesus nemui dio, trós ngomong cak ini, “Apo kau pecayo samo <span class="footnote selectable" id="G-2">Anak Manusio</span>?”<span id="bookmarks35"></span></div><span id="bookmarks35"></span><a id="v36"></a>
+<div class="p"><span class="v">36</span><span class="vsp">&nbsp;</span>Lanang tu nyawab cak ini, “Siapo Dio tu, Tuan, supayo aku pecayo samo Dio?”<span id="bookmarks36"></span></div><span id="bookmarks36"></span><a id="v37"></a>
+<div class="p"><span class="v">37</span><span class="vsp">&nbsp;</span>Uji Yesus ke dio, “Kau la nyingok Dio trós Dio tula yang lagi ngomong samo kau.”<span id="bookmarks37"></span></div><span id="bookmarks37"></span><a id="v38"></a>
+<div class="p"><span class="v">38</span><span class="vsp">&nbsp;</span>Uji lanang tu, “Aku pecayo, Tuan.” Trós dio sójód nyemba Yesus.<span id="bookmarks38"></span></div><span id="bookmarks38"></span><a id="v39"></a>
+<div class="p"><span class="v">39</span><span class="vsp">&nbsp;</span>Uji Yesus,<span class="footnote selectable" id="F-3"><sup>*</sup></span> “Aku dateng ke dalem dunio óntók ngakémi supayo wong yang buto pacak nyingok,<span class="footnote selectable" id="F-4"><sup>e</sup></span> trós wong yang pacak nyingok jadi buto.”<span id="bookmarks39"></span></div><span id="bookmarks39"></span><a id="v40"></a>
+<div class="p"><span class="v">40</span><span class="vsp">&nbsp;</span>Beberapo wong Parisi yang lagi besamo Yesus ndenger omongan tu, trós ngomong ke Yesus cak ini, “Memangnyo kami ni buto?”<span id="bookmarks40"></span></div><span id="bookmarks40"></span><a id="v41"></a>
+<div class="p"><span class="v">41</span><span class="vsp">&nbsp;</span>Uji Yesus ke dio wong, “Amen kamu buto, kamu dak beduso, tapi sekarang karno kamu ngomong amen kamu pacak nyingok, jadi duso kamu tu tetep ado.”<span id="bookmarks41"></span></div>
+</div>
+
+<div id="toolbar-bottom">
+<div class="audio-player">
+  <audio id="audio" controls>
+    <source id="audio1" src="https://storage.googleapis.com/tbp-audio/TBP Yahya_9.mp3" />
+  </audio>
+</div>
+</div>
+
+<script type='text/javascript' src='./pwa-main.js'></script>
+<script>
+var coll = document.getElementsByClassName("collapsible-button");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
+}
+</script>
+</body>
+</html>

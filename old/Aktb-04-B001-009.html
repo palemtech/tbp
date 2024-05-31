@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#6C0000">
+<title>Saér Nyanyian 9</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+// Footnotes and Cross-references
+var footnotes = {
+    "F-0": "<div class=\"footnote-p\"><span class=\"fr\">9:1 </span><span class=\"ft\">Ado kemóngkénan besak amen awal mulo S. Ny. 9-10 ni jadi sikok pas jaman bingen.</span></div>",
+    "F-1": "<div class=\"footnote-p\"><span class=\"fr\">9:1 </span><span class=\"fq\">mut-laben: </span><span class=\"ft\">Kato ni dari baso asli. Maknonyo dak pulok jelas. Móngkén namo nyanyian apo dak tu petónjók musik.</span></div>",
+    "F-2": "<div class=\"footnote-p\"><span class=\"fr\">9:17 </span><span class=\"fq\">Higayon. Selah: </span><span class=\"ft\">Keduo kato ni dari baso asli. Idak diartike karno idak jelas maknonyo, tapi móngkén digunoke jadi petónjók musik.</span></div>"
+};
+
+initFootnotes(footnotes);
+
+
+// Glossary entries
+var glossary = {
+    "G-11": "<div><span class=\"k\">Daód</span> - Dio ni rajo yang paléng penténg jugo yang paléng dicintoi di sejara bangso Israel. Keédópan Nabi Daód diceritoke di 1 Samuel 16–31, 2 Samuel 1–24, 1 Rajo-Rajo 1–2, jugo 1 Riwayat 11–29. Banyak nyanyian yang dikaétke ke Nabi Daód di kitab Saér Nyanyian, mugola idak jelas amen slóró nyanyian tu memang ditólés ole Nabi Daód, apo amen sebagéan darinyo cuman ditujuke bae ke dio.</div><div class=\"p\">Karno kasé Allah óntók Daód, Allah békén pejanjian samo dio amen ketórónan-ketórónan dio bakal nguasoi bangso Israel selamo-lamonyo (2 Samuel 7:11-16). Yesus iola ketórónan Daód yang jadi penggenepan terahér pejanjian ni. Dio bakal jadi rajo yang mrénto umat Allah sampe selamo-lamonyo.</div>",
+    "G-2": "<div><span class=\"k\"><span class=\"nd\">Allah</span><span class=\"nd2\">yhwh</span></span> - Setiap kali tejingok kato ni (óróp besak galo), artinyo yang tetólés di teks aslinyo bukan kato Allah, tapi namo YHWH. YHWH tu iola namonyo Allah yang diwahyuke-Nyo ke Nabi Musa di Gónóng Horeb (Pembebasan 3:15). Namo YHWH tu móngkén diucapke “Yahwe” trós artinyo ‘Yang Kekal’. Tapi ado tradisi lamo yang dak nyebótke namo YHWH soalnyo takót dianggep ngotori namo tu. Jadi banyak wong makek kato pengganti, contonyo “Allah”.</div>",
+    "G-57": "<div><span class=\"k\">Sion</span> - Sion ni nónjókke tempat tinggal Allah di dunio, iola kota Yerusalem jugo <span class=\"footnote selectable\" id=\"G-51\">Ruma Agóng Allah</span> yang ado di dalemnyo. Karno Yerusalem ado di pócók bókét, seréng disebót Bókét Sion.</div>"
+};
+
+initFootnotes(glossary);
+
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 34 }, { start: 36, end: 36 }, { start: 41, end: 43 }, { start: 46, end: 48 }, { start: 51, end: 51 }, { start: 53, end: 54 }, { start: 73, end: 73 }, { start: 84, end: 84 }, { start: 87, end: 87 }, { start: 90, end: 91 }, { start: 104, end: 104 }, { start: 108, end: 108 }, { start: 110, end: 110 }, { start: 112, end: 118 }, { start: 127, end: 128 }, { start: 132, end: 134 }, { start: 137, end: 139 }, { start: 143, end: 143 }, { start: 146, end: 146 }, { start: 148, end: 148 }];
+var hasIntro = false;
+var baseRef  = "Aktb-04-B001-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='Aktb-03-FRT-2-001.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-04-B001-008.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;Saér Nyanyian&nbsp;&nbsp;</a></span>
+<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;9&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-04-B001-010.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-05-JON-000.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div class="c">9</div> 
+<div class="s2"><div id="s1">Ucapan sókór samo Allah, Hakém yang bener<span class="footnote selectable" id="F-0"><sup>a</sup></span></div></div><a id="v1"></a>
+<div class="qc-v top-spacing"><span class="v">1</span><span class="vsp">&nbsp;</span><span class="add">Catetan</span> óntók pemémpén pujian: <span class="add">Saér ni dinyanyike</span> nórót mut-laben<span class="footnote selectable" id="F-1"><sup>b</sup></span>. Nyanyian <span class="footnote selectable" id="G-11">Daód</span>.</div>
+<div class="b">&nbsp;</div><span id="bookmarks1"></span><span id="bookmarks1"></span><a id="v2"></a>
+<div class="q-v"><span class="v">2</span><span class="vsp">&nbsp;</span>Aku nak ngucap sókór samo <span class="nd"><span class="footnote selectable" id="G-2"><span class="nd">Allah</span><span class="nd2">yhwh</span></span></span> dengen segenep ati.</div>
+<div class="q">Aku nak nyeritoke pebuatan Kau yang ajaéb.<span id="bookmarks2"></span></div><span id="bookmarks2"></span><a id="v3"></a>
+<div class="q-v"><span class="v">3</span><span class="vsp">&nbsp;</span>Aku nak besorak-sorak trós beseneng-seneng karno Kau.</div>
+<div class="q">Aku nak nyanyike puji-pujian óntók namo Kau, ya Yang Mahabesak.</div>
+<div class="b">&nbsp;</div><span id="bookmarks3"></span><span id="bookmarks3"></span><a id="v4"></a>
+<div class="q-v"><span class="v">4</span><span class="vsp">&nbsp;</span>Pas mósó-mósó aku móndór,</div>
+<div class="q2">dio wong kesandóng trós binaso di adepan Kau.<span id="bookmarks4"></span></div><span id="bookmarks4"></span><a id="v5"></a>
+<div class="q-v"><span class="v">5</span><span class="vsp">&nbsp;</span>Soalnyo Kau mbela keadélan óntók pekaro aku.</div>
+<div class="q">Kau dódók di korsi kekuasoan trós ngakémi dengen bener.<span id="bookmarks5"></span></div><span id="bookmarks5"></span><a id="v6"></a>
+<div class="q-v"><span class="v">6</span><span class="vsp">&nbsp;</span>Kau nyegak bangso-bangso trós mbinasoke wong jahat.</div>
+<div class="q2">Namo dio wong Kau apóske óntók seterósnyo jugo selamo-lamonyo.<span id="bookmarks6"></span></div><span id="bookmarks6"></span><a id="v7"></a>
+<div class="q-v"><span class="v">7</span><span class="vsp">&nbsp;</span>Mósó-mósó la abés, jadi póéng-póéng selamonyo.</div>
+<div class="q2">Kota-kota dio wong la Kau tumbangke.</div>
+<div class="q3">Katek yang inget lagi pasal dio wong.</div>
+<div class="b">&nbsp;</div><span id="bookmarks7"></span><span id="bookmarks7"></span><a id="v8"></a>
+<div class="q-v"><span class="v">8</span><span class="vsp">&nbsp;</span>Tapi <span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span> tinggal óntók selamo-lamonyo,</div>
+<div class="q2">Dio la negakke korsi kekuasoan-Nyo óntók ngakémi.<span id="bookmarks8"></span></div><span id="bookmarks8"></span><a id="v9"></a>
+<div class="q-v"><span class="v">9</span><span class="vsp">&nbsp;</span>Diola yang ngakémi dunio ni dengen keadélan,</div>
+<div class="q2">ngakémi bangso-bangso dengen kebeneran.<span id="bookmarks9"></span></div><span id="bookmarks9"></span><a id="v10"></a>
+<div class="q-vv"><span class="v">10</span><span class="vsp">&nbsp;</span><span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span> iola tempat peléndóngan óntók wong yang tetindes,</div>
+<div class="q2">tempat beléndóng pas dalem kesaroan.<span id="bookmarks10"></span></div><span id="bookmarks10"></span><a id="v11"></a>
+<div class="q-vv"><span class="v">11</span><span class="vsp">&nbsp;</span>Wong-wong yang tau namo baék Kau pecayo samo Kau,</div>
+<div class="q2">karno Kau dak perna ninggalke wong yang nyari Kau, ya <span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span>.</div>
+<div class="b">&nbsp;</div><span id="bookmarks11"></span><span id="bookmarks11"></span><a id="v12"></a>
+<div class="q-vv"><span class="v">12</span><span class="vsp">&nbsp;</span>Nyanyikela puji-pujian óntók <span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span>, yang dódók di bókét <span class="footnote selectable" id="G-57">Sion</span>!</div>
+<div class="q2">Britokela samo bangso-bangso pasal pebuatan-pebuatan-Nyo!<span id="bookmarks12"></span></div><span id="bookmarks12"></span><a id="v13"></a>
+<div class="q-vv"><span class="v">13</span><span class="vsp">&nbsp;</span>Soalnyo Dio yang mbaleske penumpahan dara pasti nginget wong yang saro;</div>
+<div class="q2">Dio idak lupo jerétan dio wong.</div>
+<div class="b">&nbsp;</div><span id="bookmarks13"></span><span id="bookmarks13"></span><a id="v14"></a>
+<div class="q-vv"><span class="v">14</span><span class="vsp">&nbsp;</span>Ya <span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span>, mura atila samo aku.</div>
+<div class="q">Jingokila kesaroan aku dari wong-wong yang mbenci aku,</div>
+<div class="q2">ya <span class="add">Tuhan</span> yang ngangkat aku dari gerbang maót,<span id="bookmarks14"></span></div><span id="bookmarks14"></span><a id="v15"></a>
+<div class="q-vv"><span class="v">15</span><span class="vsp">&nbsp;</span>supayo aku pacak nyeritoke slóró kemulyoan Kau</div>
+<div class="q2">di jeró gerbang Sion, yang iola anak gadés Kau.</div>
+<div class="q">Aku bakal besorak-sorak karno keselametan dari Kau.<span id="bookmarks15"></span></div><span id="bookmarks15"></span><a id="v16"></a>
+<div class="q-vv"><span class="v">16</span><span class="vsp">&nbsp;</span>Bangso-bangso tejeblos ke jeró lobang yang la dio wong mbékén.</div>
+<div class="q2">Sekel dio wong tejiret jeró jaréng yang dio wong pasang dewek.<span id="bookmarks16"></span></div><span id="bookmarks16"></span><a id="v17"></a>
+<div class="q-vv"><span class="v">17</span><span class="vsp">&nbsp;</span><span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span> la nyatoke diri-Nyo dengen nyalanke pengakéman.</div>
+<div class="q2">Wong jahat tejiret dalem pebuatan tangannyo dewek. <span class="qs">Higayon. Selah.</span><span class="footnote selectable" id="F-2"><sup>c</sup></span></div>
+<div class="b">&nbsp;</div><span id="bookmarks17"></span><span id="bookmarks17"></span><a id="v18"></a>
+<div class="q-vv"><span class="v">18</span><span class="vsp">&nbsp;</span>Wong-wong jahat bakal balék ke alam kóbór,</div>
+<div class="q2">iyo, segalo bangso yang ngelupoke Allah.<span id="bookmarks18"></span></div><span id="bookmarks18"></span><a id="v19"></a>
+<div class="q-vv"><span class="v">19</span><span class="vsp">&nbsp;</span>Tapi, wong méskén dak bakal dilupoke óntók seterósnyo,</div>
+<div class="q2">trós arepan wong yang saro dak bakal ilang selamonyo.</div>
+<div class="b">&nbsp;</div><span id="bookmarks19"></span><span id="bookmarks19"></span><a id="v20"></a>
+<div class="q-vv"><span class="v">20</span><span class="vsp">&nbsp;</span>Ya <span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span>, bangkétla!</div>
+<div class="q2">Jangan biarke manusio menang!</div>
+<div class="q">Békénla bangso-bangso diakémi di adepan Kau.<span id="bookmarks20"></span></div><span id="bookmarks20"></span><a id="v21"></a>
+<div class="q-vv"><span class="v">21</span><span class="vsp">&nbsp;</span>Békénla dio wong takót, ya <span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span>!</div>
+<div class="q">Békénla bangso-bangso tau</div>
+<div class="q2">amen dio wong cuman manusio. <span class="qs">Selah.</span><span id="bookmarks21"></span></div>
+</div>
+
+<div id="toolbar-bottom">
+<div class="audio-player">
+  <audio id="audio" controls>
+    <source id="audio1" src="https://storage.googleapis.com/tbp-audio/TBP Mazmur 9.mp3" />
+  </audio>
+</div>
+</div>
+
+<script type='text/javascript' src='./pwa-main.js'></script>
+</body>
+</html>

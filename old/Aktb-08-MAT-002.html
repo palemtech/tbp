@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#6C0000">
+<title>Matius 2</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+// Footnotes and Cross-references
+var footnotes = {
+    "F-0": "<div class=\"footnote-p\"><span class=\"fr\">2:1 </span><span class=\"fq\">Rajo Herodes: </span><span class=\"ft\">Rajo Herodes yang dimaksód di sini iola <span class=\"footnote selectable\" id=\"G-13\">Rajo Herodes Agóng</span>, yang bekuaso di slóró Israel sejak taón 37 SM sampe taón 4 SM.</span></div>",
+    "F-1": "<div class=\"footnote-p\"><span class=\"fr\">2:1 </span><span class=\"fq\">wong-wong Majus: </span><span class=\"ft\">Wong Majus ni iola wong yang pinter pasal ilmu pebintangan, yang beasal dari Kerajaan Persia. Kato <span class=\"it\">Majus</span> ni bukan sebótan óntók namo suku apo negara.</span></div>",
+    "F-2": "<div class=\"footnote-p\"><span class=\"fr\">2:11 </span><span class=\"fq\">emas, kemenyan, jugo minyak damar wangi: </span><span class=\"ft\">Ini ni iola barang-barang mahal pas jaman tu, yang biaso dipesembake óntók rajo apo dewo-dewo di kerajaan Timur.</span></div>",
+    "F-3": "<div class=\"footnote-p\"><span class=\"fr\">2:18 </span><span class=\"fq\">Kota Rama: </span><span class=\"ft\">Kota Rama, tempat Rahel dikóbór, iola namo sala sikok kota di parak Betlehem. Nabi Yeremia makek kiasan óntók ngambarke emak-emak di Israel (Rahel) yang ngeratepi anak-anaknyo yang la dibuang ke Babel. Kejadian ni mérép dengen ratepan yang tejadi pas Rajo Herodes mbunu galo-galo anak lanang di Betlehem teko daera sekitarnyo.</span></div>"
+};
+
+initFootnotes(footnotes);
+
+var crossrefs = {
+    "X-0": "<div class=\"footnote-p\"><span class=\"xo\">2:6 </span><span class=\"xt\">Mika 5:1</span></div>",
+    "X-1": "<div class=\"footnote-p\"><span class=\"xo\">2:15 </span><span class=\"xt\">Hosea 11:1</span></div>",
+    "X-2": "<div class=\"footnote-p\"><span class=\"xo\">2:18 </span><span class=\"xt\">Yeremia 31:15</span></div>",
+    "X-3": "<div class=\"footnote-p\"><span class=\"xo\">2:23 </span><span class=\"xt\">Markós 1:24; <span class=\"reflink\"><a href=\"Aktb-09-LUK-002.html#v39\">Lukas 2:39</a></span>; <span class=\"reflink\"><a href=\"Aktb-10-JHN-001.html#v45\">Yahya 1:45</a></span></span></div>"
+};
+
+initFootnotes(crossrefs);
+
+
+// Glossary entries
+var glossary = {
+    "G-52": "<div><span class=\"k\">imam besak</span> - Imam ni punyo jabatan paléng tinggi dari slóró imam-imam yang ado di agama wong Israel. Dio jugo jadi ketuo Mahkama Agama wong Israel, tapi katek kuaso dalem pemeréntoan Roma.</div>",
+    "G-49": "<div><span class=\"k\">ahli Kitab Suci</span> - Kato teks asli yang ditejemake “ahli Kitab Suci” artinyo ‘ahli tólés’. Dalem agama wong Israel, dio wong betugas óntók nyalén naska-naska Kitab Suci sesuai dengen caro yang kósós. Dio wong jugo pacak jadi guru agama yang tugasnyo iola melajari kitab-kitab suci trós ngajarkenyo. Ini ni iola arti yang biaso dalem Alkitab.</div><div class=\"p\">Wong yang pinter baco samo nólés pas jaman tu pacak jugo jadi wong yang penténg di pemeréntoan jugo agama. Ado yang gaweannyo cuman nólés samo baco surat, tapi ado jugo yang dapet jabatan yang besak. Dio wong dianggep wong yang behikmah karno pacak baco buku.</div>"
+};
+
+initFootnotes(glossary);
+
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 11 }];
+var hasIntro = false;
+var baseRef  = "Aktb-08-MAT-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='Aktb-07-JON-000.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-08-MAT-001.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;Matius&nbsp;&nbsp;</a></span>
+<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;2&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-08-MAT-003.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-09-LUK-001.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div class="c">2</div> 
+<div class="s3"><div id="s1">Wong-wong Majus dateng óntók nyemba Yesus</div></div>
+<div class="r"><div id="r1">(<span class="reflink"><a href="Aktb-09-LUK-003.html#v3">Lukas 3:3-9</a></span>; <span class="reflink"><a href="Aktb-09-LUK-003.html#v15">3:15-17</a></span>)</div></div><a id="v1"></a>
+<div class="p"><span class="v">1</span><span class="vsp">&nbsp;</span>Seabés Yesus dilaérke di Kota Betlehem di Propinsi Yudea pas jaman Rajo Herodes,<span class="footnote selectable" id="F-0"><sup>a</sup></span> tibo-tibo datengla wong-wong Majus<span class="footnote selectable" id="F-1"><sup>b</sup></span> dari Timur ke Kota Yerusalem.<span id="bookmarks1"></span> <a id="v2"></a><span class="v">2</span><span class="vsp">&nbsp;</span>Dio wong tu betanyo-tanyo cak ini, “Di mano Rajo wong Israel yang baru dilaérke tu? Soalnyo, kami la nyingok bintang-Nyo móncól, jadi kami dateng óntók sójód nyemba Dio.”<span id="bookmarks2"></span></div><span id="bookmarks2"></span><a id="v3"></a>
+<div class="p"><span class="v">3</span><span class="vsp">&nbsp;</span>Na, pas pasal tu didenger Rajo Herodes, tekejótla dio samo slóró wong yang tinggal di Kota Yerusalem.<span id="bookmarks3"></span> <a id="v4"></a><span class="v">4</span><span class="vsp">&nbsp;</span>Laju, Rajo Herodes ngómpólke galo-galo <span class="footnote selectable" id="G-52">imam besak</span> samo <span class="footnote selectable" id="G-49">ahli-ahli Kitab Suci</span>. Trós, dio betanyo ke wong-wong tu di mano Almasi bakal dilaérke.<span id="bookmarks4"></span> <a id="v5"></a><span class="v">5</span><span class="vsp">&nbsp;</span>Jawab dio wong cak ini, “Di Betlehem, di Propinsi Yudea. Soalnyo, cak inila yang Allah omongke liwat nabi-Nyo,<span id="bookmarks5"></span></div><span id="bookmarks5"></span><a id="v6"></a>
+<div class="q-v top-spacing"><span class="v">6</span><span class="vsp">&nbsp;</span>‘Ói Kota Betlehem, yang ado di Tana Yehuda,</div>
+<div class="q2">kau samo sekali bukanla yang paléng kecik dari antaro kota-kota laén di Yehuda.</div>
+<div class="q2">Soalnyo, dari kaula bakal móncól sikok pemémpén yang bakal nyago umat Aku, Israel.’”<span class="footnote selectable" id="X-0"><sup>c</sup></span><span id="bookmarks6"></span></div><span id="bookmarks6"></span><a id="v7"></a>
+<div class="p"><span class="v">7</span><span class="vsp">&nbsp;</span>Laju, abés tu, Rajo Herodes manggél wong-wong Majus tu secaro diem-diem, trós ndapetke penjelasan yang lebé lengkap dari dio wong pasal kapan bintang tu mulai kejingok'an.<span id="bookmarks7"></span> <a id="v8"></a><span class="v">8</span><span class="vsp">&nbsp;</span>Laju, dikongkonnyo dio wong pegi ke Kota Betlehem. Ujinyo, “Pegila trós carila bener-bener kupek tu. Pas kamu la ketemu samo dio, enjók taukela samo aku supayo aku jugo pacak pegi óntók sójód nyemba dio.”<span id="bookmarks8"></span></div><span id="bookmarks8"></span><a id="v9"></a>
+<div class="p"><span class="v">9</span><span class="vsp">&nbsp;</span>Seabés ndenger apo yang diomongke rajo tu, wong-wong Majus pegi. Na, Tibo-tibo, bintang yang dio wong jingok móncól pas di Timur tu ndului dio wong, trós brenti di pócók tempat Kupek tu berado.<span id="bookmarks9"></span> <a id="v10"></a><span class="v">10</span><span class="vsp">&nbsp;</span>Pas bintang tu kejingok'an lagi, dio wong jadi seneng nian.<span id="bookmarks10"></span> <a id="v11"></a><span class="v">11</span><span class="vsp">&nbsp;</span>Laju, masókla dio wong ke ruma tu, trós nyingok Kupek tu samo Mariam, emak-Nyo. Abés tu dio wong sójód nyemba Budak tu. Dio wong mbukak wada harto dio wong yang beisi emas, kemenyan, jugo minyak damar wangi,<span class="footnote selectable" id="F-2"><sup>d</sup></span> trós dipesembakenyo ke Budak tu.<span id="bookmarks11"></span> <a id="v12"></a><span class="v">12</span><span class="vsp">&nbsp;</span>Abés tu, dio wong diperingetke liwat mimpi óntók idak balék ke Rajo Herodes. Jadi, dio wong balék ke negrinyo liwat jalan yang laén.<span id="bookmarks12"></span></div>
+<div class="s3"><div id="s2">Prénto óntók pegi ke Mesér</div></div><span id="bookmarks12"></span><a id="v13"></a>
+<div class="p"><span class="v">13</span><span class="vsp">&nbsp;</span>Seabés wong-wong Majus tu berangkat, tibo-tibo malekat Allah<span class="ul">‡</span> nónjókke diri ke Yósóp dalem mimpi. Ujinyo, “Bangónla, gawakla Kupek tu samo emak-Nyo, trós larila ke Mesér. Tinggalla di sano sampe aku ngenjók kabar ke kau, karno Rajo Herodes lagi nyari Budak tu óntók mbunu-Nyo!”<span id="bookmarks13"></span></div><span id="bookmarks13"></span><a id="v14"></a>
+<div class="p"><span class="v">14</span><span class="vsp">&nbsp;</span>Laju bangónla Yósóp. Pas malem tu jugo, dio gawak Budak tu samo emak-Nyo ngungsi ke Mesér.<span id="bookmarks14"></span> <a id="v15"></a><span class="v">15</span><span class="vsp">&nbsp;</span>Dio tinggal di sano sampe Rajo Herodes mati. Dengen cak itu, ditepatila yang diomongke Allah<span class="ul">‡</span> liwat nabi-Nyo, “Dari Mesér Aku manggél Anak Aku.”<span class="footnote selectable" id="X-1"><sup>e</sup></span><span id="bookmarks15"></span></div>
+<div class="s3"><div id="s3">Pembunuhan budak-budak di Kota Betlehem</div></div><span id="bookmarks15"></span><a id="v16"></a>
+<div class="p"><span class="v">16</span><span class="vsp">&nbsp;</span>Seabés Rajo Herodes tau amen dio la dibudike ole wong-wong Majus tu, dio jadi mara nian. Ahérnyo, dio mréntoke wong-wongnyo óntók mbunu galo-galo budak lanang beómór duo taón ke bawa, yang ado di Kota Betlehem samo daera yang ado di sekitarnyo. Kepótósan ini sesuai dengen waktu yang la dio pastike dari wong-wong Majus.<span id="bookmarks16"></span> <a id="v17"></a><span class="v">17</span><span class="vsp">&nbsp;</span>Jadi, ditepatila apo yang diomongke ole Nabi Yeremia,<span id="bookmarks17"></span></div><span id="bookmarks17"></span><a id="v18"></a>
+<div class="q-vv top-spacing"><span class="v">18</span><span class="vsp">&nbsp;</span>“Di Kota Rama<span class="footnote selectable" id="F-3"><sup>f</sup></span> tedenger suaro</div>
+<div class="q2">tangisan samo ratepan yang nyaréng.</div>
+<div class="q">Rahel nangisi anak-anaknyo trós dak galak dihébór</div>
+<div class="q2">karno anak-anaknyo la dak katek lagi.”<span class="footnote selectable" id="X-2"><sup>g</sup></span><span id="bookmarks18"></span></div>
+<div class="s3"><div id="s4">Balék dari Mesér</div></div><span id="bookmarks18"></span><a id="v19"></a>
+<div class="p"><span class="v">19</span><span class="vsp">&nbsp;</span>Pas Rajo Herodes la mati, tibo-tibo malekat Allah<span class="ul">‡</span> nónjókke dirinyo lagi ke Yósóp dalem mimpi di Mesér.<span id="bookmarks19"></span> <a id="v20"></a><span class="v">20</span><span class="vsp">&nbsp;</span>Dio ngomong cak ini, “Bangónla, gawakla Budak tu samo emak-Nyo trós balékla ke tana Israel karno wong-wong yang nak mbunu Budak tu la mati.”<span id="bookmarks20"></span> <a id="v21"></a><span class="v">21</span><span class="vsp">&nbsp;</span>Laju, bangónla Yósóp, digawaknyo Budak tu samo emak-Nyo trós pegi ke Tana Israel.<span id="bookmarks21"></span> <a id="v22"></a><span class="v">22</span><span class="vsp">&nbsp;</span>Tapi pas Yósóp ndenger amen Arkelaós, anaknyo Rajo Herodes, la jadi rajo di Propinsi Yudea gantike Rajo Herodes, jadi takótla dio óntók balék lagi ke sano. Seabés diwahyuke liwat mimpi, pegila dio ke Wilaya Galilea.<span id="bookmarks22"></span> <a id="v23"></a><span class="v">23</span><span class="vsp">&nbsp;</span>Sesampenyo di sano, tinggalla dio di sikok kota yang benamo Najaret. Dengen cak itu, ditepatila apo yang diomongke ole nabi-nabi, “Dio bakal disebót Wong Najaret.”<span class="footnote selectable" id="X-3"><sup>h</sup></span><span id="bookmarks23"></span></div>
+</div>
+<script type='text/javascript' src='./pwa-main.js'></script>
+<script>
+var coll = document.getElementsByClassName("collapsible-button");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
+}
+</script>
+</body>
+</html>

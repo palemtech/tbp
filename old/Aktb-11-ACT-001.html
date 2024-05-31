@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#6C0000">
+<title>Cerito Rosul-Rosul 1</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+// Footnotes and Cross-references
+var footnotes = {
+    "F-0": "<div class=\"footnote-p\"><span class=\"fr\">1:1 </span><span class=\"fq\">Teopélós: </span><span class=\"ft\">Namo Teopélós móngkén bearti “wong yang ngaséhi Allah” apo dak tu “wong yang dikaséhi Allah”. Lukas makek sebótan “yang tehormat” dalem </span><span class=\"xt\"><span class=\"reflink\"><a href=\"Aktb-09-LUK-001.html#v1\">Lukas 1:1-3</a></span></span><span class=\"ft\">, jadi ado ahli Alkitab yang bepékér amen Teopélós iola wong Romawi yang bekuaso yang la melok agama wong Israel.</span></div>",
+    "F-1": "<div class=\"footnote-p\"><span class=\"fr\">1:4 </span><span class=\"fq\">lagi makan: </span><span class=\"ft\">Tólésan asli dalem baso Yunani pacak jugo diartike “Masé ado besamo dengen rosul-rosul tu”.</span></div>",
+    "F-2": "<div class=\"footnote-p\"><span class=\"fr\">1:5 </span><span class=\"fq\">dibaptés dengen Ro Suci: </span><span class=\"ft\">Kato-kato ni nónjókke caro Allah mberkahi wong-wong yang la betobat. Dio ngérém Ro Suci óntók tinggal di jeró atinyo.</span></div>",
+    "F-3": "<div class=\"footnote-p\"><span class=\"fr\">1:6 </span><span class=\"fq\">balékke lagi Kerajaan Israel: </span><span class=\"ft\">Rosul-rosul tu betanyo ke Yesus pasal kapan Dio bakal negakke lagi kerajaan Israel jadi bangso yang merdeka, soalnyo Israel ni la ratósan taón dijaja bangso-bangso laén.</span></div>",
+    "F-4": "<div class=\"footnote-p\"><span class=\"fr\">1:12 </span><span class=\"fq\">jaraknyo kiro-kiro sekilo: </span><span class=\"ft\">Tólésan asli dalem baso Yunani iola “jaraknyo pacak dijalani pas ari Sabat”. Hókóm Musa idak mboleke wong Israel ngelakuke gawean apo bae pas ari Sabat (jingok </span><span class=\"xt\">Pembebasan 20:8-11</span><span class=\"ft\">). Nórót guru-guru agama wong Israel, wong-wong tu cuman bole bejalan kiro-kiro sekilo pas ari Sabat. Atóran ni dak katek dalem Alkitab tapi dibékén supayo dio wong idak ngelanggar Hókóm Musa pas ari Sabat.</span></div>",
+    "F-5": "<div class=\"footnote-p\"><span class=\"fr\">1:21-22 </span><span class=\"fq\">Yahya mulai mbaptés: </span><span class=\"ft\">Tólésan aslinyo iola “Baptésan Yahya”. Kato-kato ni nónjókke pas Yahya la mulai pelayanannyo (jingok </span><span class=\"xt\"><span class=\"reflink\"><a href=\"Aktb-09-LUK-003.html#v1\">Lukas 3:1-14</a></span></span><span class=\"ft\">) apo dak tu pas Yahya lagi mbaptés Yesus.</span></div>"
+};
+
+initFootnotes(footnotes);
+
+var crossrefs = {
+    "X-0": "<div class=\"footnote-p\"><span class=\"xo\">1:20 </span><span class=\"xt\"><span class=\"reflink\">Saér Nyanyian 69:26</span></span></div>",
+    "X-1": "<div class=\"footnote-p\"><span class=\"xo\">1:20 </span><span class=\"xt\"><span class=\"reflink\">Saér Nyanyian 109:8</span></span></div>"
+};
+
+initFootnotes(crossrefs);
+
+
+// Glossary entries
+var glossary = {
+    "G-70": "<div><span class=\"k\">buku aku yang petamo - 1:1</span> -  Buku yang dimaksód di sini iola Énjél Lukas.</div>",
+    "G-35": "<div><span class=\"k\">Ro Suci</span> - Pas jaman Pejanjian Lamo sampe jaman-Nyo Yesus, Ro Suci kadang-kadang menui wong. Dio ngenjók kuaso cuman sementaro bae óntók nyalanke tójóan dari Allah. Tapi mak ini ari, sejak Ro Suci dienjók abés Yesus balék ke surgo (<span class=\"reflink\"><a href=\"Aktb-11-ACT-002.html\">Cerito Rosul-Rosul 2</a></span>), Ro Suci tu menui wong yang pecayo samo Yesus. Wong-wong ni dipenui secaro permanen, bukan sementaro bae. Ke wong yang pecayo samo Yesus, Ro Suci ngenjók kuaso óntók nolak duso jugo óntók édóp sesuai dengen kendak Allah. Dikit-dikit, Ro Suci ngoba wong yang pecayo óntók jadi wong suci pecak Yesus.</div><div class=\"p\">Ro Suci iola Allah. Allah iola tigo Pribadi: Allah Aba, Allah Anak, jugo Ro Suci. Tiap Pribadi iola sepenunyo Allah, trós cuman ado sikok Allah. Ro Suci nyelesaike gawean yang la direncanoke ole Aba trós dimulai ole Anak. Dalem slóró pasal yang digaweke-Nyo, Ro Suci mulyoke Anak.</div>",
+    "G-21": "<div><span class=\"k\">Kerajaan Allah</span> - Kerajaan Allah iola di mano bae Allah diakui ole umat-Nyo jadi Rajo dio wong, sampe-sampe dio wong melok'i jalan-Nyo Allah dengen sempurno. Asélnyo iola kerajaan yang penu kebaék'an jugo damai sentosa. Kerajaan Allah tu idak tebates cuman di surgo apo di maso depan bae. Yesus gawak <span class=\"footnote selectable\" id=\"G-53\">kabar baék</span> amen Kerajaan Allah yang la lamo dijanjike tu mulai jadi nyato dikit-dikit kósósnyo di antaro wong-wong yang nerimo ati yang baru dari Allah trós mélé óntók édóp nórót prénto Allah di dunio ni. Mugola la mulai nyato, Kerajaan Allah tu dak bakal hadér sepenunyo sampe disempurnoke Allah di ahér jaman.</div>"
+};
+
+initFootnotes(glossary);
+
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 28 }];
+var hasIntro = true;
+var baseRef  = "Aktb-11-ACT-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='Aktb-10-JHN-001.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-11-ACT-000.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;Cerito Rosul-Rosul&nbsp;&nbsp;</a></span>
+<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;1&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-11-ACT-002.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-12-GLO-001.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div class="mt"><span class="mt">Cerito Rosul-Rosul</span></div>
+<div class="mt2"><span class="mt2">[PERSI AWAL]</span></div>
+<div class="b"></div>
+<div class="b"></div>
+<div class="c">1</div> 
+<div class="ms"><div id="ms1">pembukaan</div></div>
+<div class="s2"><div id="s1">Yesus ngajar pasal Kerajaan Allah jugo kedatengan Ro Suci, trós diangkat ke surgo</div></div><a id="v1"></a>
+<div class="m"><span class="v">1</span><span class="vsp">&nbsp;</span><span class="add">Dari Lukas</span> óntók Bapak Teopélós<span class="footnote selectable" id="F-0"><sup>a</sup></span> yang tehormat,</div>
+<div class="p">Di <span class="footnote selectable" id="G-70">buku aku yang petamo</span>, aku la nóléske slóró pasal yang mulai dilakuke jugo diajarke ole Yesus<span id="bookmarks1"></span> <a id="v2"></a><span class="v">2</span><span class="vsp">&nbsp;</span>sampe ari Dio teangkat ke surgo. Dio diangkat seabés ngenjókke prénto-prénto liwat <span class="footnote selectable" id="G-35">Ro Suci</span> ke rosul-rosul yang dipélé-Nyo.<span id="bookmarks2"></span> <a id="v3"></a><span class="v">3</span><span class="vsp">&nbsp;</span>Ke dio wong tula Yesus nampakke diri-Nyo seabés Dio mendrito. Dengen banyak bukti Dio nónjókke amen Dio tu édóp. Selamo 40 ari, Dio nónjókke diri-Nyo ke rosul-rosul trós ngomong pasal <span class="footnote selectable" id="G-21">Kerajaan Allah</span>.<span id="bookmarks3"></span></div><span id="bookmarks3"></span><a id="v4"></a>
+<div class="p"><span class="v">4</span><span class="vsp">&nbsp;</span>Kapan ari, pas Yesus lagi makan<span class="footnote selectable" id="F-1"><sup>*</sup></span> besamo dengen rosul-rosul tu, Yesus mréntoke supayo dio wong jangan ninggalke Yerusalem. Uji-Nyo, “Tetepla di situ sambél nungguke janji Aba yang la kamu denger dari Aku.<span id="bookmarks4"></span> <a id="v5"></a><span class="v">5</span><span class="vsp">&nbsp;</span>Soalnyo, Nabi Yahya mbaptés dengen banyu, tapi denget lagi kamu bakal dibaptés dengen Ro Suci.”<span class="footnote selectable" id="F-2"><sup>b</sup></span><span id="bookmarks5"></span></div><span id="bookmarks5"></span><a id="v6"></a>
+<div class="p"><span class="v">6</span><span class="vsp">&nbsp;</span>Na, pas slóró wong tu la bekómpól, dio wong betanyo cak ini, “Tuan, apo inila waktunyo Tuan balékke lagi Kerajaan Israel?”<span class="footnote selectable" id="F-3"><sup>c</sup></span><span id="bookmarks6"></span></div><span id="bookmarks6"></span><a id="v7"></a>
+<div class="p"><span class="v">7</span><span class="vsp">&nbsp;</span>Uji Yesus ke dio wong, “Kamu tu dak usa tau kapan waktu jugo ari yang la ditentuke ole Aba Aku dengen kuaso-Nyo dewek.<span id="bookmarks7"></span> <a id="v8"></a><span class="v">8</span><span class="vsp">&nbsp;</span>Tapi, kamu bakal nerimo kuaso pas Ro Suci dateng ke kamu. Kamu bakal jadi saksi Aku di Yerusalem, di slóró Yudea samo Samaria, jugo sampe ke ójóng bumi.”<span id="bookmarks8"></span></div><span id="bookmarks8"></span><a id="v9"></a>
+<div class="p"><span class="v">9</span><span class="vsp">&nbsp;</span>Na, seabés ngomong cak itu, Yesus teangkat sambél dijingok ole rosul-rosul-Nyo. Ado awan nótópi-Nyo sampe Dio ngilang dari penjingok'an dio wong.<span id="bookmarks9"></span></div><span id="bookmarks9"></span><a id="v10"></a>
+<div class="p"><span class="v">10</span><span class="vsp">&nbsp;</span>Pas dio wong masé bae nyungak ke langét nyingok'i Yesus pegi, tibo-tibo duo wong bebaju póté tegak parak rosul-rosul tu.<span id="bookmarks10"></span> <a id="v11"></a><span class="v">11</span><span class="vsp">&nbsp;</span>Uji dio wong, “Ói kamu, wong Galilea! Ngapo kamu masé bae tegak di situ nyungak ke langét? Yesus yang kamu jingok tadi la teangkat ke surgo dari kamu, kagek bakal dateng lagi dengen caro yang samo pecak yang kamu jingok Dio naék ke surgo.”<span id="bookmarks11"></span></div>
+<div class="s2"><div id="s2">Rosul-rosul nunggu di Yerusalem óntók kedatengan Ro Suci</div></div><span id="bookmarks11"></span><a id="v12"></a>
+<div class="p"><span class="v">12</span><span class="vsp">&nbsp;</span>Ahérnyo, rosul-rosul balék ke Kota Yerusalem dari Bókét Jaitun tu, yang jaraknyo kiro-kiro sekilo<span class="footnote selectable" id="F-4"><sup>*</sup></span> dari Yerusalem.<span id="bookmarks12"></span> <a id="v13"></a><span class="v">13</span><span class="vsp">&nbsp;</span>Pas la sampe di situ, dio wong naék ke ruangan pócók di sikok ruma tempat dio wong numpang. Rosul-rosul tu iola Petrus, Yahya, Yakób, Andreas, Pilipus, Tomas, Bartolomeus, Matius, Yakób anaknyo Alpeus, Simon wong Jelot tu, samo Yudas anaknyo Yakób.<span id="bookmarks13"></span> <a id="v14"></a><span class="v">14</span><span class="vsp">&nbsp;</span>Galo-galo wong tu rajén manjatke doa dengen seati sepékér. Di antaro dio wong tu ado beberapo betino. Ado jugo Mariam emak-Nyo Yesus jugo dólór-dólór Yesus.<span id="bookmarks14"></span></div>
+<div class="s3"><div id="s3">Matias dipélé jadi rosul gentike Yudas Iskariot</div></div><span id="bookmarks14"></span><a id="v15"></a>
+<div class="p"><span class="v">15</span><span class="vsp">&nbsp;</span>Pas ari-ari tu, Petrus tegak di tenga-tenga pengékót-pengékót Yesus yang laén, trós ngomong ke dio wong. Jumla wong tu kiro-kiro 120. Ujinyo,<span id="bookmarks15"></span> <a id="v16"></a><span class="v">16</span><span class="vsp">&nbsp;</span>“Dólór-dólór, apo yang dulu diomongke ole Ro Suci liwat Nabi Daód di Kitab Suci pasal Yudas memang harós tejadi. Yudas nila yang mémpén wong-wong yang nangkep Yesus.<span id="bookmarks16"></span> <a id="v17"></a><span class="v">17</span><span class="vsp">&nbsp;</span>Dio ni sala sikok dari kito yang dapet bagéan dalem pelayanan ni.” (<span id="bookmarks17"></span> <a id="v18"></a><span class="v">18</span><span class="vsp">&nbsp;</span>Ternyato dari dóét asél kejahatannyo dio ndapetke sepetak tana, tempat dio campak tesóngkór. Perótnyo tebela sampe-sampe isi perótnyo temetu.<span id="bookmarks18"></span> <a id="v19"></a><span class="v">19</span><span class="vsp">&nbsp;</span>Galo-galo wong di Yerusalem tau pasal tu. Mangkonyo, dalem baso dio wong dewek tana tu dinamoke Hakal Dama, yang artinyo ‘Tana Bedara’.)<span id="bookmarks19"></span> <a id="v20"></a><span class="v">20</span><span class="vsp">&nbsp;</span><span class="add">Uji Petrus, </span> “Soalnyo, la tetólés di kitab Saér Nyanyian,</div>
+<div class="b">&nbsp;</div>
+<div class="q">‘Biarla tempat tinggalnyo jadi sepi,</div>
+<div class="q2">katek penghuninyo,’<span class="footnote selectable" id="X-0"><sup>d</sup></span> trós</div>
+<div class="q">‘Biarla kedódók'annyo diambék wong laén.’<span class="footnote selectable" id="X-1"><sup>e</sup></span></div>
+<div class="b">&nbsp;</div><span id="bookmarks20"></span><span id="bookmarks20"></span><a id="v21"></a>
+<div class="m"><span class="v">21-22</span><span class="vsp">&nbsp;</span>“ Na, ole karno tu, kito harós mélé sala sikok wong óntók jadi saksi kebangkétan Yesus. Seharósnyo, wong tu la melok kito pas Tuan Yesus ado samo kito, dari sejak Yahya lagi mbaptés<span class="footnote selectable" id="F-5"><sup>f</sup></span> sampe Yesus teangkat dari kito ke surgo.”<span id="bookmarks21-22"></span></div><span id="bookmarks21-22"></span><a id="v23"></a>
+<div class="p"><span class="v">23</span><span class="vsp">&nbsp;</span>Ahérnyo, wong-wong yang ado di situ ngósólke duo wong. Sikok benamo Yósóp yang disebót Barsabas yang dipanggél Yustus, trós sikok lagi benamo Matias.<span id="bookmarks23"></span> <a id="v24"></a><span class="v">24</span><span class="vsp">&nbsp;</span>Laju, dio wong bedoa, “Ya Tuan, Kau ngenal ati slóró wong. Karno tu, tónjókkela samo kami siapo di antaro keduo wong ni yang Kau pélé<span id="bookmarks24"></span> <a id="v25"></a><span class="v">25</span><span class="vsp">&nbsp;</span>óntók nempati kedódók'an ni trós ngelakuke pelayanan rosul, yang ditinggalke Yudas óntók pegi ke tempat yang pantes óntók dio.”<span id="bookmarks25"></span></div><span id="bookmarks25"></span><a id="v26"></a>
+<div class="p"><span class="v">26</span><span class="vsp">&nbsp;</span>Na, jadi dio wong ngoncang undi óntók mélé sikok dari keduo wong tu. Ahérnyo, Matiasla yang tekeno undi. Dio diterimo jadi rosul besamo kesebelas rosul laénnyo.<span id="bookmarks26"></span></div>
+</div>
+
+<div id="toolbar-bottom">
+<div class="audio-player">
+  <audio id="audio" controls>
+    <source id="audio1" src="https://storage.googleapis.com/tbp-audio/TBP Cerito Rosul 1.mp3" />
+  </audio>
+</div>
+</div>
+
+<script type='text/javascript' src='./pwa-main.js'></script>
+<script>
+var coll = document.getElementsByClassName("collapsible-button");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
+}
+</script>
+</body>
+</html>

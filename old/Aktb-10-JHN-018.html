@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#6C0000">
+<title>Yahya 18</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+// Footnotes and Cross-references
+var footnotes = {
+    "F-0": "<div class=\"footnote-p\"><span class=\"fr\">18:11 </span><span class=\"fq\">minum dari cangkér: </span><span class=\"ft\">Minum dari cangkér pacak diartike ngalami hókóman dari Allah (jingok </span><span class=\"xt\"><span class=\"reflink\">Saér Nyanyian 11:6</span>; Wahyu 14:10; 16:19</span><span class=\"ft\">). Di sini Yesus nyelaske amen Dio siap mendrito di kayu saléb karno nanggóng duso manusio.</span></div>",
+    "F-1": "<div class=\"footnote-p\"><span class=\"fr\">18:13 </span><span class=\"fq\">Hanas: </span><span class=\"ft\">Nórót Pejanjian Lamo, jabatan imam besak tu seómór édóp trós ditórónke ke anaknyo. Tapi, pas bangso Israel dijaja Kekaésaran Roma, pemerénto Romawi pacak sekendaknyo dewek gentike imam besak. Taón 6 M Hanas jadi imam besak trós taón 15 M dio digentike Kayapas, mantunyo. Mugola Hanas idak lagi jadi imam besak, tapi dio masé punyo pengaru yang besak di antaro wong-wong Israel. Itula ngapo dio masé disebót imam besak (jingok </span><span class=\"xt\"><span class=\"reflink\"><a href=\"Aktb-10-JHN-018.html#v15\">18:15</a></span>, <span class=\"reflink\"><a href=\"Aktb-10-JHN-018.html#v19\">19</a></span>, <span class=\"reflink\"><a href=\"Aktb-10-JHN-018.html#v24\">24</a></span></span><span class=\"ft\">).</span></div>",
+    "F-2": "<div class=\"footnote-p\"><span class=\"fr\">18:15 </span><span class=\"fq\">móréd yang laén: </span><span class=\"ft\">Kemóngkénan besak ini ni nónjókke Yahya móréd Yesus yang nólés kitab ni.</span></div>",
+    "F-3": "<div class=\"footnote-p\"><span class=\"fr\">18:28 </span><span class=\"fq\">supayo dio wong idak jadi najés: </span><span class=\"ft\">Wong Israel nganggep ruma wong yang bukan Israel tu najés. Apolagi besoknyo wong-wong tu nak ngerayoke Paska. Amen dio wong jadi najés ari ni, nórót Hókóm Taurat, dio wong harós ngerayoke Paska bulan depan (jingok </span><span class=\"xt\">Kelóyóran di Górón 9:6-11</span><span class=\"ft\">).</span></div>"
+};
+
+initFootnotes(footnotes);
+
+var crossrefs = {
+    "X-0": "<div class=\"footnote-p\"><span class=\"xo\">18:9 </span><span class=\"xta\">Yesus jugo ngomong cak ini di </span><span class=\"xt\"><span class=\"reflink\"><a href=\"Aktb-10-JHN-006.html#v39\">Yahya 6:39</a></span>; <span class=\"reflink\"><a href=\"Aktb-10-JHN-017.html#v12\">Yahya 17:12</a></span></span><span class=\"xt\"></span></div>",
+    "X-1": "<div class=\"footnote-p\"><span class=\"xo\">18:14 </span><span class=\"xt\"><span class=\"reflink\"><a href=\"Aktb-10-JHN-011.html#v49\">Yahya 11:49-50</a></span></span></div>",
+    "X-2": "<div class=\"footnote-p\"><span class=\"xo\">18:32 </span><span class=\"xt\"><span class=\"reflink\"><a href=\"Aktb-10-JHN-003.html#v14\">Yahya 3:14</a></span>; <span class=\"reflink\"><a href=\"Aktb-10-JHN-012.html#v32\">12:32-33</a></span></span></div>"
+};
+
+initFootnotes(crossrefs);
+
+
+// Glossary entries
+var glossary = {
+    "G-36": "<div><span class=\"k\">Ruma Agóng Allah</span> - Ini ni bukan ruma ibada biaso, malahan sikok-sikoknyo tempat di dunio di mano hadérat Allah tinggal pas jaman tu. Tempatnyo ado di Kota <span class=\"footnote selectable\" id=\"G-46\">Yerusalem</span>, trós wong Israel nyemba Allah di tempat tu. Mak ini ari, Ruma tu dak katek lagi karno la diancórke ole tentra Roma pas taón 70 M.</div><div class=\"p\">Pas jaman Ruma Agóng Allah masé ado, Ruma tu iola pusat budayo jugo agama slóró wong Israel, mugola amen dio wong tinggal jaó nian dari tempat tu. Yang seréng dilakuke di Ruma tu iola pesembahan kórban sembeléhan, pembakaran garu ole imam, pesembahan dóét, pesembahan-pesembahan laén, jugo doa. Pas jaman Musa sampe jaman Daód, Ruma Agóng Allah bebentók kemah karno belóm ado bangónannyo. Jingokla jugo “<span class=\"footnote selectable\" id=\"G-20\">Kemah Petemuan</span>”.</div>",
+    "G-25": "<div><span class=\"k\">Parisi</span> - Ini ni partai agama wong Israel yang cókóp begaéra pasal Prénto Allah. Dio wong jugo pecayo samo slóró kitab suci wong Israel trós seréng dipelajarinyo. Selaén kitab suci, dio wong jugo pecayo samo “tradisi lelóhór” yang dianggepnyo samo penténg pecak kitab-kitab suci. Pasal ni seréng nyebabke pedebatan antaro dio wong samo Yesus. Wong Parisi jugo ngargoi nian upacara samo adat wong Israel, sampe-sampe banyak wong Parisi diséndér ole Yesus karno lebé ngargoi upacara samo adat dibandéngke ketólósan ati, yang sebenernyo lebé penténg.</div><div class=\"p\">Asal-ósól partai ni móngkén dari duo apo tigo abad SM, jadi partai ni belóm ado pas jaman Pejanjian Lamo, tapi pas jaman Yesus partai ni la punyo pengaru besak di Israel. Idak slóró wong Parisi nolak Yesus. Rosul Paólós dulu iola wong Parisi (<span class=\"reflink\"><a href=\"Aktb-11-ACT-023.html#v9\">Cerito Rosul-Rosul 23:9</a></span>; <span class=\"reflink\"><a href=\"Aktb-11-ACT-026.html#v5\">Cerito Rosul-Rosul 26:5</a></span>; Pilipi 3:5) trós ado jugo wong-wong yang laén dari partai ni yang pecayo samo Yesus (<span class=\"reflink\"><a href=\"Aktb-10-JHN-003.html#v1\">Yahya 3:1-15</a></span>; <span class=\"reflink\"><a href=\"Aktb-11-ACT-015.html#v5\">Cerito Rosul-Rosul 15:5</a></span>).</div>"
+};
+
+initFootnotes(glossary);
+
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 21 }];
+var hasIntro = false;
+var baseRef  = "Aktb-10-JHN-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='Aktb-10-JHN-017.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span id="book-selector">&nbsp;&nbsp;Yahya&nbsp;&nbsp;</span>
+<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;18&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-10-JHN-019.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div class="c">18</div> 
+<div class="s2"><div id="s1">Yesus ditangkep</div></div>
+<div class="r"><div id="r1">(<span class="reflink">Matius 26:47-56</span>; Markós 14:43-50; <span class="reflink"><a href="Aktb-09-LUK-022.html#v47">Lukas 22:47-53</a></span>)</div></div><a id="v1"></a>
+<div class="p"><span class="v">1</span><span class="vsp">&nbsp;</span>Seabés Yesus ngomong pasal-pasal tu, pegila Dio besamo móréd-móréd-Nyo ke sebrang Sungi Kidron. Di situ ado sikok taman, trós Yesus samo móréd-móréd-Nyo masók ke taman tu.<span id="bookmarks1"></span></div><span id="bookmarks1"></span><a id="v2"></a>
+<div class="p"><span class="v">2</span><span class="vsp">&nbsp;</span>Yudas, móréd yang ngianati Yesus, tau jugo tempat tu karno Yesus seréng bekómpól di situ dengen móréd-móréd-Nyo.<span id="bookmarks2"></span> <a id="v3"></a><span class="v">3</span><span class="vsp">&nbsp;</span>Jadi, Yudas gawak sekompi prajórét jugo pengawal-pengawal <span class="footnote selectable" id="G-36">Ruma Agóng Allah</span> yang dikongkon ketuo-ketuo imam jugo wong-wong <span class="footnote selectable" id="G-25">Parisi</span> dateng ke sano dengen gawak lampu sumbu, obor, jugo senjato.<span id="bookmarks3"></span></div><span id="bookmarks3"></span><a id="v4"></a>
+<div class="p"><span class="v">4</span><span class="vsp">&nbsp;</span>Ole karno Yesus tau segalo yang bakal nimpo Dio, mangkonyo Yesus maju trós ngomong samo wong-wong tu cak ini, “Siapo yang kamu cari?”<span id="bookmarks4"></span></div><span id="bookmarks4"></span><a id="v5"></a>
+<div class="p"><span class="v">5</span><span class="vsp">&nbsp;</span>Jawab dio wong tu, “Yesus, Wong Najaret.”</div>
+<div class="p">Uji Yesus, “Akula Dio.” Yudas, yang ngianati Yesus, tegak jugo besamo dio wong.<span id="bookmarks5"></span> <a id="v6"></a><span class="v">6</span><span class="vsp">&nbsp;</span>Na, pas Yesus ngomong ke wong-wong tu, “Akula Dio,” laju móndórla wong-wong tu trós nyampak ke tana.<span id="bookmarks6"></span></div><span id="bookmarks6"></span><a id="v7"></a>
+<div class="p"><span class="v">7</span><span class="vsp">&nbsp;</span>Abés tu, Yesus betanyo lagi samo dio wong, “Siapo nian yang kamu cari tu?”</div>
+<div class="p">Laju, dio wong tu ngomong, “Yesus, Wong Najaret.”<span id="bookmarks7"></span></div><span id="bookmarks7"></span><a id="v8"></a>
+<div class="p"><span class="v">8</span><span class="vsp">&nbsp;</span>Jawab Yesus, “La Aku omongke samo kamu, Akula Dio. Amen Akula yang kamu cari, biarkela wong-wong <span class="add">yang besamo Aku</span> ni pegi.”<span id="bookmarks8"></span> <a id="v9"></a><span class="v">9</span><span class="vsp">&nbsp;</span>Dengen cak itu, tepatla omongan yang perna diomongke-Nyo cak ini, “Dari segalo wong yang Aba enjókke samo Aku, dak katek sikok bae yang Aku biarke binaso”.<span class="footnote selectable" id="X-0"><sup>a</sup></span><span id="bookmarks9"></span></div><span id="bookmarks9"></span><a id="v10"></a>
+<div class="p"><span class="v">10</span><span class="vsp">&nbsp;</span>Na, laju, Simon Petrus, yang punyo sikok pedang, nyabót pedangnyo tu, trós nyerang kacóng imam besak jugo nebas kópéng kanannyo. Namo kacóng tu iola Malkus.<span id="bookmarks10"></span></div><span id="bookmarks10"></span><a id="v11"></a>
+<div class="p"><span class="v">11</span><span class="vsp">&nbsp;</span>Karno itula, Yesus ngomong samo Petrus cak ini, “Saróngkela pedang kau tu! Bukannyo Aku harós minum dari cangkér<span class="footnote selectable" id="F-0"><sup>b</sup></span> yang dienjókke Aba ke Aku?”<span id="bookmarks11"></span></div>
+<div class="s2"><div id="s2">Yesus diadepke samo Imam Besak Hanas</div></div>
+<div class="r"><div id="r2">(<span class="reflink">Matius 26:57-68</span>; Markós 14:53-72; <span class="reflink"><a href="Aktb-09-LUK-022.html#v54">Lukas 22:54-71</a></span>)</div></div><span id="bookmarks11"></span><a id="v12"></a>
+<div class="p"><span class="v">12</span><span class="vsp">&nbsp;</span>Laju, sekompi prajórét tu dengen komandannyo jugo pengawal-pengawal Ruma Agóng Allah nangkep trós ngiket Yesus.<span id="bookmarks12"></span> <a id="v13"></a><span class="v">13</span><span class="vsp">&nbsp;</span>Petamo-tamo Yesus digawak ke Hanas,<span class="footnote selectable" id="F-1"><sup>c</sup></span> yang iola mertuonyo Kayapas. Kayapas ni imam besak pas taón tu.<span id="bookmarks13"></span> <a id="v14"></a><span class="v">14</span><span class="vsp">&nbsp;</span>Kayapas nila yang nasehati wong-wong Israel amen lebé baék sikok wong mati daripado wong banyak binaso.<span class="footnote selectable" id="X-1"><sup>d</sup></span><span id="bookmarks14"></span></div>
+<div class="s2"><div id="s3">Petrus nyangkal Yesus</div></div>
+<div class="r"><div id="r3">(<span class="reflink">Matius 26:69-70</span>; Markós 14:66-68; <span class="reflink"><a href="Aktb-09-LUK-022.html#v55">Lukas 22:55-57</a></span>)</div></div><span id="bookmarks14"></span><a id="v15"></a>
+<div class="p"><span class="v">15</span><span class="vsp">&nbsp;</span>Simon Petrus dengen sala sikok móréd yang laén<span class="footnote selectable" id="F-2"><sup>e</sup></span> melok'i Yesus. Móréd tu kenalan imam besak, trós dio masók dengen Yesus ke halaman istana imam besak,<span id="bookmarks15"></span> <a id="v16"></a><span class="v">16</span><span class="vsp">&nbsp;</span>tapi Petrus tegak di jabo parak lawang. Laju, móréd yang laén, yang iola kenalan imam besak tu, metu lagi, abés tu ngomong samo betino penjago lawang trós gawak Petrus masók.<span id="bookmarks16"></span></div><span id="bookmarks16"></span><a id="v17"></a>
+<div class="p"><span class="v">17</span><span class="vsp">&nbsp;</span>Uji babu betino yang nyago lawang tu, “Bukannyo kau ni jugo sala sikok pengékót Yesus tu?”</div>
+<div class="p">Uji Petrus, “Bukan!”<span id="bookmarks17"></span></div><span id="bookmarks17"></span><a id="v18"></a>
+<div class="p"><span class="v">18</span><span class="vsp">&nbsp;</span>Pas waktu tu, udara lagi dingin. Kacóng-kacóng jugo pengawal-pengawal Ruma Agóng Allah tegak parak api ónggón yang la dio wong békén óntók ngangetke badan. Petrus ni jugo tegak ngangetke badan besamo dio wong waktu tu.<span id="bookmarks18"></span></div>
+<div class="s2"><div id="s4">Imam Besak Hanas nanyoi Yesus</div></div>
+<div class="r"><div id="r4">(<span class="reflink">Matius 26:59-66</span>; Markós 14:55-64; <span class="reflink"><a href="Aktb-09-LUK-022.html#v66">Lukas 22:66-71</a></span>)</div></div><span id="bookmarks18"></span><a id="v19"></a>
+<div class="p"><span class="v">19</span><span class="vsp">&nbsp;</span>Abés tu, imam besak betanyo samo Yesus pasal pengékót-pengékót jugo ajaran-Nyo.<span id="bookmarks19"></span></div><span id="bookmarks19"></span><a id="v20"></a>
+<div class="p"><span class="v">20</span><span class="vsp">&nbsp;</span>Jawab Yesus ke dio cak ini, “Aku ngomong terang-terangan ke dunio. Aku ngajar terós di ruma-ruma ibada jugo di halaman Ruma Agóng Allah, di mano galo-galo wong Israel bekómpól. Aku idak perna ngomong secaro diem-diem.<span id="bookmarks20"></span> <a id="v21"></a><span class="v">21</span><span class="vsp">&nbsp;</span>Ngapo kau nanyoi Aku? Tanyokela samo wong-wong yang la ndenger apo yang la Aku omongke samo dio wong tu. Jingokla, dio wong tau apo yang la Aku omongke tu.”<span id="bookmarks21"></span></div><span id="bookmarks21"></span><a id="v22"></a>
+<div class="p"><span class="v">22</span><span class="vsp">&nbsp;</span>Na, pas Yesus ngomong pasal tu, sikok penjago yang tegak di situ nabok rai Yesus trós ngomong cak ini, “Ngapo cak itu nian jawaban Kau ke imam besak?”<span id="bookmarks22"></span></div><span id="bookmarks22"></span><a id="v23"></a>
+<div class="p"><span class="v">23</span><span class="vsp">&nbsp;</span>Jawab Yesus ke wong tu, “Amen omongan Aku tu sala, cobo tónjókke salanyo, tapi amen omongan Aku tu bener, ngapo kau nabok Aku?”<span id="bookmarks23"></span> <a id="v24"></a><span class="v">24</span><span class="vsp">&nbsp;</span>Laju, Hanas ngérém Yesus dalem keadaan teiket ke Kayapas, yang iola imam besak.<span id="bookmarks24"></span></div>
+<div class="s2"><div id="s5">Petrus nyangkal Yesus lagi</div></div>
+<div class="r"><div id="r5">(<span class="reflink">Matius 26:71-75</span>; Markós 14:69-72; <span class="reflink"><a href="Aktb-09-LUK-022.html#v58">Lukas 22:58-62</a></span>)</div></div><span id="bookmarks24"></span><a id="v25"></a>
+<div class="p"><span class="v">25</span><span class="vsp">&nbsp;</span>Simon Petrus ni masé bae tegak di situ sambél ngangetke badannyo. Wong-wong tu ngomong samo dio cak ini, “Bukannyo kau ni jugo sala sikok pengékót-Nyo?” Dio nyangkal trós ngomong, “Bukan ói! <span class="add">Lemak bae!</span>”<span id="bookmarks25"></span></div><span id="bookmarks25"></span><a id="v26"></a>
+<div class="p"><span class="v">26</span><span class="vsp">&nbsp;</span>Na, sala sikok kacóng imam besak, yang iola kluargo dari kacóng yang kópéngnyo ditebas Petrus tu, ngomong cak ini, “Caknyo tadi aku nyingok kau di taman samo Dio, kan?”<span id="bookmarks26"></span> <a id="v27"></a><span class="v">27</span><span class="vsp">&nbsp;</span>Laju, Petrus nyangkal lagi. Pas itu jugo ayam bekokok.<span id="bookmarks27"></span></div>
+<div class="s2"><div id="s6">Yesus diadepke samo Gubernór Pilatus</div></div>
+<div class="r"><div id="r6">(<span class="reflink">Matius 27:1-2</span>, <span class="reflink">11-14</span>; Markós 15:1-5; <span class="reflink"><a href="Aktb-09-LUK-023.html#v1">Lukas 23:1-5</a></span>)</div></div><span id="bookmarks27"></span><a id="v28"></a>
+<div class="p"><span class="v">28</span><span class="vsp">&nbsp;</span>Abés tu, <span class="add">pemémpén-pemémpén wong Israel</span> tu gawak Yesus dari Kayapas ke istana gubernór. Waktu tu masé pagi nian. Wong-wong Israel ni idak masók ke istana gubernór supayo dio wong idak jadi najés<span class="footnote selectable" id="F-3"><sup>f</sup></span> karno dio wong nak makan pejamuan Paska.<span id="bookmarks28"></span> <a id="v29"></a><span class="v">29</span><span class="vsp">&nbsp;</span>Jadi, metula Pilatus nemui dio wong trós ngomong cak ini, “Apo tódóan kamu ke Wong ini?”<span id="bookmarks29"></span></div><span id="bookmarks29"></span><a id="v30"></a>
+<div class="p"><span class="v">30</span><span class="vsp">&nbsp;</span>Wong-wong tu nyawab ke dio cak ini, “Amen Wong ini idak ngelakuke kejahatan, dak bakalan kami nyerake Dio ke kau!”<span id="bookmarks30"></span></div><span id="bookmarks30"></span><a id="v31"></a>
+<div class="p"><span class="v">31</span><span class="vsp">&nbsp;</span>Jadi, Pilatus ngomong ke dio wong cak ini, “Ambékla Dio trós hakémila Dio nórót hókóm agama kamu dewek!”</div>
+<div class="p">Uji pemémpén-pemémpén wong Israel ke dio cak ini, “Kami idak diéjénke ngókóm mati wong.”<span id="bookmarks31"></span> <a id="v32"></a><span class="v">32</span><span class="vsp">&nbsp;</span>Pasal ni tejadi supayo tepatla pirman yang la diomongke Yesus pasal cakmano caro Dio bakal mati.<span class="footnote selectable" id="X-2"><sup>g</sup></span><span id="bookmarks32"></span></div><span id="bookmarks32"></span><a id="v33"></a>
+<div class="p"><span class="v">33</span><span class="vsp">&nbsp;</span>Laju, Pilatus masók lagi ke jeró istana gubernór, abés tu dio manggél Yesus trós betanyo ke Dio cak ini, “Apo Kau ni rajo wong Israel?”<span id="bookmarks33"></span></div><span id="bookmarks33"></span><a id="v34"></a>
+<div class="p"><span class="v">34</span><span class="vsp">&nbsp;</span>Jawab Yesus, “Yang kau tanyoke tu dari diri kau dewek, apo ado wong laén yang ngomongkenyo samo kau pasal Aku?”<span id="bookmarks34"></span></div><span id="bookmarks34"></span><a id="v35"></a>
+<div class="p"><span class="v">35</span><span class="vsp">&nbsp;</span>Uji Pilatus, “Apo aku ni wong Israel? Bangso Kau dewek jugo ketuo-ketuo imam yang la nyerake Kau ke aku. Sebenernyo apo nian yang la Kau lakuke?”<span id="bookmarks35"></span></div><span id="bookmarks35"></span><a id="v36"></a>
+<div class="p"><span class="v">36</span><span class="vsp">&nbsp;</span>Jawab Yesus, “Kerajaan Aku asalnyo bukan dari dunio ini. Amen kerajaan Aku dari dunio ni, ceto hamba-hamba Aku la ngelawan supayo Aku idak diserake ke wong-wong Israel. Tapi, kerajaan Aku asalnyo bukan dari sini.”<span id="bookmarks36"></span></div><span id="bookmarks36"></span><a id="v37"></a>
+<div class="p"><span class="v">37</span><span class="vsp">&nbsp;</span>Laju, uji Pilatus ke Yesus cak ini, “Jadi, amen cak itu Kau ni rajo?”</div>
+<div class="p">Uji Yesus, “Kau dewek kan yang ngomong amen Aku ni rajo. Óntók itula Aku laér trós óntók itula Aku dateng ke dalem dunio ni supayo Aku besaksi pasal kebeneran. Tiap wong yang asalnyo dari kebeneran ndengerke suaro Aku.”<span id="bookmarks37"></span></div><span id="bookmarks37"></span><a id="v38"></a>
+<div class="p"><span class="v">38</span><span class="vsp">&nbsp;</span>Uji Pilatus ke Yesus, “Kebeneran? Apo si itu?”<span id="bookmarks38"></span></div>
+<div class="s2"><div id="s7">Yesus dihókóm mati</div></div>
+<div class="r"><div id="r7">(<span class="reflink">Matius 27:15-26</span>; Markós 15:6-20; <span class="reflink"><a href="Aktb-09-LUK-023.html#v13">Lukas 23:13-25</a></span>)</div></div>
+<div class="p">Na, seabés Pilatus ngomong cak itu, dio metu lagi óntók nemui wong-wong Israel tu, trós ngomong samo dio wong cak ini, “Aku idak nemuke kesalahan apo bae dari Wong ini. <a id="v39"></a><span class="v">39</span><span class="vsp">&nbsp;</span>Tapi, kamu punyo kebiasoan amen pas Paska aku mbebaske sikok wong óntók kamu. Galak dak kalu aku mbebaske rajo wong Israel ni óntók kamu?”<span id="bookmarks39"></span></div><span id="bookmarks39"></span><a id="v40"></a>
+<div class="p"><span class="v">40</span><span class="vsp">&nbsp;</span>Laju, wong-wong tu mekék lagi, ujinyo, “Jangan Wong ini! Barabas bae!” Na, Barabas ni bandét.<span id="bookmarks40"></span></div>
+</div>
+<script type='text/javascript' src='./pwa-main.js'></script>
+<script>
+var coll = document.getElementsByClassName("collapsible-button");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
+}
+</script>
+</body>
+</html>

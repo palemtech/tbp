@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#6C0000">
+<title>Saér Nyanyian 51</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+// Footnotes and Cross-references
+var footnotes = {
+    "F-0": "<div class=\"footnote-p\"><span class=\"fr\">51:2 </span><span class=\"fq\">Batsyeba: </span><span class=\"ft\">Dio ni bininyo prajórét Daód yang benamo Uria. Daód bejina samo Batsyeba trós ngerencanoke supayo Uria mati dalem perang. (Jingokla </span><span class=\"xt\">2 Samuel 12:1-15</span><span class=\"ft\">.) </span></div>",
+    "F-1": "<div class=\"footnote-p\"><span class=\"fr\">51:7 </span><span class=\"fq\">aku la besala pas dilaérke, trós la beduso pas dikandóng emak aku: </span><span class=\"ft\">Dio ngomong cak ini karno dio ngeraso beduso nian. Mugola dio belóm ngelakuke duso pas di jeró kandóngan, tapi dio la nerimo sipat bawakan manusio yang beduso. Amen katek petolongan Allah, pasti kito ngelakuke duso terós. Omongan dio ni idak bemaksód amen emaknyo sala ngandóng dio.</span></div>",
+    "F-2": "<div class=\"footnote-p\"><span class=\"fr\">51:8 </span><span class=\"fq\">batén: </span><span class=\"ft\">Arti kato Ibrani di teks asli di sini kurang jelas.</span></div>",
+    "F-3": "<div class=\"footnote-p\"><span class=\"fr\">51:8 </span><span class=\"fq\">bagéan yang tesingit: </span><span class=\"ft\">Arti kato Ibrani di teks asli di sini kurang jelas.</span></div>",
+    "F-4": "<div class=\"footnote-p\"><span class=\"fr\">51:9 </span><span class=\"fq\">percékan banyu: </span><span class=\"ft\">Teks aslinyo iola “ranténg hisop”. Di budayo Ibrani, ranténg hisop digunoke óntók nyucike wong. Ranténg hisop dicelópke ke jeró banyu, trós banyunyo dipercékke ke wong yang nak disucike.</span></div>",
+    "F-5": "<div class=\"footnote-p\"><span class=\"fr\">51:10 </span><span class=\"fq\">biarkela tulang-tulang yang Kau remókke besorak: </span><span class=\"ft\">Maksódnyo wong ini mintak Allah móléke dio seabés hókómannyo diselesaike.</span></div>",
+    "F-6": "<div class=\"footnote-p\"><span class=\"fr\">51:16 </span><span class=\"fq\">utang dara: </span><span class=\"ft\">Teks aslinyo iola “dara-dara”. Maksód dari kato ni kurang jelas antaro duso karno mbunu samo kematian yang kejem.</span></div>"
+};
+
+initFootnotes(footnotes);
+
+
+// Glossary entries
+var glossary = {
+    "G-57": "<div><span class=\"k\">Sion</span> - Sion ni nónjókke tempat tinggal Allah di dunio, iola kota Yerusalem jugo <span class=\"footnote selectable\" id=\"G-51\">Ruma Agóng Allah</span> yang ado di dalemnyo. Karno Yerusalem ado di pócók bókét, seréng disebót Bókét Sion.</div>",
+    "G-64": "<div><span class=\"k\">Yerusalem</span> - Ini ni ibu kota kuno bangso Israel samo tempat pusat budayo jugo agama Yahudi. Rajo <span class=\"footnote selectable\" id=\"G-11\">Daód</span> yang mbékénnyo jadi ibu kota pas dio ngalakenyo dari wong-wong Yebus. Di sano <span class=\"footnote selectable\" id=\"G-51\">Ruma Agóng Allah</span> dibangón. Letaknyo di pócók bókét besak di daera Palestina, trós masé ado mak ini ari. Jingokla jugo kato kunci “<span class=\"footnote selectable\" id=\"G-57\">Sion</span>” samo “<span class=\"footnote selectable\" id=\"G-51\">Ruma Agóng Allah</span>”.</div>"
+};
+
+initFootnotes(glossary);
+
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 34 }, { start: 36, end: 36 }, { start: 41, end: 43 }, { start: 46, end: 48 }, { start: 51, end: 51 }, { start: 53, end: 54 }, { start: 73, end: 73 }, { start: 84, end: 84 }, { start: 87, end: 87 }, { start: 90, end: 91 }, { start: 104, end: 104 }, { start: 108, end: 108 }, { start: 110, end: 110 }, { start: 112, end: 118 }, { start: 127, end: 128 }, { start: 132, end: 134 }, { start: 137, end: 139 }, { start: 143, end: 143 }, { start: 146, end: 146 }, { start: 148, end: 148 }];
+var hasIntro = false;
+var baseRef  = "Aktb-04-B001-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='Aktb-03-FRT-2-001.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-04-B001-048.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;Saér Nyanyian&nbsp;&nbsp;</a></span>
+<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;51&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-04-B001-053.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-05-JON-000.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div class="c">51</div> 
+<div class="s2"><div id="s1">Doa mintak diampóni Allah</div></div><a id="v1"></a>
+<div class="qc-v top-spacing"><span class="v">1</span><span class="vsp">&nbsp;</span><span class="add">Catetan</span> óntók pemémpén pujian: Nyanyian ni dari Daód,<span id="bookmarks1"></span> <a id="v2"></a><span class="v">2</span><span class="vsp">&nbsp;</span>pas Nabi Natan dateng ke dio abés dio marak'i Batsyeba<span class="footnote selectable" id="F-0"><sup>a</sup></span>.</div>
+<div class="b">&nbsp;</div><span id="bookmarks2"></span><span id="bookmarks2"></span><a id="v3"></a>
+<div class="q-v"><span class="v">3</span><span class="vsp">&nbsp;</span>Mura atila samo aku, ya Allah, nórót kasé stio Kau;</div>
+<div class="q2">nórót belas kesian Kau yang besak, apóskela pelanggaran-pelanggaran aku!<span id="bookmarks3"></span></div><span id="bookmarks3"></span><a id="v4"></a>
+<div class="q-v"><span class="v">4</span><span class="vsp">&nbsp;</span>Basóla aku nian-nian dari kesalahan aku;</div>
+<div class="q2">sucikela aku dari duso aku.</div>
+<div class="b">&nbsp;</div><span id="bookmarks4"></span><span id="bookmarks4"></span><a id="v5"></a>
+<div class="q-v"><span class="v">5</span><span class="vsp">&nbsp;</span>Soalnyo aku nyadari pelanggaran-pelanggaran aku,</div>
+<div class="q2">trós duso aku ado terós di adepan aku.<span id="bookmarks5"></span></div><span id="bookmarks5"></span><a id="v6"></a>
+<div class="q-v"><span class="v">6</span><span class="vsp">&nbsp;</span>Samo Kau, samo Kau baela aku beduso,</div>
+<div class="q2">trós di mato Kau aku la ngelakuke kejahatan;</div>
+<div class="q">mangko Kau bener pas Kau ngomong,</div>
+<div class="q2">trós tólós pas Kau ngakémi.<span id="bookmarks6"></span></div><span id="bookmarks6"></span><a id="v7"></a>
+<div class="q-v"><span class="v">7</span><span class="vsp">&nbsp;</span>Sebenernyo, aku la besala pas dilaérke,</div>
+<div class="q2">trós la beduso pas dikandóng emak aku<span class="footnote selectable" id="F-1"><sup>b</sup></span>.<span id="bookmarks7"></span></div><span id="bookmarks7"></span><a id="v8"></a>
+<div class="q-v"><span class="v">8</span><span class="vsp">&nbsp;</span>Sebenernyo, kestioanla yang Kau senengi di jeró batén<span class="footnote selectable" id="F-2"><sup>c</sup></span>,</div>
+<div class="q2">trós Kau enjóktauke hikmah samo aku di jeró bagéan yang tesingit<span class="footnote selectable" id="F-3"><sup>d</sup></span>.</div>
+<div class="b">&nbsp;</div><span id="bookmarks8"></span><span id="bookmarks8"></span><a id="v9"></a>
+<div class="q-v"><span class="v">9</span><span class="vsp">&nbsp;</span>Apóskela duso aku dengen percékan banyu<span class="footnote selectable" id="F-4"><sup>e</sup></span>, mangko aku jadi suci;</div>
+<div class="q2">basóla aku, mangko aku jadi lebé póté dari salju.<span id="bookmarks9"></span></div><span id="bookmarks9"></span><a id="v10"></a>
+<div class="q-vv"><span class="v">10</span><span class="vsp">&nbsp;</span>Biarkela aku denger kemeriahan samo kesenengan;</div>
+<div class="q2">biarkela tulang-tulang yang Kau remókke besorak<span class="footnote selectable" id="F-5"><sup>f</sup></span>.<span id="bookmarks10"></span></div><span id="bookmarks10"></span><a id="v11"></a>
+<div class="q-vv"><span class="v">11</span><span class="vsp">&nbsp;</span>Singitkela rai Kau dari duso-duso aku,</div>
+<div class="q2">trós apóskela slóró kesalahan aku.</div>
+<div class="b">&nbsp;</div><span id="bookmarks11"></span><span id="bookmarks11"></span><a id="v12"></a>
+<div class="q-vv"><span class="v">12</span><span class="vsp">&nbsp;</span>Ciptokela ati yang suci óntók aku, ya Allah,</div>
+<div class="q2">trós barukela ro yang tegu di jeró batén aku.<span id="bookmarks12"></span></div><span id="bookmarks12"></span><a id="v13"></a>
+<div class="q-vv"><span class="v">13</span><span class="vsp">&nbsp;</span>Janganla buang aku dari hadérat Kau,</div>
+<div class="q2">trós janganla ambék dari aku ro Kau yang suci.<span id="bookmarks13"></span></div><span id="bookmarks13"></span><a id="v14"></a>
+<div class="q-vv"><span class="v">14</span><span class="vsp">&nbsp;</span>Balékkela ke aku kesenengan yang dari keselametan Kau,</div>
+<div class="q2">trós enjókkela aku ro keridoan.<span id="bookmarks14"></span></div><span id="bookmarks14"></span><a id="v15"></a>
+<div class="q-vv"><span class="v">15</span><span class="vsp">&nbsp;</span>Mangko aku bakal ngajarke jalan Kau samo wong-wong yang ngelakuke pelanggaran,</div>
+<div class="q2">trós wong-wong beduso tu bakal bebalék samo Kau.</div>
+<div class="b">&nbsp;</div><span id="bookmarks15"></span><span id="bookmarks15"></span><a id="v16"></a>
+<div class="q-vv"><span class="v">16</span><span class="vsp">&nbsp;</span>Lepaskela aku dari utang dara<span class="footnote selectable" id="F-6"><sup>g</sup></span>,</div>
+<div class="q2">ya Allah, ya Tuhan keselametan aku,</div>
+<div class="q2">mangko lida aku bakal besorak-sorak karno kebeneran Kau.<span id="bookmarks16"></span></div><span id="bookmarks16"></span><a id="v17"></a>
+<div class="q-vv"><span class="v">17</span><span class="vsp">&nbsp;</span>Ya Tuan, bukakkela bébér aku,</div>
+<div class="q2">mangko mólót aku nyatoke puji-pujian samo Kau!<span id="bookmarks17"></span></div><span id="bookmarks17"></span><a id="v18"></a>
+<div class="q-vv"><span class="v">18</span><span class="vsp">&nbsp;</span>Soalnyo Kau idak ngendak'i kórban sembeléhan.</div>
+<div class="q2">Sekironyo aku nyembake kórban bakaran, Kau dak seneng.<span id="bookmarks18"></span></div><span id="bookmarks18"></span><a id="v19"></a>
+<div class="q-vv"><span class="v">19</span><span class="vsp">&nbsp;</span>Kórban sembeléhan <span class="add">yang dikendak'i</span> Allah iola jiwo yang ancór.</div>
+<div class="q2">Ati yang ancór jugo remók dak bakal Kau hino, ya Allah.</div>
+<div class="b">&nbsp;</div><span id="bookmarks19"></span><span id="bookmarks19"></span><a id="v20"></a>
+<div class="q-vv"><span class="v">20</span><span class="vsp">&nbsp;</span>Bebuat baékla samo <span class="footnote selectable" id="G-57">Sion</span> sesuai yang Kau senengi.</div>
+<div class="q2">Bangónla tembok-tembok <span class="footnote selectable" id="G-64">Yerusalem</span>.<span id="bookmarks20"></span></div><span id="bookmarks20"></span><a id="v21"></a>
+<div class="q-vv"><span class="v">21</span><span class="vsp">&nbsp;</span>Mangko Kau bakal seneng nerimo kórban-kórban sembeléhan yang bener,</div>
+<div class="q2">iola kórban bakaran yang ótó, yang ditunu sampe abés;</div>
+<div class="q2">mangko sapi-sapi lanang bakal disembake di pócók meja pesembahan Kau.<span id="bookmarks21"></span></div>
+</div>
+<script type='text/javascript' src='./pwa-main.js'></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> 1</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+<link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 1 }];
+var hasIntro = false;
+var baseRef  = "Aktb-05-EST-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="content">
+
+<div class="mt"><span class="mt">Petanyoan Belajar Alkitab</span></div>
+<div class="b"></div>
+<div class="b"></div>
+<div class="p">Petanyoan-petanyoan ni disedioke óntók mbantu kito belajar pasal apo bae yang ado di Alkitab:</div>
+<div class="li top-spacing">1. Bacoke ayat pokok. Ceritoke lagi makek kato-kato kau dewek.</div>
+<div class="li">2. Apo yang dipelajari pasal Allah di bacoan ni?</div>
+<div class="li">3. Apo yang dipelajari pasal manusio di bacoan ni?</div>
+<div class="li">4. Bahas tindakan yang mesti dilakuke dalem keédópan kito bedasarke kebeneran yang baru dibaco tadi:</div>
+<div class="li2">a) Apo yang bakal kito lakuke minggu depan karno baco ayat-ayat ni, secaro pribadi? (Mulai jawabannyo dengen, “Aku bakal…”.)</div>
+<div class="li2">b) Apo yang bakal kito lakuke, secaro kelompok? (amen dibahas secaro kelompok)</div>
+<div class="li">5. Samo siapo kito bakal nyaksike kebeneran ni?</div>
+<div class="li">6. Bedoa ke Allah pasal apo yang la kito pelajari.</div>
+</div>
+<script>
+var coll = document.getElementsByClassName("collapsible-button");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
+}
+</script>
+</body>
+</html>

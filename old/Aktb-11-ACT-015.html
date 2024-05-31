@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#6C0000">
+<title>Cerito Rosul-Rosul 15</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+// Footnotes and Cross-references
+var footnotes = {
+    "F-0": "<div class=\"footnote-p\"><span class=\"fr\">15:2 </span><span class=\"fq\">Jemaah di Antiokia: </span><span class=\"ft\">Tólésan aslinyo iola “dio wong”. Kebanyak'an ahli Alkitab nyangko amen yang dimaksód iola jemaah di Antiokia, tapi ado jugo yang bepékér amen yang dimaksód iola wong-wong yang dateng dari Yudea.</span></div>",
+    "F-1": "<div class=\"footnote-p\"><span class=\"fr\">15:13 </span><span class=\"fq\">Yakób: </span><span class=\"ft\">Yakób samo Yesus ni bedólór.Yakób iola sala sikok pemémpén utamo jemaah Yerusalem (jingok </span><span class=\"xt\">Markós 6:3; Galatia 1:19; <span class=\"reflink\"><a href=\"Aktb-11-ACT-012.html#v17\">Cerito Rosul-Rosul 12:17</a></span></span><span class=\"ft\">) trós nólés surat Yakób. Dio ni bukan Yakób móréd Yesus yang dihókóm mati di </span><span class=\"xt\"><span class=\"reflink\"><a href=\"Aktb-11-ACT-012.html#v2\">Cerito Rosul-Rosul 12:2</a></span></span><span class=\"ft\">.</span></div>",
+    "F-2": "<div class=\"footnote-p\"><span class=\"fr\">15:14 </span><span class=\"fq\">Petrus: </span><span class=\"ft\">Tólésan aslinyo iola “Simon”, namo laénnyo Petrus.</span></div>",
+    "F-3": "<div class=\"footnote-p\"><span class=\"fr\">15:16 </span><span class=\"fq\">kemah Daód: </span><span class=\"ft\">Kemah iola kiasan óntók rajo-rajo dari ketórónan Daód yang beahér pas kerajaan Yehuda ke Babilonia (</span><span class=\"xt\">2 Rajo-Rajo 24:15–25:7</span><span class=\"ft\">).</span></div>",
+    "F-4": "<div class=\"footnote-p\"><span class=\"fr\">15:20 </span><span class=\"fq\">pasal-pasal yang najés karno berhalo: </span><span class=\"ft\">Pas jaman tu, wong-wong yang bukan wong Israel tekenal dengen penyembahan berhalo. Jadi kemóngkénan besak dagéng yang dijual di pasar ole wong-wong yang bukan wong Israel tu iola dagéng yang la disembake óntók berhalo-berhalo. Jadi, wong-wong Israel nganggep dagéng tu ‘najés’ trós siapo bae yang makannyo jadi ‘najés’ jugo.</span></div>",
+    "F-5": "<div class=\"footnote-p\"><span class=\"fr\">15:34 </span><span class=\"ft\">Kemóngkénan ayat 34 ni ditamba ole wong yang nyalén naska.</span></div>"
+};
+
+initFootnotes(footnotes);
+
+var crossrefs = {
+    "X-0": "<div class=\"footnote-p\"><span class=\"xo\">15:18 </span><span class=\"xt\">Amos 9:11-12; Yesaya 45:21</span></div>"
+};
+
+initFootnotes(crossrefs);
+
+
+// Glossary entries
+var glossary = {
+    "G-25": "<div><span class=\"k\">Parisi</span> - Ini ni partai agama wong Israel yang cókóp begaéra pasal Prénto Allah. Dio wong jugo pecayo samo slóró kitab suci wong Israel trós seréng dipelajarinyo. Selaén kitab suci, dio wong jugo pecayo samo “tradisi lelóhór” yang dianggepnyo samo penténg pecak kitab-kitab suci. Pasal ni seréng nyebabke pedebatan antaro dio wong samo Yesus. Wong Parisi jugo ngargoi nian upacara samo adat wong Israel, sampe-sampe banyak wong Parisi diséndér ole Yesus karno lebé ngargoi upacara samo adat dibandéngke ketólósan ati, yang sebenernyo lebé penténg.</div><div class=\"p\">Asal-ósól partai ni móngkén dari duo apo tigo abad SM, jadi partai ni belóm ado pas jaman Pejanjian Lamo, tapi pas jaman Yesus partai ni la punyo pengaru besak di Israel. Idak slóró wong Parisi nolak Yesus. Rosul Paólós dulu iola wong Parisi (<span class=\"reflink\"><a href=\"Aktb-11-ACT-023.html#v9\">Cerito Rosul-Rosul 23:9</a></span>; <span class=\"reflink\"><a href=\"Aktb-11-ACT-026.html#v5\">Cerito Rosul-Rosul 26:5</a></span>; Pilipi 3:5) trós ado jugo wong-wong yang laén dari partai ni yang pecayo samo Yesus (<span class=\"reflink\"><a href=\"Aktb-10-JHN-003.html#v1\">Yahya 3:1-15</a></span>; <span class=\"reflink\"><a href=\"Aktb-11-ACT-015.html#v5\">Cerito Rosul-Rosul 15:5</a></span>).</div>",
+    "G-15": "<div><span class=\"k\">Hókóm Musa</span> - Istila ni samo dengen <span class=\"footnote selectable\" id=\"G-14\">Hókóm Taurat</span>.</div>",
+    "G-29": "<div><span class=\"k\">Peta Pejalanan Paólós</span> </div><div class=\"image-block\"><span class=\"image\"><img src=\"images/Paul's Journeys 123.jpg\" /></span><div class=\"caption\"><span class=\"caption\">Pejalanan Paólós (Cerito Rosul-Rosul 9–28)</span></div></div>"
+};
+
+initFootnotes(glossary);
+
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 28 }];
+var hasIntro = true;
+var baseRef  = "Aktb-11-ACT-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='Aktb-10-JHN-001.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-11-ACT-014.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;Cerito Rosul-Rosul&nbsp;&nbsp;</a></span>
+<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;15&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-11-ACT-016.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-12-GLO-001.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div class="c">15</div> 
+<div class="s2"><div id="s1">Pemémpén-pemémpén jemaah di Yerusalem berembók pasal wong-wong bukan wong Israel yang la pecayo</div></div><a id="v1"></a>
+<div class="p"><span class="v">1</span><span class="vsp">&nbsp;</span>Beberapo wong pecayo dari Yudea dateng ke Antiokia jugo ngajar dólór-dólór seiman di kota tu. Uji dio wong, “Amen kamu idak disunat sesuai adat yang diwaréske ole Nabi Musa, kamu dak pacak diselametke.”<span id="bookmarks1"></span> <a id="v2"></a><span class="v">2</span><span class="vsp">&nbsp;</span>Paólós jugo Barnabas rébót dengen wong-wong dari Yudea tu. Jemaah di Antiokia<span class="footnote selectable" id="F-0"><sup>a</sup></span> mótóske supayo Paólós samo Barnabas, jugo beberapo wong laénnyo dari antaro jemaah, harós pegi ke Yerusalem óntók betemu dengen rosul-rosul jugo pemémpén-pemémpén jemaah pasal masala ni.<span id="bookmarks2"></span> <a id="v3"></a><span class="v">3</span><span class="vsp">&nbsp;</span>Seabés diótós dengen dókóngan dari jemaah, dio wong ngeliwati Penisia jugo Samaria. Di tempat-tempat tu dio wong nyeritoke pasal petobatan wong-wong yang bukan wong Israel Pasal tu jugo nyenengke ati dólór-dólór seiman yang ado di situ.<span id="bookmarks3"></span> <a id="v4"></a><span class="v">4</span><span class="vsp">&nbsp;</span>Na, pas ótósan-ótósan tu sampe di Yerusalem, dio wong disambót ole jemaah, rosul-rosul, jugo pemémpén-pemémpén. Dio wong nyeritoke slóró yang la Allah gaweke liwat dio wong.<span id="bookmarks4"></span></div><span id="bookmarks4"></span><a id="v5"></a>
+<div class="p"><span class="v">5</span><span class="vsp">&nbsp;</span>Na, tapi, ado wong-wong dari kelompok <span class="footnote selectable" id="G-25">Parisi</span> yang la pecayo tegak, ngomong cak ini, “Wong-wong yang pecayo yang bukan wong Israel, harós disunat jugo dikongkon óntók nórót samo <span class="footnote selectable" id="G-15">Hókóm Musa</span>.”<span id="bookmarks5"></span></div><span id="bookmarks5"></span><a id="v6"></a>
+<div class="p"><span class="v">6</span><span class="vsp">&nbsp;</span>Jadi, rosul-rosul samo pemémpén-pemémpén bekómpól óntók beróndéng pasal tu.<span id="bookmarks6"></span> <a id="v7"></a><span class="v">7</span><span class="vsp">&nbsp;</span>Pas kerébótan tu la belangsóng lumayan lamo, Petrus tegak, ngomong ke dio wong cak ini, “Ói dólór-dólór, kamu tau amen dari dulu Allah la mélé aku di antaro kamu óntók mbritoke Kabar Baék ke wong-wong yang bukan wong Israel, supayo dio wong denger trós pecayo.<span id="bookmarks7"></span> <a id="v8"></a><span class="v">8</span><span class="vsp">&nbsp;</span>Allah, yang ngenal ati manusio, la besaksi pasal dio wong dengen ngenjókke Ro Suci, samo pecak yang dienjók-Nyo ke kito <span class="add">wong Israel</span>.<span id="bookmarks8"></span> <a id="v9"></a><span class="v">9</span><span class="vsp">&nbsp;</span>Allah idak mbeda-bedake kito dengen dio wong. Allah jugo nyucike ati dio wong liwat iman.<span id="bookmarks9"></span> <a id="v10"></a><span class="v">10</span><span class="vsp">&nbsp;</span>Jadi, sekarang ni, ngapo kamu nak nguji Allah dengen narokke beban ke móréd-móréd <span class="add">Yesus</span> yang bukan wong Israel? Soalnyo, beban tu dak pacak ditanggóng ole nenek moyang kito, jugo kito dewek.<span id="bookmarks10"></span> <a id="v11"></a><span class="v">11</span><span class="vsp">&nbsp;</span>Tapi kito pecayo amen kito diselametke liwat kemurahan ati Tuan Yesus, samo pecak wong-wong yang bukan wong Israel.”<span id="bookmarks11"></span></div><span id="bookmarks11"></span><a id="v12"></a>
+<div class="p"><span class="v">12</span><span class="vsp">&nbsp;</span>Ahérnyo, slóró kómpólan wong tu jadi diem ndengerke Barnabas jugo Paólós nyelaske slóró tando jugo mujijat yang la Allah lakuke liwat dio wong di antaro bangso-bangso yang bukan bangso Israel.<span id="bookmarks12"></span></div><span id="bookmarks12"></span><a id="v13"></a>
+<div class="p"><span class="v">13</span><span class="vsp">&nbsp;</span>Pas dio wong brenti ngomong, Yakób<span class="footnote selectable" id="F-1"><sup>b</sup></span> nyawab. Ujinyo, “Ói dólór-dólór, dengerkela aku.<span id="bookmarks13"></span> <a id="v14"></a><span class="v">14</span><span class="vsp">&nbsp;</span>Petrus<span class="footnote selectable" id="F-2"><sup>c</sup></span> la nyelaske samo kito cakmano Allah dari petamonyo la betindak óntók mélé sikok jemaah dari antaro wong-wong yang bukan wong Israel tu óntók jadi umat-Nyo.<span id="bookmarks14"></span> <a id="v15"></a><span class="v">15</span><span class="vsp">&nbsp;</span>Pasal tu sesuai dengen omongan nabi-nabi yang tetólés cak ini:</div>
+<div class="b">&nbsp;</div><span id="bookmarks15"></span><span id="bookmarks15"></span><a id="v16"></a>
+<div class="q-vv"><span class="v">16</span><span class="vsp">&nbsp;</span>‘Abés tu, Aku bakal dateng lagi</div>
+<div class="q2">trós negakke lagi kemah Daód<span class="footnote selectable" id="F-3"><sup>d</sup></span> yang róbó.</div>
+<div class="q">Róntóannyo bakal Aku tegakke</div>
+<div class="q2">trós Aku bakal mbangónnyo lagi.<span id="bookmarks16"></span></div><span id="bookmarks16"></span><a id="v17"></a>
+<div class="q-vv"><span class="v">17</span><span class="vsp">&nbsp;</span>‘Dengen cak itu, slóró manusio yang laén bakal nyari Allah,</div>
+<div class="q2">jugo slóró wong yang bukan wong Israel</div>
+<div class="q3">yang la dijadike umat Aku dewek.</div>
+<div class="q">Cak itula pirman Allah,</div>
+<div class="q2">yang ngelakuke galo-galonyo ni<span id="bookmarks17"></span></div><span id="bookmarks17"></span><a id="v18"></a>
+<div class="q2-vv"><span class="v">18</span><span class="vsp">&nbsp;</span>yang la dibritoke dari jaman bingen.’<span class="footnote selectable" id="X-0"><sup>e</sup></span></div>
+<div class="b">&nbsp;</div><span id="bookmarks18"></span><span id="bookmarks18"></span><a id="v19"></a>
+<div class="m"><span class="v">19</span><span class="vsp">&nbsp;</span>“Jadi, aku nyémpólke amen wong-wong dari bangso laén yang la bebalék ke Allah, jangan kito bebani <span class="add">dengen nyóró dio wong nóróti Hókóm Musa</span>.<span id="bookmarks19"></span> <a id="v20"></a><span class="v">20</span><span class="vsp">&nbsp;</span>Tapi, kito kérém bae surat ke dio wong, supayo dio wong nyaóke diri dari pasal-pasal yang najés karno berhalo,<span class="footnote selectable" id="F-4"><sup>f</sup></span> nyaóke diri dari pecabólan, jangan makan dagéng binatang yang mati dicekék, jugo jangan makan dara.<span id="bookmarks20"></span> <a id="v21"></a><span class="v">21</span><span class="vsp">&nbsp;</span>Karno <span class="footnote selectable" id="G-15">Hókóm Musa</span> la dibritoke dari jaman bingen di tiap kota jugo dibacoke tiap ari Sabat di jeró ruma-ruma ibada.”<span id="bookmarks21"></span></div>
+<div class="s2"><div id="s2">Surat kepótósan óntók wong-wong yang bukan wong Israel yang la pecayo</div></div><span id="bookmarks21"></span><a id="v22"></a>
+<div class="p"><span class="v">22</span><span class="vsp">&nbsp;</span>Ahérnyo, rosul-rosul, pemémpén-pemémpén, jugo slóró jemaah tu mótóske óntók mélé beberapo wong dari antaro dio wong, óntók diótós ke Antiokia besamo Paólós jugo Barnabas. Dio wong mélé Yudas, yang disebót Barsabas, jugo Silas. Keduo wong tu iola pemémpén di antaro dólór-dólór seiman tu.<span id="bookmarks22"></span> <a id="v23"></a><span class="v">23</span><span class="vsp">&nbsp;</span>Dio wong nétépke surat samo ótósan-ótósan tu <span class="add">yang isinyo cak ini</span>,</div>
+<div class="b">&nbsp;</div>
+<div class="pm">“Salam dari kami, rosul-rosul jugo pemémpén-pemémpén jemaah, yang iola dólór-dólór seiman <span class="add">kamu</span>. Ke dólór-dólór seiman yang ado di Antiokia, Siria, jugo Kilikia, yang bukan beasal dari wong-wong Israel.<span id="bookmarks23"></span> <a id="v24"></a><span class="v">24</span><span class="vsp">&nbsp;</span>Kami ndenger amen ado beberapo wong dari kami yang dateng ke kamu trós ngacauke kamu liwat omongan dio wong sampe-sampe kamu jadi bingsal, padahal kami idak nyóró dio wong.<span id="bookmarks24"></span> <a id="v25"></a><span class="v">25</span><span class="vsp">&nbsp;</span>Karno tu, kami sepakat óntók mélé beberapo wong trós mótóske óntók ngótós dio wong ke kamu besamo-samo dengen Barnabas jugo Paólós yang kami kaséhi,<span id="bookmarks25"></span> <a id="v26"></a><span class="v">26</span><span class="vsp">&nbsp;</span>yang la nyerake édóp dio wong demi Tuan kito, Yesus Almasi.<span id="bookmarks26"></span> <a id="v27"></a><span class="v">27</span><span class="vsp">&nbsp;</span>Jadi kami ngótós Yudas samo Silas yang bakal nyampeke secaro langsóng apo yang la kami tólés óntók kamu dalem surat ini.<span id="bookmarks27"></span></div><span id="bookmarks27"></span><a id="v28"></a>
+<div class="pm"><span class="v">28</span><span class="vsp">&nbsp;</span>“Ro Suci seneng, cak itu jugo kami, óntók idak narokke beban lagi ke kamu selaén pasal-pasal ni yang memang perlu dilakuke:<span id="bookmarks28"></span> <a id="v29"></a><span class="v">29</span><span class="vsp">&nbsp;</span>nyaóke diri dari dagéng yang la disembake óntók berhalo, idak makan dara, idak makan dagéng binatang yang mati dicekék, trós nyaóke diri dari pecabólan. Amen kamu nyago diri kamu dari pasal-pasal tu, kamu ngelakuke apo yang bener. Salam!”</div>
+<div class="b">&nbsp;</div><span id="bookmarks29"></span><span id="bookmarks29"></span><a id="v30"></a>
+<div class="p"><span class="v">30</span><span class="vsp">&nbsp;</span>Seabés bepamétan, ótósan-ótósan tu pegi ke Antiokia. Di sano dio wong ngómpólke slóró jemaah, trós ngenjókke surat tu.<span id="bookmarks30"></span> <a id="v31"></a><span class="v">31</span><span class="vsp">&nbsp;</span>Na, pas jemaah mbaco surat tu, dio wong ngeraso seneng karno nasehat tu.<span id="bookmarks31"></span> <a id="v32"></a><span class="v">32</span><span class="vsp">&nbsp;</span>Yudas samo Silas ni iola nabi. Jadi, dengen banyak omongan dio wong nasehatke dólór-dólór seiman yang ado di Antiokia tu, jugo nguatke ati dio wong.<span id="bookmarks32"></span> <a id="v33"></a><span class="v">33</span><span class="vsp">&nbsp;</span>Seabés Yudas samo Silas tinggal di Antiokia óntók beberapo lamo, dólór-dólór yang ado di situ ngérém Yudas samo Silas balék dengen damai ke wong-wong yang la ngótósnyo.<span id="bookmarks33"></span> <a id="v34"></a><span class="v">34</span><span class="vsp">&nbsp;</span>[Tapi, Silas ni mótóske óntók tetep tinggal di Antiokia.]<span class="footnote selectable" id="F-5"><sup>g</sup></span><span id="bookmarks34"></span></div>
+<div class="s2"><div id="s3">Paólós samo Barnabas bepisa</div></div><span id="bookmarks34"></span><a id="v35"></a>
+<div class="p"><span class="v">35</span><span class="vsp">&nbsp;</span>Paólós samo Barnabas masé tinggal beberapo lamo di Antiokia. Besamo dengen wong banyak laénnyo, dio wong ngajar jugo mbritoke pirman Tuan <span class="add">kito</span>.<span id="bookmarks35"></span> <a id="v36"></a><span class="v">36</span><span class="vsp">&nbsp;</span>Na, pas la beberapo ari, Paólós ni ngomong ke Barnabas, “Payó kito balék ngónjóngi dólór-dólór seiman kito yang ado di tiap kota, tempat kito mbritoke pirman Tuan <span class="add">kito</span>, óntók nyingok cakmano keadaan dio wong.”<span id="bookmarks36"></span></div><span id="bookmarks36"></span><a id="v37"></a>
+<div class="p"><span class="v">37</span><span class="vsp">&nbsp;</span>Barnabas nak gawak Yahya yang dipanggél Markós.<span id="bookmarks37"></span> <a id="v38"></a><span class="v">38</span><span class="vsp">&nbsp;</span>Tapi, Paólós ni dak galak gawak Markós, yang perna ninggalke dio wong di Pampilia, jugo yang idak melok begawe samo dio wong.<span id="bookmarks38"></span> <a id="v39"></a><span class="v">39</span><span class="vsp">&nbsp;</span>Jadi, tejadila kerébótan besak di antaro keduo wong tu, sampe-sampe dio wong bepisa. Barnabas gawak Markós. Dio wong belayar ke <span class="footnote selectable" id="G-29">Siprus</span>,<span id="bookmarks39"></span> <a id="v40"></a><span class="v">40</span><span class="vsp">&nbsp;</span>sementaro Paólós mélé Silas. Seabés diserake ole dólór-dólór seiman tu ke dalem kemurahan ati Tuan <span class="add">kito</span>, Paólós ni berangkat.<span id="bookmarks40"></span> <a id="v41"></a><span class="v">41</span><span class="vsp">&nbsp;</span>Ahérnyo, dio pegi ngeléléngi daera <span class="footnote selectable" id="G-29">Siria</span> trós <span class="footnote selectable" id="G-29">Kilikia</span> sambél nguatke jemaah-jemaah yang ado di sano.<span id="bookmarks41"></span></div>
+</div>
+
+<div id="toolbar-bottom">
+<div class="audio-player">
+  <audio id="audio" controls>
+    <source id="audio1" src="https://storage.googleapis.com/tbp-audio/TBP Cerito Rosul 15.mp3" />
+  </audio>
+</div>
+</div>
+
+<script type='text/javascript' src='./pwa-main.js'></script>
+<script>
+var coll = document.getElementsByClassName("collapsible-button");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
+}
+</script>
+</body>
+</html>

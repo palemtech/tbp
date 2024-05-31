@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#6C0000">
+<title>Saér Nyanyian 14</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+// Footnotes and Cross-references
+var crossrefs = {
+    "X-0": "<div class=\"footnote-p\"><span class=\"xo\">14:3 </span><span class=\"xt\">Roma 3:10-12</span></div>"
+};
+
+initFootnotes(crossrefs);
+
+
+// Glossary entries
+var glossary = {
+    "G-8": "<div><span class=\"k\">Daód</span> - Dio ni rajo yang paléng penténg jugo yang paléng dicintoi di sejara bangso Israel. Keédópan Nabi Daód diceritoke di 1 Samuel 16–31, 2 Samuel 1–24, 1 Rajo-Rajo 1–2, jugo 1 Riwayat 11–29. Banyak nyanyian yang dikaétke ke Nabi Daód di kitab Saér Nyanyian, mugola idak jelas amen slóró nyanyian tu memang ditólés ole Nabi Daód, apo amen sebagéan darinyo cuman ditujuke bae ke dio.</div><div class=\"p\">Karno kasé Allah óntók Daód, Allah békén pejanjian samo dio amen ketórónan-ketórónan dio bakal nguasoi bangso Israel selamo-lamonyo (2 Samuel 7:11-16). Yesus iola ketórónan Daód yang jadi penggenepan terahér pejanjian ni. Dio bakal jadi rajo yang mrénto umat Allah sampe selamo-lamonyo.</div>",
+    "G-0": "<div><span class=\"k\"><span class=\"nd\">Allah</span><span class=\"nd2\">yhwh</span></span> - Setiap kali tejingok kato ni (óróp besak galo), artinyo yang tetólés di teks aslinyo bukan kato Allah, tapi namo YHWH. YHWH tu iola namonyo Allah yang diwahyuke-Nyo ke Nabi Musa di Gónóng Horeb (Pembebasan 3:15). Namo YHWH tu móngkén diucapke “Yahwe” trós artinyo ‘Yang Kekal’. Tapi ado tradisi lamo yang dak nyebótke namo YHWH soalnyo takót dianggep ngotori namo tu. Jadi banyak wong makek kato pengganti, contonyo “Allah”.</div>",
+    "G-17": "<div><span class=\"k\">Israel</span> - Ini ni namo bangso di daera Palestina yang mano galo-galo ketórónannyo dari cócóng Ibrahém yang benamo Yakób. Yakób ni jugo disebót Israel. (Jingokla jugo “Yakób” di kamus ni.) Bangso Israel dibagé jadi 12 suku sesuai dengen ketórónan ke-12 anak lanang Yakób. Di Pejanjian Lamo, bangso Israel dipélé Allah óntók jadi umat-Nyo trós óntók jadi berkah yang ngarake slóró dunio ke Allah. Wong Israel disebót jugo wong Ibrani apo dak tu wong Yahudi, tegantóng dengen penggunoannyo. Ketigo istila ni ampér samo.</div><div class=\"p\">Kato Yahudi diambék dari kato Ibrani <span class=\"it\">Yehuda</span> yang iola namo anak lanangnyo Yakób yang jadi sala sikok suku Israel. Kato Yehuda ni jugo dipakek óntók sebótan kerajaan Israel yang mano seabés Rajo Suleiman mati, kerajaan Israel tepeca duo. Pas jaman Yesus, wong Israel galak disebót wong <span class=\"tl\">ioudaios</span> yang mano asal kato tu dari kato Yehuda. Kato “Israel” yang dibékén Tim Penerjema di Pejanjian Baru ni nónjókke wong <span class=\"tl\">ioudaios</span> supayo hóbóngan antaro kato yang ado di Pejanjian Lamo dengen Pejanjian Baru jelas.</div>",
+    "G-40": "<div><span class=\"k\">Sion</span> - Sion ni nónjókke tempat tinggal Allah di dunio, iola Kota Yerusalem jugo <span class=\"footnote selectable\" id=\"G-36\">Ruma Agóng Allah</span> yang ado di dalemnyo. Karno Yerusalem ado di pócók bókét, seréng disebót Bókét Sion.</div>",
+    "G-44": "<div><span class=\"k\">Yakób</span> - Yakób iola cócóng Ibrahém. Ishak iola abanyo. Allah mberkahi Yakób trós ngenjók namo baru ke dio, iola namo “Israel” (<span class=\"reflink\">Asal Mulo Dunio 32:28</span>; <span class=\"reflink\">35:10</span>). Selaén namo pribadi, “Yakób” samo “Israel” jugo dipakek óntók nónjókke slóró ketórónannyo. Ke-12 anak lanang Yakób tula yang jadi kepalak ke-12 suku bangso Israel.</div><div class=\"p\">Di Pejanjian Lamo, Allah mélé Ibrahém, Ishak, Yakób, samo ketórónan dio wong óntók jadi umat-Nyo trós óntók jadi berkah yang ngarake slóró dunio ke Allah. Jingokla jugo kato kónci “<span class=\"footnote selectable\" id=\"G-17\">Israel</span>”.</div>"
+};
+
+initFootnotes(glossary);
+
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 34 }, { start: 36, end: 36 }, { start: 41, end: 43 }, { start: 46, end: 48 }, { start: 51, end: 51 }, { start: 53, end: 54 }, { start: 73, end: 73 }, { start: 84, end: 84 }, { start: 87, end: 87 }, { start: 90, end: 91 }, { start: 104, end: 104 }, { start: 108, end: 108 }, { start: 110, end: 110 }, { start: 112, end: 118 }, { start: 127, end: 128 }, { start: 132, end: 134 }, { start: 137, end: 139 }, { start: 143, end: 143 }, { start: 146, end: 146 }, { start: 148, end: 148 }];
+var hasIntro = false;
+var baseRef  = "Aktb-06-B001-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='Aktb-05-EST-001.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-06-B001-013.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;Saér Nyanyian&nbsp;&nbsp;</a></span>
+<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;14&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-06-B001-015.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-07-JON-000.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div class="c">14</div> 
+<div class="s2"><div id="s1">Kebórókan manusio</div></div><a id="v1"></a>
+<div class="qc-v top-spacing"><span class="v">1</span><span class="vsp">&nbsp;</span><span class="add">Catetan</span> óntók pemémpén pujian: <span class="add">Nyanyian ni</span> dari <span class="footnote selectable" id="G-8">Daód</span>.</div>
+<div class="b">&nbsp;</div>
+<div class="q">Wong tekak ngomong di dalem atinyo,</div>
+<div class="q2">“Katek Tuhan.”</div>
+<div class="q">Dio wong busuk ati. Kelakuannyo kejem.</div>
+<div class="q2">Katek yang bebuat baék.</div>
+<div class="b">&nbsp;</div><span id="bookmarks1"></span><span id="bookmarks1"></span><a id="v2"></a>
+<div class="q-v"><span class="v">2</span><span class="vsp">&nbsp;</span><span class="nd"><span class="footnote selectable" id="G-0"><span class="nd">Allah</span><span class="nd2">yhwh</span></span></span> masati dari surgo,</div>
+<div class="q2">ke anak-anak manusio,</div>
+<div class="q">óntók jingok kalu bae ado wong yang bijak,</div>
+<div class="q2">yang nyari Allah.<span id="bookmarks2"></span></div><span id="bookmarks2"></span><a id="v3"></a>
+<div class="q-v"><span class="v">3</span><span class="vsp">&nbsp;</span>Galo-galo wong la melenceng,</div>
+<div class="q2">samo-samo rusak.</div>
+<div class="q">Katek yang bebuat baék,</div>
+<div class="q2">sikok wong bae idak.<span class="footnote selectable" id="X-0"><sup>a</sup></span></div>
+<div class="b">&nbsp;</div><span id="bookmarks3"></span><span id="bookmarks3"></span><a id="v4"></a>
+<div class="q-v"><span class="v">4</span><span class="vsp">&nbsp;</span>Idak sadar apo slóró wong yang bebuat jahat tu?</div>
+<div class="q2">Dio wong tu makani umat aku pecak makan roti,</div>
+<div class="q2">jugo idak bejerét samo <span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span>.<span id="bookmarks4"></span></div><span id="bookmarks4"></span><a id="v5"></a>
+<div class="q-v"><span class="v">5</span><span class="vsp">&nbsp;</span>Di sano dio wong bakal ketakótan nian.</div>
+<div class="q2">Soalnyo Allah nyertoi angkatan wong bener.<span id="bookmarks5"></span></div><span id="bookmarks5"></span><a id="v6"></a>
+<div class="q-v"><span class="v">6</span><span class="vsp">&nbsp;</span>Kamu nak ngalangi rencano wong yang saro,</div>
+<div class="q2">tapi <span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span> iola tempat peléndóngannyo.</div>
+<div class="b">&nbsp;</div><span id="bookmarks6"></span><span id="bookmarks6"></span><a id="v7"></a>
+<div class="q-v"><span class="v">7</span><span class="vsp">&nbsp;</span>Kironyo keselametan wong-wong <span class="footnote selectable" id="G-17">Israel</span> dateng dari <span class="footnote selectable" id="G-40">Sion</span>!</div>
+<div class="q">Pas <span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span> balékke keadaan umat-Nyo tu,</div>
+<div class="q2"><span class="footnote selectable" id="G-44">Yakób</span> bakal besorak-sorak jugo Israel bakal seneng.<span id="bookmarks7"></span></div>
+</div>
+
+<div id="toolbar-bottom">
+<div class="audio-player">
+  <audio id="audio" controls>
+    <source id="audio1" src="https://storage.googleapis.com/tbp-audio/TBP Mazmur 14_new.mp3" />
+  </audio>
+</div>
+</div>
+
+<script type='text/javascript' src='./pwa-main.js'></script>
+<script>
+var coll = document.getElementsByClassName("collapsible-button");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
+}
+</script>
+</body>
+</html>

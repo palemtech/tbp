@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#6C0000">
+<title>Lukas 1</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+// Footnotes and Cross-references
+var footnotes = {
+    "F-0": "<div class=\"footnote-p\"><span class=\"fr\">1:1 </span><span class=\"fq\">Teopélós: </span><span class=\"ft\">Namo Teopélós móngkén bearti ‘wong yang ngaséhi Allah’ apo dak tu ‘wong yang dikaséhi Allah’. Lukas makek sebótan “yang tehormat” dalem </span><span class=\"xt\"><span class=\"reflink\"><a href=\"Aktb-09-LUK-001.html#v1\">Lukas 1:1-3</a></span></span><span class=\"ft\"> jugo </span><span class=\"xt\"><span class=\"reflink\"><a href=\"Aktb-11-ACT-001.html#v1\">Cerito Rosul-Rosul 1:1</a></span></span><span class=\"ft\">. Mangkonyo ado ahli Alkitab yang bepékér amen Teopélós iola wong Romawi yang bekuaso yang la melok agama wong Israel.</span></div>",
+    "F-1": "<div class=\"footnote-p\"><span class=\"fr\">1:1 </span><span class=\"fq\">kejadian-kejadian: </span><span class=\"ft\">Yang dimaksód di sini iola kejadian-kejadian pasal Yesus.</span></div>",
+    "F-2": "<div class=\"footnote-p\"><span class=\"fr\">1:1 </span><span class=\"fq\">kito: </span><span class=\"ft\">Kato <span class=\"it\">kito</span> di ayat ini nónjókke Bapak Teopélós, penólés (Lukas), samo galo-galo wong yang ado di daera Israel pas jaman Yesus.</span></div>",
+    "F-3": "<div class=\"footnote-p\"><span class=\"fr\">1:2 </span><span class=\"fq\">pengajar cerito: </span><span class=\"ft\">Tólésan aslinyo iola “pembantu cerito”. Gawean wong ni iola nyebarke cerito tu, trós édóp wong ni jugo harós sesuai dengen prénsép yang diceritokenyo tu.</span></div>",
+    "F-4": "<div class=\"footnote-p\"><span class=\"fr\">1:5 </span><span class=\"fq\">imam: </span><span class=\"ft\">Dalem agama wong Israel, imam iola ketórónan Harón yang punyo gawean kósós di <span class=\"footnote selectable\" id=\"G-36\">Ruma Agóng Allah</span>. Imam-imam tu dibagé jadi 24 rombongan (jingok </span><span class=\"xt\">1 Riwayat 24:10</span><span class=\"ft\">), trós setiap rombongan tu gaweke gaweannyo dewek-dewek di Ruma Agóng Allah di Yerusalem selamo seminggu secaro begéléran. Tugas imam-imam tu beda nian dengen tugas pendeta apo imam mak ini ari. Tugas utamo imam dalem agama wong Israel bukan becerama, tapi ngenjókke kórban bakaran ke Allah jugo jadi penenga antaro Allah samo manusio.</span></div>",
+    "F-5": "<div class=\"footnote-p\"><span class=\"fr\">1:13 </span><span class=\"fq\">Yahya: </span><span class=\"ft\">Arti namonyo ni iola ‘<span class=\"nd\"><span class=\"nd\">Allah</span><span class=\"nd2\">yhwh</span></span> ngesiani’ .</span></div>",
+    "F-6": "<div class=\"footnote-p\"><span class=\"fr\">1:15 </span><span class=\"fq\">dak bole minum anggór samo minuman keras laénnyo: </span><span class=\"ft\">Dalem budayo Ibrani, amen wong nak ngósóske édópnyo óntók Allah, dak bole minum anggór jugo minuman keras laénnyo dalem beberapo bulan. Selamo ngelakuke pasal tu, dio wong disebót “wong <span class=\"tl\">najér</span>” (jingok </span><span class=\"xt\">Kelóyóran di Górón 6:3</span><span class=\"ft\">). Dalem kasós ni, budak ni bakal jadi wong <span class=\"tl\">najér</span> seómór édópnyo.</span></div>",
+    "F-7": "<div class=\"footnote-p\"><span class=\"fr\">1:15 </span><span class=\"fq\">dipenui samo Ro Suci: </span><span class=\"ft\">Maksódnyo, <span class=\"footnote selectable\" id=\"G-35\">Ro Suci</span> masók ke jeró wong tu, trós wong tu dienjók kekuatan kósós óntók ngelayani Allah. Dalem kasós ni, Yahya bakal jadi nabi.</span></div>",
+    "F-8": "<div class=\"footnote-p\"><span class=\"fr\">1:17 </span><span class=\"fq\">Allah: </span><span class=\"ft\">Tólésan aslinyo iola “Dio”.</span></div>",
+    "F-9": "<div class=\"footnote-p\"><span class=\"fr\">1:17 </span><span class=\"fq\">ndului Allah dengen ro samo kuaso Nabi Elias: </span><span class=\"ft\">Maksódnyo, budak ni bakal jadi nabi yang bekuaso pecak Nabi Elias di jaman bingen, trós bakal betugas nyiapke umat Israel óntók kedatengan Allah. Di </span><span class=\"xt\">Maleaki 4:5</span><span class=\"ft\"> diwahyuke amen Nabi Elias bakal balék lagi sebelóm ahér jaman. Di sini, Yahya yang bakal nepati wahyu tu (jingok </span><span class=\"xt\"><span class=\"reflink\"><a href=\"Aktb-08-MAT-011.html#v14\">Matius 11:14</a></span></span><span class=\"ft\">).</span></div>",
+    "F-10": "<div class=\"footnote-p\"><span class=\"fr\">1:19 </span><span class=\"fq\">Jebrel: </span><span class=\"ft\">Jebrel ni jugo disebót di kitab </span><span class=\"xt\">Danil 8:15; 9:21</span><span class=\"ft\">.</span></div>",
+    "F-11": "<div class=\"footnote-p\"><span class=\"fr\">1:31 </span><span class=\"fq\">Yesus: </span><span class=\"ft\">Arti namonyo ni iola ‘Allah nyelametke’.</span></div>",
+    "F-12": "<div class=\"footnote-p\"><span class=\"fr\">1:35 </span><span class=\"fq\">Kupek yang kagek kau laérke tu bakal disebót suci, Anak-Nyo Allah: </span><span class=\"ft\">Tólésan asli dalem baso Yunani pacak jugo diartike, “Kupek suci yang kagek kau laérke tu bakal disebót Anak-Nyo Allah.”</span></div>",
+    "F-13": "<div class=\"footnote-p\"><span class=\"fr\">1:59 </span><span class=\"fq\">lapan ari: </span><span class=\"ft\">Sesuai dengen Hókóm Musa, budak lanang Ibrani harós disunatke pas ómórnyo la lapan ari. (Jingok </span><span class=\"xt\"><span class=\"reflink\">Asal Mulo Dunio 17:9-14</span></span><span class=\"ft\"> samo </span><span class=\"xt\">Imamat 12:1-3</span><span class=\"ft\">.)</span></div>",
+    "F-14": "<div class=\"footnote-p\"><span class=\"fr\">1:66 </span><span class=\"fq\">kuaso: </span><span class=\"ft\">Tólésan aslinyo iola “tangan”. Di budayo Ibrani samo Yunani, “tangan” iola kiasan yang nónjókke kuaso apo dak tu kekuatan.</span></div>",
+    "F-15": "<div class=\"footnote-p\"><span class=\"fr\">1:67 </span><span class=\"fq\">Ujinyo: </span><span class=\"ft\">Pesen yang ado di ayat 68–79 ni disampeke Jakaria ke wong-wong Israel yang ado di rumanyo óntók ngerayoke sunatan anaknyo. Móngkén bae inila isi pujian Jakaria ke Allah yang disebótke di ayat 64 tu.</span></div>",
+    "F-16": "<div class=\"footnote-p\"><span class=\"fr\">1:69 </span><span class=\"fq\">Penyelamet yang perkasa: </span><span class=\"ft\">Tólésan aslinyo iola “tandók keselametan”. Dalem budayo Ibrani, “tandók” iola kiasan yang nónjókke kekuatan jugo kekuasoan. Jadi, “tandók keselametan” artinyo ‘Penyelamet yang perkasa’ trós nónjókke Almasi, <span class=\"footnote selectable\" id=\"G-42\">Wong Yang Dilanték</span> tu.</span></div>",
+    "F-17": "<div class=\"footnote-p\"><span class=\"fr\">1:76 </span><span class=\"fq\">nyiapke jalan-Nyo: </span><span class=\"ft\">Pas jaman tu, rajo biasonyo ngótós sikok wong óntók ndului dio jugo ngómómke amen rajo bakal liwat. Sebelóm rajo tu liwat, wong-wong yang ado di sano bakal mbenerke jalan tu dulu supayo rajo pacak liwat dengen muda.</span></div>"
+};
+
+initFootnotes(footnotes);
+
+var crossrefs = {
+    "X-0": "<div class=\"footnote-p\"><span class=\"xo\">1:17 </span><span class=\"xt\">1 Rajo-Rajo 17:1–19:21; 21:1-29; 2 Rajo-Rajo 1:1–8:15</span></div>"
+};
+
+initFootnotes(crossrefs);
+
+
+// Glossary entries
+var glossary = {
+    "G-13": "<div><span class=\"k\">Herodes</span> - Dalem Pejanjian Baru ado empat rajo yang benamo Herodes:</div><div class=\"ili top-spacing\">(1) Rajo Herodes Yang Besak iola penguaso Yudea pas kelaéran Yesus. Dio tu yang nyobo óntók mbunu Yesus abés wong Majus dateng (<span class=\"reflink\"><a href=\"Aktb-08-MAT-002.html#v1\">Matius 2:1-22</a></span>; <span class=\"reflink\"><a href=\"Aktb-09-LUK-001.html#v5\">Lukas 1:5</a></span>). Dio mati pas Yesus ado di Mesir (<span class=\"reflink\"><a href=\"Aktb-08-MAT-002.html#v19\">Matius 2:19</a></span>).</div><div class=\"ili\">(2) Herodes Antipas iola penguaso Galilea pas pelayanan Yesus jugo Yahya Pembaptés. Dio tu yang ngawéni Herodias, kakak iparnyo, yang kageknyo manasi dio supayo Yahya dibunu. Yesus digawak ke dio ole pemémpén-pemémpén Israel supayo disalébke (Markós 6:14-29; <span class=\"reflink\"><a href=\"Aktb-09-LUK-023.html#v6\">Lukas 23:6-12</a></span>).</div><div class=\"ili\">(3) Herodes Agripa Yang Petamo iola penguaso yang petamo kali nganiayo wong-wong yang pecayo samo Yesus. Dio ni cócóngnyo Herodes Agóng. Pas taón 41-44 M, dio mrénto beberapo propinsi yang ado di daera Israel pecak Yudea, Samaria, teko Galilea. Dio tula yang ngongkon supayo Yakób, adéknyo Yesus, dibunu (<span class=\"reflink\"><a href=\"Aktb-11-ACT-012.html#v1\">Cerito Rosul-Rosul 12:1-23</a></span>)</div><div class=\"ili\">(4) Herodes Agripa Yang Keduo iola penguaso yang ngakémi rosul Paólós sebelóm dio dikérém ke Roma óntók diakémi Kaisar (<span class=\"reflink\"><a href=\"Aktb-11-ACT-025.html#v13\">Cerito Rosul-Rosul 25:13</a></span>–<span class=\"reflink\"><a href=\"Aktb-11-ACT-026.html#v2\">26:2</a></span>; <span class=\"reflink\"><a href=\"Aktb-11-ACT-026.html#v19\">26:19</a></span>, <span class=\"reflink\"><a href=\"Aktb-11-ACT-026.html#v27\">27-32</a></span>).</div>",
+    "G-47": "<div><span class=\"k\">Yudea</span> - Pas jaman Yesus, namo ni pacak nónjókke slóró daera Palestina, amen dak tu bagéan selatan bae. Yerusalem tetep temasók di dalemnyo.</div>",
+    "G-12": "<div><span class=\"k\">Harón</span> - Dio ni dólór Musa. Allah mélé Harón samo slóró ketórónan lanangnyo jadi imam. Jadi Harón ni iola <span class=\"footnote selectable\" id=\"G-52\">imam besak</span> yang petamo. Jingokla jugo kato kónci “imam”.</div>",
+    "G-36": "<div><span class=\"k\">Ruma Agóng Allah</span> - Ini ni bukan ruma ibada biaso, malahan sikok-sikoknyo tempat di dunio di mano hadérat Allah tinggal pas jaman tu. Letaknyo di <span class=\"footnote selectable\" id=\"G-46\">Yerusalem</span>, trós wong Israel nyemba Allah di tempat tu. Mak ini ari, Ruma tu dak katek lagi karno la diancórke ole tentra Roma pas taón 70 M.</div><div class=\"p\">Pas jaman Ruma Agóng Allah masé ado, Ruma tu iola pusat budayo jugo agama slóró wong Ibrani, mugola amen dio wong tinggal jaó nian dari tempat tu. Yang seréng dilakuke di Ruma tu iola pesembahan kórban sembeléhan, pembakaran garu ole imam, pesembahan dóét, pesembahan-pesembahan laén, jugo doa. Pas jaman Musa sampe jaman Daód, Ruma Agóng Allah bebentók kemah karno belóm ado bangónannyo. Jingokla jugo “<span class=\"footnote selectable\" id=\"G-20\">Kemah Petemuan</span>”.</div>",
+    "G-57": "<div><span class=\"k\">malekat</span> - Dio ni mahlók surgawi yang diciptoke Allah óntók jadi pelayan-Nyo sebelóm alam semesto diciptoke. Dalem baso asli, malekat maksódnyo ‘ótósan’. Dio diótós Allah óntók gaweke tójóan-Nyo di dunio.</div>",
+    "G-17": "<div><span class=\"k\">Israel</span> - Ini ni namo bangso di daera Palestina yang mano galo-galo ketórónannyo dari cócóng Ibrahém yang benamo Yakób. Yakób ni jugo disebót Israel. (Jingokla jugo “Yakób” di kamus ni.) Bangso Israel dibagé jadi 12 suku sesuai dengen ketórónan ke-12 anak lanang Yakób. Di Pejanjian Lamo, bangso Israel dipélé Allah óntók jadi umat-Nyo trós óntók jadi berkah yang ngarake slóró dunio ke Allah. Wong Israel disebót jugo wong Ibrani apo dak tu wong Yahudi, tegantóng dengen penggunoannyo. Ketigo istila ni ampér samo.</div><div class=\"p\">Kato Yahudi diambék dari kato Ibrani <span class=\"it\">Yehuda</span> yang iola namo anak lanangnyo Yakób yang jadi sala sikok suku Israel. Kato Yehuda ni jugo dipakek óntók sebótan kerajaan Israel yang mano seabés Rajo Suleiman mati, kerajaan Israel tepeca duo. Pas jaman Yesus, wong Israel galak disebót wong <span class=\"tl\">ioudaios</span> yang mano asal kato tu dari kato Yehuda. Kato “Israel” yang dibékén Tim Penerjema di Pejanjian Baru ni nónjókke wong <span class=\"tl\">ioudaios</span> supayo hóbóngan antaro kato yang ado di Pejanjian Lamo dengen Pejanjian Baru jelas.</div>",
+    "G-11": "<div><span class=\"k\">Galilea</span> - Ini ni sala sikok dari tigo Propinsi Israel pas jaman Yesus. (Yang laénnyo iola Samaria jugo Yudea.) Letaknyo di bagéan utara Palestina. Kota Kapernaum samo Dósón Najaret temasók di dalemnyo. Sebagéan besak pelayanan Yesus tejadi di Galilea, trós ke-12 móréd-Nyo asalnyo dari situ jugo.</div>",
+    "G-8": "<div><span class=\"k\">Daód</span> - Dio ni rajo yang paléng penténg jugo yang paléng dicintoi di sejara bangso Israel. Keédópan Nabi Daód diceritoke di 1 Samuel 16–31, 2 Samuel 1–24, 1 Rajo-Rajo 1–2, jugo 1 Riwayat 11–29. Banyak nyanyian yang dikaétke ke Nabi Daód di kitab Saér Nyanyian, mugola idak jelas amen slóró nyanyian tu memang ditólés ole Nabi Daód, apo amen sebagéan darinyo cuman ditujuke bae ke dio.</div><div class=\"p\">Karno kasé Allah óntók Daód, Allah békén pejanjian samo dio amen ketórónan-ketórónan dio bakal nguasoi bangso Israel selamo-lamonyo (2 Samuel 7:11-16). Yesus iola ketórónan Daód yang jadi penggenepan terahér pejanjian ni. Dio bakal jadi rajo yang mrénto umat Allah sampe selamo-lamonyo.</div>",
+    "G-44": "<div><span class=\"k\">Yakób</span> - Yakób iola cócóng Ibrahém. Ishak iola abanyo. Allah mberkahi Yakób trós ngenjók namo baru ke dio, iola namo “Israel” (<span class=\"reflink\">Asal Mulo Dunio 32:28</span>; <span class=\"reflink\">35:10</span>). Selaén namo pribadi, “Yakób” samo “Israel” jugo dipakek óntók nónjókke slóró ketórónannyo. Ke-12 anak lanang Yakób tula yang jadi kepalak ke-12 suku bangso Israel.</div><div class=\"p\">Di Pejanjian Lamo, Allah mélé Ibrahém, Ishak, Yakób, samo ketórónan dio wong óntók jadi umat-Nyo trós óntók jadi berkah yang ngarake slóró dunio ke Allah. Jingokla jugo kato kónci “<span class=\"footnote selectable\" id=\"G-17\">Israel</span>”.</div>",
+    "G-35": "<div><span class=\"k\">Ro Suci</span> - Pas jaman Pejanjian Lamo sampe jaman-Nyo Yesus, Ro Suci kadang-kadang menui wong. Dio ngenjók kuaso cuman sementaro bae óntók nyalanke tójóan dari Allah. Tapi mak ini ari, sejak Ro Suci dienjók abés Yesus balék ke surgo (<span class=\"reflink\"><a href=\"Aktb-11-ACT-002.html\">Cerito Rosul-Rosul 2</a></span>), Ro Suci tu menui wong yang pecayo samo Yesus. Wong-wong ni dipenui secaro permanen, bukan sementaro bae. Ke wong yang pecayo samo Yesus, Ro Suci ngenjók kuaso óntók nolak duso jugo óntók édóp sesuai dengen kendak Allah. Dikit-dikit, Ro Suci ngoba wong yang pecayo óntók jadi wong suci pecak Yesus.</div><div class=\"p\">Ro Suci iola Allah. Allah iola tigo Pribadi: Allah Aba, Allah Anak, jugo Ro Suci. Tiap Pribadi iola sepenunyo Allah, trós cuman ado sikok Allah. Ro Suci nyelesaike gawean yang la direncanoke ole Aba trós dimulai ole Anak. Dalem slóró pasal yang digaweke-Nyo, Ro Suci mulyoke Anak.</div>",
+    "G-16": "<div><span class=\"k\">Ibrahém</span> - Dio ni sikok wong yang édóp kiro-kiro 2 ribu taón sebelóm Yesus. Allah mélé Ibrahém óntók jadi nenek moyang sikok bangso yang bakal jadi umat péléan-Nyo trós óntók jadi berkah yang ngarake slóró dunio ke Allah (<span class=\"reflink\">Asal Mulo Dunio 12:1-3</span>). Secaro pisik, Ibrahém iola nenek moyang bangso <span class=\"footnote selectable\" id=\"G-17\">Israel</span>. Secaro rohani, Ibrahém dianggep nenek moyang slóró wong yang pecayo jugo yang nóróti Allah (Galatia 3:7-9,29). Keédópan Ibrahém diceritoke di <span class=\"reflink\"><a href=\"Aktb-04-GEN-011.html#v27\">Asal Mulo Dunio 11:27</a></span>–<span class=\"reflink\">25:11</span>.</div>"
+};
+
+initFootnotes(glossary);
+
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 24 }];
+var hasIntro = false;
+var baseRef  = "Aktb-09-LUK-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='Aktb-08-MAT-001.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-08-MAT-011.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;Lukas&nbsp;&nbsp;</a></span>
+<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;1&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-09-LUK-002.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-10-JHN-001.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div class="mt"><span class="mt">LUKAS</span></div>
+<div class="mt2"><span class="mt2">[PERSI AWAL]</span></div>
+<div class="b"></div>
+<div class="b"></div>
+<div class="c">1</div> 
+<div class="ms"><div id="ms1">Pembukaan</div></div><a id="v1"></a>
+<div class="m"><span class="v">1</span><span class="vsp">&nbsp;</span>Yang Tehormat Bapak Teopélós,<span class="footnote selectable" id="F-0"><sup>a</sup></span></div>
+<div class="p">Banyak wong la nyobo nyósón dengen beórótan cerito pasal kejadian-kejadian,<span class="footnote selectable" id="F-1"><sup>b</sup></span> yang la dipenui di antaro kito<span class="footnote selectable" id="F-2"><sup>c</sup></span><span id="bookmarks1"></span> <a id="v2"></a><span class="v">2</span><span class="vsp">&nbsp;</span>pecak yang disampeke ke kito dari wong-wong yang jadi saksi mato kejadian tu, trós jadi pengajar cerito tu.<span class="footnote selectable" id="F-3"><sup>d</sup></span><span id="bookmarks2"></span> <a id="v3"></a><span class="v">3</span><span class="vsp">&nbsp;</span>Aku la nian-nian nyelédék'i galonyo tu dari petamo. Aku jugo mótóske óntók nóléskenyo secaro beórótan óntók kau, Bapak Teopélós.<span id="bookmarks3"></span> <a id="v4"></a><span class="v">4</span><span class="vsp">&nbsp;</span>Tójóannyo supayo kau tau amen galo-galo yang la diajarke ke kau tu bener-bener ado nian.<span id="bookmarks4"></span></div>
+<div class="ms"><div id="ms2">Asal-ósól Nabi Yahya samo Yesus</div></div>
+<div class="s2"><div id="s1">Kelaéran Nabi Yahya dienjók tau</div></div><span id="bookmarks4"></span><a id="v5"></a>
+<div class="p"><span class="v">5</span><span class="vsp">&nbsp;</span>Pas jamannyo <span class="footnote selectable" id="G-13">Herodes</span>, rajo <span class="footnote selectable" id="G-47">Yudea</span>, ado sikok imam<span class="footnote selectable" id="F-4"><sup>e</sup></span> yang benamo Jakaria dari kelompok pelayanan Abia. Bininyo yang benamo Elisabet tu ketórónan <span class="footnote selectable" id="G-12">Harón</span>.<span id="bookmarks5"></span></div><span id="bookmarks5"></span><a id="v6"></a>
+<div class="p"><span class="v">6</span><span class="vsp">&nbsp;</span>Duo laki bini tu bener di mato Allah, jugo édóp nórót prénto samo atóran Allah<span class="ul">‡</span> dengen sole.<span id="bookmarks6"></span> <a id="v7"></a><span class="v">7</span><span class="vsp">&nbsp;</span>Dio wong ni dak katek anak karno Elisabet mandól, trós tu dio wong jugo la tuo nian.<span id="bookmarks7"></span></div><span id="bookmarks7"></span><a id="v8"></a>
+<div class="p"><span class="v">8</span><span class="vsp">&nbsp;</span>Kejadian ni tejadi pas Jakaria lagi ngimami di adepan Allah soalnyo itu tu géléran rombongannyo.<span id="bookmarks8"></span> <a id="v9"></a><span class="v">9</span><span class="vsp">&nbsp;</span>Sesuai dengen adat jabatan imam, Jakaria ni tekeno undi óntók masók ke <span class="footnote selectable" id="G-36">Ruma Agóng Allah</span> trós nunu garu.<span id="bookmarks9"></span> <a id="v10"></a><span class="v">10</span><span class="vsp">&nbsp;</span>Pas waktu garu tu ditunu, galo-galo umat yang ado di luar lagi bedoa.<span id="bookmarks10"></span></div><span id="bookmarks10"></span><a id="v11"></a>
+<div class="p"><span class="v">11</span><span class="vsp">&nbsp;</span>Tibo-tibo móncólla <span class="footnote selectable" id="G-57">malekat</span> Allah tegak di sebela kanan meja tempat nunu garu.<span id="bookmarks11"></span> <a id="v12"></a><span class="v">12</span><span class="vsp">&nbsp;</span>Jakaria ni tekejót waktu dio nyingok malekat tu trós ketakótan.<span id="bookmarks12"></span> <a id="v13"></a><span class="v">13</span><span class="vsp">&nbsp;</span>Tapi, malekat tu ngomong ke dio cak ini, “Dak usa takót Jakaria, doa kau la dikabólke. Bini kau Elisabet bakal ngelaérke sikok budak lanang, trós bakal kau namoi dio Yahya.<span class="footnote selectable" id="F-5"><sup>f</sup></span><span id="bookmarks13"></span> <a id="v14"></a><span class="v">14</span><span class="vsp">&nbsp;</span>Dio bakal mbékén kau seneng nian, trós banyak wong jugo melok seneng karno dio laér,<span id="bookmarks14"></span> <a id="v15"></a><span class="v">15</span><span class="vsp">&nbsp;</span>soalnyo dio ni kagek jadi wong yang besak di mato Allah<span class="ul">‡</span>. Trós dio jugo dak bole minum anggór samo minuman keras laénnyo.<span class="footnote selectable" id="F-6"><sup>g</sup></span> Dari rahém emaknyo dio bakal dipenui samo Ro Suci.<span class="footnote selectable" id="F-7"><sup>h</sup></span><span id="bookmarks15"></span> <a id="v16"></a><span class="v">16</span><span class="vsp">&nbsp;</span><span class="add">Uji malekat tu lagi,</span> “Dio kagek ngarake banyak ketórónan <span class="footnote selectable" id="G-17">Israel</span> balék ke Allah<span class="ul">‡</span>, Tuhan dio wong.<span id="bookmarks16"></span> <a id="v17"></a><span class="v">17</span><span class="vsp">&nbsp;</span>Trós budak ni bakal ndului Allah<span class="footnote selectable" id="F-8"><sup>i</sup></span> dengen ro samo kuaso Nabi Elias.<span class="footnote selectable" id="X-0"><sup>k</sup></span><span class="footnote selectable" id="F-9"><sup>j</sup></span> Itu bakal dilakuke supayo ngarake ati galo-galo aba bebalék ke anak-anaknyo trós wong-wong durhako bebalék ke dalem hikmah wong bener, trós nyedioke óntók Allah<span class="ul">‡</span> sikok umat yang la siap.”<span id="bookmarks17"></span></div><span id="bookmarks17"></span><a id="v18"></a>
+<div class="p"><span class="v">18</span><span class="vsp">&nbsp;</span>Laju, Jakaria ni ngomong samo malekat tu, “Cakmano aku pacak tau amen pasal tu bakal tejadi? Soalnyo, aku ni la tuo, trós bini aku jugo la beómór.”<span id="bookmarks18"></span></div><span id="bookmarks18"></span><a id="v19"></a>
+<div class="p"><span class="v">19</span><span class="vsp">&nbsp;</span>Trós uji malekat tu ke Jakaria, “Aku ni Jebrel<span class="footnote selectable" id="F-10"><sup>l</sup></span>, yang tegak di adepan Allah, trós aku ni dikongkon óntók ngomong samo kau trós nyampeke kabar baék ni samo kau.<span id="bookmarks19"></span> <a id="v20"></a><span class="v">20</span><span class="vsp">&nbsp;</span>Jingokla, kau sekarang jadi bisu trós dak pacak ngomong sampe ari di mano galonyo tu tejadi. Soalnyo, kau dak pecayo samo kato-kato aku yang bakal dinyatoke pas waktunyo.”<span id="bookmarks20"></span></div><span id="bookmarks20"></span><a id="v21"></a>
+<div class="p"><span class="v">21</span><span class="vsp">&nbsp;</span>Sementaro tu, banyak wong nunggui Jakaria. Dio wong ni heran ngapo Jakaria ni lamo nian di Ruma Agóng Allah.<span id="bookmarks21"></span></div><span id="bookmarks21"></span><a id="v22"></a>
+<div class="p"><span class="v">22</span><span class="vsp">&nbsp;</span>Na, pas Jakaria ni metu, dio dak pacak ngomong samo dio wong. Trós ngertila wong-wong tu amen dio ni la nyingok sikok penjingok'an di jeró Ruma Allah. Laju, Jakaria ni ngenjók isyarat ke dio wong, soalnyo dio tetep bisu.<span id="bookmarks22"></span> <a id="v23"></a><span class="v">23</span><span class="vsp">&nbsp;</span>Ahérnyo, pas ari pelayanannyo la selesai, dio balék ke rumanyo.<span id="bookmarks23"></span></div><span id="bookmarks23"></span><a id="v24"></a>
+<div class="p"><span class="v">24</span><span class="vsp">&nbsp;</span>Beberapo lamo abés tu, Elisabet bininyo bónténg. Selamo limo bulan Elisabet ni mendep bae, ujinyo,<span id="bookmarks24"></span> <a id="v25"></a><span class="v">25</span><span class="vsp">&nbsp;</span>“Na, inila yang Allah<span class="ul">‡</span> gaweke óntók aku, pas Dio meratike aku óntók ngapós aéb aku.”<span id="bookmarks25"></span></div>
+<div class="s2"><div id="s2">Kelaéran Yesus dienjók tau ke Mariam</div></div><span id="bookmarks25"></span><a id="v26"></a>
+<div class="p"><span class="v">26</span><span class="vsp">&nbsp;</span>Pas <span class="add">kandóngan Elisabet la masók</span> bulan yang keenem, malekat Jebrel dikongkon ole Allah ke dósón yang benamo Najaret di Wilaya <span class="footnote selectable" id="G-11">Galilea</span>,<span id="bookmarks26"></span> <a id="v27"></a><span class="v">27</span><span class="vsp">&nbsp;</span>ke sikok betino yang masé gadés yang la betunangan samo lanang yang benamo Yósóp, ketórónan Rajo <span class="footnote selectable" id="G-8">Daód</span>. Namo gadés tu Mariam.<span id="bookmarks27"></span></div><span id="bookmarks27"></span><a id="v28"></a>
+<div class="p"><span class="v">28</span><span class="vsp">&nbsp;</span>Malekat tu ndatengi dio, ujinyo, “Salam, kau yang dikarunioi. Allah ado besamo kau.”<span id="bookmarks28"></span></div><span id="bookmarks28"></span><a id="v29"></a>
+<div class="p"><span class="v">29</span><span class="vsp">&nbsp;</span>Tapi, Mariam ni bingung nian karno salam tu, trós betanyo di jeró atinyo apola maksód dari salam tu.<span id="bookmarks29"></span></div><span id="bookmarks29"></span><a id="v30"></a>
+<div class="p"><span class="v">30</span><span class="vsp">&nbsp;</span>Tapi, uji malekat tu ke dio, “Dak usa takót Mariam, karno kau la dapet karunio dari Allah.<span id="bookmarks30"></span> <a id="v31"></a><span class="v">31</span><span class="vsp">&nbsp;</span>Jingokla, kau bakal bónténg trós ngelaérke sikok kupek lanang. Kau bakal namoi-Nyo Yesus.<span class="footnote selectable" id="F-11"><sup>m</sup></span><span id="bookmarks31"></span> <a id="v32"></a><span class="v">32</span><span class="vsp">&nbsp;</span>Dio bakal jadi wong yang besak trós bakal disebót Anak dari Yang Maha Besak. Tuhan Allah<span class="ul">‡</span> bakal ngarunioke ke Dio korsi kerajaannyo Daód, nenek moyang-Nyo.<span id="bookmarks32"></span> <a id="v33"></a><span class="v">33</span><span class="vsp">&nbsp;</span>Dio bakal mrénto ketórónan <span class="footnote selectable" id="G-44">Yakób</span> sampe selamo-lamonyo, trós kerajaan-Nyo dak bakal beahér.”<span id="bookmarks33"></span></div><span id="bookmarks33"></span><a id="v34"></a>
+<div class="p"><span class="v">34</span><span class="vsp">&nbsp;</span>Tapi, uji Mariam ke malekat tu, “Cakmano pasal tu pacak tejadi? Soalnyo, aku ni <span class="add">masé gadés</span>, dak perna tédók samo lanang.”<span id="bookmarks34"></span></div><span id="bookmarks34"></span><a id="v35"></a>
+<div class="p"><span class="v">35</span><span class="vsp">&nbsp;</span>Uji malekat tu ke dio, “<span class="footnote selectable" id="G-35">Ro Suci</span> bakal ndatengi kau, trós kuaso dari Yang Maha Besak bakal nódóngi kau. Itula sebabnyo Kupek yang kagek kau laérke tu bakal disebót suci, Anak-Nyo Allah.<span class="footnote selectable" id="F-12"><sup>n</sup></span><span id="bookmarks35"></span> <a id="v36"></a><span class="v">36</span><span class="vsp">&nbsp;</span>Jingokla! Elisabet, dólór kau tu, dio jugo lagi bónténg enem bulan, mugola dio diomongi mandól,<span id="bookmarks36"></span> <a id="v37"></a><span class="v">37</span><span class="vsp">&nbsp;</span>soalnyo dak katek yang dak móngkén óntók Allah.”<span id="bookmarks37"></span></div><span id="bookmarks37"></span><a id="v38"></a>
+<div class="p"><span class="v">38</span><span class="vsp">&nbsp;</span>Uji Mariam, “Aku ni hamba Allah<span class="ul">‡</span>. Biarla tejadi samo aku pecak apo yang la kau omongke tu.” Ahérnyo malekat tu pegi ninggalke dio.<span id="bookmarks38"></span></div>
+<div class="s2"><div id="s3">Mariam ndatengi Elisabet</div></div><span id="bookmarks38"></span><a id="v39"></a>
+<div class="p"><span class="v">39</span><span class="vsp">&nbsp;</span>Dak lamo abés tu, Mariam begancang pegi ke sikok kota di Yudea di daera pebókétan.<span id="bookmarks39"></span> <a id="v40"></a><span class="v">40</span><span class="vsp">&nbsp;</span>Dio masók ke rumanyo Jakaria, trós ngucapke salam ke Elisabet.<span id="bookmarks40"></span> <a id="v41"></a><span class="v">41</span><span class="vsp">&nbsp;</span>Pas Elisabet ndenger salamnyo Mariam, kupek yang di jeró perótnyo Elisabet ni ngelonjak. Elisabet ni jugo dipenui samo Ro Suci,<span id="bookmarks41"></span> <a id="v42"></a><span class="v">42</span><span class="vsp">&nbsp;</span>laju dengen suaro besak dio mekék, “Diberkahila kau di antaro slóró betino, trós diberkahila bua dari rahém kau!<span id="bookmarks42"></span> <a id="v43"></a><span class="v">43</span><span class="vsp">&nbsp;</span>Siapola aku ni, sampe-sampe emak-Nyo Tuan aku ndatengi aku?<span id="bookmarks43"></span> <a id="v44"></a><span class="v">44</span><span class="vsp">&nbsp;</span>Karno pas suaro salam kau sampe ke kópéng aku, kupek yang ado di jeró perót aku ni ngelonjak kesenengan.<span id="bookmarks44"></span> <a id="v45"></a><span class="v">45</span><span class="vsp">&nbsp;</span>Trós seneng atila kau yang la pecayo amen apo yang diomongke samo kau dari Allah<span class="ul">‡</span> tu bakal tejadi.”<span id="bookmarks45"></span></div>
+<div class="s2"><div id="s4">Mariam muji Allah</div></div><span id="bookmarks45"></span><a id="v46"></a>
+<div class="p"><span class="v">46</span><span class="vsp">&nbsp;</span>Laju uji Mariam,</div>
+<div class="b">&nbsp;</div>
+<div class="q">“Jiwo aku muji Allah<span class="ul">‡</span>,<span id="bookmarks46"></span></div><span id="bookmarks46"></span><a id="v47"></a>
+<div class="q2-vv"><span class="v">47</span><span class="vsp">&nbsp;</span>trós ati aku seneng nian karno Tuhan, Penyelamet aku,<span id="bookmarks47"></span></div><span id="bookmarks47"></span><a id="v48"></a>
+<div class="q2-vv"><span class="v">48</span><span class="vsp">&nbsp;</span>karno Dio la meratike keadaan saro hamba-Nyo.</div>
+<div class="q">Jingokla! Mulai sekarang slóró angkatan bakal nganggep aku seneng,<span id="bookmarks48"></span></div><span id="bookmarks48"></span><a id="v49"></a>
+<div class="q2-vv"><span class="v">49</span><span class="vsp">&nbsp;</span>karno Yang Bekuaso la ngelakuke pebuatan-pebuatan besak óntók aku.</div>
+<div class="q">Sucila namo-Nyo!<span id="bookmarks49"></span></div><span id="bookmarks49"></span><a id="v50"></a>
+<div class="q-vv"><span class="v">50</span><span class="vsp">&nbsp;</span>Kasé stio-Nyo tórón-temórón óntók wong yang takót samo Dio.</div>
+<div class="b">&nbsp;</div><span id="bookmarks50"></span><span id="bookmarks50"></span><a id="v51"></a>
+<div class="q-vv"><span class="v">51</span><span class="vsp">&nbsp;</span>“Dio ngelakuke kekuatan dengen tangan-Nyo.</div>
+<div class="q2">Dio bubarke wong-wong yang sombong di jeró atinyo.<span id="bookmarks51"></span></div><span id="bookmarks51"></span><a id="v52"></a>
+<div class="q2-vv"><span class="v">52</span><span class="vsp">&nbsp;</span>Dio nyampakke wong-wong yang bekuaso dari kedódók'annyo,</div>
+<div class="q3">trós ngangkat wong-wong yang dak masók étóngan.<span id="bookmarks52"></span></div><span id="bookmarks52"></span><a id="v53"></a>
+<div class="q-vv"><span class="v">53</span><span class="vsp">&nbsp;</span>Wong-wong yang laper Dio penui dengen pasal yang baék,</div>
+<div class="q2">trós wong-wong yang kayo Dio ósér dengen dak gawak apo-apo.<span id="bookmarks53"></span></div><span id="bookmarks53"></span><a id="v54"></a>
+<div class="q-vv"><span class="v">54</span><span class="vsp">&nbsp;</span>Dio nolong wong-wong <span class="footnote selectable" id="G-17">Israel</span>, hamba-Nyo,</div>
+<div class="q2">karno Dio nginget kasé stio-Nyo<span id="bookmarks54"></span> <a id="v55"></a><span class="v">55</span><span class="vsp">&nbsp;</span>óntók <span class="footnote selectable" id="G-16">Ibrahém</span> samo ketórónannyo</div>
+<div class="q3">sampe selamo-lamonyo,</div>
+<div class="q2">pecak yang diomongke-Nyo ke nenek moyang kito.”</div>
+<div class="b">&nbsp;</div><span id="bookmarks55"></span><span id="bookmarks55"></span><a id="v56"></a>
+<div class="p"><span class="v">56</span><span class="vsp">&nbsp;</span>Jadi, Mariam ni tinggal samo Elisabet kiro-kiro tigo bulan lamonyo, abés tu balék lagi ke rumanyo.<span id="bookmarks56"></span></div>
+<div class="s2"><div id="s5">Laérnyo Nabi Yahya</div></div><span id="bookmarks56"></span><a id="v57"></a>
+<div class="p"><span class="v">57</span><span class="vsp">&nbsp;</span>Na, tibola waktunyo Elisabet beranak. Dio ngelaérke sikok budak lanang.<span id="bookmarks57"></span> <a id="v58"></a><span class="v">58</span><span class="vsp">&nbsp;</span>Tetanggo-tetanggo jugo dólór-dólórnyo denger amen Allah<span class="ul">‡</span> la nónjókke kasé stio-Nyo yang besak ke Elisabet, laju dio wong melok seneng jugo.<span id="bookmarks58"></span></div><span id="bookmarks58"></span><a id="v59"></a>
+<div class="p"><span class="v">59</span><span class="vsp">&nbsp;</span>Pas la lapan ari,<span class="footnote selectable" id="F-13"><sup>o</sup></span> datengla wong-wong tu óntók nyunatke budak tu, trós dio wong nak namoi budak tu Jakaria pecak namo abanyo.<span id="bookmarks59"></span> <a id="v60"></a><span class="v">60</span><span class="vsp">&nbsp;</span>Tapi, uji emaknyo, “Jangan! Dio tu harós dinamoi Yahya.”<span id="bookmarks60"></span></div><span id="bookmarks60"></span><a id="v61"></a>
+<div class="p"><span class="v">61</span><span class="vsp">&nbsp;</span>Uji dio wong ke Elisabet, “Dak katek sanak kluargo kau yang punyo namo cak itu.”<span id="bookmarks61"></span></div><span id="bookmarks61"></span><a id="v62"></a>
+<div class="p"><span class="v">62</span><span class="vsp">&nbsp;</span>Jadi, dio wong ngenjók isyarat ke abanyo óntók nanyoke namo apo yang nak dienjókke samo anaknyo tu.<span id="bookmarks62"></span> <a id="v63"></a><span class="v">63</span><span class="vsp">&nbsp;</span>Jakaria ni mintak alat tólés trós nóléske kato-kato ni, “Yahya namonyo.” Dio wong jadi heran galo.<span id="bookmarks63"></span> <a id="v64"></a><span class="v">64</span><span class="vsp">&nbsp;</span>Ahérnyo Jakaria ni langsóng pacak ngomong lagi, laju dio muji Allah.<span id="bookmarks64"></span></div><span id="bookmarks64"></span><a id="v65"></a>
+<div class="p"><span class="v">65</span><span class="vsp">&nbsp;</span>Slóró wong yang tinggal di parak dio wong ketakótan. Galo-galo kejadian tu jadi omongan di slóró pegónóngan Yudea.<span id="bookmarks65"></span> <a id="v66"></a><span class="v">66</span><span class="vsp">&nbsp;</span>Galo-galo wong yang ndengernyo betanyo-tanyo di jeró ati cak ini, “Bakal jadi apola budak ni kagek?” Soalnyo, kuaso<span class="footnote selectable" id="F-14"><sup>p</sup></span> Allah<span class="ul">‡</span> ado samo dio.<span id="bookmarks66"></span></div>
+<div class="s2"><div id="s6">Jakaria ngewahyuke pesen dari Allah</div></div><span id="bookmarks66"></span><a id="v67"></a>
+<div class="p"><span class="v">67</span><span class="vsp">&nbsp;</span>Jakaria, abanyo budak tu, dipenui samo <span class="footnote selectable" id="G-35">Ro Suci</span>, laju ngewahyuke pesen dari Allah<span class="ul">‡</span>. Ujinyo,<span class="footnote selectable" id="F-15"><sup>q</sup></span></div>
+<div class="b">&nbsp;</div><span id="bookmarks67"></span><span id="bookmarks67"></span><a id="v68"></a>
+<div class="q-vv"><span class="v">68</span><span class="vsp">&nbsp;</span>“Pujila Allah<span class="ul">‡</span>, Tuhan bangso <span class="footnote selectable" id="G-17">Israel</span>,</div>
+<div class="q2">soalnyo Dio la ndatengi umat-Nyo trós gawak kebebasan óntók dio wong,<span id="bookmarks68"></span></div><span id="bookmarks68"></span><a id="v69"></a>
+<div class="q2-vv"><span class="v">69</span><span class="vsp">&nbsp;</span>trós Dio ngangkat sikok Penyelamet yang perkasa<span class="footnote selectable" id="F-16"><sup>r</sup></span> óntók kito</div>
+<div class="q3">dari ketórónan <span class="footnote selectable" id="G-8">Daód</span>, hamba-Nyo tu.<span id="bookmarks69"></span></div><span id="bookmarks69"></span><a id="v70"></a>
+<div class="q-vv"><span class="v">70</span><span class="vsp">&nbsp;</span>Pasal tu pecak yang la diomongke-Nyo dari jaman bingen</div>
+<div class="q2">ole mólót nabi-nabi-Nyo yang suci,<span id="bookmarks70"></span></div><span id="bookmarks70"></span><a id="v71"></a>
+<div class="q-vv"><span class="v">71</span><span class="vsp">&nbsp;</span>amen kito pasti diselametke dari mósó-mósó,</div>
+<div class="q2">jugo dari tangan slóró wong yang mbenci kito,<span id="bookmarks71"></span></div><span id="bookmarks71"></span><a id="v72"></a>
+<div class="q2-vv"><span class="v">72</span><span class="vsp">&nbsp;</span>óntók nónjókke kasé stio-Nyo ke nenek moyang kito,</div>
+<div class="q3">jugo óntók nginget pejanjian-Nyo yang suci.<span id="bookmarks72"></span></div><span id="bookmarks72"></span><a id="v73"></a>
+<div class="q-vv"><span class="v">73</span><span class="vsp">&nbsp;</span>Itula sumpa yang la dijanjike-Nyo ke <span class="footnote selectable" id="G-16">Ibrahém</span>, aba lelóhór kito,</div>
+<div class="q2">óntók ngenjókke samo kito amen,<span id="bookmarks73"></span></div><span id="bookmarks73"></span><a id="v74"></a>
+<div class="q3-vv"><span class="v">74</span><span class="vsp">&nbsp;</span>pas diselametke dari tangan mósó,</div>
+<div class="q2">kito pacak ngelayani Dio dengen katek raso takót<span id="bookmarks74"></span></div><span id="bookmarks74"></span><a id="v75"></a>
+<div class="q3-vv"><span class="v">75</span><span class="vsp">&nbsp;</span>jugo dengen kesucian samo kebeneran,</div>
+<div class="q2">di adepan-Nyo seómór édóp kito.</div>
+<div class="b">&nbsp;</div><span id="bookmarks75"></span><span id="bookmarks75"></span><a id="v76"></a>
+<div class="q-vv"><span class="v">76</span><span class="vsp">&nbsp;</span>“Trós kau, anak aku ni, bakal disebót nabi dari Yang Maha Besak,</div>
+<div class="q2">soalnyo kau bakal bejalan ndului Allah<span class="ul">‡</span> óntók nyiapke jalan-Nyo,<span class="footnote selectable" id="F-17"><sup>s</sup></span><span id="bookmarks76"></span></div><span id="bookmarks76"></span><a id="v77"></a>
+<div class="q2-vv"><span class="v">77</span><span class="vsp">&nbsp;</span>óntók ngenjók pengertian pasal keselametan ke umat-Nyo</div>
+<div class="q3">liwat pengampónan duso-duso dio wong.<span id="bookmarks77"></span></div><span id="bookmarks77"></span><a id="v78"></a>
+<div class="q-vv"><span class="v">78</span><span class="vsp">&nbsp;</span>Itu karno kasé stio samo belas kesian Allah kito,</div>
+<div class="q2">di mano pajar pagi bakal ndatengi kito dari surgo,<span id="bookmarks78"></span></div><span id="bookmarks78"></span><a id="v79"></a>
+<div class="q3-vv"><span class="v">79</span><span class="vsp">&nbsp;</span>óntók nerangi dio wong yang tinggal dalem kegelepan jugo dalem bayangan kematian,</div>
+<div class="q3">trós óntók ngarake sekel kito ke jalan kedamaian.”</div>
+<div class="b">&nbsp;</div><span id="bookmarks79"></span><span id="bookmarks79"></span><a id="v80"></a>
+<div class="p"><span class="v">80</span><span class="vsp">&nbsp;</span>Lamo-kelamoan budak tu namba besak jugo namba kuat rohaninyo. Dio tinggal di padang górón sampe ari di mano dio nónjókke dirinyo ke Israel.<span id="bookmarks80"></span></div>
+</div>
+
+<div id="toolbar-bottom">
+<div class="audio-player">
+  <audio id="audio" controls>
+    <source id="audio1" src="https://storage.googleapis.com/tbp-audio/TBP Lukas 1.mp3" />
+  </audio>
+</div>
+</div>
+
+<script type='text/javascript' src='./pwa-main.js'></script>
+<script>
+var coll = document.getElementsByClassName("collapsible-button");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
+}
+</script>
+</body>
+</html>

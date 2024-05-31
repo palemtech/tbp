@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#6C0000">
+<title>Cerito Rosul-Rosul 5</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+// Footnotes and Cross-references
+var footnotes = {
+    "F-0": "<div class=\"footnote-p\"><span class=\"fr\">5:13 </span><span class=\"fq\">rosul-rosul tu: </span><span class=\"ft\">Tólésan aslinyo iola “dio wong” trós pacak nónjókke rosul-rosul bae apo dak tu slóró wong yang pecayo teko rosul-rosul jugo yang galak bekómpól di teras Suleiman (jingok </span><span class=\"xt\"><span class=\"reflink\"><a href=\"Aktb-11-ACT-005.html#v12\">5:12</a></span></span><span class=\"ft\">).</span></div>",
+    "F-1": "<div class=\"footnote-p\"><span class=\"fr\">5:20 </span><span class=\"fq\">britokela ke slóró wong yang ado di situ slóró kato-kato pasal édóp ni: </span><span class=\"ft\">Kemóngkénan besak kato-kato ni nónjókke édóp baru yang ado di dalem Yesus, soalnyo Yesus disebót “sumber keédópan” (jingok </span><span class=\"xt\"><span class=\"reflink\"><a href=\"Aktb-11-ACT-003.html#v15\">Cerito Rosul-Rosul 3:15</a></span></span><span class=\"ft\">).</span></div>",
+    "F-2": "<div class=\"footnote-p\"><span class=\"fr\">5:30 </span><span class=\"fq\">makuke Dio di batang: </span><span class=\"ft\">Wong-wong Israel pecayo amen wong yang disalébke tu iola wong yang dikótók Allah (jingok </span><span class=\"xt\">Ulangan 21:22-23</span><span class=\"ft\">). Petrus nyalake pemémpén-pemémpén Israel karno dio wong nolak Yesus trós mbunu Dio dengen caro yang hino nian.</span></div>"
+};
+
+initFootnotes(footnotes);
+
+
+// Glossary entries
+var glossary = {
+    "G-52": "<div><span class=\"k\">imam besak</span> - Imam ni punyo jabatan paléng tinggi dari slóró imam-imam yang ado di agama wong Israel. Dio jugo jadi ketuo Mahkama Agama wong Israel, tapi katek kuaso dalem pemeréntoan Roma.</div>",
+    "G-38": "<div><span class=\"k\">Saduki</span> - Saduki iola namo sikok kelompok wong dalem agama wong Israel yang bekuaso pasal agama jugo politik. Kebanyak'an imam besak jugo anggota Mahkama Agama iola wong Saduki. Wong-wong ni dak pecayo amen ado kebangkétan pasal wong mati jugo keédópan seabés ari kiamat. Dio wong jugo idak pecayo amen Almasi bakal dateng, trós dio wong ni jugo cuman pecayo samo kitab yang ditólés ole Musa.</div>",
+    "G-36": "<div><span class=\"k\">Ruma Agóng Allah</span> - Ini ni bukan ruma ibada biaso, malahan sikok-sikoknyo tempat di dunio di mano hadérat Allah tinggal pas jaman tu. Letaknyo di <span class=\"footnote selectable\" id=\"G-46\">Yerusalem</span>, trós wong Israel nyemba Allah di tempat tu. Mak ini ari, Ruma tu dak katek lagi karno la diancórke ole tentra Roma pas taón 70 M.</div><div class=\"p\">Pas jaman Ruma Agóng Allah masé ado, Ruma tu iola pusat budayo jugo agama slóró wong Ibrani, mugola amen dio wong tinggal jaó nian dari tempat tu. Yang seréng dilakuke di Ruma tu iola pesembahan kórban sembeléhan, pembakaran garu ole imam, pesembahan dóét, pesembahan-pesembahan laén, jugo doa. Pas jaman Musa sampe jaman Daód, Ruma Agóng Allah bebentók kemah karno belóm ado bangónannyo. Jingokla jugo “<span class=\"footnote selectable\" id=\"G-20\">Kemah Petemuan</span>”.</div>",
+    "G-22": "<div><span class=\"k\">Mahkama Agama</span> - Mahkama Agama ni iola kelompok pemémpén bangso Israel pas jaman Yesus. Imam Besak iola ketuo dari Mahkama Agama tu. Tapi ado jugo anggota-anggota laénnyo pecak 22 imam, 22 wong yang dituoke, samo 22 ahli Kitab Suci. Dio wong mémpén bangso Israel tapi kuaso Mahkama Agama ni tebates (<span class=\"reflink\"><a href=\"Aktb-10-JHN-018.html#v21\">Yahya 18:21</a></span>) soalnyo dio wong masé di bawa kuaso Gubernór Romawi.</div>",
+    "G-25": "<div><span class=\"k\">Parisi</span> - Ini ni partai agama wong Israel yang cókóp begaéra pasal Prénto Allah. Dio wong jugo pecayo samo slóró kitab suci wong Israel trós seréng dipelajarinyo. Selaén kitab suci, dio wong jugo pecayo samo “tradisi lelóhór” yang dianggepnyo samo penténg pecak kitab-kitab suci. Pasal ni seréng nyebabke pedebatan antaro dio wong samo Yesus. Wong Parisi jugo ngargoi nian upacara samo adat wong Israel, sampe-sampe banyak wong Parisi diséndér ole Yesus karno lebé ngargoi upacara samo adat dibandéngke ketólósan ati, yang sebenernyo lebé penténg.</div><div class=\"p\">Asal-ósól partai ni móngkén dari duo apo tigo abad SM, jadi partai ni belóm ado pas jaman Pejanjian Lamo, tapi pas jaman Yesus partai ni la punyo pengaru besak di Israel. Idak slóró wong Parisi nolak Yesus. Rosul Paólós dulu iola wong Parisi (<span class=\"reflink\"><a href=\"Aktb-11-ACT-023.html#v9\">Cerito Rosul-Rosul 23:9</a></span>; <span class=\"reflink\"><a href=\"Aktb-11-ACT-026.html#v5\">Cerito Rosul-Rosul 26:5</a></span>; Pilipi 3:5) trós ado jugo wong-wong yang laén dari partai ni yang pecayo samo Yesus (<span class=\"reflink\"><a href=\"Aktb-10-JHN-003.html#v1\">Yahya 3:1-15</a></span>; <span class=\"reflink\"><a href=\"Aktb-11-ACT-015.html#v5\">Cerito Rosul-Rosul 15:5</a></span>).</div>"
+};
+
+initFootnotes(glossary);
+
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 28 }];
+var hasIntro = true;
+var baseRef  = "Aktb-11-ACT-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='Aktb-10-JHN-001.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-11-ACT-004.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;Cerito Rosul-Rosul&nbsp;&nbsp;</a></span>
+<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;5&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-11-ACT-006.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-12-GLO-001.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div class="c">5</div> 
+<div class="s3"><div id="s1">Wong-wong jadi takót pas jingok kuaso Allah nyato di jemaah yang baru</div></div><a id="v1"></a>
+<div class="p"><span class="v">1</span><span class="vsp">&nbsp;</span>Ado sikok lanang benamo Ananias. Dio besamo bininyo, yang benamo Sapira, nyual sepetak tananyo.<span id="bookmarks1"></span> <a id="v2"></a><span class="v">2</span><span class="vsp">&nbsp;</span>Sebagéan dari asél penjualan tu ditahannyo óntók dirinyo dewek. Bininyo ni jugo tau pasal tu. Tapi, sebagéan lagi digawaknyo trós diserake ke rosul-rosul.<span id="bookmarks2"></span></div><span id="bookmarks2"></span><a id="v3"></a>
+<div class="p"><span class="v">3</span><span class="vsp">&nbsp;</span>Na, tapi Petrus ngomong cak ini, “Ói Ananias, ngapo Éblés nyesatke pékéran kau, sampe-sampe kau bebohong samo Ro Suci jugo nyingiti sebagéan dari asél penjualan tana tu?<span id="bookmarks3"></span> <a id="v4"></a><span class="v">4</span><span class="vsp">&nbsp;</span>Sebelóm tana tu dijual, bukannyo tana tu masé punyo kau? Pas dijual, bukannyo dóétnyo masé ado dalem kuaso kau? Jadi ngapo kau ngerencanoke pasal ni di jeró ati kau? Kau bebohong bukan samo manusio, tapi samo Allah!”<span id="bookmarks4"></span></div><span id="bookmarks4"></span><a id="v5"></a>
+<div class="p"><span class="v">5</span><span class="vsp">&nbsp;</span>Pas Ananias ndenger kato-kato tu, dio campak trós mati. Slóró wong yang ndenger pasal tu jadi takót nian.<span id="bookmarks5"></span> <a id="v6"></a><span class="v">6</span><span class="vsp">&nbsp;</span>Wong-wong mudo dateng trós ngapani mayat Ananias. Laju, mayatnyo digawak metu trós dikóbórke.<span id="bookmarks6"></span></div><span id="bookmarks6"></span><a id="v7"></a>
+<div class="p"><span class="v">7</span><span class="vsp">&nbsp;</span>Na, kiro-kiro tigo jam abés tu, bininyo dateng, tapi dio ni idak tau apo yang la tejadi.<span id="bookmarks7"></span> <a id="v8"></a><span class="v">8</span><span class="vsp">&nbsp;</span>Petrus ngomong cak ini, “Omongkela samo aku, apo semak inila rego tana yang kamu jual tu?”</div>
+<div class="p">Uji Sapira, “Iyo, semak itula.”<span id="bookmarks8"></span></div><span id="bookmarks8"></span><a id="v9"></a>
+<div class="p"><span class="v">9</span><span class="vsp">&nbsp;</span>Uji Petrus lagi, “Ngapo kamu beduo ni besekongkol óntók nguji Ro Allah<span class="ul">‡</span>? Jingokla, wong-wong yang ngóbórke laki kau tadi la ado di depan lawang. Dio wong jugo bakal gawak kau metu.”<span id="bookmarks9"></span></div><span id="bookmarks9"></span><a id="v10"></a>
+<div class="p"><span class="v">10</span><span class="vsp">&nbsp;</span>Langsóng bae betino tu campak di depan Petrus trós mati. Pas wong-wong mudo tu masók, dio wong nemuke betino tu la mati. Jadi, dio wong jugo gawak betino tu metu trós ngóbórke dio di sebela lakinyo tadi.<span id="bookmarks10"></span> <a id="v11"></a><span class="v">11</span><span class="vsp">&nbsp;</span>Laju, slóró jemaah <span class="add">yang pecayo samo Yesus</span> jugo wong-wong laén yang ndenger pasal tu jadi takót nian.<span id="bookmarks11"></span></div>
+<div class="s2"><div id="s2">Kerajaan Allah tejingok liwat pelayanan rosul-rosul, yang ngelanjótke pelayanan Yesus</div></div>
+<div class="s3"><div id="s3">Rosul-rosul nyembóke banyak wong</div></div><span id="bookmarks11"></span><a id="v12"></a>
+<div class="p"><span class="v">12</span><span class="vsp">&nbsp;</span>Liwat tangan rosul-rosul tejadi banyak tando ajaéb jugo mujijat di antaro wong banyak. Dio wong galo biasonyo bekómpól dengen seati sepékér di teras Suleiman.<span id="bookmarks12"></span> <a id="v13"></a><span class="v">13</span><span class="vsp">&nbsp;</span>Wong laén katek yang berani óntók begabóng dengen rosul-rosul tu,<span class="footnote selectable" id="F-0"><sup>a</sup></span> tapi dio wong tetep dihormati ole wong banyak.<span id="bookmarks13"></span> <a id="v14"></a><span class="v">14</span><span class="vsp">&nbsp;</span>Makén lamo, makén banyak wong yang pecayo samo Tuan <span class="add">kito</span>, mugola itu lanang apo betino.<span id="bookmarks14"></span> <a id="v15"></a><span class="v">15</span><span class="vsp">&nbsp;</span>Karno galo-galonyo tu, wong-wong sakét digawak ke jalan-jalan, trós digóléngke di pócók tempat tédók samo tiker supayo pas Petrus dateng paléng idak bayangannyo tu tekeno dio wong.<span id="bookmarks15"></span> <a id="v16"></a><span class="v">16</span><span class="vsp">&nbsp;</span>Dari kota-kota parak Yerusalem, banyak wong bedatengan gawak wong-wong yang sakét jugo yang diganggu setan-setan. Ahérnyo, slóró wong tu disembóke.<span id="bookmarks16"></span></div>
+<div class="s3"><div id="s4">Rosul-rosul ditangkep trós diperikso ole Mahkama Agama wong Israel</div></div><span id="bookmarks16"></span><a id="v17"></a>
+<div class="p"><span class="v">17</span><span class="vsp">&nbsp;</span>Na, <span class="footnote selectable" id="G-52">imam besak</span> samo slóró pengékótnyo, yang iola wong-wong dari kelompok <span class="footnote selectable" id="G-38">Saduki</span>, jadi sérék nian <span class="add">samo rosul-rosul</span>.<span id="bookmarks17"></span> <a id="v18"></a><span class="v">18</span><span class="vsp">&nbsp;</span>Jadi, rosul-rosul tu ditangkep, dimasókke ke jeró penjaro kota.<span id="bookmarks18"></span> <a id="v19"></a><span class="v">19</span><span class="vsp">&nbsp;</span>Tapi, pas malem tu malekat Allah<span class="ul">‡</span> mbukak lawang-lawang penjaro trós gawak rosul-rosul tu metu. Uji malekat tu,<span id="bookmarks19"></span> <a id="v20"></a><span class="v">20</span><span class="vsp">&nbsp;</span>“Pegila! Tegakla di halaman <span class="footnote selectable" id="G-36">Ruma Agóng Allah</span>. Britokela ke slóró wong yang ado di situ slóró kato-kato pasal édóp ni.”<span class="footnote selectable" id="F-1"><sup>b</sup></span><span id="bookmarks20"></span></div><span id="bookmarks20"></span><a id="v21"></a>
+<div class="p"><span class="v">21</span><span class="vsp">&nbsp;</span>Abés ndenger omongan malekat tu, dio wong pegi ke Ruma Agóng Allah pas sóbó, jugo ngajar di situ. Sementaro tu, imam besak samo pengékót-pengékótnyo manggél slóró pemémpén Israel, yang iola anggota-anggota tetinggi, óntók bekómpól ngadoke sidang. Dio wong ngótós beberapo wong sóróan ke penjaro supayo rosul-rosul tu digawak.<span id="bookmarks21"></span> <a id="v22"></a><span class="v">22</span><span class="vsp">&nbsp;</span>Na, tapi, pas wong-wong sóróan tu sampe, dio wong idak nemuke rosul-rosul tu di jeró penjaro. Pas balék, dio wong ngelapor,<span id="bookmarks22"></span> <a id="v23"></a><span class="v">23</span><span class="vsp">&nbsp;</span>ujinyo, “Kami jingok amen penjaro tu tekonci rapet, trós slóró pengawal tegak di depan lawang. Tapi, pas kami mbukak lawang tu, kami idak nemuke sikok wong bae di jerónyo.”<span id="bookmarks23"></span></div><span id="bookmarks23"></span><a id="v24"></a>
+<div class="p"><span class="v">24</span><span class="vsp">&nbsp;</span>Na, pas ketuo pengawal Ruma Agóng Allah jugo ketuo-ketuo imam ndenger brito tu, dio wong ni heran pasal rosul-rosul, trós betanyo apo yang bakal tejadi.<span id="bookmarks24"></span> <a id="v25"></a><span class="v">25</span><span class="vsp">&nbsp;</span>Tapi, ado wong dateng ke tempat sidang tadi, ujinyo, “Jingokla! Wong-wong yang kamu masókke ke jeró penjaro tadi, sekarang lagi tegak di halaman Ruma Agóng Allah, trós ngajar wong banyak!<span id="bookmarks25"></span> <a id="v26"></a><span class="v">26</span><span class="vsp">&nbsp;</span>Ahérnyo, pegila ketuo pengawal Ruma Agóng Allah besamo pengawal-pengawalnyo, trós rosul-rosul tu digawak balék lagi. Tapi, dio wong ni dak makek kekerasan soalnyo dio wong tu takót kalu-kalu bae wong banyak ni bakal mbabeti dio wong makek batu.<span id="bookmarks26"></span></div><span id="bookmarks26"></span><a id="v27"></a>
+<div class="p"><span class="v">27</span><span class="vsp">&nbsp;</span>Jadi, dio wong gawak rosul-rosul tu óntók diadepke samo <span class="footnote selectable" id="G-22">Mahkama Agama</span>, trós imam besak merikso dio wong.<span id="bookmarks27"></span> <a id="v28"></a><span class="v">28</span><span class="vsp">&nbsp;</span>Ujinyo, “Kami ni la teges ngelarang kamu supayo kamu idak lagi ngajar dalem namo tu. Jingokla! Yerusalem la penu dengen ajaran kamu trós kamu nak békén kami betanggóng jawab pasal kematian wong tu.”<span id="bookmarks28"></span></div><span id="bookmarks28"></span><a id="v29"></a>
+<div class="p"><span class="v">29</span><span class="vsp">&nbsp;</span>Tapi Petrus samo rosul-rosul laénnyo nyawab, “Kito ni harós nórót samo Allah bukan manusio!<span id="bookmarks29"></span> <a id="v30"></a><span class="v">30</span><span class="vsp">&nbsp;</span>Tuhannyo nenek moyang kito la mbangkétke Yesus. Dio tu yang kamu bunu dengen makuke Dio di batang.<span class="footnote selectable" id="F-2"><sup>c</sup></span><span id="bookmarks30"></span> <a id="v31"></a><span class="v">31</span><span class="vsp">&nbsp;</span>Allah dewek la ninggike Dio óntók jadi pemémpén jugo penyelamet ke tempat tehormat di sebela kanan-Nyo, supayo Dio ngenjók petobatan jugo pengampónan duso ke bangso Israel.<span id="bookmarks31"></span> <a id="v32"></a><span class="v">32</span><span class="vsp">&nbsp;</span>Kami ni iola saksi pasal slóró kejadian tu. Ro Suci, yang la Allah ótós ke wong-wong yang la nóróti Dio, jugo jadi saksi.”<span id="bookmarks32"></span></div><span id="bookmarks32"></span><a id="v33"></a>
+<div class="p"><span class="v">33</span><span class="vsp">&nbsp;</span>Laju wong-wong yang ndenger omongan rosul-rosul tu ngeraso sakét ati. Dio wong ni mbékén rencano óntók mbunu rosul-rosul tu.<span id="bookmarks33"></span></div><span id="bookmarks33"></span><a id="v34"></a>
+<div class="p"><span class="v">34</span><span class="vsp">&nbsp;</span>Tapi, di Mahkama Agama tu ado sikok wong <span class="footnote selectable" id="G-25">Parisi</span> benamo Gamaliel. Dio ni guru Hókóm Musa yang dihormati ole slóró wong banyak. Dio tegak trós ngongkon supayo rosul-rosul tu metu dóken.<span id="bookmarks34"></span> <a id="v35"></a><span class="v">35</span><span class="vsp">&nbsp;</span>Uji dio ke wong-wong Mahkama Agama tu, “Ói wong-wong Israel, ati-atila dengen apo yang bakal kamu lakuke samo wong-wong ni!<span id="bookmarks35"></span> <a id="v36"></a><span class="v">36</span><span class="vsp">&nbsp;</span>Beberapo waktu lalu Teudas móncól, ngaku amen dio ni wong penténg, trós kiro-kiro 400 wong begabóng samo dio. Dio ni keno hókóm mati, jadi slóró pengékótnyo tepisa-pisa trós pemberontakan tu ngilang.<span id="bookmarks36"></span> <a id="v37"></a><span class="v">37</span><span class="vsp">&nbsp;</span>Abés tu, pas waktu sensós pendódók, Yudas wong Galilea tu móncól. Dio ni jugo nyesatke wong banyak óntók melok'i dio. Ahérnyo, dio ni jugo mati, trós slóró pengékótnyo buyar.<span id="bookmarks37"></span></div><span id="bookmarks37"></span><a id="v38"></a>
+<div class="p"><span class="v">38</span><span class="vsp">&nbsp;</span>Na, Karno tu, dalem pekaro ni aku ngomong ke kamu galo, jaóila jugo talakkela wong-wong ni. Soalnyo, amen rencano jugo pebuatan ni beasal dari manusio, pasal ni bakal gagal.<span id="bookmarks38"></span> <a id="v39"></a><span class="v">39</span><span class="vsp">&nbsp;</span>Tapi amen itu beasal dari Allah, kamu dak móngkén pacak gagalke dio wong. Malahan kamu yang ketauan mósói Allah.”<span id="bookmarks39"></span></div><span id="bookmarks39"></span><a id="v40"></a>
+<div class="p"><span class="v">40</span><span class="vsp">&nbsp;</span>Ahérnyo, nasehat tu diterimo. Laju, rosul-rosul tu dipanggél, abés tu dicambók'i jugo dipréntoke dengen teges supayo idak ngajar lagi makek namo Yesus, baru abés tu dio wong dilepaske.<span id="bookmarks40"></span></div><span id="bookmarks40"></span><a id="v41"></a>
+<div class="p"><span class="v">41</span><span class="vsp">&nbsp;</span>Jadi, rosul-rosul ninggalke Mahkama Agama tu dengen seneng ati karno dio wong ngeraso amen dihino demi namo Yesus sebenernyo iola kehormatan.<span id="bookmarks41"></span> <a id="v42"></a><span class="v">42</span><span class="vsp">&nbsp;</span>Tiap ari di <span class="footnote selectable" id="G-36">Ruma Agóng Allah</span> jugo dari ruma ke ruma, rosul-rosul ni dak perna brenti ngajar jugo mbritoke amen Yesus iola Almasi, Wong Yang Dilanték.<span id="bookmarks42"></span></div>
+</div>
+
+<div id="toolbar-bottom">
+<div class="audio-player">
+  <audio id="audio" controls>
+    <source id="audio1" src="https://storage.googleapis.com/tbp-audio/TBP Cerito Rosul 5.mp3" />
+  </audio>
+</div>
+</div>
+
+<script type='text/javascript' src='./pwa-main.js'></script>
+<script>
+var coll = document.getElementsByClassName("collapsible-button");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
+}
+</script>
+</body>
+</html>
