@@ -2,8 +2,12 @@
 <html>
 <head>
 <meta charset="utf-8" />
+
+<meta property="og:title" content="Alkitab Tejemahan Palembang">
+<meta property="og:description" content="Terjemahan Alkitab dalem baso Palembang.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title> 1</title>
+<meta name="theme-color" content="#6C0000">
+<title>Ester 1</title>
 
 <script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
 <script type='text/javascript' src='js/popcorn-complete.min.js'></script>
@@ -15,16 +19,34 @@
 <script type='text/javascript' src='js/book-names.js'></script>
 
 <link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
 <link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
 
 <script type="text/javascript">
 
 $(document).ready(function() {
+
+// Footnotes and Cross-references
+var footnotes = {
+    "F-0": "<div class=\"footnote-p\"><span class=\"fr\">1:1 </span><span class=\"fq\">Ahasweros: </span><span class=\"ft\">Rajo ni iola Rajo Ahasweros I, rajo keempat dari Kekaésaran Persia yang ngerajoi selamo 22 taón, dari taón 486 sampe taón 464 SM. Dalem baso Yunani namo rajo ni iola Xerxes I.</span></div>",
+    "F-1": "<div class=\"footnote-p\"><span class=\"fr\">1:1 </span><span class=\"fq\">Etiopia: </span><span class=\"ft\">Tólésan aslinyo iola “Kus”. Itu tu namo kuno óntók Etiopia.</span></div>",
+    "F-2": "<div class=\"footnote-p\"><span class=\"fr\">1:2 </span><span class=\"fq\">benteng, di Kota Susan: </span><span class=\"ft\">Kota Susan ni ado duo bagéan. Bagéan petamo iola bagéan kota yang lebé luas, yang idak dibentengi. Bagéan keduo, yang dibangón di bagéan paléng tinggi di kota tu, iola bagéan kota yang dibentengi trós di jerónyo ado istana kerajaan yang disebót “Benteng Susan”.</span></div>",
+    "F-3": "<div class=\"footnote-p\"><span class=\"fr\">1:3 </span><span class=\"fq\">Media: </span><span class=\"ft\">Ini ni sikok propinsi di dalem Kekaésaran Persia. Ibu kota dari Propinsi Media ni namonyo Ahmeta, yang iola sala sikok pusat administrasi Kekaésaran Persia.</span></div>",
+    "F-4": "<div class=\"footnote-p\"><span class=\"fr\">1:6 </span><span class=\"fq\">batu porpiri, marmer, mutiaro, jugo batu mulyo laénnyo: </span><span class=\"ft\">Makno kato-kato asli di sini dak pulok jelas. Tapi, kito pacak yakén amen lantai halaman tu dibékén dari bahan-bahan jugo batu-batuan yang cindó, bewarno-warni, jugo mahal.</span></div>",
+    "F-5": "<div class=\"footnote-p\"><span class=\"fr\">1:8 </span><span class=\"fq\">minumnyo idak dibatesi: </span><span class=\"ft\">Tólésan asli dalem baso Ibrani pacak jugo diartike “minumnyo idak dibatesi jugo idak dipakso”.</span></div>",
+    "F-6": "<div class=\"footnote-p\"><span class=\"fr\">1:10 </span><span class=\"fq\">kasém: </span><span class=\"ft\">Istila ni nónjókke lanang yang la dikebiri alat kelaminnyo. Ini ni dilakuke supayo tuannyo ni dak perlu takót amen kasém tu bakal nedók'i bini apo dak tu anak betinonyo. Kasém seréng dipélé óntók jadi pejabat dalem kerajaan.</span></div>"
+};
+
+initFootnotes(footnotes);
+
 });
 
 // Chapters
-var chapters = [ { start: 1, end: 1 }];
-var hasIntro = false;
+var chapters = [ { start: 1, end: 10 }];
+var hasIntro = true;
 var baseRef  = "Aktb-05-EST-";
 
 
@@ -33,21 +55,48 @@ var baseRef  = "Aktb-05-EST-";
 
 <body class="browser" dir="LTR">
 
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='Aktb-04-GEN-001.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-05-EST-000.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;Ester&nbsp;&nbsp;</a></span>
+<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;1&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-05-EST-002.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-06-PSA-001.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+</div>
+</div>
+
 <div id="content">
 
-<div class="mt"><span class="mt">Petanyoan Belajar Alkitab</span></div>
+<div class="mt"><span class="mt">Ester</span></div>
 <div class="b"></div>
 <div class="b"></div>
-<div class="p">Petanyoan-petanyoan ni disedioke óntók mbantu kito belajar pasal apo bae yang ado di Alkitab:</div>
-<div class="li top-spacing">1. Bacoke ayat pokok. Ceritoke lagi makek kato-kato kau dewek.</div>
-<div class="li">2. Apo yang dipelajari pasal Allah di bacoan ni?</div>
-<div class="li">3. Apo yang dipelajari pasal manusio di bacoan ni?</div>
-<div class="li">4. Bahas tindakan yang mesti dilakuke dalem keédópan kito bedasarke kebeneran yang baru dibaco tadi:</div>
-<div class="li2">a) Apo yang bakal kito lakuke minggu depan karno baco ayat-ayat ni, secaro pribadi? (Mulai jawabannyo dengen, “Aku bakal…”.)</div>
-<div class="li2">b) Apo yang bakal kito lakuke, secaro kelompok? (amen dibahas secaro kelompok)</div>
-<div class="li">5. Samo siapo kito bakal nyaksike kebeneran ni?</div>
-<div class="li">6. Bedoa ke Allah pasal apo yang la kito pelajari.</div>
+<div class="c">1</div> 
+<div class="s2"><div id="s1">Ratu Wasti diséngkérke</div></div><a id="v1"></a>
+<div class="p"><span class="v">1</span><span class="vsp">&nbsp;</span>Cak inila cerito yang tejadi pas jamannyo Ahasweros.<span class="footnote selectable" id="F-0"><sup>a</sup></span> Dio ni yang ngerajoi 127 propinsi, dari India sampe ke Etiopia.<span class="footnote selectable" id="F-1"><sup>*</sup></span><span id="bookmarks1"></span></div><span id="bookmarks1"></span><a id="v2"></a>
+<div class="p"><span class="v">2</span><span class="vsp">&nbsp;</span>Waktu tu, pas Rajo Ahasweros dódók di korsi kekuasoannyo di jeró benteng, di Kota Susan,<span class="footnote selectable" id="F-2"><sup>b</sup></span><span id="bookmarks2"></span> <a id="v3"></a><span class="v">3</span><span class="vsp">&nbsp;</span>di taón ketigo pemeréntoannyo, dio ngadoke pesta besak óntók slóró pejabat kerajaan jugo hambanyo. Tentra Propinsi Media<span class="footnote selectable" id="F-3"><sup>c</sup></span> jugo tentra Kerajaan Persia, wong-wong ningrat kerajaan jugo pejabat-pejabat propinsi hadér di adepannyo.<span id="bookmarks3"></span> <a id="v4"></a><span class="v">4</span><span class="vsp">&nbsp;</span>Rajo Ahasweros ni mamerke kekayoan kerajaannyo yang mulyo jugo kehormatan keagóngannyo yang besinar selamo beari-ari, sampe setenga taón lamonyo.<span id="bookmarks4"></span></div><span id="bookmarks4"></span><a id="v5"></a>
+<div class="p"><span class="v">5</span><span class="vsp">&nbsp;</span>Na, pas ari-ari pesta tu la selesai, rajo ngadoke pesta besak lagi óntók slóró rakyat yang ado di Benteng Susan, dari wong besak sampe wong kecik, selamo tójó ari, di halaman taman istana rajo.<span id="bookmarks5"></span> <a id="v6"></a><span class="v">6</span><span class="vsp">&nbsp;</span>Ya cacam! Jingok kaén lenan pótényo jugo kaén ungunyo! Dikebet makek tali alós póté jugo kaén mera ati, trós digantóng di batang perak jugo cagak marmer. Ado jugo bangku-bangku emas samo perak yang bekasór, di lantai batu porpiri, marmer, mutiaro, jugo batu mulyo laénnyo.<span class="footnote selectable" id="F-4"><sup>*</sup></span><span id="bookmarks6"></span> <a id="v7"></a><span class="v">7</span><span class="vsp">&nbsp;</span>Minuman dihidangke dalem cangkér-cangkér emas yang bentóknyo belaénan. Banyu anggór kerajaan melimpa, sesuai dengen kebaék'an ati rajo.<span id="bookmarks7"></span> <a id="v8"></a><span class="v">8</span><span class="vsp">&nbsp;</span>Sesuai atóran rajo, minumnyo idak dibatesi,<span class="footnote selectable" id="F-5"><sup>*</sup></span> soalnyo rajo la ngenjók prénto ke slóró kepalak pelayan istananyo supayo kendak tiap wong ditóróti.<span id="bookmarks8"></span></div><span id="bookmarks8"></span><a id="v9"></a>
+<div class="p"><span class="v">9</span><span class="vsp">&nbsp;</span>Na, sementaro tu, di istana kerajaan Rajo Ahasweros, Ratu Wasti jugo ngadoke pesta óntók betino-betino.<span id="bookmarks9"></span></div><span id="bookmarks9"></span><a id="v10"></a>
+<div class="p"><span class="v">10</span><span class="vsp">&nbsp;</span>Pas ari ketójó, waktu ati rajo seneng karno minum anggór, dio mréntoke Mehuman, Bista, Harbona, Bigta, Abagta, Jetar, samo Karkas, iola ketójó kasém<span class="footnote selectable" id="F-6"><sup>d</sup></span> yang ngelayani rajo secaro pribadi.<span id="bookmarks10"></span> <a id="v11"></a><span class="v">11</span><span class="vsp">&nbsp;</span>Dio wong dipréntoke óntók gawak Ratu Wasti ngadep rajo makek mahkota kerajaan. Rajo nak mamerke kecindóan ratu ke rakyat jugo pejabat-pejabat karno dio cindó nian.<span id="bookmarks11"></span> <a id="v12"></a><span class="v">12</span><span class="vsp">&nbsp;</span>Na, tapi, Ratu Wasti ni nolak óntók dateng nóróti prénto rajo yang disampeke ole kasém-kasém tu. Laju, rajo jadi mara nian sampe-sampe kemarahannyo tu benyalo-nyalo.<span id="bookmarks12"></span></div><span id="bookmarks12"></span><a id="v13"></a>
+<div class="p"><span class="v">13</span><span class="vsp">&nbsp;</span>Jadi, rajo betanyo samo wong-wong bijak yang paham pasal jaman-jaman, karno rajo memang biaso beróndéng ke segalo ahli undang-undang jugo hókóm.<span id="bookmarks13"></span> <a id="v14"></a><span class="v">14</span><span class="vsp">&nbsp;</span>Beberapo dari wong bijak tu yang paléng deket dengen rajo iola Karsena, Setar, Admata, Tarsis, Meres, Marsena, jugo Memukan, yang iola ketójó pejabat Persia samo Media yang pacak jingok rai rajo jugo yang punyo kedódók'an paléng penténg di dalem kerajaan.<span id="bookmarks14"></span></div><span id="bookmarks14"></span><a id="v15"></a>
+<div class="p"><span class="v">15</span><span class="vsp">&nbsp;</span>Rajo betanyo cak ini, “Nórót undang-undang, apo yang harós dilakuke samo Ratu Wasti karno dio idak ngelakuke prénto aku yang la disampeke ole kasém-kasém tu?”<span id="bookmarks15"></span></div><span id="bookmarks15"></span><a id="v16"></a>
+<div class="p"><span class="v">16</span><span class="vsp">&nbsp;</span><span class="add">Sala sikok pejabat yang benamo</span> Memukan nyawab di adepan rajo jugo ke slóró pejabat tu cak ini, “Ratu Wasti idak cuman besala samo Rajo bae, tapi dio jugo besala samo slóró pejabat jugo segalo bangso yang ado di slóró Propinsi Rajo Ahasweros.<span id="bookmarks16"></span> <a id="v17"></a><span class="v">17</span><span class="vsp">&nbsp;</span>Soalnyo, kelakuan ratu bakal diketaui slóró betino, sampe-sampe betino-betino bakal mandang renda lakinyo dengen omongan cak ini, ‘Rajo Ahasweros mréntoke supayo Ratu Wasti digawak ngadep dio, tapi ratu dak galak dateng.’<span id="bookmarks17"></span> <a id="v18"></a><span class="v">18</span><span class="vsp">&nbsp;</span>Pas ari ni jugo, bini-bini wong ningrat Kerajaan Persia jugo Media yang la ndenger kelakuan ratu bakal ngomong cak itu pulok ke slóró pejabat rajo, sampe-sampe penghinoan samo kemarahan bakal belarót-larót lamonyo.<span id="bookmarks18"></span></div><span id="bookmarks18"></span><a id="v19"></a>
+<div class="p"><span class="v">19</span><span class="vsp">&nbsp;</span>Jadi, amen baék nórót Rajo, metukela sikok surat prénto supayo Wasti dak pacak ngadep Rajo lagi. Surat prénto tu bakal ditólés dalem undang-undang Persia jugo Media supayo dak pacak dibatalke. Trós, biarla Rajo ngenjókke kedódók'an ratu ke betino laén yang lebé pantes dari dio.<span id="bookmarks19"></span> <a id="v20"></a><span class="v">20</span><span class="vsp">&nbsp;</span><span class="add">Dengen cak itu</span>, pas surat prénto rajo tu diómómke di slóró kerajaannyo yang besak nian ni, laju slóró bini, dari wong besak sampe wong kecik, bakal ngormati lakinyo.” <span class="add">Uji Memukan cak itu.</span><span id="bookmarks20"></span></div><span id="bookmarks20"></span><a id="v21"></a>
+<div class="p"><span class="v">21</span><span class="vsp">&nbsp;</span>Ósólan tu dianggep baék ole rajo jugo pejabat-pejabatnyo, jadi rajo betindak sesuai dengen ósólan Memukan tu.<span id="bookmarks21"></span> <a id="v22"></a><span class="v">22</span><span class="vsp">&nbsp;</span>Ahérnyo, rajo ngérém surat-surat tu ke slóró propinsi daera kerajaannyo, ke tiap propinsi nórót tólésannyo jugo ke tiap bangso nórót basonyo. Surat-surat tu ngómómke amen tiap lanang harós jadi kepalak ruma tanggonyo trós ngomong makek baso dari bangsonyo dewek.<span id="bookmarks22"></span></div>
 </div>
+
+<div id="toolbar-bottom">
+<div class="audio-player">
+  <audio id="audio" controls>
+    <source id="audio1" src="https://storage.googleapis.com/tbp-audio/TBP Ester 1.mp3" />
+  </audio>
+</div>
+</div>
+
+<script type='text/javascript' src='./pwa-main.js'></script>
 <script>
 var coll = document.getElementsByClassName("collapsible-button");
 var i;

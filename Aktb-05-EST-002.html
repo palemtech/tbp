@@ -2,6 +2,9 @@
 <html>
 <head>
 <meta charset="utf-8" />
+
+<meta property="og:title" content="Alkitab Tejemahan Palembang">
+<meta property="og:description" content="Terjemahan Alkitab dalem baso Palembang.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#6C0000">
 <title>Ester 2</title>
@@ -30,7 +33,7 @@ $(document).ready(function() {
 var footnotes = {
     "F-0": "<div class=\"footnote-p\"><span class=\"fr\">2:5 </span><span class=\"fq\">suku Benyamin: </span><span class=\"ft\">Ini ni sala sikok dari 12 suku Israel. Rajo Saól jugo dari suku Benyamin, trós namo abanyo iola Kis. Jadi pecaknyo Mordekai ni ketórónan dari kluargo yang samo. Saól ni iola rajo petamo Israel sebelóm Rajo Daód, trós édóp kiro-kiro 550 taón sebelóm cerito ni (jingok </span><span class=\"xt\">1 Samuel 9:1-2; 10:1</span><span class=\"ft\">).</span></div>",
     "F-1": "<div class=\"footnote-p\"><span class=\"fr\">2:6 </span><span class=\"fq\">rajo Babel: </span><span class=\"ft\">Bangso Babel naklókke Kerajaan Yehuda di taón 597 SM, kiro-kiro 120 taón sebelóm cerito ni. Yehuda iola bagéan selatan dari Israel. Jadi, banyak wong Israel yang digawak dari Yehuda ke Babel, teko kluargonyo Mordekai. Di taón 539 SM, Babel ditaklókke ole Kerajaan Persia. Mangkonyo ado banyak wong Israel yang tinggal di negri Persia di dalem cerito ini.</span></div>",
-    "F-2": "<div class=\"footnote-p\"><span class=\"fr\">2:16 </span><span class=\"fq\">bulan kesepóló, yang iola bulan Tebet: </span><span class=\"ft\">Bulan Tebet iola sala sikok bulan dalem kalender wong Israel. Mak ini ari, bulan Tebet dipekiroke dari petengahan Desember sampe petengahan Januari. Awal taón wong Israel jaman tu dimulai di petengahan bulan Maret, mangkonyo bulan kesepóló bukan bulan Oktober, melaénke Desember sampe Januari.</span></div>",
+    "F-2": "<div class=\"footnote-p\"><span class=\"fr\">2:16 </span><span class=\"fq\">bulan ke-10, yang iola bulan Tebet: </span><span class=\"ft\">Bulan Tebet iola sala sikok bulan dalem kalender wong Israel. Mak ini ari, bulan Tebet dipekiroke dari petengahan Desember sampe petengahan Januari. Awal taón wong Israel jaman tu dimulai di petengahan bulan Maret, mangkonyo bulan kesepóló bukan bulan Oktober, melaénke Desember sampe Januari.</span></div>",
     "F-3": "<div class=\"footnote-p\"><span class=\"fr\">2:23 </span><span class=\"fq\">dicócókke di cagak kayu: </span><span class=\"ft\">Tólésan aslinyo iola “digantóng di batang”. Di Kerajaan Persia jaman tu, biasonyo wong yang dihókóm mati dicócókke di cagak kayu supayo jadi peringetan óntók wong laénnyo. Jingok </span><span class=\"xt\"><span class=\"reflink\"><a href=\"Aktb-05-EST-009.html#v7\">Ester 9:7-10</a></span>, <span class=\"reflink\"><a href=\"Aktb-05-EST-009.html#v14\">14</a></span></span><span class=\"ft\">.</span></div>"
 };
 
@@ -54,10 +57,12 @@ var baseRef  = "Aktb-05-EST-";
 
 <div id="toolbar-top">
 <div class="navigation-top">
+  <span class="button"><a href='Aktb-04-GEN-001.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
   <span class="button"><a href='Aktb-05-EST-001.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
-  <span id="book-selector">&nbsp;&nbsp;Ester&nbsp;&nbsp;</span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;Ester&nbsp;&nbsp;</a></span>
 <span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;2&nbsp;&nbsp;</a></span>
   <span class="button"><a href='Aktb-05-EST-003.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-06-PSA-001.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
 </div>
 </div>
 

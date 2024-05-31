@@ -2,6 +2,9 @@
 <html>
 <head>
 <meta charset="utf-8" />
+
+<meta property="og:title" content="Alkitab Tejemahan Palembang">
+<meta property="og:description" content="Terjemahan Alkitab dalem baso Palembang.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#6C0000">
 <title>Yahya 18</title>
@@ -28,7 +31,7 @@ $(document).ready(function() {
 
 // Footnotes and Cross-references
 var footnotes = {
-    "F-0": "<div class=\"footnote-p\"><span class=\"fr\">18:11 </span><span class=\"fq\">minum dari cangkér: </span><span class=\"ft\">Minum dari cangkér pacak diartike ngalami hókóman dari Allah (jingok </span><span class=\"xt\"><span class=\"reflink\">Saér Nyanyian 11:6</span>; Wahyu 14:10; 16:19</span><span class=\"ft\">). Di sini Yesus nyelaske amen Dio siap mendrito di kayu saléb karno nanggóng duso manusio.</span></div>",
+    "F-0": "<div class=\"footnote-p\"><span class=\"fr\">18:11 </span><span class=\"fq\">minum dari cangkér: </span><span class=\"ft\">Minum dari cangkér pacak diartike ngalami hókóman dari Allah (jingok </span><span class=\"xt\"><span class=\"reflink\"><a href=\"Aktb-06-PSA-011.html#v6\">Saér Nyanyian 11:6</a></span>; Wahyu 14:10; 16:19</span><span class=\"ft\">). Di sini Yesus nyelaske amen Dio siap mendrito di kayu saléb karno nanggóng duso manusio.</span></div>",
     "F-1": "<div class=\"footnote-p\"><span class=\"fr\">18:13 </span><span class=\"fq\">Hanas: </span><span class=\"ft\">Nórót Pejanjian Lamo, jabatan imam besak tu seómór édóp trós ditórónke ke anaknyo. Tapi, pas bangso Israel dijaja Kekaésaran Roma, pemerénto Romawi pacak sekendaknyo dewek gentike imam besak. Taón 6 M Hanas jadi imam besak trós taón 15 M dio digentike Kayapas, mantunyo. Mugola Hanas idak lagi jadi imam besak, tapi dio masé punyo pengaru yang besak di antaro wong-wong Israel. Itula ngapo dio masé disebót imam besak (jingok </span><span class=\"xt\"><span class=\"reflink\"><a href=\"Aktb-10-JHN-018.html#v15\">18:15</a></span>, <span class=\"reflink\"><a href=\"Aktb-10-JHN-018.html#v19\">19</a></span>, <span class=\"reflink\"><a href=\"Aktb-10-JHN-018.html#v24\">24</a></span></span><span class=\"ft\">).</span></div>",
     "F-2": "<div class=\"footnote-p\"><span class=\"fr\">18:15 </span><span class=\"fq\">móréd yang laén: </span><span class=\"ft\">Kemóngkénan besak ini ni nónjókke Yahya móréd Yesus yang nólés kitab ni.</span></div>",
     "F-3": "<div class=\"footnote-p\"><span class=\"fr\">18:28 </span><span class=\"fq\">supayo dio wong idak jadi najés: </span><span class=\"ft\">Wong Israel nganggep ruma wong yang bukan Israel tu najés. Apolagi besoknyo wong-wong tu nak ngerayoke Paska. Amen dio wong jadi najés ari ni, nórót Hókóm Taurat, dio wong harós ngerayoke Paska bulan depan (jingok </span><span class=\"xt\">Kelóyóran di Górón 9:6-11</span><span class=\"ft\">).</span></div>"
@@ -71,10 +74,12 @@ var baseRef  = "Aktb-10-JHN-";
 
 <div id="toolbar-top">
 <div class="navigation-top">
+  <span class="button"><a href='Aktb-09-LUK-001.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
   <span class="button"><a href='Aktb-10-JHN-017.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
-  <span id="book-selector">&nbsp;&nbsp;Yahya&nbsp;&nbsp;</span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;Yahya&nbsp;&nbsp;</a></span>
 <span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;18&nbsp;&nbsp;</a></span>
   <span class="button"><a href='Aktb-10-JHN-019.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-11-ACT-000.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
 </div>
 </div>
 

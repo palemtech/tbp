@@ -1,4 +1,14 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="stylesheet" href="css/sab-stylesheet.css" type="text/css" />
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+
+<meta property="og:title" content="Alkitab Tejemahan Palembang">
+<meta property="og:description" content="Terjemahan Alkitab dalem baso Palembang.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#6C0000">
+<title>Yunus 1</title>
+
 <script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
 <script type='text/javascript' src='js/popcorn-complete.min.js'></script>
 <script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
@@ -10,34 +20,108 @@
 
 <link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
 
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+
 <script type="text/javascript">
 
 $(document).ready(function() {
+
+// Footnotes and Cross-references
+var footnotes = {
+    "F-0": "<div class=\"footnote-p\"><span class=\"fr\">1:1 </span><span class=\"fq\">Yunus: </span><span class=\"ft\">Sikok nabi dari Israel pas pemeréntoannyo Rajo Yerobeam II, yang mrénto pas taón 793–753 SM. (Jingokla </span><span class=\"xt\">2 Rajo-Rajo 14:2</span><span class=\"ft\">.)</span></div>",
+    "F-1": "<div class=\"footnote-p\"><span class=\"fr\">1:3 </span><span class=\"fq\">Yapo: </span><span class=\"ft\">Kota pelabuan yang ado di Laót Tenga. Kota tu banyak diliwati kapal-kapal dari negri laén.</span></div>",
+    "F-2": "<div class=\"footnote-p\"><span class=\"fr\">1:10 </span><span class=\"fq\">Alangke beraninyo kau ngelakuke itu: </span><span class=\"ft\">Tólésan aslinyo iola, “Apo yang la kau lakuke?” (Iola tódóan bebentók petanyoan yang dak perlu dijawab.)</span></div>",
+    "F-3": "<div class=\"footnote-p\"><span class=\"fr\">1:16 </span><span class=\"fq\">ngórbanke kórban... ngucapke najar: </span><span class=\"ft\">Ini caro biaso óntók wong-wong ni supayo dapet kebaék'an dari dewo-dewonyo. Jadi móngkén bae dio wong idak beroba agama, tapi cuman namba dewo bae. </span></div>"
+};
+
+initFootnotes(footnotes);
+
+var crossrefs = {
+    "X-0": "<div class=\"footnote-p\"><span class=\"xo\">1:17 </span><span class=\"xt\"><span class=\"reflink\">Matius 12:40</span></span></div>"
+};
+
+initFootnotes(crossrefs);
+
+
+// Glossary entries
+var glossary = {
+    "G-0": "<div><span class=\"k\"><span class=\"nd\">Allah</span><span class=\"nd2\">yhwh</span></span> - Setiap kali tejingok kato ni (óróp besak galo), artinyo yang tetólés di teks aslinyo bukan kato Allah, tapi namo YHWH. Mangko, kato ALLAH yang ditólés makek óróp besak galo idak samo dengen kato Allah yang ditólés makek óróp besak di awal bae. YHWH tu iola namonyo Allah yang diwahyuke-Nyo ke Nabi Musa di Gónóng Horeb (Pembebasan 3:15). Namo YHWH tu móngkén diucapke “Yahwe” trós artinyo ‘Yang Kekal’. Tapi ado tradisi lamo yang dak nyebótke namo YHWH soalnyo takót dianggep ngotori namo tu. Jadi banyak wong makek kato pengganti, contonyo <span class=\"it\">Allah</span> apo <span class=\"it\">Tuhan</span>.</div>"
+};
+
+initFootnotes(glossary);
+
 });
 
 // Chapters
-var chapters = [ { start: 1, end: 1 }];
-var hasIntro = false;
+var chapters = [ { start: 1, end: 4 }];
+var hasIntro = true;
 var baseRef  = "Aktb-07-JON-";
 
 
 </script>
-</head><body dir="LTR">
-<div id="content">
-<div id="content">
-<div class="s">Video komik "Cerito Yunus"</div>
-<div class="video-block">
-    <a class="vid-a" href="https://youtu.be/6bDak-V79_E?si=1_c-dmIpqZoNS29i">
-        <img class="vid-img" style="width:200px" src="images/V20240214103432179.png" />
-    </a>
-   <div class="video-title"><span class="video-title"> Penciptoan</span></div>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='Aktb-06-PSA-001.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-07-JON-000.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;Yunus&nbsp;&nbsp;</a></span>
+<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;1&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-07-JON-002.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-08-MAT-001.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+</div>
 </div>
 
-<div class="s"> Belajar Bersama Yunus </div>
-<div class="image-block"><span class="image"><img src="images/buku kurikulum.jpg"></span>
-<div class="caption"><span class="caption">Buku Kurikulum Yunus</span></div></div>
-<div class-"p">Kurikulum sekolah minggu tersedia di <a href="https://www.proyekwoto.com/id/produk-proyek-woto/kurikulum-sekolah-minggu">sini</a></div>
+<div id="content">
+
+<div class="mt"><span class="mt">YUNUS</span></div>
+<div class="mt2"><span class="mt2">[PERSI AWAL]</span></div>
+<div class="b"></div>
+<div class="b"></div>
+<div class="c">1</div> 
+<div class="s2"><div id="s1">Allah enjók prénto ke Yunus, tapi Yunus nyobo ngelarike diri</div></div><a id="v1"></a>
+<div class="p"><span class="v">1</span><span class="vsp">&nbsp;</span><span class="add">Kapan ari</span>, <span class="nd"><span class="footnote selectable" id="G-0"><span class="nd">Allah</span><span class="nd2">yhwh</span></span></span> ngomong ke Yunus,<span class="footnote selectable" id="F-0"><sup>a</sup></span> anaknyo Amitai. Uji-Nyo,<span id="bookmarks1"></span> <a id="v2"></a><span class="v">2</span><span class="vsp">&nbsp;</span>“Gancangla pegi ke Niniwe, kota yang besak tu, trós pringetkela dio wong, soalnyo Aku la nyingok kejahatan dio wong.”<span id="bookmarks2"></span> <a id="v3"></a><span class="v">3</span><span class="vsp">&nbsp;</span>Laju Yunus ni begancang ngelarike diri <span class="add">ke ara sebaléknyo</span> ke Tarsis, supayo jaó dari adepan <span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span>. Dio pegi ke Yapo.<span class="footnote selectable" id="F-1"><sup>b</sup></span> Dio nemuke kapal yang nak ke Tarsis. Dio bayar ongkosnyo, laju naék kapal tu supayo pacak belayar dengen wong-wong tu ke Tarsis, supayo jaó dari adepan <span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span>.<span id="bookmarks3"></span></div><span id="bookmarks3"></span><a id="v4"></a>
+<div class="p"><span class="v">4</span><span class="vsp">&nbsp;</span><span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span> nguntalke angin besak ke laót, trós tejadila badai besak, sampe-sampe kapal tu nak ancór.<span id="bookmarks4"></span> <a id="v5"></a><span class="v">5</span><span class="vsp">&nbsp;</span>Awak kapal tu ketakótan. Dio wong mekék-mekék mintak tolong ke dewonyo dewek-dewek. Dio wong nguntalke barang-barang yang ado di jeró kapal tu ke laót óntók ngurangi berat kapal. Tapi Yunus ni mala tórón ke jeró bagéan kapal yang paléng bawa. Dio bególéng di situ, trós tetédók nyenyak.<span id="bookmarks5"></span> <a id="v6"></a><span class="v">6</span><span class="vsp">&nbsp;</span>Na, pas kapten kapal nemuke Yunus, dio ngomong cak ini, “Cakmano kau pacak tédók nyenyak dalem keadaan cak ini? Bangónla, bedoala ke dewo kau. Kalu-kalu bae dio bakal kesian samo kito, jadi kito dak mati.”<span id="bookmarks6"></span></div><span id="bookmarks6"></span><a id="v7"></a>
+<div class="p"><span class="v">7</span><span class="vsp">&nbsp;</span>Cak itu jugo wong-wong yang ado di kapal tu saléng ngomong cak ini, “Payó kito koncang undi bae, supayo kito pacak tau lantak siapo kito ditimpo bencano ni.” Jadi dio wong ngoncang undi. Na, Yunusla yang tekeno undi tu.<span id="bookmarks7"></span> <a id="v8"></a><span class="v">8</span><span class="vsp">&nbsp;</span>Dio wong betanyo ke Yunus cak ini, “Enjók taukela samo kami: Lantak siapo kito ditimpo bencano ni? Apo gawean kau? Dari mano kau dateng? Apo negri kau? Dari bangso mano kau?”<span id="bookmarks8"></span></div><span id="bookmarks8"></span><a id="v9"></a>
+<div class="p"><span class="v">9</span><span class="vsp">&nbsp;</span>Uji Yunus ke wong-wong tu, “Aku ni wong Ibrani. Aku takót samo <span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span>, Tuhan yang di surgo, yang békén laótan samo daratan.”<span id="bookmarks9"></span></div><span id="bookmarks9"></span><a id="v10"></a>
+<div class="p"><span class="v">10</span><span class="vsp">&nbsp;</span>Wong-wong tu ketakótan nian trós ngomong cak ini, “Alangke beraninyo kau ngelakuke itu!”<span class="footnote selectable" id="F-2"><sup>*</sup></span> Soalnyo, wong-wong tu tau amen dio ngelarike diri dari adepan <span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span>, karno la diomongkenyo cak itu samo dio wong.<span id="bookmarks10"></span> <a id="v11"></a><span class="v">11</span><span class="vsp">&nbsp;</span>Jadi dio wong nanyo ke Yunus, “Nak kami apoi kau tu supayo laót ni pacak tenang, <span class="add">idak nyerang</span> kami lagi? Soalnyo, laót ni tamba ganas.”<span id="bookmarks11"></span></div><span id="bookmarks11"></span><a id="v12"></a>
+<div class="p"><span class="v">12</span><span class="vsp">&nbsp;</span>Uji Yunus ke dio wong, “Angkatla, untalkela aku ke laót, supayo laót pacak tenang, <span class="add">idak nyerang</span> kamu lagi! Soalnyo, aku tau, lantak aku nila badai ni nimpo kamu.”<span id="bookmarks12"></span></div><span id="bookmarks12"></span><a id="v13"></a>
+<div class="p"><span class="v">13</span><span class="vsp">&nbsp;</span>Dio wong tu ndayóng óntók nyobo balék ke darat, tapi dak pacak, soalnyo laót tu namba ganas nyerang dio wong.<span id="bookmarks13"></span> <a id="v14"></a><span class="v">14</span><span class="vsp">&nbsp;</span>Dio wong mekék ke <span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span> cak ini, “Ya <span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span>, kami mintak nian jangan biarke kami mati gara-gara nyawo wong ni! Janganla Kau tanggóngke samo kami dara wong yang dak beduso! Soalnyo, Kau la mbékén pecak yang Kau kendak'i, ya <span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span>.”<span id="bookmarks14"></span> <a id="v15"></a><span class="v">15</span><span class="vsp">&nbsp;</span>Ahérnyo dio wong ngangkat Yunus trós nguntalke dio ke laót, laju laót brenti ngamók.<span id="bookmarks15"></span> <a id="v16"></a><span class="v">16</span><span class="vsp">&nbsp;</span>Dio wong ketakótan nian samo <span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span>. Dio wong ngórbanke kórban sembeléhan óntók <span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span>, trós ngucapke najar<span class="footnote selectable" id="F-3"><sup>c</sup></span>.<span id="bookmarks16"></span></div><span id="bookmarks16"></span><a id="v17"></a>
+<div class="p"><span class="v">17</span><span class="vsp">&nbsp;</span>Na, ahérnyo <span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span> ngérém sikok iwak besak óntók negok Yunus. Jadi Yunus ni ado di jeró perót iwak tu selamo tigo ari tigo malem.<span class="footnote selectable" id="X-0"><sup>d</sup></span><span id="bookmarks17"></span></div>
+</div>
+
+<div id="toolbar-bottom">
+<div class="audio-player">
+  <audio id="audio" controls>
+    <source id="audio1" src="https://storage.googleapis.com/tbp-audio/Dramatisasi Yunus Chapter 1.mp3" />
+  </audio>
 </div>
 </div>
+
+<script type='text/javascript' src='./pwa-main.js'></script>
+<script>
+var coll = document.getElementsByClassName("collapsible-button");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
+}
+</script>
 </body>
 </html>
