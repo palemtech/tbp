@@ -33,7 +33,7 @@ $(document).ready(function() {
 var footnotes = {
     "F-0": "<div class=\"footnote-p\"><span class=\"fr\">118:0 </span><span class=\"ft\">Saér 118 ni digunoke ole bangso Israel pas upacara di <span class=\"footnote selectable\" id=\"G-36\">Ruma Agóng Allah</span> (contonyo móngkén pas ari rayo Pondok Daón). Dalem saér ni ado bagéan-bagéan yang móngkén diucapke ole imam, rajo, jugo umat.</span></div>",
     "F-1": "<div class=\"footnote-p\"><span class=\"fr\">118:2 </span><span class=\"fq\">“Kasé stio-Nyo sampe selamo-lamonyo.”: </span><span class=\"ft\">Pecaknyo ini ni balesan yang diomongke ole “wong Israel” abés pemémpén ngomong, “Ngomongla ói wong Israel.” Cak itu jugo, di ayat 3 iola imam-imam (ketórónan Harón) yang ngomong balesannyo, trós di ayat 4 umat Israel lagi.</span></div>",
-    "F-2": "<div class=\"footnote-p\"><span class=\"fr\">118:5 </span><span class=\"fq\">aku: </span><span class=\"ft\">Pecaknyo di ayat 5–18, ado sikok wong (móngkén rajo Israel) yang ngomong di depan umum, ngenjók kesaksian pasal Allah nyelametke dio pas petempóran.</span></div>",
+    "F-2": "<div class=\"footnote-p\"><span class=\"fr\">118:5 </span><span class=\"fq\">aku: </span><span class=\"ft\">Pecaknyo di ayat 5–18, ado sikok wong (móngkén rajo Israel) yang ngomong di depan ómóm, ngenjók kesaksian pasal Allah nyelametke dio pas petempóran.</span></div>",
     "F-3": "<div class=\"footnote-p\"><span class=\"fr\">118:15 </span><span class=\"fq\">pekemahan pasókan wong-wong bener: </span><span class=\"ft\">Maksódnyo, pekemahan Israel pas perang di ayat 10–13.</span></div>",
     "F-4": "<div class=\"footnote-p\"><span class=\"fr\">118:20 </span><span class=\"fq\">Inila gerbang <span class=\"nd\"><span class=\"nd\">Allah</span><span class=\"nd2\">yhwh</span></span>: </span><span class=\"ft\">Pecaknyo di sini penjago lawang Ruma Agóng Allah bales pintak'an dari ayat 19.</span></div>",
     "F-5": "<div class=\"footnote-p\"><span class=\"fr\">118:21 </span><span class=\"fq\">Aku: </span><span class=\"ft\">Pecaknyo di sini wong tadi nyelaske ngapo dio nak masók.</span></div>",
@@ -58,7 +58,7 @@ initFootnotes(glossary);
 });
 
 // Chapters
-var chapters = [ { start: 1, end: 34 }, { start: 36, end: 36 }, { start: 40, end: 43 }, { start: 46, end: 51 }, { start: 53, end: 54 }, { start: 70, end: 70 }, { start: 73, end: 73 }, { start: 84, end: 84 }, { start: 87, end: 87 }, { start: 90, end: 91 }, { start: 96, end: 96 }, { start: 98, end: 98 }, { start: 104, end: 104 }, { start: 108, end: 108 }, { start: 110, end: 110 }, { start: 112, end: 119 }, { start: 127, end: 128 }, { start: 132, end: 134 }, { start: 137, end: 139 }, { start: 143, end: 143 }, { start: 146, end: 146 }, { start: 148, end: 148 }];
+var chapters = [ { start: 1, end: 34 }, { start: 36, end: 37 }, { start: 40, end: 43 }, { start: 46, end: 51 }, { start: 53, end: 54 }, { start: 70, end: 70 }, { start: 73, end: 73 }, { start: 84, end: 84 }, { start: 87, end: 87 }, { start: 90, end: 91 }, { start: 96, end: 96 }, { start: 98, end: 98 }, { start: 104, end: 104 }, { start: 108, end: 108 }, { start: 110, end: 110 }, { start: 112, end: 119 }, { start: 127, end: 128 }, { start: 132, end: 134 }, { start: 137, end: 139 }, { start: 143, end: 143 }, { start: 146, end: 146 }, { start: 148, end: 148 }];
 var hasIntro = false;
 var baseRef  = "Aktb-06-PSA-";
 
@@ -161,6 +161,15 @@ var baseRef  = "Aktb-06-PSA-";
 <div class="q-vv"><span class="v">29</span><span class="vsp">&nbsp;</span>Ngucap sókórla<span class="footnote selectable" id="F-10"><sup>k</sup></span> samo <span class="nd"><span class="nd">Allah</span><span class="nd2">yhwh</span></span>, karno Dio baék,</div>
 <div class="q2">kasé stio-Nyo sampe selamo-lamonyo.<span id="bookmarks29"></span></div>
 </div>
+
+<div id="toolbar-bottom">
+<div class="audio-player">
+  <audio id="audio" controls>
+    <source id="audio1" src="https://storage.googleapis.com/tbp-audio/TBP Mazmur 118.mp3" />
+  </audio>
+</div>
+</div>
+
 <script type='text/javascript' src='./pwa-main.js'></script>
 <script>
 var coll = document.getElementsByClassName("collapsible-button");
