@@ -23,9 +23,9 @@ Copies data from Paratext folder to `plm_texts` where SAB can find it. It also d
 
 
 ```zsh
-~/OneDrive/_Areas/10\ tbp_scripts/copy_tbp_files.py update-files
-~/OneDrive/_Areas/10\ tbp_scripts/process_footnotes_to_glo.py prep "@"
-~/OneDrive/_Areas/10\ tbp_scripts/fix_figures.py
+uv run ~/OneDrive/_Areas/10\ tbp_scripts/copy_tbp_files.py update-files
+uv run ~/OneDrive/_Areas/10\ tbp_scripts/process_footnotes_to_glo.py prep "@"
+uv run ~/OneDrive/_Areas/10\ tbp_scripts/fix_figures.py
 ```
 
 ### publish
@@ -39,11 +39,11 @@ if [ -z "$MSG" ]
 then
     echo "No commit message given. Exiting"
 else
-~/OneDrive/_Areas/10\ tbp_scripts/copy_tbp_files.py update-app
-~/OneDrive/_Areas/10\ tbp_scripts/replace_xrs.py
-~/OneDrive/_Areas/10\ tbp_scripts/process_footnotes_to_glo.py finish 
-./update-index.py
-./update-metadata.py
+uv run ~/OneDrive/_Areas/10\ tbp_scripts/copy_tbp_files.py update-app
+uv run ~/OneDrive/_Areas/10\ tbp_scripts/replace_xrs.py
+uv run ~/OneDrive/_Areas/10\ tbp_scripts/process_footnotes_to_glo.py finish 
+uv run ./update-index.py
+uv run ./update-metadata.py
 git add --all
 git commit -a -m "$MSG"
 git push
