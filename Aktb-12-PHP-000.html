@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#6C0000">
+<title>Pilipi i</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+
+<script type='text/javascript'>
+
+$(document).ready(function() {
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 4 }];
+var hasIntro = true;
+var baseRef  = "Aktb-12-PHP-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='Aktb-11-ACT-000.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-11-ACT-028.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;Pilipi&nbsp;&nbsp;</a></span>
+<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;i&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-12-PHP-001.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-13-1JN-000.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div class="mt"><span class="mt">Pilipi</span></div>
+<div class="mt2"><span class="mt2">[Persi Awal]</span></div>
+<div class="b"></div>
+<div class="b"></div>
+<div class="is"><div id="is1">Pengantar</div></div>
+<div class="ip">Kitab Pilipi ni iola surat yang memang Paólós tujuke óntók jemaah-jemaah gereja yang ado di Kota Pilipi. Kitab ni ditólés Paólós pas dio lagi dipenjaro karno mbritoke Kabar Baék. Timotius ngérém surat Paólós tu terós Epaproditus yang gawak surat tu ke jemaah-jemaah Pilipi.</div>
+<div class="ip">Kitab ni ditólés sekitar taón 60-62 Masehi apo 32 taón seabés Yesus la naék ke surgo. Kitab ni temasók kelompok surat Paólós yang disebót “surat-surat dari penjaro” (teko Epesus, Kolose, jugo Pilemon) karno kemóngkénan besak ditólés Paólós dari penjaro.</div>
+<div class="ip">Pilipi ni iola kota yang petamo kali dikónjóngi Paólós pas dio nyebrang dari Asia Kecik (Turki mak ini ari) ke Eropa tenggara (<span class="reflink"><a href="Aktb-11-ACT-016.html#v11">Cerito Rosul-Rosul 16:11-12</a></span>), tepatnyo di Propinsi Makedonia, yang mak ini ari bagéan dari Yunani. Jadi, pacak dikatoke amen wong-wong Pilipi ni iola jemaah Eropa petamo yang pecayo Yesus. Paólós nólés surat ini karno dio péngén ngucapke mokasé samo jemaah-jemaah di Pilipi. Pas dio wong tau amen Paólós ni lagi di penjaro, dio wong ndoake Paólós jugo ngérémke dóét óntók nolong dio (<span class="reflink"><a href="Aktb-12-PHP-001.html#v5">1:5</a></span>; <span class="reflink"><a href="Aktb-12-PHP-004.html#v10">4:10-19</a></span>).</div>
+</div>
+<script type='text/javascript' src='./pwa-main.js'></script>
+<script type='text/javascript'>
+var coll = document.getElementsByClassName("collapsible-button");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
+}
+</script>
+</body>
+</html>

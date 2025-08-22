@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#6C0000">
+<title>Pilipi 2</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+
+<script type='text/javascript'>
+
+$(document).ready(function() {
+
+// Footnotes and Cross-references
+var footnotes = {
+    "F-0": "<div class=\"footnote-p\"><span class=\"fr\">2:7 </span><span class=\"fq\">trós jadi samo dengen manusio: </span><span class=\"ft\">Ado jugo naska kuno yang masókke kato-kato ni di ayat 8.</span></div>",
+    "F-1": "<div class=\"footnote-p\"><span class=\"fr\">2:8 </span><span class=\"fq\">kayu saléb: </span><span class=\"ft\">Nórót Pejanjian Lamo jugo Pejanjian Baru, wong yang dihókóm mati dengen caro dikebet di sikok tiang iola tekótók ole Allah (</span><span class=\"xt\">Ulangan 21:22; 23</span><span class=\"ft\">; </span><span class=\"xt\">Galatia 3:13</span><span class=\"ft\">). Bangso Romawi jugo ngókóm penjahat dengen caro disaléb yang mano keduo tangan jugo keduo sekel dipaku dalem keadaan telanjang. Tesalébnyo Yesus iola rencano keselametan Allah yang la diwahyuke dari jaman bingen (</span><span class=\"xt\"><span class=\"reflink\"><a href=\"Aktb-06-PSA-022.html\">Saér Nyanyian 22</a></span></span><span class=\"ft\">; </span><span class=\"xt\">Yesaya 53</span><span class=\"ft\">). Yesus rela tekótók óntók gentike kito. Óntók kito, matinyo Yesus di kayu saléb tu bukan penghinoan, tapi kemenangan. Dio rela mati biar kito menang samo kuaso Éblés, duso, jugo kematian yang óntók selamo-lamonyo di nerako supayo kito ndapetke keédópan yang óntók selamo-lamonyo di surgo (</span><span class=\"xt\">1 Korintus 15:55-57</span><span class=\"ft\">).</span></div>",
+    "F-2": "<div class=\"footnote-p\"><span class=\"fr\">2:10 </span><span class=\"fq\">segalo yang ado di surgo … di bawa bumi: </span><span class=\"ft\">Maksód tólésan ni iola nónjókke segalo mahlók ciptoan Allah.</span></div>",
+    "F-3": "<div class=\"footnote-p\"><span class=\"fr\">2:17 </span><span class=\"fq\">dara aku … ibada iman kamu: </span><span class=\"ft\">Wong Israel pas pesembake kórban tunuan ke Allah, dio wong jugo harós numpake banyu anggór di pócók kórban tu apo ke tana (jingok </span><span class=\"xt\">Kelóyóran di Górón 15:1-12</span><span class=\"ft\">). Maksód omongan Paólós di sini bukan daranyo yang dipesembake, tapi Paólós nak nónjókke amen dio rela mati óntók iman dio wong. Jadi, Paólós nak nónjókke amen yang dio wong pesembake seabés pecayo Almasi idak lagi kórban tunuan, tapi iman dio wong ke Almasi.</span></div>",
+    "F-4": "<div class=\"footnote-p\"><span class=\"fr\">2:18 </span><span class=\"fq\">besorak: </span><span class=\"ft\">Kato ni jugo pacak ditejemake “beseneng”.</span></div>"
+};
+
+initFootnotes(footnotes);
+
+
+// Glossary entries
+var glossary = {
+    "G-45": "<div><span class=\"k\">Timotius</span> - Dio ni kawan sepejalanan Paólós (<span class=\"reflink\"><a href=\"Aktb-11-ACT-016.html#v1\">Cerito Rosul-Rosul 16:1-2</a></span>; Roma 16:21; 1 Korintus 4:17; 1 Tesalonika 3:2; <span class=\"reflink\"><a href=\"Aktb-12-PHP-001.html#v19\">Pilipi 1:19</a></span>).</div>"
+};
+
+initFootnotes(glossary);
+
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 4 }];
+var hasIntro = true;
+var baseRef  = "Aktb-12-PHP-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='Aktb-11-ACT-000.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-12-PHP-001.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;Pilipi&nbsp;&nbsp;</a></span>
+<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;2&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-12-PHP-003.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-13-1JN-000.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div class="c">2</div> 
+<div class="s2"><div id="s1">Nasehat óntók seati sepékér jugo ngerendake diri pecak Almasi</div></div><a id="v1"></a>
+<div class="p"><span class="v">1</span><span class="vsp">&nbsp;</span>Jadi, karno dalem Almasi kamu dinasehati, kamu dihébór samo kasé, kamu galo dapet bagéan dalem Ro Suci, trós kamu ngerasoke kasé sayang jugo belas kesian,<span id="bookmarks1"></span> <a id="v2"></a><span class="v">2</span><span class="vsp">&nbsp;</span>sempurnokela kesenengan aku supayo kamu seati sepékér, saléng ngaséhi, sejiwo, jugo sikok tójóan.<span id="bookmarks2"></span> <a id="v3"></a><span class="v">3</span><span class="vsp">&nbsp;</span>Jangan ngelakuke apo bae demi menténgke diri dewek apo pujian yang sio-sio. Sebaléknyo dengen renda ati biarla tiap wong nganggep yang laén lebé penténg daripado dirinyo dewek.<span id="bookmarks3"></span> <a id="v4"></a><span class="v">4</span><span class="vsp">&nbsp;</span>Janganla maséng-maséng wong cuman meratike kepenténgannyo dewek, tapi kepenténgan wong laén jugo.<span id="bookmarks4"></span></div><a id="v5"></a>
+<div class="p"><span class="v">5</span><span class="vsp">&nbsp;</span>Biarla kamu jugo narok pékéran ni dalem diri kamu, pecak yang ado dalem Almasi Yesus,<span id="bookmarks5"></span></div><a id="v6"></a>
+<div class="q top-spacing"><span class="v">6</span><span class="vsp">&nbsp;</span>mugola Dio dalem rupo Allah,</div>
+<div class="q2">Dio idak nganggep kesetaroan diri-Nyo dengen Allah tu harós dipetahanke,<span id="bookmarks6"></span></div><a id="v7"></a>
+<div class="q"><span class="v">7</span><span class="vsp">&nbsp;</span>sebaléknyo Dio la ngosongke diri-Nyo dewek,</div>
+<div class="q2">dengen ngambék rupo sikok hamba,</div>
+<div class="q2">trós jadi samo dengen manusio.<span class="footnote selectable" id="F-0"><sup>*</sup></span><span id="bookmarks7"></span></div><a id="v8"></a>
+<div class="q"><span class="v">8</span><span class="vsp">&nbsp;</span>Dio jugo la ngerendake diri-Nyo</div>
+<div class="q2">trós nóróti Allah sampe mati,</div>
+<div class="q2">mala mati di kayu saléb<span class="footnote selectable" id="F-1"><sup>a</sup></span>.</div>
+<div class="b">&nbsp;</div><span id="bookmarks8"></span><a id="v9"></a>
+<div class="q"><span class="v">9</span><span class="vsp">&nbsp;</span>Itula sebabnyo Allah ninggike Dio nian</div>
+<div class="q2">trós ngarunioke samo Dio namo di pócók segalo namo,<span id="bookmarks9"></span></div><a id="v10"></a>
+<div class="q"><span class="v">10</span><span class="vsp">&nbsp;</span>supayo segalo mahlók yang ado di surgo, di pócók bumi, jugo yang ado di bawa bumi,</div>
+<div class="q2">betekók lótót karno namo Yesus,<span class="footnote selectable" id="F-2"><sup>b</sup></span><span id="bookmarks10"></span></div><a id="v11"></a>
+<div class="q"><span class="v">11</span><span class="vsp">&nbsp;</span>trós segalo lida harós ngakui, “Yesus Almasi iola Tuan Yang Agóng.”</div>
+<div class="q2">óntók kemulyoan Allah, Aba!<span id="bookmarks11"></span></div>
+<div class="s2"><div id="s2">Nasehat óntók tetep gaweke keselametan</div></div><a id="v12"></a>
+<div class="p"><span class="v">12</span><span class="vsp">&nbsp;</span>Ole karno tu, dólór-dólór aku yang tekasé, tetepla gaweke keselametan kamu dengen takót jugo gemeter samo pecak kamu yang terós-terósan stio, idak cuman pas aku ado bae, tapi telebé lagi sekarang pas aku jaó dari kamu.<span id="bookmarks12"></span> <a id="v13"></a><span class="v">13</span><span class="vsp">&nbsp;</span>Soalnyo, Allah dewekla yang nyadike kamu bekendak jugo begawe nórót kerelaan-Nyo.<span id="bookmarks13"></span></div><a id="v14"></a>
+<div class="p"><span class="v">14</span><span class="vsp">&nbsp;</span>Lakukela segalonyo dengen idak berótók'an jugo idak bebantahan,<span id="bookmarks14"></span> <a id="v15"></a><span class="v">15</span><span class="vsp">&nbsp;</span>supayo kamu além jugo murni, jadi anak-anak Allah yang dak benoda di tenga-tenga angkatan yang bengkok atinyo jugo yang sesat ni, supayo kamu becahayo di antaro dio wong pecak bintang-bintang di alam semesto,<span id="bookmarks15"></span> <a id="v16"></a><span class="v">16</span><span class="vsp">&nbsp;</span>dengen njóngjóng pirman keédópan. Amen kamu édóp cak itu, aku pacak ngeraso bangga pas ari Almasi karno aku idak sio-sio belomba jugo idak sio-sio begawe.<span id="bookmarks16"></span> <a id="v17"></a><span class="v">17</span><span class="vsp">&nbsp;</span>Tapi, mugola dara aku ditumpake ke kórban jugo ibada iman kamu,<span class="footnote selectable" id="F-3"><sup>c</sup></span> aku besorak jugo aku beseneng-seneng dengen kamu galo.<span id="bookmarks17"></span> <a id="v18"></a><span class="v">18</span><span class="vsp">&nbsp;</span>Trós, pecak itu jugo kamu harós besorak<span class="footnote selectable" id="F-4"><sup>d</sup></span> jugo beseneng dengen aku.<span id="bookmarks18"></span></div>
+<div class="ms"><div id="ms1">Kesaksian édóp Paólós</div></div>
+<div class="s2"><div id="s3">Kesaksian Paólós pasal Timotius jugo Epaproditus</div></div><a id="v19"></a>
+<div class="p"><span class="v">19</span><span class="vsp">&nbsp;</span>Tapi, aku bearep dalem Tuan Agóng Yesus óntók begancang ngérém <span class="footnote selectable" id="G-45">Timotius</span> ke kamu, supayo ati aku jugo tenang dengen tau kabar pasal kamu.<span id="bookmarks19"></span> <a id="v20"></a><span class="v">20</span><span class="vsp">&nbsp;</span>Soalnyo, aku idak punyo siapo-siapo yang seati sepékér dengen aku trós yang meratike nian kepenténgan kamu.<span id="bookmarks20"></span> <a id="v21"></a><span class="v">21</span><span class="vsp">&nbsp;</span>Karno galo-galo wong tu nyari kepenténgannyo dewek, tapi kepenténgan Almasi Yesus idak.<span id="bookmarks21"></span> <a id="v22"></a><span class="v">22</span><span class="vsp">&nbsp;</span>Kamu tau amen Timotius tu tebukti tahan uji, trós dio la nolong aku dalem mbritoke Kabar Baék pecak anak ngelayani abanyo.<span id="bookmarks22"></span> <a id="v23"></a><span class="v">23</span><span class="vsp">&nbsp;</span>Karno tu, aku bearep óntók secepetnyo ngérém dio seabés aku tau dengen jelas cakmano kepótósan pengadélan pasal pekaro aku ni.<span id="bookmarks23"></span> <a id="v24"></a><span class="v">24</span><span class="vsp">&nbsp;</span>Tapi, aku pecayo dalem Tuan Agóng Yesus amen aku dewek bakal gancang dateng ngónjóngi kamu.<span id="bookmarks24"></span></div><a id="v25"></a>
+<div class="p"><span class="v">25</span><span class="vsp">&nbsp;</span>Mugola cak itu, Epaproditus yang iola dólór aku, kawan segawean jugo kawan sepejuangan aku, yang kamu ótós óntók ngelayani kebutuan aku, aku anggep perlu óntók ngérém dio balék ke kamu.<span id="bookmarks25"></span> <a id="v26"></a><span class="v">26</span><span class="vsp">&nbsp;</span>Soalnyo, dio ni kangen nian samo kamu galo, trós atinyo jugo bingsal karno dio tau amen kamu la ndenger kalu dio ni sakét.<span id="bookmarks26"></span> <a id="v27"></a><span class="v">27</span><span class="vsp">&nbsp;</span>Memang nian dio tu sakét mala ampér mati. Tapi, Allah ngaséhani dio, mala bukan cuman dio bae, tapi aku jugo, supayo dukocito aku jangan makén betamba banyak.<span id="bookmarks27"></span> <a id="v28"></a><span class="v">28</span><span class="vsp">&nbsp;</span>Itula sebabnyo, aku begancang ngérém dio, supayo pas kamu nyingok dio lagi, kamu pacak beseneng, trós kesedéan aku bekurang.<span id="bookmarks28"></span> <a id="v29"></a><span class="v">29</span><span class="vsp">&nbsp;</span>Jadi, sambótla dio dalem Tuan Agóng dengen segalo kesenengan trós hormatila wong-wong pecak dio.<span id="bookmarks29"></span> <a id="v30"></a><span class="v">30</span><span class="vsp">&nbsp;</span>Karno gawean Almasi, dio ampér mati dengen naróke nyawonyo óntók nyelesaike petolongan yang kamu dewek dak pacak enjókke samo aku.<span id="bookmarks30"></span></div>
+</div>
+<script type='text/javascript' src='./pwa-main.js'></script>
+<script type='text/javascript'>
+var coll = document.getElementsByClassName("collapsible-button");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
+}
+</script>
+</body>
+</html>

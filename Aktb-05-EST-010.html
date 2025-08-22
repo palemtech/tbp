@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8" />
-
-<meta property="og:title" content="Alkitab Tejemahan Palembang">
-<meta property="og:description" content="Terjemahan Alkitab dalem baso Palembang.">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#6C0000">
 <title>Ester 10</title>
@@ -25,7 +22,7 @@
 
 <link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
 
-<script type="text/javascript">
+<script type='text/javascript'>
 
 $(document).ready(function() {
 
@@ -74,13 +71,13 @@ var baseRef  = "Aktb-05-EST-";
 <div id="toolbar-bottom">
 <div class="audio-player">
   <audio id="audio" controls>
-    <source id="audio1" src="https://storage.googleapis.com/tbp-audio/TBP Ester 10.mp3" />
+    <source id="audio1" src="https://storage.googleapis.com/tbp-audio/TBP%20Ester%2010.mp3" />
   </audio>
 </div>
 </div>
 
 <script type='text/javascript' src='./pwa-main.js'></script>
-<script>
+<script type='text/javascript'>
 var coll = document.getElementsByClassName("collapsible-button");
 var i;
 
@@ -88,7 +85,7 @@ for (i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function() {
         this.classList.toggle("active");
         var content = this.nextElementSibling;
-        if (content.style.maxHeight){
+        if (content.style.maxHeight) {
             content.style.maxHeight = null;
         } else {
             content.style.maxHeight = content.scrollHeight + "px";

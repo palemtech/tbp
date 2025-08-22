@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#6C0000">
+<title>1 Yahya 2</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+
+<script type='text/javascript'>
+
+$(document).ready(function() {
+
+// Footnotes and Cross-references
+var footnotes = {
+    "F-0": "<div class=\"footnote-p\"><span class=\"fr\">2.6 </span><span class=\"fq\">édóp ... édóp: </span><span class=\"ft\">Tólésan aslinyo dalem baso Yunani iola “dio wajéb bejalan samo pecak Almasi la bejalan”.</span></div>",
+    "F-1": "<div class=\"footnote-p\"><span class=\"fr\">2:12 </span><span class=\"fq\">budak-budak kecik: </span><span class=\"ft\">Kato ni pacak nónjókke wong-wong yang baru pecayo, galo-galo wong yang nerimo surat ini, jugo panggélan yang biasonyo dipakek guru ke móréd-móréd rohaninyo.</span></div>",
+    "F-2": "<div class=\"footnote-p\"><span class=\"fr\">2:13 </span><span class=\"fq\">aba-aba: </span><span class=\"ft\">Kato ni pacak nónjókke wong yang la beómór, wong yang iman kepecayoannyo la besak, jugo pemémpén-pemémpén jemaah.</span></div>",
+    "F-3": "<div class=\"footnote-p\"><span class=\"fr\">2:13 </span><span class=\"fq\">wong-wong mudo: </span><span class=\"ft\">Kato ni pacak nónjókke wong yang belóm kawén, wong yang dari kecik la pecayo samo Almasi, jugo iman kepecayoannyo kuat.</span></div>",
+    "F-4": "<div class=\"footnote-p\"><span class=\"fr\">2:13 </span><span class=\"fq\">yang jahat: </span><span class=\"ft\">Di sini samo di ayat 14 nónjókke Éblés (jingok </span><span class=\"xt\"><span class=\"reflink\"><a href=\"Aktb-10-JHN-017.html#v15\">Yahya 17:15</a></span>; <span class=\"reflink\"><a href=\"Aktb-13-1JN-003.html#v12\">1 Yahya 3:12</a></span>; <span class=\"reflink\"><a href=\"Aktb-13-1JN-005.html#v18\">5:18-19</a></span></span><span class=\"ft\">).</span></div>",
+    "F-5": "<div class=\"footnote-p\"><span class=\"fr\">2:14 </span><span class=\"fq\">Aku tóléske … ngenal Aba: </span><span class=\"ft\">Di beberapo tejemahan laén, kato-kato “Aku tóléske óntók kamu, anak-anak, karno kamu ngenal Aba” ditóléske di ayat 13.</span></div>",
+    "F-6": "<div class=\"footnote-p\"><span class=\"fr\">2:14 </span><span class=\"fq\">kamu kuat: </span><span class=\"ft\">Kuat di sini secaro rohani pecak iman, pirman, apo dak tu kepacak'an kito dalem mbritoke Kabar Baék.</span></div>",
+    "F-7": "<div class=\"footnote-p\"><span class=\"fr\">2:20 </span><span class=\"fq\">karunio: </span><span class=\"ft\">Kato ni pacak nónjókke “Ro Suci” jugo ajaran Kabar Baék. Trós, tólésan aslinyo dalem baso Yunani di sini jugo di ayat 27 iola “dituangke pakek minyak” karno imam jugo rajo wong Israel dituangke minyak jaitun pas dilanték.</span></div>",
+    "F-8": "<div class=\"footnote-p\"><span class=\"fr\">2:23 </span><span class=\"fq\">Wong yang ngakui Anak, dio punyo Aba jugo: </span><span class=\"ft\">Ado jugo naska kuno yang idak nóléske kato-kato ni.</span></div>"
+};
+
+initFootnotes(footnotes);
+
+var crossrefs = {
+    "X-0": "<div class=\"footnote-p\"><span class=\"xo\">2:7 </span><span class=\"xta\">Yahya ngulangi ajaran Yesus di </span><span class=\"xt\"><span class=\"reflink\"><a href=\"Aktb-10-JHN-013.html#v34\">Yahya 13:34</a></span></span></div>"
+};
+
+initFootnotes(crossrefs);
+
+
+// Glossary entries
+var glossary = {
+    "G-114": "<div><span class=\"k\">dólórnyo - 2:9</span> -  Kato “dólór” di sini idak cuman nónjókke dólór kandóng bae, tapi jugo dólór seiman.</div>",
+    "G-46": "<div><span class=\"k\">Wong Yang Dilanték</span> - Istila ni samo dengen <span class=\"footnote selectable\" id=\"G-1\">Almasi</span>, Mesias, jugo Kristus. Dalem Pejanjian Lamo, Allah bekali-kali janjike amen sikok Wong Yang Dilanték bakal dateng óntók jadi Rajo Penyelamet óntók umat Allah dari segalo macem kejahatan jugo duso. Jingokla jugo kato “<span class=\"footnote selectable\" id=\"G-60\">lanték</span>”.</div>"
+};
+
+initFootnotes(glossary);
+
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 5 }];
+var hasIntro = true;
+var baseRef  = "Aktb-13-1JN-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='Aktb-12-PHP-000.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-13-1JN-001.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;1 Yahya&nbsp;&nbsp;</a></span>
+<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;2&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-13-1JN-003.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='Aktb-14-2JN-000.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div class="c">2</div> 
+<div class="s2"><div id="s1">Yesus Almasi pembela kito</div></div><a id="v1"></a>
+<div class="p"><span class="v">1</span><span class="vsp">&nbsp;</span>Anak-anak yang aku kaséhi, pasal-pasal ni aku tóléske óntók kamu supayo kamu jangan békén duso. Tapi, amen ado wong yang békén duso, kito punyo sikok Pembela di adepan Aba, yang iola Yesus Almasi, yang bener.<span id="bookmarks1"></span> <a id="v2"></a><span class="v">2</span><span class="vsp">&nbsp;</span>Iyo, Dio tula kórban pedamaian pasal duso kito. Bukan óntók duso kito bae, tapi jugo óntók duso slóró dunio.<span id="bookmarks2"></span></div><a id="v3"></a>
+<div class="p"><span class="v">3</span><span class="vsp">&nbsp;</span>Na, dengen tando inila kito tau amen kito ngenal Aba, kalu kito terós-terósan nóróti prénto-prénto-Nyo.<span id="bookmarks3"></span> <a id="v4"></a><span class="v">4</span><span class="vsp">&nbsp;</span>Amen ado wong yang ngomong, “Aku ngenal Dio,” tapi idak nóróti prénto-Nyo, dio tu tukang ngotak'i, trós dalem wong tu dak katek kebeneran Allah.<span id="bookmarks4"></span> <a id="v5"></a><span class="v">5</span><span class="vsp">&nbsp;</span>Tapi, siapo bae yang nóróti pirman-Nyo, di dalem wong tu, la sempurno nian kasé Allah. Dengen cak itula kito tau amen kito ado di dalem Dio.<span id="bookmarks5"></span> <a id="v6"></a><span class="v">6</span><span class="vsp">&nbsp;</span>Trós, amen ado wong yang ngomong dio tinggal dalem Allah, dio wajéb édóp<span class="footnote selectable" id="F-0"><sup>a</sup></span> samo pecak caro Almasi édóp.<span id="bookmarks6"></span></div>
+<div class="s2"><div id="s2">Saléng ngaséhi iola prénto baru yang jugo prénto lamo</div></div><a id="v7"></a>
+<div class="p"><span class="v">7</span><span class="vsp">&nbsp;</span>Dólór-dólór yang aku kaséhi, bukan prénto baru yang aku tóléske óntók kamu, melaénke prénto lamo yang la kamu punyo dari mulonyo. Prénto lamo tu iola pirman yang la kamu denger.<span class="footnote selectable" id="X-0"><sup>b</sup></span><span id="bookmarks7"></span> <a id="v8"></a><span class="v">8</span><span class="vsp">&nbsp;</span>Mugola cak itu, prénto yang aku tóléske ni iola prénto yang baru jugo, karno prénto ni bener-bener nyato nian di dalem Almasi jugo di dalem kamu. Soalnyo, kegelepan mulai ngilang, trós tu terang yang bener la becahayo.<span id="bookmarks8"></span></div><a id="v9"></a>
+<div class="p"><span class="v">9</span><span class="vsp">&nbsp;</span>Siapo bae yang ngomong amen dio ado dalem terang, tapi mbenci <span class="footnote selectable" id="G-114">dólórnyo</span>, dio tu ado dalem kegelepan sampe mak ini ari.<span id="bookmarks9"></span> <a id="v10"></a><span class="v">10</span><span class="vsp">&nbsp;</span>Siapo yang ngaséhi dólórnyo, dio tinggal dalem terang. Trós, dalem dirinyo dak katek yang pacak nyebabke dio tesandóng.<span id="bookmarks10"></span> <a id="v11"></a><span class="v">11</span><span class="vsp">&nbsp;</span>Tapi, siapo yang mbenci dólórnyo, dio tu ado dalem kegelepan jugo bejalan dalem kegelepan. Dio dak tau ke mano dio pegi, karno kegelepan tu la mbutoke matonyo.<span id="bookmarks11"></span></div>
+<div class="s2"><div id="s3">Alesan Yahya nólés kitab ni</div></div><a id="v12"></a>
+<div class="q top-spacing"><span class="v">12</span><span class="vsp">&nbsp;</span>Aku nóléske óntók kamu, ói budak-budak kecik<span class="footnote selectable" id="F-1"><sup>c</sup></span> yang aku kaséhi,</div>
+<div class="q2">soalnyo duso kamu la diampóni ole karno namo-Nyo.<span id="bookmarks12"></span></div><a id="v13"></a>
+<div class="q"><span class="v">13</span><span class="vsp">&nbsp;</span>Aku tóléske óntók kamu, ói aba-aba<span class="footnote selectable" id="F-2"><sup>d</sup></span>,</div>
+<div class="q2">karno kamu la ngenal Dio yang ado dari mulonyo.</div>
+<div class="q">Aku tóléske óntók kamu, ói wong-wong mudo<span class="footnote selectable" id="F-3"><sup>e</sup></span>,</div>
+<div class="q2">karno kamu la ngalake yang jahat<span class="footnote selectable" id="F-4"><sup>*</sup></span>.<span id="bookmarks13"></span></div><a id="v14"></a>
+<div class="q"><span class="v">14</span><span class="vsp">&nbsp;</span>Aku tóléske óntók kamu, ói budak-budak kecik,</div>
+<div class="q2">karno kamu ngenal Aba<span class="footnote selectable" id="F-5"><sup>*</sup></span>.</div>
+<div class="q">Aku tóléske óntók kamu, ói aba-aba,</div>
+<div class="q2">karno kamu ngenal Dio yang ado dari mulonyo.</div>
+<div class="q">Aku tóléske óntók kamu, ói wong-wong mudo,</div>
+<div class="q2">karno kamu kuat<span class="footnote selectable" id="F-6"><sup>*</sup></span>,</div>
+<div class="q2">trós pirman Allah tinggal dalem kamu,</div>
+<div class="q2">jugo kamu la ngalake yang jahat.<span id="bookmarks14"></span></div>
+<div class="s2"><div id="s4">Jangan ngaséhi dunio</div></div><a id="v15"></a>
+<div class="p"><span class="v">15</span><span class="vsp">&nbsp;</span>Janganla kamu ngaséhi dunio jugo apo bae yang ado di dalemnyo. Amen ado wong yang ngaséhi dunio ni, kasényo ke Aba dak katek dalem wong tu.<span id="bookmarks15"></span> <a id="v16"></a><span class="v">16</span><span class="vsp">&nbsp;</span>Soalnyo galo-galo yang ado di dalem dunio ni, pecak hawo napsu, napsu mato, jugo kesombongan édóp, bukan beasal dari Aba, melaénke dari dunio.<span id="bookmarks16"></span> <a id="v17"></a><span class="v">17</span><span class="vsp">&nbsp;</span>Trós, dunio ni mulai lenyep besamo napsunyo, tapi wong yang ngelakuke kendak Allah tetep édóp óntók selamo-lamonyo.<span id="bookmarks17"></span></div>
+<div class="s2"><div id="s5">Jangan tepengaru dengen ajaran almasi palsu</div></div><a id="v18"></a>
+<div class="p"><span class="v">18</span><span class="vsp">&nbsp;</span>Anak-anak aku, inila waktu yang terahér. Pecak yang la kamu denger amen almasi palsu bakal dateng, mala sekarang la banyak bangkét almasi palsu. Ole karno tu, kito tau amen inila waktu yang terahér.<span id="bookmarks18"></span> <a id="v19"></a><span class="v">19</span><span class="vsp">&nbsp;</span>Memang wong-wong tu beasal dari antaro kito, tapi dio wong tu idak temasók bagéan dari kito. Soalnyo, amen dio wong tu bagéan dari kito nian, ceto dio wong tu tetep besamo-samo dengen kito. Tapi, pasal tu tejadi supayo nyato amen dio wong galo-galo tu memang bukan bagéan dari kito.<span id="bookmarks19"></span></div><a id="v20"></a>
+<div class="p"><span class="v">20</span><span class="vsp">&nbsp;</span>Tapi, kamu la ndapetke karunio<span class="footnote selectable" id="F-7"><sup>f</sup></span> dari Yang Suci, trós kamu galo tu tau kebeneran.<span id="bookmarks20"></span> <a id="v21"></a><span class="v">21</span><span class="vsp">&nbsp;</span>Mangkonyo, aku tóléske óntók kamu bukan karno kamu idak tau kebeneran, tapi justru karno kamu tu tau. Trós, kamu jugo tau amen dak katek kebohongan yang beasal dari kebeneran.<span id="bookmarks21"></span> <a id="v22"></a><span class="v">22</span><span class="vsp">&nbsp;</span>Na, siapo tukang bohong tu? Bukannyo diola wong yang nyangkal amen Yesus tu Almasi, <span class="footnote selectable" id="G-46">Wong Yang Dilanték</span>? Inila Almasi palsu tu, iola wong yang nyangkal Aba jugo Anak tu.<span id="bookmarks22"></span> <a id="v23"></a><span class="v">23</span><span class="vsp">&nbsp;</span>Tiap wong yang nyangkal Anak, dio dak punyo Aba. Wong yang ngakui Anak, dio punyo Aba jugo<span class="footnote selectable" id="F-8"><sup>*</sup></span>.<span id="bookmarks23"></span></div><a id="v24"></a>
+<div class="p"><span class="v">24</span><span class="vsp">&nbsp;</span>Trós kamu, apo yang la kamu denger dari mulonyo harós tetep tinggal dalem kamu. Amen apo yang la kamu denger dari mulonyo tu tinggal dalem kamu, mangko kamu bakal tinggal dalem Anak jugo dalem Aba.<span id="bookmarks24"></span> <a id="v25"></a><span class="v">25</span><span class="vsp">&nbsp;</span>Na, inila janji yang la dijanjike-Nyo dewek samo kito, iola édóp yang óntók selamo-lamonyo.<span id="bookmarks25"></span></div><a id="v26"></a>
+<div class="p"><span class="v">26</span><span class="vsp">&nbsp;</span>Galo-galonyo tu aku tóléske óntók kamu pasal wong-wong yang beusaha nyesatke kamu.<span id="bookmarks26"></span> <a id="v27"></a><span class="v">27</span><span class="vsp">&nbsp;</span>Tapi, kamu la nerimo karunio dari Dio, trós karunio tu tetep tinggal dalem kamu. Ole karno tu, kamu idak merluke wong laén óntók ngajari kamu. Tapi, karunio-Nyo tu ngajari kamu pasal segalonyo, trós pengajaran-Nyo tu bener, idak ngotak'i. Pecak yang la diajarke-Nyo samo kamu, tetepla tinggal dalem Dio.<span id="bookmarks27"></span></div>
+<div class="s2"><div id="s6">Tetepla tinggal dalem Almasi</div></div><a id="v28"></a>
+<div class="p"><span class="v">28</span><span class="vsp">&nbsp;</span>Jadi sekarang, anak-anak yang aku kaséhi, tinggalla dalem Dio supayo amen pas Dio nyatoke diri-Nyo, kito pacak berani, jugo idak dipermaluke di adepan-Nyo pas ari kedatengan-Nyo.<span id="bookmarks28"></span></div><a id="v29"></a>
+<div class="p"><span class="v">29</span><span class="vsp">&nbsp;</span>Jadi, amen kamu tau Almasi tu bener, kamu jugo harós tau amen tiap wong yang bebuat kebeneran, laér dari Aba.<span id="bookmarks29"></span></div>
+</div>
+
+<div id="toolbar-bottom">
+<div class="audio-player">
+  <audio id="audio" controls>
+    <source id="audio1" src="https://storage.googleapis.com/tbp-audio/TBP%201%20Yayha%202.mp3" />
+  </audio>
+</div>
+</div>
+
+<script type='text/javascript' src='./pwa-main.js'></script>
+<script type='text/javascript'>
+var coll = document.getElementsByClassName("collapsible-button");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
+}
+</script>
+</body>
+</html>
